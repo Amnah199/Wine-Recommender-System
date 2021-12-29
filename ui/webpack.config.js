@@ -1,18 +1,28 @@
-const path = require('path');
 
+const path = require('path');
+const webpack = require('webpack');
 module.exports = {
-  entry: './src/index.js',
-  mode: 'development',
-  output: {
-    filename: 'main.js',
-    path: path.resolve(__dirname, 'dist'),
+  entry: path.resolve(__dirname, './src/index.js'),
+  module: {
+    rules: [
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: ['babel-loader'],
+      },
+    ],
   },
-  devServer: {
-    static: {
-      directory: path.join(__dirname, 'dist'),
-    },
-    allowedHosts: 'all',
-    compress: true,
-    port: 8080,
+  resolve: {
+    extensions: ['*', '.js', '.jsx'],
+  },
+  output: {
+    path: path.resolve(__dirname, './dist'),
+    filename: 'bundle.js',
+  },
+  plugins: [new webpack.HotModuleReplacementPlugin()],
+  devServer: {static: {
+    directory: path.join(__dirname, './dist'),
+  },
+    hot: "only",
   },
 };
