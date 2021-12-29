@@ -3,4 +3,4 @@ vivino scraper/export
 vivino scraper/productDetailLinks
 vivino scraper/temp
 vivino scraper/dependencies/chromedriver
-vivino scraper/src/__pycache__/config.cpython-38.pyc
+vivino scraper/src/__pycache__
