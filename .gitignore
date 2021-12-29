@@ -4,3 +4,4 @@ vivino scraper/productDetailLinks
 vivino scraper/temp
 vivino scraper/dependencies/chromedriver
 vivino scraper/src/__pycache__
+ui/node_modules
