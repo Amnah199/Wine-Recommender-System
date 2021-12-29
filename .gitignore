@@ -1,1 +1,6 @@
-# created by virtualenv automatically
+vivino scraper/export
+.gitignore
+vivino scraper/productDetailLinks
+vivino scraper/temp
+vivino scraper/dependencies/chromedriver
+vivino scraper/src/__pycache__/config.cpython-38.pyc

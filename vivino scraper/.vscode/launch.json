@@ -1,0 +1,27 @@
+{
+    // Verwendet IntelliSense zum Ermitteln möglicher Attribute.
+    // Zeigen Sie auf vorhandene Attribute, um die zugehörigen Beschreibungen anzuzeigen.
+    // Weitere Informationen finden Sie unter https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "1: wine overview scraper",
+            "type": "python",
+            "request": "launch",
+            "program": "./src/wine_overview_scraper.py",
+            "console": "integratedTerminal"
+        },{
+            "name": "2: combine link lists",
+            "type": "python",
+            "request": "launch",
+            "program": "./src/combine_links.py",
+            "console": "integratedTerminal"
+        },{
+            "name": "3: scrape wine detail pages",
+            "type": "python",
+            "request": "launch",
+            "program": "./src/wine_detail_page_scraper.py",
+            "console": "integratedTerminal"
+        }
+    ]
+}
