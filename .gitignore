@@ -5,3 +5,5 @@ vivino scraper/temp
 vivino scraper/dependencies/chromedriver
 vivino scraper/src/__pycache__
 ui/node_modules
+ui/src/App.js
+ui/package-lock.json
