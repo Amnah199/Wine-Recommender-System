@@ -1,0 +1,39 @@
+{
+  "sellers": [
+    {
+      "rank": 1,
+      "id": 1,
+      "name": "Jacques",
+      "info": [
+        { "label": "address", "content": "Spiegelturm 2 48143 Münster" },
+        { "label": "whatever", "content": "info we have on the wineseller" }
+      ]
+    },
+    {
+      "rank": 2,
+      "id": 3,
+      "name": "second seller",
+      "info": [
+        { "label": "address", "content": "Spiegelturm 2 48143 Münster" },
+        { "label": "whatever", "content": "info we have on the wineseller" }
+      ]
+    },
+    {
+      "rank": 3,
+      "id": 2,
+      "name": "third seller",
+      "info": [
+        { "label": "address", "content": "Spiegelturm 2 48143 Münster" },
+        { "label": "whatever", "content": "info we have on the wineseller" }
+      ]
+    }
+  ],
+  "wines": [
+    { "rank": 1, "id": 1, "name": "abcd", "picture_url": "http://myurl.com" },
+    { "rank": 2, "id": 4, "name": "asdasd", "picture_url": "http://myurl.com" },
+    { "rank": 3, "id": 3, "name": "xcv", "picture_url": "http://myurl.com" },
+    { "rank": 4, "id": 2, "name": "xcvxvc", "picture_url": "http://myurl.com" },
+    { "rank": 5, "id": 5, "name": "xcvxvc", "picture_url": "http://myurl.com" },
+    { "rank": 6, "id": 6, "name": "xcvxvc", "picture_url": "http://myurl.com" }
+  ]
+}
