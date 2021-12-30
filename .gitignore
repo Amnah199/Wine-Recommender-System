@@ -1,3 +1,8 @@
+﻿WineRecommender_API/WineAPI/__pycache__
+WineRecommender_API/__pycache__
+WineRecommender_API/WineAPI/migrations/__pycache__
+WineRecommender_API/WineRecommender_API/__pycache__
+WineRecommender_API/.idea
 vivino scraper/export
 .gitignore
 vivino scraper/productDetailLinks
