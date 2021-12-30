@@ -1,0 +1,17 @@
+{
+  "id": 1,
+  "name": "abcd",
+  "picture_url": "http://myurl.com",
+  "description": "lorem ipsum",
+  "facts": [
+    { "label": "region", "content": "italy, puglia" },
+    { "label": "style", "content": "red" },
+    { "label": "alc", "content": "12%" }
+  ],
+  "taste_data": [
+    { "label": "tree fruit", "percentage": 0.2 },
+    { "label": "red fruit", "percentage": 0.1 },
+    { "label": "citrus fruit", "percentage": 0.5 },
+    { "label": "cinnamon", "percentage": 0.3 }
+  ]
+}
