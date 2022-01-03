@@ -3,14 +3,14 @@ import requests
 import pandas as pd
 
 
-def scrape_wines(url, output):
+def scrape_wines(url, output, headers = ['Name', 'Beschreibung']):
     """
     Scrape wines from https://www.divino.de
+    :param headers: Headers for the output table
     :param url: Full URL after choosing desired filters and choosing the number of elements per page e.g. https://www.divino.de/wein-aus-deutschland?sPage=1&sPerPage=48 OR https://www.divino.de/weisswein?p=1&n=12
     :param output: Absolute path where the data will be saved as XLSX file e.g. C:/Users/user/Desktop/wines.xlsx
     :return:
     """
-    headers = ['Name', 'Beschreibung']
     data = []
     req = requests.get(url)
     soup = BeautifulSoup(req.text, 'lxml')
@@ -57,13 +57,8 @@ def scrape_wines(url, output):
             for prop in properties:
                 prop_value = prop.findAll('span')
 
-                header = prop_value[0].text
-
-                if header not in headers:
-                    headers.append(header)
-                    headers.append(headers.pop(headers.index('Beschreibung')))
-
-                row_data[header] = prop_value[1].text
+                header = prop_value[0].text.strip()
+                row_data[header] = prop_value[1].text.strip()
 
             data.append(row_data)
 

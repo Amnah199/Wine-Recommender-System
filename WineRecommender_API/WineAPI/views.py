@@ -1,124 +1,127 @@
 from django.http import HttpResponse
-from django.shortcuts import render
 
 # Create your views here.
-from rest_framework import status
-from rest_framework.response import Response
+from rest_framework.decorators import api_view
 
-def getWines(request):
+@api_view(['GET'])
+def search_wines(request, criteria=""):
     return HttpResponse("""
-    [{  "wine_id": 0,
-		"wine_name": "Cielo e Terra Pinot Grigio 2020",
-		"wine_alcohol": 12,
-		"wine_type": "white",
-		"wine_year": 2020,
-		"wine_country": "delle Venezie, Italien",
-		"wine_price": 3.95,
-		"wine_tastes": [
-			"Grüner Apfel",
-			"Apfel",
-			"Pfirsich",
-			"Birne",
-			"Melone",
-			"Nektarine",
-			"Aprikose",
-			"Quitte",
-			"Honigmelone",
-			"Steinfrucht",
-			"Gelber Apfel",
-			"Cantaloupe-Melone",
-			"Weißer Pfirsich",
-			"Grüne Melone",
-			"Zitrone",
-			"Zitrone",
-			"Grapefruit",
-			"Limette",
-			"Mandarine",
-			"Orange",
-			"Zitruswürze",
-			"Zitronenschale",
-			"Zitronenwürze",
-			"Ananas",
-			"Tropisch",
-			"Litschi",
-			"Honig",
-			"Mineralien",
-			"Stein",
-			"Leder",
-			"Ingwer",
-			"Teer",
-			"Champignon",
-			"Banane",
-			"Käse",
-			"Creme",
-			"Yoga-Studio",
-			"Butter",
-			"Vanille",
-			"Karamell",
-			"Eiche",
-			"Stroh",
-			"Gras",
-			"Stachelbeere",
-			"Geißblatt",
-			"Zitronenblüte",
-			"Lavendel",
-			"Walnuss",
-			"Mandel",
-			"Nussig",
-			"Toast",
-			"Cranberry",
-			"Kirsche",
-			"Erdbeere",
-			"Getrocknete Aprikose",
-			"Pflaume"
-		]},
-		{
-		"wine_id": 1,
-		"wine_name": "Antares Sauvignon Blanc 2020",
-		"wine_alcohol": 12,
-		"wine_type": "white",
-		"wine_year": 2020,
-		"wine_country": "Central Valley, Chile",
-		"wine_price": 4.44,
-		"wine_tastes": [
-			"Zitrone",
-			"Grapefruit",
-			"Limette",
-			"Zitronenwürze",
-			"Limettenmark",
-			"Tropisch",
-			"Ananas",
-			"Passionsfrucht",
-			"Kiwi",
-			"Guave",
-			"Melone",
-			"Apfel",
-			"Aprikose",
-			"Birne",
-			"Steinfrucht",
-			"Grüner Apfel",
-			"Pfirsich",
-			"Nektarine",
-			"Gras",
-			"Stroh",
-			"Stachelbeere",
-			"Spargel",
-			"Grüne Paprika",
-			"Tomate",
-			"Honig",
-			"Stein",
-			"Mineralien",
-			"Leder",
-			"Asche",
-			"Saline",
-			"Butter",
-			"Vanille",
-			"Kirsche",
-			"Wassermelone",
-			"Käse",
-			"Pfeffer",
-			"Schwarze Johannisbeere",
-			"Geißblatt"
-		]}
-	]
-    """)
+    {
+    "wines":
+     [
+        {
+            "id": 1,
+            "name": "2017 Primitivo di Madura",
+            "picture_url": "http://myurl.com"
+        },
+        {
+            "id": 5,
+            "name": "Susumaniello 2020di Epicuro",
+            "picture_url": "http://myurl.com"
+        }
+    ]
+    }""")
+
+@api_view(['GET'])
+def get_recommendations(request):
+    return HttpResponse("""{
+  "sellers": [
+    {
+      "rank": 1,
+      "id": 1,
+      "name": "Jacques",
+      "info": [
+        { "label": "address", "content": "Spiegelturm 2 48143 Münster" },
+        { "label": "whatever", "content": "info we have on the wineseller" }
+      ]
+    },
+    {
+      "rank": 2,
+      "id": 3,
+      "name": "second seller",
+      "info": [
+        { "label": "address", "content": "Spiegelturm 2 48143 Münster" },
+        { "label": "whatever", "content": "info we have on the wineseller" }
+      ]
+    },
+    {
+      "rank": 3,
+      "id": 2,
+      "name": "third seller",
+      "info": [
+        { "label": "address", "content": "Spiegelturm 2 48143 Münster" },
+        { "label": "whatever", "content": "info we have on the wineseller" }
+      ]
+    }
+  ],
+  "wines": [
+    { "rank": 1, "id": 1, "name": "abcd", "picture_url": "http://myurl.com" },
+    { "rank": 2, "id": 4, "name": "asdasd", "picture_url": "http://myurl.com" },
+    { "rank": 3, "id": 3, "name": "xcv", "picture_url": "http://myurl.com" },
+    { "rank": 4, "id": 2, "name": "xcvxvc", "picture_url": "http://myurl.com" },
+    { "rank": 5, "id": 5, "name": "xcvxvc", "picture_url": "http://myurl.com" },
+    { "rank": 6, "id": 6, "name": "xcvxvc", "picture_url": "http://myurl.com" }
+  ]
+}
+""")
+
+@api_view(['GET'])
+def get_profile(request):
+    return HttpResponse("""{
+  "wine_data": [
+    {
+      "selection_type": "multiselect",
+      "name": "Type of Wine",
+      "options": [
+        { "option": "red", "selected": false },
+        { "option": "white", "selected": true },
+        { "option": "sparkling", "selected": false }
+      ]
+    },
+    {
+      "selection_type": "multiselect",
+      "name": "Price",
+      "options": [
+        { "option": "under 10€", "selected": false },
+        { "option": "10-20€", "selected": true },
+        { "option": "over 20€", "selected": true }
+      ]
+    },
+    {
+      "selection_type": "search_field",
+      "name": "Origin",
+      "options": [
+        { "option": "germany", "selected": true },
+        { "option": "italy", "selected": true },
+        { "option": "france", "selected": false }
+      ]
+    }
+  ],
+  "taste_data": [
+    { "label": "tree fruit", "percentage": 0.2 },
+    { "label": "red fruit", "percentage": 0.1 },
+    { "label": "citrus fruit", "percentage": 0.5 },
+    { "label": "cinnamon", "percentage": 0.3 }
+  ]
+}
+""")
+
+@api_view(['GET'])
+def get_wine_details(request, id = 0):
+    return HttpResponse("""{
+  "id": 1,
+  "name": "abcd",
+  "picture_url": "http://myurl.com",
+  "description": "lorem ipsum",
+  "facts": [
+    { "label": "region", "content": "italy, puglia" },
+    { "label": "style", "content": "red" },
+    { "label": "alc", "content": "12%" }
+  ],
+  "taste_data": [
+    { "label": "tree fruit", "percentage": 0.2 },
+    { "label": "red fruit", "percentage": 0.1 },
+    { "label": "citrus fruit", "percentage": 0.5 },
+    { "label": "cinnamon", "percentage": 0.3 }
+  ]
+}""")
