@@ -15,11 +15,11 @@ export const RecommendationScreen = () => {
         <></>
       )}
       {recoData ? (
-        <Typography variant="h3" textAlign={"center"}>
+        <Typography variant="h4" textAlign={"center"}>
           profile ready
         </Typography>
       ) : (
-        <Typography variant="h3" textAlign={"center"}>
+        <Typography variant="h4" textAlign={"center"}>
           Find Wines from Münster!
         </Typography>
       )}

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Typography } from "@mui/material";
 import { CustomModal } from "../components/CustomModal";
 import { WineSelection } from "../components/profileCreationScreens/WineSelection";
@@ -7,6 +7,15 @@ import { ProfileCustomization } from "../components/profileCreationScreens/Profi
 
 export const ProfileCreationModal = (props) => {
   const [step, setStep] = useState(0);
+  const [title, setTitle] = useState("");
+
+  useEffect(() => {
+    if (step == 0) {
+      setTitle("Wine Selection");
+    } else if (step == 1 || step == 2) {
+      setTitle("Taste Profile");
+    }
+  }, [step]);
 
   const onPrevious = () => {
     if (step == 1) {
@@ -27,6 +36,7 @@ export const ProfileCreationModal = (props) => {
 
   return (
     <CustomModal
+      title={title}
       onClose={() => props.onClose()}
       onNext={onNext}
       onPrevious={onPrevious}
