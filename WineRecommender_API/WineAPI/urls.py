@@ -6,4 +6,5 @@ urlpatterns = [
     path('profile/', views.get_profile),
     path('recommendations/', views.get_recommendations),
     path('details/<int:id>/', views.get_wine_details),
+    path('swaggerconfig', views.get_swagger_config)
 ]
