@@ -10,6 +10,7 @@ import { SwaggerContext } from "../../App";
 import { CustomModal } from "../CustomModal";
 import { ImageList, ImageListItemBar } from "@mui/material";
 import { CustomImageList } from "../CustomImageList";
+import { searchWine } from "../../tempfile";
 export const SearchResultModal = (props) => {
   const swagger = useContext(SwaggerContext);
   const [results, setResults] = useState(null);
@@ -19,36 +20,7 @@ export const SearchResultModal = (props) => {
         .search_wines({ search_content: props.searchString })
         .then((result) => console.log(result))
         .catch(() => {
-          const result = {
-            wines: [
-              {
-                id: 1,
-                name: "2017 Primitivo di Madura",
-                picture_url: "http://127.0.0.1:8080/testimage.png",
-              },
-              {
-                id: 5,
-                name: "Susumaniello 2020di Epicuro",
-                picture_url: "http://127.0.0.1:8080/testimage.png",
-              },
-              {
-                id: 3,
-                name: "Susumaniello 2020di Epicuro",
-                picture_url: "http://127.0.0.1:8080/testimage.png",
-              },
-              {
-                id: 4,
-                name: "Susumaniello 2020di Epicuro",
-                picture_url: "http://127.0.0.1:8080/testimage.png",
-              },
-              {
-                id: 2,
-                name: "Susumaniello 2020di Epicuro",
-                picture_url: "http://127.0.0.1:8080/testimage.png",
-              },
-            ],
-          };
-          setResults(result.wines);
+          setResults(searchWine.wines);
         }),
     []
   );
