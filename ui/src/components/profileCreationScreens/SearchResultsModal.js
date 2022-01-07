@@ -38,6 +38,7 @@ export const SearchResultModal = (props) => {
           id={"id"}
           pictureUrl={"picture_url"}
           label={"name"}
+          cols={2}
           onClick={(elem) => props.onClose(elem)}
         />
       )}

@@ -9,7 +9,7 @@ import {
 
 export const CustomImageList = (props) => {
   return (
-    <ImageList cols={4}>
+    <ImageList cols={props.cols}>
       {props.data.map((dataPoint) => (
         <Card key={dataPoint[props.id]} variant="outlined">
           <CardActionArea onClick={() => props.onClick(dataPoint)}>

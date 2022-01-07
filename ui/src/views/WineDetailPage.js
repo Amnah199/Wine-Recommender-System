@@ -80,11 +80,22 @@ export const WineDetailPage = (props) => {
                 <Card style={{ height: "100%" }}>
                   <CardHeader title="Facts" />
                   <CardContent>
-                    {data.facts.map((elem) => (
-                      <div>
-                        {elem.label}:{elem.content}
-                      </div>
-                    ))}
+                    <Grid container>
+                      {data.facts.map((elem) => (
+                        <Grid container item justifyContent={"space-between"}>
+                          <Grid item>
+                            <Typography variant="body1">
+                              {elem.label}
+                            </Typography>
+                          </Grid>
+                          <Grid item>
+                            <Typography variant="body1">
+                              {elem.content}
+                            </Typography>
+                          </Grid>
+                        </Grid>
+                      ))}
+                    </Grid>
                   </CardContent>
                 </Card>
               </Grid>

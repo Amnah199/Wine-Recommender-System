@@ -35,7 +35,6 @@ export const Recommendations = (props) => {
     },
     zoom: 12,
   };
-  console.log(props.recoData.wines);
   return (
     <>
       <Card>
@@ -46,6 +45,7 @@ export const Recommendations = (props) => {
             id={"id"}
             pictureUrl={"picture_url"}
             label={"name"}
+            cols={4}
             onClick={(elem) => window.open("/wine/" + elem.id, "_self")}
           />
         </CardContent>
