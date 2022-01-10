@@ -25,8 +25,12 @@ SECRET_KEY = 'django-insecure-s_i(lms52s=nag*!k*p3q7&t-5-*w3s$)p(x@$)(a1lc=@qt1f
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+CORS_ORIGIN_ALLOW_ALL = True
+ALLOWED_HOSTS = ['*']
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:8080",
+    "http://127.0.0.1:8080",
+]
 
 # Application definition
 
@@ -75,7 +79,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'WineRecommender_API.wsgi.application'
 
-CORS_ALLOW_ALL_ORIGINS = True
+
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
