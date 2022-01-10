@@ -75,7 +75,7 @@ export const WineDetailPage = (props) => {
               <CardHeader title="Description" />
               <CardContent>{data.description}</CardContent>
             </Card>
-            <Grid item container spacing={1}>
+            <Grid item container spacing={1} style={{ marginTop: "0.25rem" }}>
               <Grid item md={6} xs={12}>
                 <Card style={{ height: "100%" }}>
                   <CardHeader title="Facts" />

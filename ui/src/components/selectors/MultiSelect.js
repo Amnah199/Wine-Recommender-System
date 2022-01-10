@@ -3,7 +3,12 @@ import React, { Fragment } from "react";
 
 export const MultiSelect = (props) => {
   return (
-    <Grid container justifyContent={"space-between"}>
+    <Grid
+      container
+      justifyContent={"space-between"}
+      alignItems="center"
+      marginTop="1rem"
+    >
       <Grid item xs="auto">
         <Typography variant="body">{props.label}</Typography>
       </Grid>
@@ -14,7 +19,12 @@ export const MultiSelect = (props) => {
               <ToggleButton
                 value={option}
                 selected={option.selected}
-                style={{ width: "100px", height: "50px", whiteSpace: "nowrap" }}
+                style={{
+                  width: "100px",
+                  height: "50px",
+                  whiteSpace: "nowrap",
+                  textTransform: "capitalize",
+                }}
                 onChange={(event, value) => {
                   console.log(value);
                   let changedValue = props.options.map((option) => {

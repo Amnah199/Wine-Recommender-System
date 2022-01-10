@@ -22,9 +22,9 @@ export const temp_profile = {
       selection_type: "search_field",
       name: "Origin",
       options: [
-        { option: "germany", selected: true },
-        { option: "italy", selected: true },
-        { option: "france", selected: false },
+        { option: "Germany", selected: true },
+        { option: "Italy", selected: true },
+        { option: "France", selected: false },
       ],
     },
   ],
@@ -72,6 +72,8 @@ export const recos = {
       rank: 1,
       id: 1,
       name: "Jacques",
+      lat: "51.94",
+      lon: "7.65",
       info: [
         { label: "address", content: "Spiegelturm 2 48143 Münster" },
         { label: "whatever", content: "info we have on the wineseller" },
@@ -81,6 +83,8 @@ export const recos = {
       rank: 2,
       id: 3,
       name: "second seller",
+      lat: "51.95",
+      lon: "7.66",
       info: [
         { label: "address", content: "Spiegelturm 2 48143 Münster" },
         { label: "whatever", content: "info we have on the wineseller" },
@@ -90,6 +94,8 @@ export const recos = {
       rank: 3,
       id: 2,
       name: "third seller",
+      lat: "51.96",
+      lon: "7.64",
       info: [
         { label: "address", content: "Spiegelturm 2 48143 Münster" },
         { label: "whatever", content: "info we have on the wineseller" },

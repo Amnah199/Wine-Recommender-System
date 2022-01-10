@@ -38,8 +38,14 @@ export const TasteCustomization = (props) => {
     ],
   };
   return (
-    <>
+    <div
+      style={{
+        maxWidth: "600px",
+        alignContent: "center",
+        marginInline: "auto",
+      }}
+    >
       <Radar data={data} />
-    </>
+    </div>
   );
 };

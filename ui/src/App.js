@@ -34,9 +34,11 @@ export const App = () => {
   const [swaggerClient, setSwaggerClient] = useState(null);
   useEffect(
     () =>
-      new SwaggerClient("/swagger.json").then((client) => {
-        setSwaggerClient(client.apis.WineAPI);
-      }),
+      new SwaggerClient("http://localhost:8000/WineAPI/swaggerconfig").then(
+        (client) => {
+          setSwaggerClient(client.apis.WineAPI);
+        }
+      ),
     []
   );
 

@@ -5,7 +5,12 @@ export const SearchMultiSelect = (props) => {
   let selectedValues = props.options.filter((elem) => elem.selected);
 
   return (
-    <Grid container justifyContent={"space-between"}>
+    <Grid
+      container
+      justifyContent={"space-between"}
+      alignItems="center"
+      marginTop="1rem"
+    >
       <Grid item xs="auto">
         <Typography variant="body">{props.label}</Typography>
       </Grid>

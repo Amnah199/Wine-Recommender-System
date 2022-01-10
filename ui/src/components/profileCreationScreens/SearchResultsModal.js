@@ -5,6 +5,7 @@ import {
   Card,
   CardActionArea,
 } from "@mui/material";
+import { Add } from "@mui/icons-material";
 import React, { useContext, useEffect, useState } from "react";
 import { SwaggerContext } from "../../App";
 import { CustomModal } from "../CustomModal";
@@ -34,11 +35,12 @@ export const SearchResultModal = (props) => {
         <CircularProgress />
       ) : (
         <CustomImageList
+          button={<Add />}
           data={results}
           id={"id"}
           pictureUrl={"picture_url"}
           label={"name"}
-          cols={2}
+          cols={3}
           onClick={(elem) => props.onClose(elem)}
         />
       )}
