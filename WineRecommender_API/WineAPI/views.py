@@ -38,43 +38,79 @@ def get_recommendations(request):
     :return: list of wines recommended
     """
     return HttpResponse("""{
-  "sellers": [
+  sellers: [
     {
-      "rank": 1,
-      "id": 1,
-      "name": "Jacques",
-      "info": [
-        { "label": "address", "content": "Spiegelturm 2 48143 Münster" },
-        { "label": "whatever", "content": "info we have on the wineseller" }
-      ]
+      rank: 1,
+      id: 1,
+      name: "Jacques",
+      lat: "51.94",
+      lon: "7.65",
+      info: [
+        { label: "address", content: "Spiegelturm 2 48143 Münster" },
+        { label: "whatever", content: "info we have on the wineseller" },
+      ],
     },
     {
-      "rank": 2,
-      "id": 3,
-      "name": "second seller",
-      "info": [
-        { "label": "address", "content": "Spiegelturm 2 48143 Münster" },
-        { "label": "whatever", "content": "info we have on the wineseller" }
-      ]
+      rank: 2,
+      id: 3,
+      name: "second seller",
+      lat: "51.95",
+      lon: "7.66",
+      info: [
+        { label: "address", content: "Spiegelturm 2 48143 Münster" },
+        { label: "whatever", content: "info we have on the wineseller" },
+      ],
     },
     {
-      "rank": 3,
-      "id": 2,
-      "name": "third seller",
-      "info": [
-        { "label": "address", "content": "Spiegelturm 2 48143 Münster" },
-        { "label": "whatever", "content": "info we have on the wineseller" }
-      ]
-    }
+      rank: 3,
+      id: 2,
+      name: "third seller",
+      lat: "51.96",
+      lon: "7.64",
+      info: [
+        { label: "address", content: "Spiegelturm 2 48143 Münster" },
+        { label: "whatever", content: "info we have on the wineseller" },
+      ],
+    },
   ],
-  "wines": [
-    { "rank": 1, "id": 1, "name": "abcd", "picture_url": "http://127.0.0.1:8080/testimage.png" },
-    { "rank": 2, "id": 4, "name": "asdasd", "picture_url": "http://127.0.0.1:8080/testimage.png" },
-    { "rank": 3, "id": 3, "name": "xcv", "picture_url": "http://127.0.0.1:8080/testimage.png" },
-    { "rank": 4, "id": 2, "name": "xcvxvc", "picture_url": "http://127.0.0.1:8080/testimage.png" },
-    { "rank": 5, "id": 5, "name": "xcvxvc", "picture_url": "http://127.0.0.1:8080/testimage.png" },
-    { "rank": 6, "id": 6, "name": "xcvxvc", "picture_url": "http://127.0.0.1:8080/testimage.png" }
-  ]
+  wines: [
+    {
+      rank: 1,
+      id: 1,
+      name: "abcd",
+      picture_url: "http://127.0.0.1:8080/testimage.png",
+    },
+    {
+      rank: 2,
+      id: 4,
+      name: "asdasd",
+      picture_url: "http://127.0.0.1:8080/testimage.png",
+    },
+    {
+      rank: 3,
+      id: 3,
+      name: "xcv",
+      picture_url: "http://127.0.0.1:8080/testimage.png",
+    },
+    {
+      rank: 4,
+      id: 2,
+      name: "xcvxvc",
+      picture_url: "http://127.0.0.1:8080/testimage.png",
+    },
+    {
+      rank: 5,
+      id: 5,
+      name: "xcvxvc",
+      picture_url: "http://127.0.0.1:8080/testimage.png",
+    },
+    {
+      rank: 6,
+      id: 6,
+      name: "xcvxvc",
+      picture_url: "http://127.0.0.1:8080/testimage.png",
+    },
+  ],
 }
 """)
 
