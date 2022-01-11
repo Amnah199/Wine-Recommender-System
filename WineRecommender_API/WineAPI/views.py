@@ -3,6 +3,7 @@ from django.http import HttpResponse
 # Create your views here.
 from rest_framework.decorators import api_view
 
+
 @api_view(['GET'])
 def search_wines(request, criteria=""):
     return HttpResponse("""
@@ -12,15 +13,16 @@ def search_wines(request, criteria=""):
         {
             "id": 1,
             "name": "2017 Primitivo di Madura",
-            "picture_url": "http://myurl.com"
+            "picture_url": "http://127.0.0.1:8080/testimage.png"
         },
         {
             "id": 5,
             "name": "Susumaniello 2020di Epicuro",
-            "picture_url": "http://myurl.com"
+            "picture_url": "http://127.0.0.1:8080/testimage.png"
         }
     ]
     }""")
+
 
 @api_view(['GET'])
 def get_recommendations(request):
@@ -55,15 +57,16 @@ def get_recommendations(request):
     }
   ],
   "wines": [
-    { "rank": 1, "id": 1, "name": "abcd", "picture_url": "http://myurl.com" },
-    { "rank": 2, "id": 4, "name": "asdasd", "picture_url": "http://myurl.com" },
-    { "rank": 3, "id": 3, "name": "xcv", "picture_url": "http://myurl.com" },
-    { "rank": 4, "id": 2, "name": "xcvxvc", "picture_url": "http://myurl.com" },
-    { "rank": 5, "id": 5, "name": "xcvxvc", "picture_url": "http://myurl.com" },
-    { "rank": 6, "id": 6, "name": "xcvxvc", "picture_url": "http://myurl.com" }
+    { "rank": 1, "id": 1, "name": "abcd", "picture_url": "http://127.0.0.1:8080/testimage.png" },
+    { "rank": 2, "id": 4, "name": "asdasd", "picture_url": "http://127.0.0.1:8080/testimage.png" },
+    { "rank": 3, "id": 3, "name": "xcv", "picture_url": "http://127.0.0.1:8080/testimage.png" },
+    { "rank": 4, "id": 2, "name": "xcvxvc", "picture_url": "http://127.0.0.1:8080/testimage.png" },
+    { "rank": 5, "id": 5, "name": "xcvxvc", "picture_url": "http://127.0.0.1:8080/testimage.png" },
+    { "rank": 6, "id": 6, "name": "xcvxvc", "picture_url": "http://127.0.0.1:8080/testimage.png" }
   ]
 }
 """)
+
 
 @api_view(['GET'])
 def get_profile(request):
@@ -106,12 +109,13 @@ def get_profile(request):
 }
 """)
 
+
 @api_view(['GET'])
-def get_wine_details(request, id = 0):
+def get_wine_details(request, id=0):
     return HttpResponse("""{
   "id": 1,
   "name": "abcd",
-  "picture_url": "http://myurl.com",
+  "picture_url": "http://127.0.0.1:8080/testimage.png",
   "description": "lorem ipsum",
   "facts": [
     { "label": "region", "content": "italy, puglia" },
