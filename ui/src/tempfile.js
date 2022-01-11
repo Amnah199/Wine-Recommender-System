@@ -1,4 +1,4 @@
-export const temp_profile = {
+export const _temp_profile = {
   wine_data: [
     {
       selection_type: "multiselect",
@@ -36,7 +36,7 @@ export const temp_profile = {
   ],
 };
 
-export const searchWine = {
+export const _searchWine = {
   wines: [
     {
       id: 1,
@@ -66,7 +66,7 @@ export const searchWine = {
   ],
 };
 
-export const recos = {
+export const _recos = {
   sellers: [
     {
       rank: 1,

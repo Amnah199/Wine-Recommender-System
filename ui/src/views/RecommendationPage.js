@@ -5,26 +5,35 @@ import { ProfileCreationModal } from "./ProfileCreationModal";
 import { recos } from "../tempfile";
 import { Recommendations } from "./Recommendations";
 import { LoadingOverlay } from "../components/LoadingOverlay";
+import { useContext } from "react";
+import { SwaggerContext } from "../App";
 
-export const RecommendationScreen = () => {
+export const RecommendationPage = (props) => {
   const [profile, setProfile] = useState(false);
   const [recoData, setRecoData] = useState(null);
   const [loading, setLoading] = useState(false);
 
+  const swagger = useContext(SwaggerContext);
+
   useEffect(() => {
     if (profile) {
       setLoading(true);
-      setTimeout(() => {
-        setRecoData(recos);
+
+      swagger.recommendations.recommendations_list().then((resp) => {
+        setRecoData(resp.body);
         setLoading(false);
-      }, 1000);
+      });
     }
   }, [profile]);
 
   return (
     <>
       {!profile ? (
-        <ProfileCreationModal onClose={(profile) => setProfile(profile)} />
+        <ProfileCreationModal
+          onClose={(profile) => {
+            setProfile(profile);
+          }}
+        />
       ) : (
         <></>
       )}

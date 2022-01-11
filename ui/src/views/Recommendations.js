@@ -3,8 +3,9 @@ import { Typography, Card, CardContent, CardHeader } from "@mui/material";
 import GoogleMapReact from "google-map-react";
 import { CustomImageList } from "../components/CustomImageList";
 import { createMarker } from "../components/CustomMarker";
-
+import { useNavigate } from "react-router-dom";
 export const Recommendations = (props) => {
+  const navigate = useNavigate();
   const defaultProps = {
     center: {
       lat: 51.96,
@@ -23,7 +24,7 @@ export const Recommendations = (props) => {
             pictureUrl={"picture_url"}
             label={"name"}
             cols={4}
-            onClick={(elem) => window.open("/wine/" + elem.id, "_self")}
+            onClick={(elem) => navigate("/wine/" + elem.id, { id: "test" })}
           />
         </CardContent>
       </Card>

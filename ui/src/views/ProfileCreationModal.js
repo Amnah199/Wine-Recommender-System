@@ -7,7 +7,12 @@ import { ProfileCustomization } from "../components/profileCreationScreens/Profi
 import { Modal } from "@mui/material";
 import { LoadingOverlay } from "../components/LoadingOverlay";
 import { temp_profile } from "../tempfile";
+import { useContext } from "react";
+import { SwaggerContext } from "../App";
+
 export const ProfileCreationModal = (props) => {
+  const swagger = useContext(SwaggerContext);
+
   const [step, setStep] = useState(0);
   const [title, setTitle] = useState("");
   const [selectedWines, setSelectedWines] = useState([]);
@@ -36,11 +41,11 @@ export const ProfileCreationModal = (props) => {
       setStep(1);
       setLoading(true);
 
-      //change me
-      setTimeout(() => {
-        setProfile(temp_profile);
+      //HERE ARE MISSING PARAMETERS
+      swagger.profile.profile_list().then((resp) => {
+        setProfile(resp.body);
         setLoading(false);
-      }, 100);
+      });
     } else if (step == 1) {
       setStep(2);
     } else if (step == 2) {

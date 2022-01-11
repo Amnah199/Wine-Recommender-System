@@ -10,35 +10,38 @@ import { Toolbar } from "@mui/material";
 import WineBarIcon from "@mui/icons-material/WineBar";
 import { Paper } from "@mui/material";
 import { TrainRounded } from "@mui/icons-material";
-import { RecommendationScreen } from "./views/RecommendationScreen";
+import { RecommendationPage } from "./views/RecommendationPage";
 import SwaggerClient from "swagger-client";
 import { Routes, Route } from "react-router-dom";
 import { WineDetailPage } from "./views/WineDetailPage";
+import { swagger_url } from "./constants";
+import { useNavigate } from "react-router-dom";
 
 export const SwaggerContext = React.createContext(null);
 
-const CustomAppBar = () => (
-  <AppBar>
-    <Toolbar variant="regular">
-      <MenuItem onClick={() => window.open("/", "_self")}>
-        <WineBarIcon sx={{ fontSize: 40 }} />
-        <Typography variant="h3" noWrap>
-          Wines.MS
-        </Typography>
-      </MenuItem>
-    </Toolbar>
-  </AppBar>
-);
+const CustomAppBar = (props) => {
+  const navigate = useNavigate();
+  return (
+    <AppBar>
+      <Toolbar variant="regular">
+        <MenuItem onClick={() => navigate("/")}>
+          <WineBarIcon sx={{ fontSize: 40 }} />
+          <Typography variant="h3" noWrap>
+            Wines.MS
+          </Typography>
+        </MenuItem>
+      </Toolbar>
+    </AppBar>
+  );
+};
 
-export const App = () => {
+export const App = (props) => {
   const [swaggerClient, setSwaggerClient] = useState(null);
   useEffect(
     () =>
-      new SwaggerClient("http://localhost:8000/WineAPI/swaggerconfig").then(
-        (client) => {
-          setSwaggerClient(client.apis.WineAPI);
-        }
-      ),
+      new SwaggerClient(swagger_url).then((client) => {
+        setSwaggerClient(client.apis);
+      }),
     []
   );
 
@@ -50,7 +53,7 @@ export const App = () => {
         {swaggerClient ? (
           <SwaggerContext.Provider value={swaggerClient}>
             <Routes>
-              <Route path="/" element={<RecommendationScreen />} />
+              <Route path="/" element={<RecommendationPage />} />
               <Route path="/wine/:id" element={<WineDetailPage />} />
             </Routes>
           </SwaggerContext.Provider>

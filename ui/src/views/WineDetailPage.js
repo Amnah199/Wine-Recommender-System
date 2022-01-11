@@ -1,5 +1,5 @@
 import { CardContent, Card, Typography } from "@mui/material";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import { useParams } from "react-router-dom";
 import { LoadingOverlay } from "../components/LoadingOverlay";
 import { wineData } from "../tempfile";
@@ -16,6 +16,7 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
+import { SwaggerContext } from "../App";
 
 ChartJS.register(
   RadialLinearScale,
@@ -27,10 +28,13 @@ ChartJS.register(
 );
 export const WineDetailPage = (props) => {
   const params = useParams();
+  const swagger = useContext(SwaggerContext);
   const [data, setData] = useState(null);
+
   useEffect(() => {
-    console.log(params.id);
-    setTimeout(() => setData(wineData), 100);
+    swagger.details.details_read({ id: params.id }).then((resp) => {
+      setData(resp.body);
+    });
   }, []);
 
   if (!data) {

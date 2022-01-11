@@ -18,6 +18,7 @@ export const CustomMapMarker = (props) => {
         textAlign: "center",
         color: "#3f51b5",
         fontSize: 16,
+      
         fontWeight: "bold",
         padding: 4,
       }}

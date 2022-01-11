@@ -17,11 +17,11 @@ export const SearchResultModal = (props) => {
   const [results, setResults] = useState(null);
   useEffect(
     () =>
-      swagger
-        .search_wines({ search_content: props.searchString })
-        .then((result) => console.log(result))
-        .catch(() => {
-          setResults(searchWine.wines);
+      swagger.search_wines
+        .search_wines_read({ criteria: props.searchString })
+        .then((result) => {
+          console.log(result.body.wines);
+          setResults(result.body.wines);
         }),
     []
   );
