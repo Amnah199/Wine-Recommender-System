@@ -6,6 +6,12 @@ from rest_framework.decorators import api_view
 
 @api_view(['GET'])
 def search_wines(request, criteria=""):
+    """
+    Searches for wines based on given criteria
+    :param request: http request object
+    :param criteria: string criteria used for searching
+    :return: List of wines found based on criteria
+    """
     return HttpResponse("""
     {
     "wines":
@@ -26,6 +32,11 @@ def search_wines(request, criteria=""):
 
 @api_view(['GET'])
 def get_recommendations(request):
+    """
+    Gets wine-recommendations
+    :param request: http request object
+    :return: list of wines recommended
+    """
     return HttpResponse("""{
   "sellers": [
     {
@@ -70,6 +81,11 @@ def get_recommendations(request):
 
 @api_view(['GET'])
 def get_profile(request):
+    """
+    Gets wine profile specific for a user
+    :param request: http object
+    :return: wine preferences profile
+    """
     return HttpResponse("""{
   "wine_data": [
     {
@@ -112,6 +128,12 @@ def get_profile(request):
 
 @api_view(['GET'])
 def get_wine_details(request, id=0):
+    """
+    Gets details for a wine
+    :param request: http request object
+    :param id: id of the wine
+    :return: details of specified wine
+    """
     return HttpResponse("""{
   "id": 1,
   "name": "abcd",
