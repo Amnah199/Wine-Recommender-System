@@ -49,6 +49,7 @@ def get_recommendations(request):
         { label: "address", content: "Spiegelturm 2 48143 Münster" },
         { label: "whatever", content: "info we have on the wineseller" },
       ],
+      url: "http://www.google.de",
     },
     {
       rank: 2,
@@ -60,6 +61,7 @@ def get_recommendations(request):
         { label: "address", content: "Spiegelturm 2 48143 Münster" },
         { label: "whatever", content: "info we have on the wineseller" },
       ],
+      url: "http://www.google.de",
     },
     {
       rank: 3,
@@ -71,6 +73,7 @@ def get_recommendations(request):
         { label: "address", content: "Spiegelturm 2 48143 Münster" },
         { label: "whatever", content: "info we have on the wineseller" },
       ],
+      url: "http://www.google.de",
     },
   ],
   wines: [
@@ -185,5 +188,9 @@ def get_wine_details(request, id=0):
     { "label": "red fruit", "percentage": 0.1 },
     { "label": "citrus fruit", "percentage": 0.5 },
     { "label": "cinnamon", "percentage": 0.3 }
-  ]
+  ],
+  "availability": 
+    [{label: "Divino", value: "12€", link: "http://www.google.de"},
+    {label: "Weinkontor",value: "15€", link: "http://www.google.de"}],
+  
 }""")
