@@ -11,11 +11,16 @@ import {
   IconButton,
 } from "@mui/material";
 import { Add } from "@mui/icons-material";
+import { theme } from "../theming";
 export const CustomImageList = (props) => {
   return (
     <ImageList cols={props.cols}>
       {props.data.map((dataPoint) => (
-        <Card key={dataPoint[props.id]} variant="outlined">
+        <Card
+          style={{ margin: "0.5rem" }}
+          key={dataPoint[props.id]}
+          elevation={3}
+        >
           <CardActionArea onClick={() => props.onClick(dataPoint)}>
             <ImageListItem key={dataPoint[props.id]} style={{ opacity: 2 }}>
               <img
@@ -33,8 +38,13 @@ export const CustomImageList = (props) => {
                 actionIcon={
                   props.button ? (
                     <IconButton
+                      size="small"
                       variant="contained"
-                      style={{ color: "white", backgroundColor: "black" }}
+                      style={{
+                        color: "white",
+                        backgroundColor: "#540804cc",
+                        margin: "0.25rem",
+                      }}
                     >
                       {props.button}
                     </IconButton>

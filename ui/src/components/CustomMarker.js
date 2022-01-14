@@ -3,38 +3,31 @@ import { Tooltip } from "@mui/material";
 import { Popover } from "@mui/material";
 import { Paper } from "@mui/material";
 import { propTypes } from "google-map-react";
+import { theme } from "../theming";
 export const createMarker = (nr, lat, lng, info, url) => {
-  const [hover, setHover] = useState(false);
-
   return (
     <div
-      onMouseEnter={() => setHover(true)}
-      onMouseLeave={() => setHover(false)}
+      key={nr}
       lat={lat}
       lng={lng}
       style={{
         position: "absolute",
-        width: 20,
-        height: 20,
+        width: 30,
+        height: 30,
 
-        border: "5px solid #f44336",
+        border: "5px solid" + theme.palette.primary.main,
         borderRadius: 20,
-        backgroundColor: "white",
         textAlign: "center",
-        color: "#3f51b5",
+        backgroundColor: "white",
         fontSize: 16,
         fontWeight: "bold",
         padding: 4,
+        cursor: "pointer",
       }}
-      onClick={() => console.log("abcd")}
+      onClick={() => open(url)}
     >
-      <Tooltip
-        style={{ cursor: "pointer" }}
-        placement="right"
-        title={info}
-        onClick={() => open(url)}
-      >
-        <div>{nr}</div>
+      <Tooltip placement="right" title={info}>
+        <div style={{ marginTop: "-3px" }}>{nr}</div>
       </Tooltip>
     </div>
   );

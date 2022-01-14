@@ -1,9 +1,6 @@
-import React, { useState, Fragment } from "react";
-import { Typography } from "@mui/material";
-import { CustomModal } from "../CustomModal";
-import { MultiSelect } from "../selectors/MultiSelect.js";
-import { SearchMultiSelect } from "../selectors/SearchMultiSelect.js";
-import { PinDropSharp } from "@mui/icons-material";
+import React, { Fragment } from "react";
+import { MultiSelect } from "../../components/selectors/MultiSelect.js";
+import { SearchMultiSelect } from "../../components/selectors/SearchMultiSelect.js";
 
 export const ProfileCustomization = (props) => {
   return (

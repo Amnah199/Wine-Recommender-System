@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { Typography } from "@mui/material";
-import { CustomModal } from "../CustomModal";
+
 import { Radar } from "react-chartjs-2";
 import {
   Chart as ChartJS,
@@ -10,12 +9,17 @@ import {
   Filler,
   Tooltip,
   Legend,
+  LinearScale,
 } from "chart.js";
+import "chartjs-plugin-dragdata";
+import { theme } from "../../theming";
+import Color from "color";
 
 ChartJS.register(
   RadialLinearScale,
   PointElement,
   LineElement,
+
   Filler,
   Tooltip,
   Legend
@@ -31,12 +35,37 @@ export const TasteCustomization = (props) => {
       {
         label: "Your Taste",
         data: datapoints,
-        backgroundColor: "rgba(255, 99, 132, 0.2)",
-        borderColor: "rgba(255, 99, 132, 1)",
+        backgroundColor: Color(theme.palette.primary.main).alpha(0.2).string(),
+        borderColor: theme.palette.primary.main,
         borderWidth: 1,
       },
     ],
   };
+
+  const options = {
+    responsive: true,
+    plugins: {
+      dragData: {
+        round: 1,
+        showTooltip: true,
+        onDragEnd: function (e, datasetIndex, index, value) {
+          let newProfile = { ...props.profile };
+          newProfile.taste_data[index].percentage = value;
+          props.onProfileChange(newProfile);
+        },
+      },
+    },
+    scales: {
+      r: {
+        angleLines: {
+          display: false,
+        },
+        suggestedMin: 0,
+        suggestedMax: 1,
+      },
+    },
+  };
+
   return (
     <div
       style={{
@@ -45,7 +74,7 @@ export const TasteCustomization = (props) => {
         marginInline: "auto",
       }}
     >
-      <Radar data={data} />
+      <Radar data={data} options={options} />
     </div>
   );
 };
