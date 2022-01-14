@@ -13,7 +13,7 @@ import { Button } from "@mui/material";
 
 export const CustomModal = (props) => (
   <Dialog open={true} fullWidth maxWidth="md">
-    <DialogTitle>{props.title}</DialogTitle>
+    <DialogTitle color="primary">{props.title}</DialogTitle>
     <DialogContent>{props.children}</DialogContent>
     {props.buttonDisabled ? (
       <></>

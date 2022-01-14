@@ -1,7 +1,11 @@
-# Functionality
+# Readme
+
+## Functionality
+
 This module is used to scrape vivino data from overview pages of vivino
 
-# Usage
+## Usage
+
 1. modify config.py. A sample configuration is provided. For info on configuration check the section config.
 2. run wine_overview_scraper.py. Repeat for all 
 3. run combine_links to create a shared wines_export.csv with all links
@@ -9,7 +13,8 @@ This module is used to scrape vivino data from overview pages of vivino
 
 The easiest way to test this is using the vscode debug configurations.
 
-# Config
+## Config
+
 sleepTime: wait after every scraped element to avoid bot detection
 
 loadTime: time after which an element is assumed to not be available
@@ -22,4 +27,4 @@ link: link to page thats scraped by wine_overview_scraper.py
 
 link_file_name: file with links created by wine_overview_scraper.py
 
-chromedriver_path: driver for selenium. For more info visit: https://chromedriver.chromium.org/getting-started
+chromedriver_path: driver for selenium. For more info visit: <https://chromedriver.chromium.org/getting-started>

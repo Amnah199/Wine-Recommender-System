@@ -7,11 +7,10 @@ import {
   inputAdornmentClasses,
   Typography,
 } from "@mui/material";
-import { CustomModal } from "../CustomModal";
 import { TextField } from "@mui/material";
 import { SearchResultModal } from "./SearchResultsModal";
-import { CustomImageList } from "../CustomImageList";
-import { ContentCutOutlined, Delete } from "@mui/icons-material";
+import { CustomImageList } from "../../components/CustomImageList";
+import { Delete } from "@mui/icons-material";
 
 export const WineSelection = () => {
   const [searchString, setSearchString] = useState("");

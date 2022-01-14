@@ -3,6 +3,8 @@ import AppBar from "@mui/material/AppBar";
 import {
   CircularProgress,
   Container,
+  CssBaseline,
+  Grid,
   MenuItem,
   Typography,
 } from "@mui/material";
@@ -14,22 +16,43 @@ import { RecommendationPage } from "./views/RecommendationPage";
 import SwaggerClient from "swagger-client";
 import { Routes, Route } from "react-router-dom";
 import { WineDetailPage } from "./views/WineDetailPage";
-import { swagger_url } from "./constants";
+import { cookie_name, swagger_url } from "./constants";
 import { useNavigate } from "react-router-dom";
+import { ThemeProvider } from "@emotion/react";
+import { theme } from "./theming";
+import { useCookies } from "react-cookie";
+import RestartAltIcon from "@mui/icons-material/RestartAlt";
 
 export const SwaggerContext = React.createContext(null);
 
 const CustomAppBar = (props) => {
   const navigate = useNavigate();
+  const [cookies, setCookie, removeCookie] = useCookies();
+
   return (
-    <AppBar>
+    <AppBar style={{ backgroundColor: "white" }}>
       <Toolbar variant="regular">
-        <MenuItem onClick={() => navigate("/")}>
-          <WineBarIcon sx={{ fontSize: 40 }} />
-          <Typography variant="h3" noWrap>
-            Wines.MS
-          </Typography>
-        </MenuItem>
+        <Grid container justifyContent={"space-between"}>
+          <Grid item>
+            <MenuItem onClick={() => navigate("/")}>
+              <WineBarIcon color="primary" sx={{ fontSize: 40 }} />
+              <Typography color="primary" variant="h3" noWrap>
+                Wines.MS
+              </Typography>
+            </MenuItem>
+          </Grid>
+          <Grid item>
+            <MenuItem
+              style={{ height: "100%" }}
+              onClick={() => {
+                removeCookie(cookie_name);
+                window.location.reload(false);
+              }}
+            >
+              <RestartAltIcon color="primary" sx={{ fontSize: 40 }} />
+            </MenuItem>
+          </Grid>
+        </Grid>
       </Toolbar>
     </AppBar>
   );
@@ -37,6 +60,7 @@ const CustomAppBar = (props) => {
 
 export const App = (props) => {
   const [swaggerClient, setSwaggerClient] = useState(null);
+
   useEffect(
     () =>
       new SwaggerClient(swagger_url).then((client) => {
@@ -46,8 +70,10 @@ export const App = (props) => {
   );
 
   return (
-    <div>
+    <ThemeProvider theme={theme}>
       <CustomAppBar />
+      <CssBaseline />
+
       <Toolbar />
       <Container maxWidth="lg">
         {swaggerClient ? (
@@ -69,6 +95,6 @@ export const App = (props) => {
           </div>
         )}
       </Container>
-    </div>
+    </ThemeProvider>
   );
 };

@@ -1,17 +1,9 @@
-import {
-  CircularProgress,
-  ImageListItem,
-  Paper,
-  Card,
-  CardActionArea,
-} from "@mui/material";
+import { CircularProgress } from "@mui/material";
 import { Add } from "@mui/icons-material";
 import React, { useContext, useEffect, useState } from "react";
 import { SwaggerContext } from "../../App";
-import { CustomModal } from "../CustomModal";
-import { ImageList, ImageListItemBar } from "@mui/material";
-import { CustomImageList } from "../CustomImageList";
-import { searchWine } from "../../tempfile";
+import { CustomModal } from "../../components/CustomModal";
+import { CustomImageList } from "../../components/CustomImageList";
 export const SearchResultModal = (props) => {
   const swagger = useContext(SwaggerContext);
   const [results, setResults] = useState(null);

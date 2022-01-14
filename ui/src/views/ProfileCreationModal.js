@@ -1,12 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { CircularProgress, Typography } from "@mui/material";
 import { CustomModal } from "../components/CustomModal";
-import { WineSelection } from "../components/profileCreationScreens/WineSelection";
-import { TasteCustomization } from "../components/profileCreationScreens/TasteCustomization";
-import { ProfileCustomization } from "../components/profileCreationScreens/ProfileCustomization";
-import { Modal } from "@mui/material";
+import { WineSelection } from "./profileCreationScreens/WineSelection";
+import { TasteCustomization } from "./profileCreationScreens/TasteCustomization";
+import { ProfileCustomization } from "./profileCreationScreens/ProfileCustomization";
 import { LoadingOverlay } from "../components/LoadingOverlay";
-import { temp_profile } from "../tempfile";
 import { useContext } from "react";
 import { SwaggerContext } from "../App";
 
@@ -83,7 +80,16 @@ export const ProfileCreationModal = (props) => {
       ) : (
         <></>
       )}
-      {step == 2 ? <TasteCustomization profile={profile} /> : <></>}
+      {step == 2 ? (
+        <TasteCustomization
+          profile={profile}
+          onProfileChange={(changedProfile) => {
+            setProfile({ ...changedProfile });
+          }}
+        />
+      ) : (
+        <></>
+      )}
     </CustomModal>
   );
 };

@@ -14,3 +14,4 @@ ui/src/App.js
 ui/package-lock.json
 Scraping/.idea
 Scraping/__pycache__
+vivino scraper/_export
