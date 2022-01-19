@@ -1,18 +1,19 @@
 # WineRecommender
 
-# DIRECTORY STRUCTURE:
+# Directory structure:
 
-Python packages that need to be installed for scraping:
+# Required Packages:
 
+Scraping:
 - beautifulsoup4
 - pandas
 - requests
 - xlsxwriter
 - lxml
 
-Packages required for matching:
+Matching:
 - recordlinkage
 - fuzzywuzzy
 
-Package used for importing data to DB:
+Importing data to DB:
 - sqlalchemy
