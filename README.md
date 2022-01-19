@@ -12,3 +12,5 @@ Packages required for matching:
 - recordlinkage
 - fuzzywuzzy
 
+Package used for importing data to DB:
+- sqlalchemy
