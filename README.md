@@ -1,5 +1,7 @@
 # WineRecommender
 
+# DIRECTORY STRUCTURE:
+
 Python packages that need to be installed for scraping:
 
 - beautifulsoup4
