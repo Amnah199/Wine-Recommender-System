@@ -7,3 +7,8 @@ Python packages that need to be installed for scraping:
 - requests
 - xlsxwriter
 - lxml
+
+Packages required for matching:
+- recordlinkage
+- fuzzywuzzy
+
