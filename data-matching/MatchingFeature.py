@@ -4,7 +4,7 @@
 @author: stepski
 """
 
-# Package record linkage version 1
+# record linkage version 1
 
 import numpy as np
 import pandas as pd
