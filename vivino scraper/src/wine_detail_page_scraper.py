@@ -32,6 +32,7 @@ def parseWebsite(html):
                 line = line[:-1]
 
             jsonString = line[line.index('{"vintage"'):]
+            return json.loads(jsonString)
 
 
 chrome_options = Options()
@@ -67,7 +68,10 @@ for id, row in df.iterrows():
 
     current_wine_dir_path = str(filePath) + "/../export/" + str(id) + "/"
 
-    if not(os.path.isfile(current_wine_dir_path+"vintage.json") and (os.path.isfile(current_wine_dir_path+"taste.json"))):
+    secondCondition = (os.path.isfile(current_wine_dir_path+"taste.json"))
+    secondCondition = True
+
+    if not(os.path.isfile(current_wine_dir_path+"vintage.json") and secondCondition):
 
         if not os.path.isdir(current_wine_dir_path):
             os.mkdir(current_wine_dir_path)
