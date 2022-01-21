@@ -10,11 +10,11 @@ Scraping:
 - requests
 - xlsxwriter
 - lxml
-<<<<<<< HEAD
 
 Matching:
 - recordlinkage
 - fuzzywuzzy
+- rapidfuzz
 
 Importing data to DB:
 - sqlalchemy
