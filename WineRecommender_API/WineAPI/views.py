@@ -18,7 +18,8 @@ def search_wines(request, criteria=""):
     :return: List of wines found based on criteria
     """
     try:
-        wines = serializers.serialize('json', Wine.objects.all().filter(wine_name__contains=criteria), fields=('wine_id', 'wine_name', 'wine_type', 'wine_year', 'wine_alcohol', 'wine_country', 'wine_price'))
+        wines = serializers.serialize('json', Wine.objects.all().filter(wine_name__contains=criteria), fields=(
+        'wine_id', 'wine_name', 'wine_type', 'wine_year', 'wine_alcohol', 'wine_country', 'wine_price'))
     except:
         return HttpResponseServerError()
 
@@ -120,18 +121,17 @@ def get_profile(request, wine_id=0):
     :param request: http object
     :return: wine preferences profile
     """
-    if wine_id==0:
+    if wine_id == 0:
         return HttpResponseBadRequest("Wine id must not be null or 0")
 
     try:
         wines = Wine.objects.filter(wine_id=wine_id)
-        wine_flavor= FlavorWine.objects.filter(wine_id__in=wines.values('wine_id'))
-
-        #wine_flavor = serializers.serialize('json', FlavorWine.objects.filter(wine_id__flavorwine__exact=wine_id), fields=('wine_id', 'flavor_group', 'flavor_count', 'flavor_id'))
+        wine_flavor = FlavorWine.objects.filter(wine_id__in=wines.values('wine_id'))
     except:
         return HttpResponseServerError()
 
-    return HttpResponse(serializers.serialize('json', wine_flavor, fields=('wine_id', 'flavor_group', 'flavor_count', 'flavor_id')))
+    return HttpResponse(
+        serializers.serialize('json', wine_flavor, fields=('wine_id', 'flavor_group', 'flavor_count', 'flavor_id')))
 
 
 @api_view(['GET'])
@@ -142,11 +142,12 @@ def get_wine_details(request, id=0):
     :param id: id of the wine
     :return: details of specified wine
     """
-    if id==0:
+    if id == 0:
         return HttpResponseBadRequest("Wine id must not be null or 0")
 
     try:
-        wine = serializers.serialize('json', Wine.objects.filter(wine_id=id), fields=('wine_id', 'wine_name', 'wine_type', 'wine_year', 'wine_alcohol', 'wine_country', 'wine_price'))
+        wine = serializers.serialize('json', Wine.objects.filter(wine_id=id), fields=(
+        'wine_id', 'wine_name', 'wine_type', 'wine_year', 'wine_alcohol', 'wine_country', 'wine_price'))
     except:
         return HttpResponseServerError()
 
