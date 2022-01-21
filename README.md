@@ -10,6 +10,7 @@ Scraping:
 - requests
 - xlsxwriter
 - lxml
+<<<<<<< HEAD
 
 Matching:
 - recordlinkage
@@ -17,3 +18,4 @@ Matching:
 
 Importing data to DB:
 - sqlalchemy
+=======

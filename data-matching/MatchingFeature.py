@@ -6,10 +6,10 @@
 
 # Package record linkage version 1
 
-import numpy
+import numpy as np
 import pandas as pd
 #import pip
-#pip.main(["install", "reordlinkage"])
+#pip.main(["install", "recordlinkage"])
 import recordlinkage
 #import pip
 #pip.main(["install", "fuzzywuzzy"])
@@ -67,3 +67,18 @@ class BruteForceMatch():
         file.write(element + "\n")
     file.close()
     
+    
+    
+# Rapid fuzz
+
+from rapidfuzz import process, fuzz
+
+scores = process.cdist(
+    vivino["wine_name"], local["wine_name"], scorer=fuzz.ratio,
+    dtype=np.uint8, score_cutoff=55)
+
+matches = np.any(scores, 1)
+
+matching = [x for x, is_match in zip(vivino["wine_name"], matches) if is_match]
+not_matching = [x for x, is_match in zip(vivino["wine_name"], matches) if not is_match]
+
