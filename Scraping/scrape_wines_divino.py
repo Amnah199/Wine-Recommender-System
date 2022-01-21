@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup
 import requests
 import pandas as pd
+import re
 
 
 def scrape_wines(url, output, headers = ['Name', 'Beschreibung']):
@@ -35,6 +36,11 @@ def scrape_wines(url, output, headers = ['Name', 'Beschreibung']):
         for wine in wines:
             url_details = wine.find('a')['href']
             details = requests.get(url_details)
+            imageContainerText = wine.find('a')['style']
+            image = imageContainerText[imageContainerText.find("(")+1:imageContainerText.find(")")]
+
+            price = re.findall("\d+(?:\.\d+)?,\d+", wine.find('span', attrs={"class": 'price'}).text)[0]
+
             soup = BeautifulSoup(details.text, 'lxml')
 
             name_container = soup.find('div', attrs={"id": 'detailbox'})
@@ -52,7 +58,7 @@ def scrape_wines(url, output, headers = ['Name', 'Beschreibung']):
             properties_container = soup.find('ul', {"class": "description_properties"})
             properties = properties_container.findAll('li')
 
-            row_data = {'Name': name, 'Beschreibung': description}
+            row_data = {'Name': name, 'Beschreibung': description, 'Preis': price, 'Details-URL': url_details, 'Image': image}
 
             for prop in properties:
                 prop_value = prop.findAll('span')

@@ -23,12 +23,13 @@ others = 0
 wine_name = "none"
 
 # array of file locations for json files
-for i in range(0, 9750):
+for i in range(0, 9749):
     taste_path.append("D:\WWU Muenster\Semester 3\DI\Project\\" + str(i) + "\\taste.json")  # change file path here
     vintage_path.append("D:\WWU Muenster\Semester 3\DI\Project\\" + str(i) + "\\vintage.json") # change file path here
 
     
-for k in range(0, 9750):
+
+for k in range(0, 9749):
     
     if k == 6582:
         continue;
@@ -89,6 +90,8 @@ for k in range(0, 9750):
     else:
         wine_type = "none"
 
+
+
     if wine_type == "none":
         wine_key = wine_data["wine"]
         if wine_key != None:
@@ -121,12 +124,24 @@ for k in range(0, 9750):
     taste = taste_data["tastes"]
     flavor = taste["flavor"]
     taste_list = []
+    taste_dict = {}
+    
     if flavor != None:
         for f in flavor:
+            taste_group = f["group"]
+            
             if "primary_keywords" in f.keys():
                 primary_key = f["primary_keywords"]
+                
                 for key in primary_key:
-                    taste_list.append(key['name'])
+                    taste_name = key['name']
+                    taste_count = key['count']
+                    taste_dict = {
+                        "name" : taste_name,
+                        "count" : taste_count,
+                        "group" : taste_group
+                    }
+                    taste_list.append(taste_dict)
 
     wine_dict = {
         "wine_id" : k,
@@ -140,7 +155,7 @@ for k in range(0, 9750):
     }
     dictList.append(wine_dict)
     
-    
+     
 
 # writing the data in json file 
 data_file = open('wine_data.json',mode="w", encoding="utf-8" )

@@ -19,7 +19,7 @@ schema_view = get_schema_view(
 
 urlpatterns = [
     path('search_wines/<str:criteria>/', views.search_wines),
-    path('profile/', views.get_profile),
+    path('profile/<int:wine_id>/', views.get_profile),
     path('recommendations/', views.get_recommendations),
     path('details/<int:id>/', views.get_wine_details),
     re_path(r'^swagger(?P<format>\.json|\.yaml)$', schema_view.without_ui(cache_timeout=0), name='schema-json'),
