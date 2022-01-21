@@ -1,4 +1,9 @@
 from django.http import HttpResponse
+from django.http import HttpResponseBadRequest
+from django.http import HttpResponseServerError
+from WineAPI.models import Wine
+from WineAPI.models import FlavorWine
+from django.core import serializers
 
 # Create your views here.
 from rest_framework.decorators import api_view
@@ -12,22 +17,12 @@ def search_wines(request, criteria=""):
     :param criteria: string criteria used for searching
     :return: List of wines found based on criteria
     """
-    return HttpResponse("""
-    {
-    "wines":
-     [
-        {
-            "id": 1,
-            "name": "2017 Primitivo di Madura",
-            "picture_url": "http://127.0.0.1:8080/testimage.png"
-        },
-        {
-            "id": 5,
-            "name": "Susumaniello 2020di Epicuro",
-            "picture_url": "http://127.0.0.1:8080/testimage.png"
-        }
-    ]
-    }""")
+    try:
+        wines = serializers.serialize('json', Wine.objects.all().filter(wine_name__contains=criteria), fields=('wine_id', 'wine_name', 'wine_type', 'wine_year', 'wine_alcohol', 'wine_country', 'wine_price'))
+    except:
+        return HttpResponseServerError()
+
+    return HttpResponse(wines)
 
 
 @api_view(['GET'])
@@ -119,50 +114,24 @@ def get_recommendations(request):
 
 
 @api_view(['GET'])
-def get_profile(request):
+def get_profile(request, wine_id=0):
     """
     Gets wine profile specific for a user
     :param request: http object
     :return: wine preferences profile
     """
-    return HttpResponse("""{
-  "wine_data": [
-    {
-      "selection_type": "multiselect",
-      "name": "Type of Wine",
-      "options": [
-        { "option": "red", "selected": false },
-        { "option": "white", "selected": true },
-        { "option": "sparkling", "selected": false }
-      ]
-    },
-    {
-      "selection_type": "multiselect",
-      "name": "Price",
-      "options": [
-        { "option": "under 10€", "selected": false },
-        { "option": "10-20€", "selected": true },
-        { "option": "over 20€", "selected": true }
-      ]
-    },
-    {
-      "selection_type": "search_field",
-      "name": "Origin",
-      "options": [
-        { "option": "germany", "selected": true },
-        { "option": "italy", "selected": true },
-        { "option": "france", "selected": false }
-      ]
-    }
-  ],
-  "taste_data": [
-    { "label": "tree fruit", "percentage": 0.2 },
-    { "label": "red fruit", "percentage": 0.1 },
-    { "label": "citrus fruit", "percentage": 0.5 },
-    { "label": "cinnamon", "percentage": 0.3 }
-  ]
-}
-""")
+    if wine_id==0:
+        return HttpResponseBadRequest("Wine id must not be null or 0")
+
+    try:
+        wines = Wine.objects.filter(wine_id=wine_id)
+        wine_flavor= FlavorWine.objects.filter(wine_id__in=wines.values('wine_id'))
+
+        #wine_flavor = serializers.serialize('json', FlavorWine.objects.filter(wine_id__flavorwine__exact=wine_id), fields=('wine_id', 'flavor_group', 'flavor_count', 'flavor_id'))
+    except:
+        return HttpResponseServerError()
+
+    return HttpResponse(serializers.serialize('json', wine_flavor, fields=('wine_id', 'flavor_group', 'flavor_count', 'flavor_id')))
 
 
 @api_view(['GET'])
@@ -173,24 +142,12 @@ def get_wine_details(request, id=0):
     :param id: id of the wine
     :return: details of specified wine
     """
-    return HttpResponse("""{
-  "id": 1,
-  "name": "abcd",
-  "picture_url": "http://127.0.0.1:8080/testimage.png",
-  "description": "lorem ipsum",
-  "facts": [
-    { "label": "region", "content": "italy, puglia" },
-    { "label": "style", "content": "red" },
-    { "label": "alc", "content": "12%" }
-  ],
-  "taste_data": [
-    { "label": "tree fruit", "percentage": 0.2 },
-    { "label": "red fruit", "percentage": 0.1 },
-    { "label": "citrus fruit", "percentage": 0.5 },
-    { "label": "cinnamon", "percentage": 0.3 }
-  ],
-  "availability": 
-    [{label: "Divino", value: "12€", link: "http://www.google.de"},
-    {label: "Weinkontor",value: "15€", link: "http://www.google.de"}],
-  
-}""")
+    if id==0:
+        return HttpResponseBadRequest("Wine id must not be null or 0")
+
+    try:
+        wine = serializers.serialize('json', Wine.objects.filter(wine_id=id), fields=('wine_id', 'wine_name', 'wine_type', 'wine_year', 'wine_alcohol', 'wine_country', 'wine_price'))
+    except:
+        return HttpResponseServerError()
+
+    return HttpResponse(wine)
