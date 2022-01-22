@@ -4,6 +4,7 @@ import os
 import json
 import csv
 import pandas
+from pathlib import Path
  
 
  
@@ -34,17 +35,24 @@ wine_name = "none"
 
 # get working directory and iterate over folders to generate dataset
 path = os.getcwd()
-
 wineDirs = os.listdir(path)
 
-for wineFolder in wineDirs:
+#only required because the folder structure is data/export {1,2}/...
+wineFolders = []
+for wineDir in wineDirs:
+    wineFolders.extend([wineDir+'/'+x for x in os.listdir(wineDir)])
+
+for wineFolder in wineFolders:
     try:        
         # Opening JSON file and loading the data into the variable data
+
         with open('/'.join([path, wineFolder,'vintage.json']), mode="r", encoding="utf-8") as json_file:
             wine_data = json.load(json_file)
-        with open('/'.join([path, wineFolder,'taste.json']), mode="r", encoding="utf-8") as json_file:
-            taste_data = json.load(json_file)
-            
+        try:    
+            with open('/'.join([path, wineFolder,'taste.json']), mode="r", encoding="utf-8") as json_file:
+                taste_data = json.load(json_file)
+        except:
+            taste_data = None   
         
         # Extracting desired attributes from vintage.json 
         vintage = wine_data["vintage"]
@@ -52,6 +60,8 @@ for wineFolder in wineDirs:
         wine_id = wine["id"]
         wine_name = wine["name"]
         wine_facts = vintage["wine_facts"]
+        wine_winery = wine["winery"]["name"]
+        wine_rating = vintage["statistics"]["ratings_average"]
         if "alcohol" in wine_facts.keys():
             wine_alcohol = wine_facts['alcohol']
         else: 
@@ -125,13 +135,14 @@ for wineFolder in wineDirs:
         #                 others +=1
         
         # Extracting desired attributes from taste.json 
-        taste = taste_data["tastes"]
-        flavor = taste["flavor"]
-
-        wine_structure = taste["structure"]
-        taste_list = []
+        
 
         try:
+            taste = taste_data["tastes"]
+            flavor = taste["flavor"]
+
+            wine_structure = taste["structure"]
+            taste_list = []
             for g in flavor:
                 stats = {}
                 stats["group"] = g["group"]
@@ -153,6 +164,7 @@ for wineFolder in wineDirs:
         wine_dict = {
             "wine_id" : wine_id,
             "wine_name" : wine_name,
+            "wine_winery" : wine_winery,
             "wine_alcohol" : wine_alcohol,
             "wine_type" : wine_type,
             "wine_year" : wine_year,
@@ -160,7 +172,8 @@ for wineFolder in wineDirs:
             "wine_region": wine_region,
             "wine_price" : wine_price,
             "wine_structure": wine_structure,
-            "wine_tastes": taste_list
+            "wine_tastes": taste_list,
+            "wine_rating" : wine_rating
             
         }
         dictList.append(wine_dict)
@@ -171,7 +184,7 @@ for wineFolder in wineDirs:
         
 
 # writing the data in json file 
-data_file = open(path+'/wine_data.json',mode="w", encoding="utf-8" )
+data_file = open(os.path.dirname(path)+'/wine_data.json',mode="w", encoding="utf-8" )
 jsonString = json.dumps(dictList)
 
 data_file.write(jsonString)
