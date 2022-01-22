@@ -31,15 +31,16 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'WineAPI.apps.WineapiConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'django.contrib.sites',
     'rest_framework',
-    'WineAPI',
     'corsheaders',
-    'django.contrib.staticfiles',  # required for serving swagger ui's css/js files
+    'django.contrib.staticfiles',
     'drf_yasg',
 ]
 
@@ -81,8 +82,12 @@ WSGI_APPLICATION = 'WineRecommender_API.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'PASSWORD': '12345',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
     }
 }
 
