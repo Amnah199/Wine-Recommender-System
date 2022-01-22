@@ -85,58 +85,10 @@ for wineFolder in wineFolders:
 
 
         wine_type = wineType(wine['type_id']) 
-            
-        # Extracting wine type by searching keywords || this is obsolete due to type_id in the vintage.json
-        
-        # if (' blanc ' in wine_name.lower() or ' chardonnay ' in wine_name.lower() 
-        #     or ' gewürztraminer ' in wine_name.lower() or ' albariño ' in wine_name.lower() 
-        #     or ' riesling ' in wine_name.lower() or ' blanco ' in wine_name.lower() or ' soave ' in wine_name.lower()
-        #     or ' grauburgunder ' in wine_name.lower()):
-        #     wine_type = "white"
-        #     white += 1
-            
-            
-        # elif (' primitivo ' in wine_name.lower() or ' shiraz ' in wine_name.lower() 
-        #       or ' cabernet ' in wine_name.lower() or ' syrah ' in wine_name.lower() or ' nebbiolo ' in wine_name.lower() 
-        #       or ' barbaresco ' in wine_name.lower() or ' crianza ' in wine_name.lower() or ' merlot ' in wine_name.lower() 
-        #       or ' giscours ' in wine_name.lower() or ' spätburgunder ' in wine_name.lower()):
-        #     wine_type = "red"
-        #     red += 1
-
-        # else:
-        #     wine_type = "none"
-
-        # if wine_type == "none":
-        #     wine_key = wine_data["wine"]
-        #     if wine_key != None:
-        #         style_key = wine_key["style"]
-        #         if style_key != None and "description" in style_key.keys():
-        #             wine_desc = style_key["description"]
-        
-        #         if wine_desc != None:
-        #             if (' white ' in wine_desc.lower() ):
-        #                 wine_type = "white"
-        #                 white += 1
-                        
-        #             elif (' rose ' in wine_desc.lower() or ' rosé ' in wine_desc.lower()):
-        #                 wine_type = "rose"
-        #                 rose += 1
-                        
-        #             elif (' red ' in wine_desc.lower()):
-        #                 wine_type = "red"
-        #                 red += 1
-                    
-        #             elif (' sparkling ' in wine_desc.lower()):
-        #                 wine_type = "sparkling"
-        #                 sparkling += 1
-        
-        #             else:
-        #                 wine_type = "other"
-        #                 others +=1
+        wine_thumb = vintage["image"]["location"]    
         
         # Extracting desired attributes from taste.json 
         
-
         try:
             taste = taste_data["tastes"]
             flavor = taste["flavor"]
@@ -173,7 +125,8 @@ for wineFolder in wineFolders:
             "wine_price" : wine_price,
             "wine_structure": wine_structure,
             "wine_tastes": taste_list,
-            "wine_rating" : wine_rating
+            "wine_rating" : wine_rating,
+            "wine_thumb" : wine_thumb
             
         }
         dictList.append(wine_dict)
@@ -184,7 +137,7 @@ for wineFolder in wineFolders:
         
 
 # writing the data in json file 
-data_file = open(os.path.dirname(path)+'/wine_data.json',mode="w", encoding="utf-8" )
+data_file = open('home/p/wines/winerecommender/data-matching/vivino_data_combined.json',mode="w", encoding="utf-8" )
 jsonString = json.dumps(dictList)
 
 data_file.write(jsonString)
