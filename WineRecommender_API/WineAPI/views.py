@@ -24,8 +24,11 @@ def search_wines(request, criteria=""):
         wines = Wine.objects.all().filter(wine_name__contains=criteria)
         wines_list = list(wines)
         wines_result = '{ "wines": ['
-        for wine in wines_list:
-            wines_result = wines_result + (WineDto(wine.wine_id, wine.wine_name, '')).toJSON() + ','
+
+        for i in range(len(wines_list)):
+            wines_result = wines_result + (WineDto(wines_list[i].wine_id, wines_list[i].wine_name, '')).toJSON() + ','
+            if i == 29:
+                break
 
         wines_result = wines_result + '] }'
     except BaseException as ex:
