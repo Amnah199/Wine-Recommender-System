@@ -118,6 +118,7 @@ def get_recommendations(request):
 def get_profile(request, wine_id=0):
     """
     Gets wine profile specific for a user
+    :param wine_id: Id of Wine
     :param request: http object
     :return: wine preferences profile
     """
