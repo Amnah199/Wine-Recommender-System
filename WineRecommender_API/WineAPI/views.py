@@ -1,8 +1,11 @@
+import json
+
 from django.http import HttpResponse
 from django.http import HttpResponseBadRequest
 from django.http import HttpResponseServerError
 from WineAPI.models import Wine
 from WineAPI.models import FlavorWine
+from WineAPI.models import WineDto
 from django.core import serializers
 
 # Create your views here.
@@ -18,12 +21,17 @@ def search_wines(request, criteria=""):
     :return: List of wines found based on criteria
     """
     try:
-        wines = serializers.serialize('json', Wine.objects.all().filter(wine_name__contains=criteria), fields=(
-        'wine_id', 'wine_name', 'wine_type', 'wine_year', 'wine_alcohol', 'wine_country', 'wine_price'))
-    except:
+        wines = Wine.objects.all().filter(wine_name__contains=criteria)
+        wines_list = list(wines)
+        wines_result = '{ "wines": ['
+        for wine in wines_list:
+            wines_result = wines_result + (WineDto(wine.wine_id, wine.wine_name, '')).toJSON() + ','
+
+        wines_result = wines_result + '] }'
+    except BaseException as ex:
         return HttpResponseServerError()
 
-    return HttpResponse(wines)
+    return HttpResponse(wines_result)
 
 
 @api_view(['GET'])
@@ -118,6 +126,7 @@ def get_recommendations(request):
 def get_profile(request, wine_id=0):
     """
     Gets wine profile specific for a user
+    :param wine_id: Id of Wine
     :param request: http object
     :return: wine preferences profile
     """
