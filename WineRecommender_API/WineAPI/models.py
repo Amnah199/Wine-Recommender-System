@@ -6,7 +6,7 @@
 #   * Remove `managed = False` lines if you wish to allow Django to create, modify, and delete the table
 # Feel free to rename the models, but don't rename db_table values or field names.
 from django.db import models
-
+import json
 
 # class AuthGroup(models.Model):
 #     name = models.CharField(unique=True, max_length=150)
@@ -172,6 +172,18 @@ class FlavorWine(models.Model):
     class Meta:
         managed = False
         db_table = 'flavor_wine'
+
+
+class WineDto:
+    def __init__(self, id, name, url=""):
+        self.id = id
+        self.name = name
+        self.url = url
+
+    def toJSON(self):
+        return json.dumps(self, default=lambda o: o.__dict__,
+            sort_keys=True, indent=4)
+
 
 
 
