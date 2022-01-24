@@ -14,6 +14,7 @@ Scraping:
 Matching:
 - recordlinkage
 - fuzzywuzzy
+- rapidfuzz
 
 Importing data to DB:
 - sqlalchemy
