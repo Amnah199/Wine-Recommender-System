@@ -22,14 +22,12 @@ def search_wines(request, criteria=""):
     :return: List of wines found based on criteria
     """
     try:
-        wines = Wine.objects.all().filter(wine_name__contains=criteria)
+        wines = Wine.objects.all().filter(wine_name__icontains=criteria)[:30]
         wines_list = list(wines)
         wines_result = '{ "wines": ['
 
-        for i in range(len(wines_list)):
-            wines_result = wines_result + (WineDto(wines_list[i].wine_id, wines_list[i].wine_name, '')).toJSON() + ','
-            if i == 29:
-                break
+        for wine in wines_list:
+            wines_result = wines_result + (WineDto(wine.wine_id, wine.wine_name, '')).toJSON() + ','
 
         wines_result = wines_result + '] }'
     except BaseException as ex:
