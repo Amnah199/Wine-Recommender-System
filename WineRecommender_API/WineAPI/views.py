@@ -162,7 +162,7 @@ def get_wine_details(request, id=0):
 
         wine = list(wines)[0]
 
-        taste_data = []
+        taste_data = [{'label': 'tree fruit', 'percentage' : 0.2}, {'label': 'red fruit', 'percentage' : 0.1}, {'label': 'citrus fruit', 'percentage' : 0.5}, {'label': 'cinnamon', 'percentage' : 0.3}]
         facts = [{'label' : 'region', 'content': wine.wine_country}, {'label' : 'style', 'content': wine.wine_type}, {'label' : 'alc', 'content': wine.wine_alcohol}]
 
         wine_details_dto = {}
