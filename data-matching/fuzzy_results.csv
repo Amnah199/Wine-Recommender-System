@@ -1,0 +1,943 @@
+,best_match_score,__id_left,__id_right,wine_name_left,wine_winery_left,wine_country_left,wine_region_left,wine_type_left,wine_name_right,wine_winery_right,wine_country_right,wine_region_right,wine_type_right
+49319,2.0519657293933258,372_left,927_right,grüner veltliner smaragd „ried loibenberg“,weingut emmerich knoll, Österreich ,Wachau,white,ried loibenberg loibner grüner veltliner smaragd,weingut knoll,Österreich,Wachau,white
+63955,2.0519657293933258,590_left,927_right,grüner veltliner smaragd „ried loibenberg“,weingut emmerich knoll, Österreich ,Wachau,white,ried loibenberg loibner grüner veltliner smaragd,weingut knoll,Österreich,Wachau,white
+5942,2.0393668775711364,70_left,8434_right,peraj ha'abib flor de primavera,celler de capçanes, Spanien ,Tarragona,red,flor de primavera peraj ha'abib,celler de capçanes,Spanien,Montsant,red
+49317,2.0001793924771536,371_left,927_right,grüner veltliner smaragd „ried loibenberg“ magnum,weingut emmerich knoll, Österreich ,Wachau,white,ried loibenberg loibner grüner veltliner smaragd,weingut knoll,Österreich,Wachau,white
+52795,1.8038918904598724,432_left,6042_right,"grüner veltliner ""ried kreutles"" federspiel",weingut emmerich knoll, Österreich ,Wachau,white,ried kreutles loibner grüner veltliner federspiel,weingut knoll,Österreich,Wachau,white
+19703,1.7272534746741353,157_left,2064_right,rioja tinto reserva viña tondonia,r. lópez de heredia viña tondonia, Spanien ,Rioja,red,viña tondonia reserva,r. lópez de heredia viña tondonia,Spanien,Rioja,red
+79436,1.7175203415088822,780_left,4897_right,weißer burgunder & chardonnay westhofener trocken,weingut wittmann, Deutschland ,Rheinhessen,white,westhofener weisser burgunder - chardonnay trocken,wittmann,Deutschland,Rheinhessen,white
+58765,1.7175203415088822,500_left,4897_right,weißer burgunder & chardonnay westhofener trocken,weingut wittmann, Deutschland ,Rheinhessen,white,westhofener weisser burgunder - chardonnay trocken,wittmann,Deutschland,Rheinhessen,white
+53354,1.7052385710255966,440_left,8187_right,riesling trocken hallgartener hendelberg,weingut peter jakob kühn, Deutschland ,Rheingau,white,hallgartener hendelberg riesling trocken,peter jakob kühn,Deutschland,Rheingau,white
+78000,1.7052385710255966,763_left,8187_right,riesling trocken hallgartener hendelberg,weingut peter jakob kühn, Deutschland ,Rheingau,white,hallgartener hendelberg riesling trocken,peter jakob kühn,Deutschland,Rheingau,white
+64225,1.6756022740516245,594_left,7931_right,"riesling trocken ""bockenauer schiefergestein""",weingut schäfer-fröhlich, Deutschland ,Nahe,white,schiefergestein bockenauer riesling trocken,schäfer-fröhlich,Deutschland,Nahe,white
+51632,1.6756022740516245,407_left,7931_right,"riesling trocken ""bockenauer schiefergestein""",weingut schäfer-fröhlich, Deutschland ,Nahe,white,schiefergestein bockenauer riesling trocken,schäfer-fröhlich,Deutschland,Nahe,white
+69102,1.6756022740516245,651_left,7931_right,"riesling trocken ""bockenauer schiefergestein""",weingut schäfer-fröhlich, Deutschland ,Nahe,white,schiefergestein bockenauer riesling trocken,schäfer-fröhlich,Deutschland,Nahe,white
+63954,1.600242238778414,589_left,6522_right,"chardonnay smaragd ""loibner""",weingut emmerich knoll, Österreich ,Wachau,white,loibner chardonnay smaragd,weingut knoll,Österreich,Wachau,white
+53799,1.5676580695687792,445_left,835_right,silvaner s. trocken escherndorfer lump,weingut horst sauer, Deutschland ,Franken,white,escherndorfer lump silvaner,horst sauer,Deutschland,Franken,white
+53253,1.5616421829159755,438_left,5588_right,riesling trocken jacobus,weingut peter jakob kühn, Deutschland ,Rheingau,white,jacobus riesling trocken,peter jakob kühn,Deutschland,Rheingau,white
+55370,1.5561498937365073,454_left,454_right,chardonnay herrenstück trocken,weingut holger koch, Deutschland ,Baden,white,chardonnay herrenstück,weingut holger koch,Deutschland,Baden,white
+77949,1.533116668942623,762_left,3089_right,riesling hallgarten 'rheinschiefer',weingut peter jakob kühn, Deutschland ,Rheingau,white,rheinschiefer hallgarten riesling trocken,peter jakob kühn,Deutschland,Rheingau,white
+53303,1.533116668942623,439_left,3089_right,riesling hallgarten 'rheinschiefer',weingut peter jakob kühn, Deutschland ,Rheingau,white,rheinschiefer hallgarten riesling trocken,peter jakob kühn,Deutschland,Rheingau,white
+54074,1.5037244844212059,447_left,1997_right,riesling trocken 'well done' -b-,weingut metzger, Deutschland ,Pfalz,white,well done riesling trocken,weingut metzger,Deutschland,Pfalz,white
+4273,1.4477715101008193,51_left,1935_right,côtes du rhône 'coudoulet de beaucastel',château de beaucastel/familie perrin, Frankreich ,Rhône,red,coudoulet de beaucastel côtes-du-rhône,château de beaucastel,Frankreich,Côtes-du-Rhône,red
+4031,1.4477715101008193,48_left,1935_right,côtes du rhône 'coudoulet de beaucastel',château de beaucastel/familie perrin, Frankreich ,Rhône,red,coudoulet de beaucastel côtes-du-rhône,château de beaucastel,Frankreich,Côtes-du-Rhône,red
+77598,1.4477715101008193,751_left,1935_right,côtes du rhône 'coudoulet de beaucastel',château de beaucastel/familie perrin, Frankreich ,Rhône,red,coudoulet de beaucastel côtes-du-rhône,château de beaucastel,Frankreich,Côtes-du-Rhône,red
+61995,1.446120296630057,555_left,1693_right,pinot bianco 'eichhorn',manincor, Italien ,Südtirol/Alto Adige,white,eichhorn pinot bianco,manincor,Italien,Südtirol - Alto Adige,white
+81332,1.446120296630057,792_left,1693_right,pinot bianco 'eichhorn',manincor, Italien ,Südtirol/Alto Adige,white,eichhorn pinot bianco,manincor,Italien,Südtirol - Alto Adige,white
+52793,1.4280503029896934,430_left,6042_right,"grüner veltliner ""loibner"" federspiel",weingut emmerich knoll, Österreich ,Wachau,white,ried kreutles loibner grüner veltliner federspiel,weingut knoll,Österreich,Wachau,white
+49321,1.4055854969994208,373_left,927_right,grüner veltliner smaragd „ried schütt“,weingut emmerich knoll, Österreich ,Wachau,white,ried loibenberg loibner grüner veltliner smaragd,weingut knoll,Österreich,Wachau,white
+63901,1.4055854969994208,587_left,927_right,grüner veltliner smaragd „ried schütt“,weingut emmerich knoll, Österreich ,Wachau,white,ried loibenberg loibner grüner veltliner smaragd,weingut knoll,Österreich,Wachau,white
+4710,1.3767729166788056,56_left,1757_right,poggio valente,fattoria le pupille, Italien ,Toscana,red,poggio valente,fattoria le pupille,Italien,Toscana,red
+17182,1.3641546133070575,141_left,9559_right,lytton springs,ridge vineyards, USA ,Dry Creek Valley,red,lytton springs,ridge vineyards,Vereinigte Staaten,Dry Creek Valley,red
+52791,1.3537991600832484,429_left,927_right,grüner veltliner smaragd „ried schütt“ magnum,weingut emmerich knoll, Österreich ,Wachau,white,ried loibenberg loibner grüner veltliner smaragd,weingut knoll,Österreich,Wachau,white
+68702,1.3537991600832484,645_left,927_right,grüner veltliner „ried schütt“ smaragd magnum,weingut emmerich knoll, Österreich ,Wachau,white,ried loibenberg loibner grüner veltliner smaragd,weingut knoll,Österreich,Wachau,white
+49315,1.3537991600832484,370_left,927_right,grüner veltliner smaragd „ried schütt“ magnum,weingut emmerich knoll, Österreich ,Wachau,white,ried loibenberg loibner grüner veltliner smaragd,weingut knoll,Österreich,Wachau,white
+61977,1.3354249338478423,548_left,927_right,"grüner veltliner ""ried kreutles"" smaragd",weingut emmerich knoll, Österreich ,Wachau,white,ried loibenberg loibner grüner veltliner smaragd,weingut knoll,Österreich,Wachau,white
+24604,1.3330165186446454,195_left,7439_right,côtes du rhône rouge 'le caillou',le clos du caillou, Frankreich ,Rhône,red,côtes du rhône le caillou,clos du caillou,Frankreich,Côtes-du-Rhône,red
+81535,1.3330165186446454,794_left,7439_right,côtes du rhône rouge 'le caillou',le clos du caillou, Frankreich ,Rhône,red,côtes du rhône le caillou,clos du caillou,Frankreich,Côtes-du-Rhône,red
+69758,1.3324855549822514,661_left,4675_right,riesling trocken stromberg gg,weingut schäfer-fröhlich, Deutschland ,Nahe,white,stromberg riesling gg,schäfer-fröhlich,Deutschland,Nahe,white
+87077,1.3324855549822514,873_left,4675_right,riesling trocken stromberg gg,weingut schäfer-fröhlich, Deutschland ,Nahe,white,stromberg riesling gg,schäfer-fröhlich,Deutschland,Nahe,white
+38370,1.3323962787026558,291_left,5519_right,"chianti classico gran selezione ""vigna del sorbo""",az. agr. fontodi, Italien ,Toscana,red,vigna del sorbo gran selezione chianti classico,fontodi,Italien,Chianti Classico,red
+30920,1.3261320382507593,239_left,6378_right,zweigelt domaene gobelsburg,schloss gobelsburg, Österreich ,Kamptal,red,zweigelt domaene gobelsburg,schloss gobelsburg,Österreich,Niederösterreich,red
+29775,1.324986579762633,232_left,1757_right,poggio valente magnum,fattoria le pupille, Italien ,Toscana,red,poggio valente,fattoria le pupille,Italien,Toscana,red
+75863,1.2933989640403036,738_left,7439_right,côtes du rhône rosé 'le caillou',le clos du caillou, Frankreich ,Rhône,sparkling,côtes du rhône le caillou,clos du caillou,Frankreich,Côtes-du-Rhône,red
+81189,1.2933989640403036,791_left,7439_right,côtes du rhône rosé 'le caillou',le clos du caillou, Frankreich ,Rhône,sparkling,côtes du rhône le caillou,clos du caillou,Frankreich,Côtes-du-Rhône,red
+51461,1.283868581414453,403_left,6575_right,pouilly fumé 'les chailloux silex',domaine chatelain, Frankreich ,Loire,white,les chailloux silex pouilly-fumé,domaine chatelain,Frankreich,Pouilly-Fumé,white
+61974,1.2836385969316697,546_left,927_right,"grüner veltliner ""ried kreutles"" smaragd magnum",weingut emmerich knoll, Österreich ,Wachau,white,ried loibenberg loibner grüner veltliner smaragd,weingut knoll,Österreich,Wachau,white
+33051,1.2806099417864834,253_left,5519_right,"chianti classico gran selezione ""vigna del sorbo"" magnum",az. agr. fontodi, Italien ,Toscana,red,vigna del sorbo gran selezione chianti classico,fontodi,Italien,Chianti Classico,red
+91,1.266145716439443,2_left,7444_right,"amarone della valpolicella doc ""pietro dal cero""",cà dei frati, Italien ,Lombardei,red,pietro dal cero amarone della valpolicella,cà dei frati,Italien,Amarone della Valpolicella,red
+5156,1.261036516561764,64_left,5315_right,"pinot noir trocken ""prago""",weingut metzger, Deutschland ,Pfalz,red,prago pinot noir,weingut metzger,Deutschland,Pfalz,red
+58708,1.2467077457288551,496_left,7685_right,riesling trocken vom buntsandstein vdp.ortswein,ökonomierat rebholz, Deutschland ,Pfalz,white,vom buntsandstein riesling trocken,ökonomierat rebholz,Deutschland,Pfalz,white
+79431,1.2467077457288551,777_left,7685_right,riesling trocken vom buntsandstein vdp.ortswein,ökonomierat rebholz, Deutschland ,Pfalz,white,vom buntsandstein riesling trocken,ökonomierat rebholz,Deutschland,Pfalz,white
+48297,1.2366581431195158,351_left,3245_right,pinot blanc haus klosterberg,weingut markus molitor, Deutschland ,Mosel,white,haus klosterberg pinot blanc,markus molitor,Deutschland,Mosel,white
+67265,1.2163246303120294,627_left,2788_right,chardonnay * wehlener klosterberg,weingut markus molitor, Deutschland ,Mosel,white,wehlener klosterberg chardonnay *,markus molitor,Deutschland,Mosel,white
+61917,1.1976106854917021,543_left,1124_right,"riesling kabinett kinheimer rosenberg, grüne kapsel",weingut markus molitor, Deutschland ,Mosel,white,kinheimer rosenberg riesling kabinett,markus molitor,Deutschland,Mosel,white
+82257,1.1936067948000866,804_left,603_right,lagrein 'rubatsch',manincor, Italien ,Südtirol/Alto Adige,red,rubatsch lagrein,manincor,Italien,Südtirol - Alto Adige,red
+77592,1.1936067948000866,748_left,603_right,lagrein 'rubatsch',manincor, Italien ,Südtirol/Alto Adige,red,rubatsch lagrein,manincor,Italien,Südtirol - Alto Adige,red
+1461,1.1936067948000866,17_left,603_right,lagrein 'rubatsch',manincor, Italien ,Südtirol/Alto Adige,red,rubatsch lagrein,manincor,Italien,Südtirol - Alto Adige,red
+28045,1.1936067948000866,220_left,603_right,lagrein 'rubatsch',manincor, Italien ,Südtirol/Alto Adige,red,rubatsch lagrein,manincor,Italien,Südtirol - Alto Adige,red
+77619,1.1915593647387202,753_left,1935_right,11 + 1:  côtes du rhône 'coudoulet de beaucastel',château de beaucastel/familie perrin, Frankreich ,Rhône,red,coudoulet de beaucastel côtes-du-rhône,château de beaucastel,Frankreich,Côtes-du-Rhône,red
+88943,1.1885699803202099,915_left,11374_right,cuvée katharina brut nature,sekthaus raumland, Deutschland ,Rheinhessen,sparkling,cuvée katharina brut nature,raumland,Deutschland,Rheinhessen,sparkling
+24603,1.184706220902755,194_left,9455_right,mas collet selecció,celler de capçanes, Spanien ,Tarragona,red,mas collet selecció,celler de capçanes,Spanien,Montsant,red
+65599,1.1832320306225321,612_left,472_right,riesling trocken 'kabinettstück',weingut schloss lieser, Deutschland ,Mosel,white,kabinettstück riesling trocken,schloss lieser,Deutschland,Mosel,white
+88698,1.1745666923580906,912_left,9828_right,brut bianco cuvée dei frati,cà dei frati, Italien ,Lombardei,sparkling,cuvée dei frati brut,cà dei frati,Italien,Lombardia,sparkling
+87829,1.1715342652089904,902_left,10377_right,crémant de loire excellence blanc brut,bouvet ladubay, Frankreich ,Loire,sparkling,crémant de loire blanc de blancs brut,bouvet-ladubay,Frankreich,Crémant de Loire,sparkling
+65563,1.1714926133521535,611_left,7256_right,riesling trocken 'heldenstück',weingut schloss lieser, Deutschland ,Mosel,white,heldenstück riesling trocken,schloss lieser,Deutschland,Mosel,white
+87828,1.1679463209943723,901_left,11779_right,crémant de loire excellence rosé brut,bouvet ladubay, Frankreich ,Loire,sparkling,crémant de loire brut rosé,bouvet-ladubay,Frankreich,Crémant de Loire,sparkling
+60400,1.149362200341551,518_left,1484_right,riesling kabinett wiltinger braune kupp,weingut egon müller, Deutschland ,Saar,white,riesling 'le gallais' wiltinger braune kupp kabinett,egon müller - scharzhof,Deutschland,Wiltingen,white
+48370,1.131716589855389,358_left,4853_right,'la manina',manincor, Italien ,Südtirol/Alto Adige,white,la manina,manincor,Italien,Südtirol - Alto Adige,white
+77594,1.131716589855389,749_left,4853_right,'la manina',manincor, Italien ,Südtirol/Alto Adige,white,la manina,manincor,Italien,Südtirol - Alto Adige,white
+73882,1.1240212962166052,723_left,9751_right,domaine de chevalier blanc magnum,domaine de chevalier, Frankreich ,Bordeaux,white,rosé de chevalier,domaine de chevalier,Frankreich,Bordeaux,rosé
+118,1.1209855847878183,7_left,2640_right,châteauneuf-du-pape rouge,domaine de la janasse, Frankreich ,Rhône,red,châteauneuf-du-pape (tradition) rouge,domaine de la janasse,Frankreich,Châteauneuf-du-Pape,red
+62498,1.1135436923452455,568_left,1822_right,grüner veltliner tradition,schloss gobelsburg, Österreich ,Kamptal,white,grüner veltliner,schloss gobelsburg,Österreich,Kamptal,white
+67314,1.1078648417998513,634_left,1846_right,weißburgunder trocken -b-,weingut metzger, Deutschland ,Pfalz,white,weissburgunder trocken,weingut metzger,Deutschland,Pfalz,white
+83542,1.1054698528328517,815_left,1768_right,"châteauneuf-du-pape rouge ""les safres""",le clos du caillou, Frankreich ,Rhône,red,châteauneuf-du-pape les safres,clos du caillou,Frankreich,Châteauneuf-du-Pape,red
+33338,1.1054698528328517,257_left,1768_right,"châteauneuf-du-pape rouge ""les safres""",le clos du caillou, Frankreich ,Rhône,red,châteauneuf-du-pape les safres,clos du caillou,Frankreich,Châteauneuf-du-Pape,red
+76505,1.0930316905844353,742_left,932_right,terlaner 'réserve della contessa',manincor, Italien ,Südtirol/Alto Adige,white,réserve della contessa,manincor,Italien,Südtirol - Alto Adige,white
+48367,1.0930316905844353,357_left,932_right,terlaner 'réserve della contessa',manincor, Italien ,Südtirol/Alto Adige,white,réserve della contessa,manincor,Italien,Südtirol - Alto Adige,white
+61850,1.0909282334167896,541_left,7728_right,sauvignon blanc trocken -b-,weingut metzger, Deutschland ,Pfalz,white,sauvignon blanc trocken,weingut metzger,Deutschland,Pfalz,white
+81901,1.0754739034249647,800_left,326_right,riesling großes gewächs doosberg,weingut peter jakob kühn, Deutschland ,Rheingau,white,doosberg riesling trocken,peter jakob kühn,Deutschland,Rheingau,white
+65246,1.0754739034249647,605_left,326_right,riesling großes gewächs doosberg,weingut peter jakob kühn, Deutschland ,Rheingau,white,doosberg riesling trocken,peter jakob kühn,Deutschland,Rheingau,white
+85493,1.0754739034249647,852_left,326_right,riesling großes gewächs doosberg,weingut peter jakob kühn, Deutschland ,Rheingau,white,doosberg riesling trocken,peter jakob kühn,Deutschland,Rheingau,white
+61979,1.0683791735211383,549_left,927_right,"grüner veltliner smaragd ""vinothekfüllung""",weingut emmerich knoll, Österreich ,Wachau,white,ried loibenberg loibner grüner veltliner smaragd,weingut knoll,Österreich,Wachau,white
+15425,1.0640951732107258,126_left,3032_right,"brunello di montalcino ""tenuta nuova""",az. agr. casanova di neri, Italien ,Toscana,red,tenuta nuova brunello di montalcino,casanova di neri,Italien,Brunello di Montalcino,red
+48305,1.060730868252373,354_left,369_right,pinot blanc einstern*,weingut markus molitor, Deutschland ,Mosel,white,einstern pinot blanc,markus molitor,Deutschland,Mosel,white
+65862,1.060730868252373,614_left,369_right,pinot blanc einstern*,weingut markus molitor, Deutschland ,Mosel,white,einstern pinot blanc,markus molitor,Deutschland,Mosel,white
+88950,1.0585393944191768,919_left,12001_right,champagne brut 'la chanose',champagne didier doué, Frankreich ,Champagne,sparkling,la chanose sélection brut champagne,didier doué,Frankreich,Schaumwein,sparkling
+20981,1.0464583853132334,173_left,772_right,château lynch bages pauillac grand cru classé,château lynch bages, Frankreich ,Bordeaux,red,pauillac (grand cru classé),château lynch-bages,Frankreich,Pauillac,red
+1518,1.036447965763595,20_left,4202_right,neropasso rosso veneto,biscardo, Italien ,Veneto,red,neropasso veneto rosso,biscardo,Italien,Veneto,red
+50853,1.0328738515261444,399_left,121_right,riesling kabinett bernkasteler badstube,weingut joh. jos. prüm, Deutschland ,Mosel,white,bernkasteler badstube riesling spätlese,joh. jos. prüm,Deutschland,Bernkastel,white
+63084,1.0328738515261444,579_left,121_right,riesling kabinett bernkasteler badstube,weingut joh. jos. prüm, Deutschland ,Mosel,white,bernkasteler badstube riesling spätlese,joh. jos. prüm,Deutschland,Bernkastel,white
+84786,1.0188088337113514,843_left,4675_right,riesling großes gewächs stromberg,weingut schäfer-fröhlich, Deutschland ,Nahe,white,stromberg riesling gg,schäfer-fröhlich,Deutschland,Nahe,white
+66000,1.0188088337113514,616_left,4675_right,riesling großes gewächs stromberg,weingut schäfer-fröhlich, Deutschland ,Nahe,white,stromberg riesling gg,schäfer-fröhlich,Deutschland,Nahe,white
+85887,1.0188088337113514,858_left,4675_right,riesling großes gewächs stromberg,weingut schäfer-fröhlich, Deutschland ,Nahe,white,stromberg riesling gg,schäfer-fröhlich,Deutschland,Nahe,white
+52189,1.0188088337113514,418_left,4675_right,riesling großes gewächs stromberg,weingut schäfer-fröhlich, Deutschland ,Nahe,white,stromberg riesling gg,schäfer-fröhlich,Deutschland,Nahe,white
+20093,1.0123088362945534,163_left,3032_right,"brunello di montalcino ""tenuta nuova"" magnum",az. agr. casanova di neri, Italien ,Toscana,red,tenuta nuova brunello di montalcino,casanova di neri,Italien,Brunello di Montalcino,red
+20245,1.0123088362945534,164_left,3032_right,"brunello di montalcino ""tenuta nuova"" magnum",az. agr. casanova di neri, Italien ,Toscana,red,tenuta nuova brunello di montalcino,casanova di neri,Italien,Brunello di Montalcino,red
+24602,1.0115071549213517,193_left,5807_right,lasendal selecció,celler de capçanes, Spanien ,Tarragona,red,lasendal selecció,celler de capçanes,Spanien,Montsant,red
+61998,1.0097185333625711,558_left,2584_right,grauburgunder trocken -b-,weingut metzger, Deutschland ,Pfalz,white,grauburgunder trocken,weingut metzger,Deutschland,Pfalz,white
+171,0.9981962486952598,10_left,2548_right,schwarzer trocken,weingut metzger, Deutschland ,Pfalz,red,kleiner schwarzer,weingut metzger,Deutschland,Pfalz,red
+88463,0.9932024761517655,910_left,11877_right,sauvignon blanc brut,sektmanufaktur schloss vaux, Deutschland ,Pfalz,sparkling,sauvignon blanc brut,schloss vaux,Deutschland,Pfalz,sparkling
+20756,0.989503473241946,169_left,2207_right,bolgheri superiore rosso 'sor ugo',aia vecchia, Italien ,Toscana,red,sor ugo bolgheri superiore,aia vecchia,Italien,Bolgheri Superiore,red
+89212,0.988580472519451,925_left,9761_right,champagne rosé 'rosé de craie',champagne etienne calsac, Frankreich ,Champagne,sparkling,rose de craie rosé champagne,etienne calsac,Frankreich,Schaumwein,sparkling
+85755,0.9870007500633738,857_left,5531_right,riesling großes gewächs felsenberg,weingut schäfer-fröhlich, Deutschland ,Nahe,white,felsenberg riesling gg,schäfer-fröhlich,Deutschland,Nahe,white
+65868,0.9870007500633738,615_left,5531_right,riesling großes gewächs felsenberg,weingut schäfer-fröhlich, Deutschland ,Nahe,white,felsenberg riesling gg,schäfer-fröhlich,Deutschland,Nahe,white
+52057,0.9870007500633738,417_left,5531_right,riesling großes gewächs felsenberg,weingut schäfer-fröhlich, Deutschland ,Nahe,white,felsenberg riesling gg,schäfer-fröhlich,Deutschland,Nahe,white
+84654,0.9870007500633738,842_left,5531_right,riesling großes gewächs felsenberg,weingut schäfer-fröhlich, Deutschland ,Nahe,white,felsenberg riesling gg,schäfer-fröhlich,Deutschland,Nahe,white
+58709,0.9794995312044776,497_left,7685_right,riesling trocken vom muschelkalk,ökonomierat rebholz, Deutschland ,Pfalz,white,vom buntsandstein riesling trocken,ökonomierat rebholz,Deutschland,Pfalz,white
+79432,0.9794995312044776,778_left,7685_right,riesling trocken vom muschelkalk,ökonomierat rebholz, Deutschland ,Pfalz,white,vom buntsandstein riesling trocken,ökonomierat rebholz,Deutschland,Pfalz,white
+65210,0.9748093484566773,604_left,8961_right,sl riesling trocken 1 liter,weingut schloss lieser, Deutschland ,Mosel,white,sl riesling trocken,schloss lieser,Deutschland,Mosel,white
+62495,0.9700955158832844,567_left,1822_right,grüner veltliner ried steinsetz,schloss gobelsburg, Österreich ,Kamptal,white,grüner veltliner,schloss gobelsburg,Österreich,Kamptal,white
+66400,0.9670224967951789,619_left,4675_right,riesling großes gewächs stromberg magnum,weingut schäfer-fröhlich, Deutschland ,Nahe,white,stromberg riesling gg,schäfer-fröhlich,Deutschland,Nahe,white
+86287,0.9670224967951789,861_left,4675_right,riesling großes gewächs stromberg magnum,weingut schäfer-fröhlich, Deutschland ,Nahe,white,stromberg riesling gg,schäfer-fröhlich,Deutschland,Nahe,white
+89227,0.9611349465160933,927_left,10806_right,xi. triumvirat grande cuvée brut,sekthaus raumland, Deutschland ,Rheinhessen,sparkling,triumvirat grande cuvée brut,raumland,Deutschland,Rheinhessen,sparkling
+68953,0.9569680744831782,650_left,6150_right,"riesling trocken ""vulkangestein""",weingut schäfer-fröhlich, Deutschland ,Nahe,white,riesling trocken,schäfer-fröhlich,Deutschland,Nahe,white
+51483,0.9569680744831782,406_left,6150_right,"riesling trocken ""vulkangestein""",weingut schäfer-fröhlich, Deutschland ,Nahe,white,riesling trocken,schäfer-fröhlich,Deutschland,Nahe,white
+62419,0.9557211233420174,563_left,244_right,riesling alte reben saar,weingut markus molitor, Deutschland ,Saar,white,saar alte reben riesling,markus molitor,Deutschland,Mosel,white
+49847,0.949727811156123,384_left,3097_right,riesling trocken laumersheimer 'vom kalksteinfels',weingut philipp kuhn, Deutschland ,Pfalz,white,riesling vom kalksteinfels,philipp kuhn,Deutschland,Pfalz,white
+81850,0.9392003479235949,799_left,3040_right,riesling großes gewächs hipping,weingut kühling-gillot, Deutschland ,Rheinhessen,white,hipping riesling,kühling-gillot,Deutschland,Rheinhessen,white
+63957,0.9392003479235949,591_left,3040_right,riesling großes gewächs hipping,weingut kühling-gillot, Deutschland ,Rheinhessen,white,hipping riesling,kühling-gillot,Deutschland,Rheinhessen,white
+85221,0.9392003479235949,849_left,3040_right,riesling großes gewächs hipping,weingut kühling-gillot, Deutschland ,Rheinhessen,white,hipping riesling,kühling-gillot,Deutschland,Rheinhessen,white
+61766,0.9380975687772215,534_left,182_right,sauvignon blanc kaitui,markus schneider, Deutschland ,Pfalz,white,kaitui sauvignon blanc,schneider,Deutschland,Pfalz,white
+86019,0.9352144131472014,859_left,5531_right,riesling großes gewächs felsenberg magnum,weingut schäfer-fröhlich, Deutschland ,Nahe,white,felsenberg riesling gg,schäfer-fröhlich,Deutschland,Nahe,white
+66132,0.9352144131472014,617_left,5531_right,riesling großes gewächs felsenberg magnum,weingut schäfer-fröhlich, Deutschland ,Nahe,white,felsenberg riesling gg,schäfer-fröhlich,Deutschland,Nahe,white
+58354,0.9350231427363256,489_left,2496_right,chardonnay trocken -b-,weingut metzger, Deutschland ,Pfalz,white,chardonnay trocken,weingut metzger,Deutschland,Pfalz,white
+53404,0.9283821400431324,441_left,1638_right,riesling feinherb haus klosterberg,weingut markus molitor, Deutschland ,Mosel,white,haus klosterberg riesling trocken,markus molitor,Deutschland,Mosel,white
+37924,0.9254067797175094,288_left,9209_right,pinot noir brauneberger klostergarten **,weingut markus molitor, Deutschland ,Mosel,red,brauneberger mandelgraben pinot noir,markus molitor,Deutschland,Mosel,red
+30485,0.9254067797175094,236_left,9209_right,pinot noir brauneberger klostergarten ***,weingut markus molitor, Deutschland ,Mosel,red,brauneberger mandelgraben pinot noir,markus molitor,Deutschland,Mosel,red
+33565,0.9209781812346807,259_left,5923_right,barbera d'alba 'vigna martina' magnum,azienda agricola elio grasso, Italien ,Piemont,red,barbera d’alba vigna martina,elio grasso,Italien,Barbera d'Alba,red
+67285,0.91816832252167,632_left,6058_right,sauvignon blanc ciari,borgo molino, Italien ,Veneto,white,ciari sauvignon blanc,borgo molino,Italien,Venezia,white
+89593,0.9171773567063215,934_left,11166_right,champagne 'l'echappée belle' extra brut magnum,champagne etienne calsac, Frankreich ,Champagne,sparkling,l'échappée belle blanc de blancs champagne premier cru,etienne calsac,Frankreich,Champagne Premier Cru,sparkling
+4285,0.9120713838951299,53_left,3734_right,"""rooi olifant""",markus schneider, Südafrika ,Stellenbosch,red,rooi olifant red,schneider,Südafrika,Stellenbosch,red
+4559,0.902725510405449,55_left,5993_right,morellino di scansano,fattoria le pupille, Italien ,Toscana,red,morellino di scansano,fattoria le pupille,Italien,Morellino di Scansano,red
+20880,0.8998401710289876,170_left,2383_right,inurrieta cuatrocientos crianza,bodega inurrieta, Spanien ,Navarra,red,cuatrocientos crianza,inurrieta,Spanien,Navarra,red
+130,0.8988204082093757,9_left,7393_right,black print,markus schneider, Deutschland ,Pfalz,red,black print,schneider,Deutschland,Pfalz,red
+35192,0.8891954777929472,271_left,5093_right,château pichon longueville comtesse de lalande,château pichon longueville comtesse de lalande, Frankreich ,Bordeaux,red,réserve (de la comtesse) pauillac,château pichon longueville comtesse de lalande,Frankreich,Pauillac,red
+59979,0.8871227696630871,513_left,9705_right,riesling spätlese niederberg helden,weingut schloss lieser, Deutschland ,Mosel,white,niederberg helden riesling spätlese feinherb,weingut thanisch,Deutschland,Mosel,white
+61811,0.886311231861049,536_left,182_right,"sauvignon blanc ""kaitui"" magnum",markus schneider, Deutschland ,Pfalz,white,kaitui sauvignon blanc,schneider,Deutschland,Pfalz,white
+2070,0.8862055708986869,28_left,610_right,opus one,opus one winery, USA ,Napa Valley,red,opus one,opus one,Vereinigte Staaten,Napa Valley,red
+60800,0.8779953607628201,526_left,215_right,lugana doc 'i frati',cà dei frati, Italien ,Lombardei,white,i frati lugana,cà dei frati,Italien,Lugana,white
+10761,0.8724772907859228,98_left,6816_right,châteauneuf-du-pape rouge,le vieux donjon, Frankreich ,Rhône,red,châteauneuf-du-pape,le vieux donjon,Frankreich,Châteauneuf-du-Pape,red
+58710,0.8698102062624077,498_left,1822_right,grüner veltliner trocken 'domaene gobelsburg',schloss gobelsburg, Österreich ,Kamptal,white,grüner veltliner,schloss gobelsburg,Österreich,Kamptal,white
+20686,0.8535119969281522,168_left,597_right,toskana rosso 'lagone',aia vecchia, Italien ,Toscana,red,lagone toscana,aia vecchia,Italien,Toscana,red
+120,0.8496545744057818,8_left,2640_right,"châteauneuf-du-pape rouge ""cuvée vieilles vignes""",domaine de la janasse, Frankreich ,Rhône,red,châteauneuf-du-pape (tradition) rouge,domaine de la janasse,Frankreich,Châteauneuf-du-Pape,red
+19957,0.8470340712932032,160_left,7393_right,black print magnum,markus schneider, Deutschland ,Pfalz,red,black print,schneider,Deutschland,Pfalz,red
+1812,0.837254617919604,25_left,359_right,ronchedone rosso benaco besciano igt,cà dei frati, Italien ,Lombardei,red,ronchedone rosso,cà dei frati,Italien,Lombardia,red
+73754,0.8353364327469147,719_left,9705_right,riesling spätlese niederberg helden magnum,weingut schloss lieser, Deutschland ,Mosel,white,niederberg helden riesling spätlese feinherb,weingut thanisch,Deutschland,Mosel,white
+4408,0.8267752482186682,54_left,5993_right,morellino di scansano riserva,fattoria le pupille, Italien ,Toscana,red,morellino di scansano,fattoria le pupille,Italien,Morellino di Scansano,red
+18470,0.8243229557711955,148_left,3662_right,"brunello di montalcino ""la casa""",caparzo, Italien ,Toscana,red,la casa brunello di montalcino,caparzo,Italien,Brunello di Montalcino,red
+29180,0.8243229557711955,226_left,3662_right,"brunello di montalcino ""la casa""",caparzo, Italien ,Toscana,red,la casa brunello di montalcino,caparzo,Italien,Brunello di Montalcino,red
+10925,0.8206909538697503,99_left,6816_right,châteauneuf-du-pape rouge magnum,le vieux donjon, Frankreich ,Rhône,red,châteauneuf-du-pape,le vieux donjon,Frankreich,Châteauneuf-du-Pape,red
+88719,0.8171783416121822,913_left,9802_right,rosé brut,weingut reichsrat von buhl, Deutschland ,Pfalz,sparkling,spätburgunder brut rosé,reichsrat von buhl,Deutschland,Pfalz,sparkling
+88952,0.8111294562915177,921_left,11182_right,champagne brut réserve,champagne billecart salmon, Frankreich ,Champagne,sparkling,brut réserve champagne,billecart-salmon,Frankreich,Schaumwein,sparkling
+33175,0.8095189079034235,254_left,5315_right,pinot noir 'arthos',weingut metzger, Deutschland ,Pfalz,red,prago pinot noir,weingut metzger,Deutschland,Pfalz,red
+33050,0.8095189079034235,252_left,5315_right,"pinot noir ""melandor""",weingut metzger, Deutschland ,Pfalz,red,prago pinot noir,weingut metzger,Deutschland,Pfalz,red
+62364,0.7878669786342726,562_left,244_right,riesling alte reben mosel,weingut markus molitor, Deutschland ,Mosel,white,saar alte reben riesling,markus molitor,Deutschland,Mosel,white
+55503,0.7844182098158499,461_left,283_right,riesling auslese *** wehlener sonnenuhr weiße kapsel,weingut markus molitor, Deutschland ,Mosel,white,wehlener sonnenuhr riesling spätlese,markus molitor,Deutschland,Mosel,white
+73763,0.7816600752827946,720_left,1511_right,riesling auslese *** fruchtsüß ürziger würzgarten,weingut markus molitor, Deutschland ,Mosel,white,riesling auslese ürziger würzgarten,dr. loosen,Deutschland,Mosel,white
+16976,0.7771535140453867,136_left,3890_right,barbera d'asti 'la crena',vietti, Italien ,Piemont,red,barbera d'asti la crena,vietti,Italien,Barbera d'Asti,red
+53459,0.7762870764208956,442_left,1638_right,riesling haus klosterberg weiße kapsel  ml,weingut markus molitor, Deutschland ,Mosel,white,haus klosterberg riesling trocken,markus molitor,Deutschland,Mosel,white
+61989,0.7698189328647869,554_left,3245_right,pinot blanc *** wehlener klosterberg,weingut markus molitor, Deutschland ,Mosel,white,haus klosterberg pinot blanc,markus molitor,Deutschland,Mosel,white
+75218,0.7646204548993327,734_left,11122_right,pink -b-,weingut metzger, Deutschland ,Pfalz,sparkling,pink,weingut metzger,Deutschland,Pfalz,rosé
+48421,0.7548304000085824,360_left,1217_right,brolettino lugana doc,cà dei frati, Italien ,Lombardei,white,brolettino lugana,cà dei frati,Italien,Lugana,white
+85038,0.7470313243779267,846_left,3207_right,riesling trocken forster pechstein gg,weingut von winning, Deutschland ,Pfalz,white,forster riesling,von winning,Deutschland,Pfalz,white
+62501,0.7470313243779267,569_left,3207_right,riesling trocken forster pechstein gg,weingut von winning, Deutschland ,Pfalz,white,forster riesling,von winning,Deutschland,Pfalz,white
+67266,0.7437491582296923,628_left,1697_right,gewürztraminer 'nussbaumer',kellerei cantina tramin, Italien ,Südtirol/Alto Adige,white,gewürztraminer,kellerei . cantina kaltern,Italien,Südtirol - Alto Adige,white
+26305,0.7338633339742718,208_left,3942_right,chianti classico riserva rancia,fèlsina società agricola, Italien ,Toscana,red,rancia chianti classico riserva,fèlsina,Italien,Chianti Classico,red
+5162,0.7338633339742718,65_left,3942_right,chianti classico riserva rancia,fèlsina società agricola, Italien ,Toscana,red,rancia chianti classico riserva,fèlsina,Italien,Chianti Classico,red
+62488,0.7312962030743173,564_left,9099_right,riesling zöbing,schloss gobelsburg, Österreich ,Kamptal,white,riesling tradition,schloss gobelsburg,Österreich,Kamptal,white
+89494,0.7300648561044384,932_left,12381_right,champagne extra brut vintage,champagne billecart salmon, Frankreich ,Champagne,sparkling,extra brut champagne,billecart-salmon,Frankreich,Schaumwein,sparkling
+19699,0.7198343347115764,155_left,2284_right,sangiovese terre di chieti igt 'fantini',farnese vini srl, Italien ,Abruzzen,red,fantini sangiovese terre di chieti,farnese,Italien,Terre di Chieti,red
+51818,0.7090495643938262,412_left,1075_right,"sauvignon blanc ii, von winning weinmanufaktur",weingut von winning, Deutschland ,Pfalz,white,sauvignon blanc ii,von winning,Deutschland,Pfalz,white
+85104,0.6939335399256439,847_left,3207_right,riesling trocken forster kirchenstück gg,weingut von winning, Deutschland ,Pfalz,white,forster riesling,von winning,Deutschland,Pfalz,white
+62567,0.6939335399256439,570_left,3207_right,riesling trocken forster kirchenstück gg,weingut von winning, Deutschland ,Pfalz,white,forster riesling,von winning,Deutschland,Pfalz,white
+92,0.6848728106573354,3_left,359_right,ronchedone rosso benaco besciano igt 375 ml,cà dei frati, Italien ,Lombardei,red,ronchedone rosso,cà dei frati,Italien,Lombardia,red
+5628,0.6820769970580993,68_left,3942_right,chianti classico riserva rancia magnum,fèlsina società agricola, Italien ,Toscana,red,rancia chianti classico riserva,fèlsina,Italien,Chianti Classico,red
+89983,0.678278519188266,937_left,12381_right,champagne extra brut vintage  magnum,champagne billecart salmon, Frankreich ,Champagne,sparkling,extra brut champagne,billecart-salmon,Frankreich,Schaumwein,sparkling
+51191,0.6749235101894535,401_left,930_right,chardonnay langhe 'educato',azienda agricola elio grasso, Italien ,Piemont,white,langhe chardonnay educato,elio grasso,Italien,Langhe,white
+71052,0.6708639584555729,675_left,6150_right,riesling kabinett felseneck,weingut schäfer-fröhlich, Deutschland ,Nahe,white,riesling trocken,schäfer-fröhlich,Deutschland,Nahe,white
+2349,0.6680479977954039,31_left,2284_right,"sangiovese terre di chieti igt ""fantini"" magnum",farnese vini srl, Italien ,Abruzzen,red,fantini sangiovese terre di chieti,farnese,Italien,Terre di Chieti,red
+33176,0.6621365776585963,255_left,3149_right,châteauneuf-du-pape rouge 'les quartz',le clos du caillou, Frankreich ,Rhône,red,côtes du rhône les quartz,clos du caillou,Frankreich,Côtes-du-Rhône,red
+24755,0.6621365776585963,197_left,3149_right,châteauneuf-du-pape rouge 'les quartz',le clos du caillou, Frankreich ,Rhône,red,côtes du rhône les quartz,clos du caillou,Frankreich,Côtes-du-Rhône,red
+83380,0.6621365776585963,813_left,3149_right,châteauneuf-du-pape rouge 'les quartz',le clos du caillou, Frankreich ,Rhône,red,côtes du rhône les quartz,clos du caillou,Frankreich,Côtes-du-Rhône,red
+81686,0.6621365776585963,796_left,3149_right,châteauneuf-du-pape rouge 'les quartz',le clos du caillou, Frankreich ,Rhône,red,côtes du rhône les quartz,clos du caillou,Frankreich,Côtes-du-Rhône,red
+64506,0.6620892439630868,596_left,6150_right,riesling spätlese felseneck,weingut schäfer-fröhlich, Deutschland ,Nahe,white,riesling trocken,schäfer-fröhlich,Deutschland,Nahe,white
+19754,0.6593736874442587,158_left,9531_right,hauswein rot literflasche,weingut metzger, Deutschland ,Pfalz,red,hausmarke rot,weingut metzger,Deutschland,Pfalz,red
+88946,0.6587476490292489,917_left,11182_right,champagne brut réserve 375 ml,champagne billecart salmon, Frankreich ,Champagne,sparkling,brut réserve champagne,billecart-salmon,Frankreich,Schaumwein,sparkling
+60582,0.6515579701743449,524_left,179_right,rheingau riesling trocken literflasche,weingut robert weil, Deutschland ,Rheingau,white,riesling trocken,robert weil,Deutschland,Rheingau,white
+50001,0.6498593422264044,387_left,221_right,riesling spätlese dorsheimer pittermännchen,schlossgut diel, Deutschland ,Nahe,white,pittermännchen riesling gg,diel,Deutschland,Nahe,white
+11811,0.6484524222072181,104_left,5069_right,merlot scuri,borgo molino, Italien ,Veneto,red,i scuri merlot,borgo molino,Italien,Venezia,red
+29409,0.6469144617985155,228_left,408_right,barolo castiglione,vietti, Italien ,Piemont,red,barolo castiglione,vietti,Italien,Barolo,red
+16880,0.6469144617985155,134_left,408_right,barolo castiglione,vietti, Italien ,Piemont,red,barolo castiglione,vietti,Italien,Barolo,red
+31979,0.6442585860434764,246_left,2599_right,brunello di montalcino,az. agr. casanova di neri, Italien ,Toscana,red,brunello di montalcino,casanova di neri,Italien,Brunello di Montalcino,red
+15577,0.6442585860434764,127_left,2599_right,brunello di montalcino,az. agr. casanova di neri, Italien ,Toscana,red,brunello di montalcino,casanova di neri,Italien,Brunello di Montalcino,red
+58552,0.6415186651512961,495_left,7685_right,riesling kabinett vom rotliegenden,ökonomierat rebholz, Deutschland ,Pfalz,white,vom buntsandstein riesling trocken,ökonomierat rebholz,Deutschland,Pfalz,white
+79275,0.6415186651512961,776_left,7685_right,riesling kabinett vom rotliegenden,ökonomierat rebholz, Deutschland ,Pfalz,white,vom buntsandstein riesling trocken,ökonomierat rebholz,Deutschland,Pfalz,white
+33692,0.6412664320175152,260_left,2361_right,barbaresco 'ronchi',albino rocca, Italien ,Piemont,red,barbaresco vigneto brich ronchi,albino rocca,Italien,Barbaresco,red
+49323,0.6306842577527044,374_left,8632_right,riesling smaragd „ried loibenberg“,weingut emmerich knoll, Österreich ,Wachau,white,loibner riesling federspiel,weingut knoll,Österreich,Wachau,white
+61983,0.6306842577527044,552_left,8632_right,riesling smaragd „ried loibenberg“,weingut emmerich knoll, Österreich ,Wachau,white,loibner riesling federspiel,weingut knoll,Österreich,Wachau,white
+20039,0.6264745351378499,162_left,3190_right,spätburgunder henkenberg großes gewächs,weingut salwey, Deutschland ,Baden,red,gg henkenberg spätburgunder,salwey,Deutschland,Baden,red
+84984,0.6264745351378499,845_left,3190_right,spätburgunder henkenberg großes gewächs,weingut salwey, Deutschland ,Baden,red,gg henkenberg spätburgunder,salwey,Deutschland,Baden,red
+41,0.6210527480130089,1_left,123_right,château sansonnet saint emilion grand cru classé,château sansonnet, Frankreich ,Bordeaux,red,saint-émilion grand cru (grand cru classé),château sansonnet,Frankreich,Saint-Émilion Grand Cru,red
+62492,0.6196397798871708,566_left,1822_right,grüner veltliner ried grub erste lage ötw,schloss gobelsburg, Österreich ,Kamptal,white,grüner veltliner,schloss gobelsburg,Österreich,Kamptal,white
+68699,0.6196397798871708,644_left,1822_right,grüner veltliner ried grub erste lage ötw,schloss gobelsburg, Österreich ,Kamptal,white,grüner veltliner,schloss gobelsburg,Österreich,Kamptal,white
+67311,0.6196397798871708,633_left,1822_right,grüner veltliner ried renner erste lage ötw,schloss gobelsburg, Österreich ,Kamptal,white,grüner veltliner,schloss gobelsburg,Österreich,Kamptal,white
+62489,0.6196397798871708,565_left,1822_right,grüner veltliner ried renner erste lage ötw,schloss gobelsburg, Österreich ,Kamptal,white,grüner veltliner,schloss gobelsburg,Österreich,Kamptal,white
+67989,0.6192348702229248,640_left,2211_right,scheurebe trocken,weingut engel, Deutschland ,Rheinhessen,white,scheurebe trocken,weingut geil,Deutschland,Rheinhessen,white
+49026,0.6123471451252749,364_left,922_right,côtes du rhône blanc 'réserve',château de beaucastel/familie perrin, Frankreich ,Rhône,white,coudoulet de beaucastel côtes du rhône blanc,château de beaucastel,Frankreich,Côtes-du-Rhône,white
+86605,0.6029293757660242,864_left,7685_right,riesling trocken kastanienbusch gg,ökonomierat rebholz, Deutschland ,Pfalz,white,vom buntsandstein riesling trocken,ökonomierat rebholz,Deutschland,Pfalz,white
+83309,0.6029293757660242,811_left,7685_right,riesling trocken kastanienbusch gg,ökonomierat rebholz, Deutschland ,Pfalz,white,vom buntsandstein riesling trocken,ökonomierat rebholz,Deutschland,Pfalz,white
+67954,0.6029293757660242,639_left,7685_right,riesling trocken kastanienbusch gg,ökonomierat rebholz, Deutschland ,Pfalz,white,vom buntsandstein riesling trocken,ökonomierat rebholz,Deutschland,Pfalz,white
+61851,0.602016595826758,542_left,4238_right,riesling trocken deidesheimer grainhübel gg doppelmagnum,weingut von winning, Deutschland ,Pfalz,white,deidesheimer riesling,von winning,Deutschland,Pfalz,white
+84918,0.602016595826758,844_left,4238_right,riesling trocken deidesheimer grainhübel gg doppelmagnum,weingut von winning, Deutschland ,Pfalz,white,deidesheimer riesling,von winning,Deutschland,Pfalz,white
+63814,0.5951890852061567,586_left,338_right,viognier trocken 'zafrán',weingut oliver zeter, Deutschland ,Pfalz,white,viognier,oliver zeter,Deutschland,Pfalz,white
+20397,0.592472249127304,165_left,2599_right,brunello di montalcino magnum,az. agr. casanova di neri, Italien ,Toscana,red,brunello di montalcino,casanova di neri,Italien,Brunello di Montalcino,red
+33991,0.5894800951013427,262_left,2361_right,barbaresco 'ronchi' magnum,albino rocca, Italien ,Piemont,red,barbaresco vigneto brich ronchi,albino rocca,Italien,Barbaresco,red
+60263,0.588258304262872,517_left,1737_right,scharzhof riesling,weingut egon müller, Deutschland ,Saar,white,riesling scharzhof,egon müller - scharzhof,Deutschland,Wiltingen,white
+15272,0.5876202809828714,125_left,4931_right,rosso di montalcino,az. agr. casanova di neri, Italien ,Toscana,red,rosso di montalcino,casanova di neri,Italien,Rosso di Montalcino,red
+86876,0.587240021914829,869_left,1934_right,riesling wehlener sonnenuhr gg,weingut schloss lieser, Deutschland ,Mosel,white,himmelreich riesling gg,schloss lieser,Deutschland,Mosel,white
+69347,0.587240021914829,655_left,1934_right,riesling wehlener sonnenuhr gg,weingut schloss lieser, Deutschland ,Mosel,white,himmelreich riesling gg,schloss lieser,Deutschland,Mosel,white
+3405,0.5867947394523951,43_left,2531_right,ursprung rotweincuvée,markus schneider, Deutschland ,Pfalz,red,ursprung,schneider,Deutschland,Pfalz,red
+66532,0.5861727854091076,620_left,6150_right,riesling großes gewächs felseneck magnum,weingut schäfer-fröhlich, Deutschland ,Nahe,white,riesling trocken,schäfer-fröhlich,Deutschland,Nahe,white
+86419,0.5861727854091076,862_left,6150_right,riesling großes gewächs felseneck magnum,weingut schäfer-fröhlich, Deutschland ,Nahe,white,riesling trocken,schäfer-fröhlich,Deutschland,Nahe,white
+87284,0.5850441514603967,876_left,3604_right,riesling trocken forster ungeheuer gg,weingut reichsrat von buhl, Deutschland ,Pfalz,white,riesling trocken,reichsrat von buhl,Deutschland,Pfalz,white
+83670,0.5850441514603967,821_left,3604_right,riesling trocken forster ungeheuer gg,weingut reichsrat von buhl, Deutschland ,Pfalz,white,riesling trocken,reichsrat von buhl,Deutschland,Pfalz,white
+71188,0.5850441514603967,676_left,3604_right,riesling trocken forster ungeheuer gg,weingut reichsrat von buhl, Deutschland ,Pfalz,white,riesling trocken,reichsrat von buhl,Deutschland,Pfalz,white
+61976,0.5788979208365319,547_left,8632_right,riesling smaragd „ried loibenberg“ magnum,weingut emmerich knoll, Österreich ,Wachau,white,loibner riesling federspiel,weingut knoll,Österreich,Wachau,white
+61996,0.5788979208365319,556_left,8632_right,riesling smaragd „ried loibenberg“ magnum,weingut emmerich knoll, Österreich ,Wachau,white,loibner riesling federspiel,weingut knoll,Österreich,Wachau,white
+49324,0.5788979208365319,375_left,8632_right,riesling smaragd „ried loibenberg“ magnum,weingut emmerich knoll, Österreich ,Wachau,white,loibner riesling federspiel,weingut knoll,Österreich,Wachau,white
+61982,0.5788979208365319,551_left,8632_right,riesling smaragd „ried loibenberg“ magnum,weingut emmerich knoll, Österreich ,Wachau,white,loibner riesling federspiel,weingut knoll,Österreich,Wachau,white
+61840,0.5765763286236874,537_left,1822_right,grüner veltliner ried lamm erste lage ötw,schloss gobelsburg, Österreich ,Kamptal,white,grüner veltliner,schloss gobelsburg,Österreich,Kamptal,white
+87691,0.5765413681015297,896_left,10377_right,brut blanc,bouvet ladubay, Frankreich ,Loire,sparkling,crémant de loire blanc de blancs brut,bouvet-ladubay,Frankreich,Crémant de Loire,sparkling
+64370,0.5762007302446245,595_left,6150_right,riesling spätlese goldkapsel felseneck,weingut schäfer-fröhlich, Deutschland ,Nahe,white,riesling trocken,schäfer-fröhlich,Deutschland,Nahe,white
+35669,0.5744720706164227,275_left,1201_right,barolo 'rocche di castiglione',vietti, Italien ,Piemont,red,barolo rocche di castiglione,sordo,Italien,Barolo,red
+4812,0.5689034298385194,61_left,2361_right,barbaresco docg 'ronchi',albino rocca, Italien ,Piemont,red,barbaresco vigneto brich ronchi,albino rocca,Italien,Barbaresco,red
+23923,0.5689034298385194,188_left,2361_right,barbaresco docg 'ronchi',albino rocca, Italien ,Piemont,red,barbaresco vigneto brich ronchi,albino rocca,Italien,Barbaresco,red
+84244,0.560417223983719,836_left,3604_right,riesling trocken pechstein forst gg magnum,weingut reichsrat von buhl, Deutschland ,Pfalz,white,riesling trocken,reichsrat von buhl,Deutschland,Pfalz,white
+74047,0.560417223983719,724_left,3604_right,riesling trocken pechstein forst gg magnum,weingut reichsrat von buhl, Deutschland ,Pfalz,white,riesling trocken,reichsrat von buhl,Deutschland,Pfalz,white
+87532,0.560417223983719,891_left,3604_right,riesling trocken pechstein forst gg magnum,weingut reichsrat von buhl, Deutschland ,Pfalz,white,riesling trocken,reichsrat von buhl,Deutschland,Pfalz,white
+61849,0.5598719373506993,540_left,7728_right,sauvignon blanc trocken,weingut oliver zeter, Deutschland ,Pfalz,white,sauvignon blanc trocken,weingut metzger,Deutschland,Pfalz,white
+61795,0.5552716130351335,535_left,2409_right,chardonnay,markus schneider, Deutschland ,Pfalz,white,chardonnay,schneider,Deutschland,Pfalz,white
+1771,0.55298468752313,24_left,5315_right,petit noir trocken,weingut metzger, Deutschland ,Pfalz,red,prago pinot noir,weingut metzger,Deutschland,Pfalz,red
+108,0.5510230354197367,6_left,3783_right,terre de bussière igp,domaine de la janasse, Frankreich ,Rhône,red,vin de pays terre de bussière principauté d'orange,domaine de la janasse,Frankreich,Vaucluse,red
+87410,0.5490714432588092,883_left,3604_right,riesling trocken jesuitengarten forst gg,weingut reichsrat von buhl, Deutschland ,Pfalz,white,riesling trocken,reichsrat von buhl,Deutschland,Pfalz,white
+83803,0.5490714432588092,828_left,3604_right,riesling trocken jesuitengarten forst gg,weingut reichsrat von buhl, Deutschland ,Pfalz,white,riesling trocken,reichsrat von buhl,Deutschland,Pfalz,white
+72040,0.5490714432588092,694_left,3604_right,riesling trocken jesuitengarten forst gg,weingut reichsrat von buhl, Deutschland ,Pfalz,white,riesling trocken,reichsrat von buhl,Deutschland,Pfalz,white
+56056,0.5456218860676886,467_left,2498_right,chablis,domaine moreau naudet, Frankreich ,Bourgogne,white,chablis,moreau-naudet,Frankreich,Chablis,white
+69402,0.5357048124683857,656_left,8961_right,riesling trocken goldtröpfchen gg,weingut schloss lieser, Deutschland ,Mosel,white,sl riesling trocken,schloss lieser,Deutschland,Mosel,white
+86931,0.5357048124683857,870_left,8961_right,riesling trocken goldtröpfchen gg,weingut schloss lieser, Deutschland ,Mosel,white,sl riesling trocken,schloss lieser,Deutschland,Mosel,white
+69292,0.5354536849986566,654_left,1934_right,riesling wehlener sonnenuhr gg magnum,weingut schloss lieser, Deutschland ,Mosel,white,himmelreich riesling gg,schloss lieser,Deutschland,Mosel,white
+86821,0.5354536849986566,868_left,1934_right,riesling wehlener sonnenuhr gg magnum,weingut schloss lieser, Deutschland ,Mosel,white,himmelreich riesling gg,schloss lieser,Deutschland,Mosel,white
+19998,0.5350084025362226,161_left,2531_right,ursprung rotweincuvée magnum,markus schneider, Deutschland ,Pfalz,red,ursprung,schneider,Deutschland,Pfalz,red
+0,0.5349645083630723,0_left,5315_right,filet noir trocken,weingut metzger, Deutschland ,Pfalz,red,prago pinot noir,weingut metzger,Deutschland,Pfalz,red
+72846,0.5332578145442242,707_left,3604_right,riesling trocken forster ungeheuer gg magnum,weingut reichsrat von buhl, Deutschland ,Pfalz,white,riesling trocken,reichsrat von buhl,Deutschland,Pfalz,white
+87447,0.5332578145442242,885_left,3604_right,riesling trocken forster ungeheuer gg magnum,weingut reichsrat von buhl, Deutschland ,Pfalz,white,riesling trocken,reichsrat von buhl,Deutschland,Pfalz,white
+84170,0.5332578145442242,832_left,3604_right,riesling trocken forster ungeheuer gg magnum,weingut reichsrat von buhl, Deutschland ,Pfalz,white,riesling trocken,reichsrat von buhl,Deutschland,Pfalz,white
+79205,0.529464430181045,774_left,7685_right,riesling trocken vdp.gutswein,ökonomierat rebholz, Deutschland ,Pfalz,white,vom buntsandstein riesling trocken,ökonomierat rebholz,Deutschland,Pfalz,white
+58482,0.529464430181045,493_left,7685_right,riesling trocken vdp.gutswein,ökonomierat rebholz, Deutschland ,Pfalz,white,vom buntsandstein riesling trocken,ökonomierat rebholz,Deutschland,Pfalz,white
+61843,0.524789991707515,538_left,1822_right,grüner veltliner ried lamm erste lage ötw magnum,schloss gobelsburg, Österreich ,Kamptal,white,grüner veltliner,schloss gobelsburg,Österreich,Kamptal,white
+46369,0.52365698281974,338_left,2599_right,brunello di montalcino cerretalto,az. agr. casanova di neri, Italien ,Toscana,red,brunello di montalcino,casanova di neri,Italien,Brunello di Montalcino,red
+37285,0.523384890957762,285_left,3489_right,châteauneuf-du-pape rouge 'sanctus sanctorum' magnum,clos saint jean, Frankreich ,Rhône,red,châteauneuf-du-pape,clos saint jean,Frankreich,Châteauneuf-du-Pape,red
+48077,0.523384890957762,347_left,3489_right,châteauneuf-du-pape rouge 'sanctus sanctorum' magnum,clos saint jean, Frankreich ,Rhône,red,châteauneuf-du-pape,clos saint jean,Frankreich,Châteauneuf-du-Pape,red
+62924,0.5219616345681539,575_left,915_right,riesling kabinett wehlener sonnenuhr,weingut joh. jos. prüm, Deutschland ,Mosel,white,wehlener sonnenuhr riesling alte reben gg,s.a. prüm,Deutschland,Mosel,white
+50647,0.5219616345681539,395_left,915_right,riesling kabinett wehlener sonnenuhr,weingut joh. jos. prüm, Deutschland ,Mosel,white,wehlener sonnenuhr riesling alte reben gg,s.a. prüm,Deutschland,Mosel,white
+87486,0.5173537727202354,888_left,3604_right,riesling trocken forster kirchenstück gg magnum,weingut reichsrat von buhl, Deutschland ,Pfalz,white,riesling trocken,reichsrat von buhl,Deutschland,Pfalz,white
+84209,0.5173537727202354,835_left,3604_right,riesling trocken forster kirchenstück gg magnum,weingut reichsrat von buhl, Deutschland ,Pfalz,white,riesling trocken,reichsrat von buhl,Deutschland,Pfalz,white
+72885,0.5173537727202354,710_left,3604_right,riesling trocken forster kirchenstück gg magnum,weingut reichsrat von buhl, Deutschland ,Pfalz,white,riesling trocken,reichsrat von buhl,Deutschland,Pfalz,white
+2360,0.5165861456817885,34_left,2651_right,"montepulciano d'abruzzo doc ""fantini"" magnum",farnese vini srl, Italien ,Abruzzen,red,fantini montepulciano d'abruzzo,farnese,Italien,Montepulciano d'Abruzzo,red
+79440,0.513707074702663,782_left,6372_right,riesling trocken,weingut wittmann, Deutschland ,Rheinhessen,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+58769,0.513707074702663,502_left,6372_right,riesling trocken,weingut wittmann, Deutschland ,Rheinhessen,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+68817,0.5124983356940014,649_left,6150_right,riesling großes gewächs felseneck imperial,weingut schäfer-fröhlich, Deutschland ,Nahe,white,riesling trocken,schäfer-fröhlich,Deutschland,Nahe,white
+86640,0.5124983356940014,865_left,6150_right,riesling großes gewächs felseneck imperial,weingut schäfer-fröhlich, Deutschland ,Nahe,white,riesling trocken,schäfer-fröhlich,Deutschland,Nahe,white
+49314,0.5121542514205961,369_left,8632_right,"riesling smaragd ""vinothekfüllung""",weingut emmerich knoll, Österreich ,Wachau,white,loibner riesling federspiel,weingut knoll,Österreich,Wachau,white
+75336,0.5121100015677812,735_left,12818_right,hauswein rosé literflasche,weingut metzger, Deutschland ,Pfalz,sparkling,spätburgunder rosé,weingut metzger,Deutschland,Pfalz,rosé
+88378,0.5071439689596446,906_left,10474_right,reserve brut weißburgunder & chardonnay,weingut reichsrat von buhl, Deutschland ,Pfalz,sparkling,riesling brut,reichsrat von buhl,Deutschland,Pfalz,sparkling
+52682,0.5011260432339306,424_left,9145_right,grüner veltliner trocken der ott®,weingut bernhard ott, Österreich ,Niederösterreich,white,der ott,bernhard ott,Österreich,Wagram,white
+77846,0.5011260432339306,761_left,9145_right,grüner veltliner trocken der ott®,weingut bernhard ott, Österreich ,Niederösterreich,white,der ott,bernhard ott,Österreich,Wagram,white
+50583,0.4999222531199333,393_left,915_right,riesling auslese wehlener sonnenuhr,weingut joh. jos. prüm, Deutschland ,Mosel,white,wehlener sonnenuhr riesling alte reben gg,s.a. prüm,Deutschland,Mosel,white
+61846,0.49517776736847363,539_left,1822_right,grüner veltliner ried lamm erste lage ötw doppelmagnum,schloss gobelsburg, Österreich ,Kamptal,white,grüner veltliner,schloss gobelsburg,Österreich,Kamptal,white
+5030,0.49295316765173863,63_left,2361_right,barbaresco docg 'ronchi' riserva,albino rocca, Italien ,Piemont,red,barbaresco vigneto brich ronchi,albino rocca,Italien,Barbaresco,red
+58010,0.4894062579778224,481_left,2496_right,gelber muskateller trocken -b-,weingut metzger, Deutschland ,Pfalz,white,chardonnay trocken,weingut metzger,Deutschland,Pfalz,white
+69438,0.48489702370014126,657_left,9705_right,riesling niederberg helden gg,weingut schloss lieser, Deutschland ,Mosel,white,niederberg helden riesling spätlese feinherb,weingut thanisch,Deutschland,Mosel,white
+86967,0.48489702370014126,871_left,9705_right,riesling niederberg helden gg,weingut schloss lieser, Deutschland ,Mosel,white,niederberg helden riesling spätlese feinherb,weingut thanisch,Deutschland,Mosel,white
+69256,0.48391847555221335,653_left,8961_right,riesling trocken goldtröpfchen gg magnum,weingut schloss lieser, Deutschland ,Mosel,white,sl riesling trocken,schloss lieser,Deutschland,Mosel,white
+86785,0.48391847555221335,867_left,8961_right,riesling trocken goldtröpfchen gg magnum,weingut schloss lieser, Deutschland ,Mosel,white,sl riesling trocken,schloss lieser,Deutschland,Mosel,white
+72506,0.48323222872538935,699_left,1388_right,riesling auslese *** goldkapsel zeltinger sonnenuhr,weingut markus molitor, Deutschland ,Mosel,white,zeltinger himmelreich riesling kabinett,markus molitor,Deutschland,Mosel,white
+48366,0.47386809843640265,356_left,1997_right,riesling trocken -c- liter,weingut metzger, Deutschland ,Pfalz,white,well done riesling trocken,weingut metzger,Deutschland,Pfalz,white
+77625,0.4668666612183635,754_left,523_right,"ribera del duero ""gazur""",bodegas matallana, Spanien ,Ribera del Duero,red,ribera del duero reserva,matarromera,Spanien,Ribera del Duero,red
+7008,0.4668666612183635,77_left,523_right,"ribera del duero ""gazur""",bodegas matallana, Spanien ,Ribera del Duero,red,ribera del duero reserva,matarromera,Spanien,Ribera del Duero,red
+73827,0.46265556346256603,722_left,1388_right,riesling auslese *** goldkapsel zeltinger schlossberg,weingut markus molitor, Deutschland ,Mosel,white,zeltinger himmelreich riesling kabinett,markus molitor,Deutschland,Mosel,white
+49313,0.46036791450442366,368_left,8632_right,"riesling smaragd ""vinothekfüllung"" magnum",weingut emmerich knoll, Österreich ,Wachau,white,loibner riesling federspiel,weingut knoll,Österreich,Wachau,white
+18623,0.45682810254723716,149_left,1055_right,brunello di montalcino,caparzo, Italien ,Toscana,red,brunello di montalcino,caparzo,Italien,Brunello di Montalcino,red
+89185,0.4553576320434722,924_left,10474_right,reserve brut weißburgunder & chardonnay magnum,weingut reichsrat von buhl, Deutschland ,Pfalz,sparkling,riesling brut,reichsrat von buhl,Deutschland,Pfalz,sparkling
+5500,0.454333240993594,67_left,898_right,chianti classico berardenga,fèlsina società agricola, Italien ,Toscana,red,berardenga chianti classico,fèlsina,Italien,Chianti Classico,red
+49913,0.45354552631034456,385_left,7728_right,sauvignon blanc trocken tradition,weingut philipp kuhn, Deutschland ,Pfalz,white,sauvignon blanc trocken,weingut metzger,Deutschland,Pfalz,white
+29712,0.45142368285963624,230_left,216_right,langhe nebbiolo 'perbacco',vietti, Italien ,Piemont,red,perbacco nebbiolo,vietti,Italien,Langhe,red
+16983,0.45142368285963624,137_left,216_right,langhe nebbiolo 'perbacco',vietti, Italien ,Piemont,red,perbacco nebbiolo,vietti,Italien,Langhe,red
+4037,0.4503918636394399,49_left,1536_right,châteauneuf-du-pape rouge,château de beaucastel/familie perrin, Frankreich ,Rhône,red,châteauneuf-du-pape,château de beaucastel,Frankreich,Châteauneuf-du-Pape,red
+77604,0.4503918636394399,752_left,1536_right,châteauneuf-du-pape rouge,château de beaucastel/familie perrin, Frankreich ,Rhône,red,châteauneuf-du-pape,château de beaucastel,Frankreich,Châteauneuf-du-Pape,red
+43743,0.44868022030829585,324_left,7001_right,château léoville-poyferré grand cru classé,château léoville-poyferré, Frankreich ,Bordeaux,red,saint-julien (grand cru classé),château léoville poyferré,Frankreich,Saint-Julien,red
+63428,0.4480097248560091,582_left,3656_right,i sistri bianco toscana,fèlsina società agricola, Italien ,Toscana,white,i sistri chardonnay,fèlsina,Italien,Toscana,white
+87323,0.44739542851563197,879_left,8937_right,riesling trocken zellerweg am schwarzen herrgott gg,weingut battenfeld-spanier, Deutschland ,Rheinhessen,white,riesling trocken,battenfeld spanier,Deutschland,Rheinhessen,white
+83725,0.44739542851563197,825_left,8937_right,riesling trocken zellerweg am schwarzen herrgott gg,weingut battenfeld-spanier, Deutschland ,Rheinhessen,white,riesling trocken,battenfeld spanier,Deutschland,Rheinhessen,white
+71884,0.44739542851563197,689_left,8937_right,riesling trocken zellerweg am schwarzen herrgott gg,weingut battenfeld-spanier, Deutschland ,Rheinhessen,white,riesling trocken,battenfeld spanier,Deutschland,Rheinhessen,white
+87401,0.44610862645592037,882_left,2406_right,riesling juffer sonnenuhr gg,weingut schloss lieser, Deutschland ,Mosel,white,brauneberger juffer-sonnenuhr riesling spätlese trocken,weingut paulinshof,Deutschland,Mosel,white
+72031,0.44610862645592037,693_left,2406_right,riesling juffer sonnenuhr gg,weingut schloss lieser, Deutschland ,Mosel,white,brauneberger juffer-sonnenuhr riesling spätlese trocken,weingut paulinshof,Deutschland,Mosel,white
+12147,0.44572914533595487,106_left,4911_right,chianti classico magnum,isole e olena s.r.l., Italien ,Toscana,red,chianti classico,isole e olena,Italien,Chianti Classico,red
+4904,0.4411668307355662,62_left,2361_right,barbaresco docg 'ronchi' riserva magnum,albino rocca, Italien ,Piemont,red,barbaresco vigneto brich ronchi,albino rocca,Italien,Barbaresco,red
+49344,0.4361675528853056,379_left,6672_right,trebbiano d'abruzzo,azienda agricola valentini, Italien ,Abruzzen,white,trebbiano d'abruzzo,valentini,Italien,Trebbiano d'Abruzzo,white
+49327,0.4361675528853056,378_left,6672_right,trebbiano d'abruzzo,azienda agricola valentini, Italien ,Abruzzen,white,trebbiano d'abruzzo,valentini,Italien,Trebbiano d'Abruzzo,white
+69247,0.43311068678396875,652_left,9705_right,riesling niederberg helden gg magnum,weingut schloss lieser, Deutschland ,Mosel,white,niederberg helden riesling spätlese feinherb,weingut thanisch,Deutschland,Mosel,white
+73818,0.43311068678396875,721_left,9705_right,riesling niederberg helden gg magnum,weingut schloss lieser, Deutschland ,Mosel,white,niederberg helden riesling spätlese feinherb,weingut thanisch,Deutschland,Mosel,white
+87523,0.43311068678396875,890_left,9705_right,riesling niederberg helden gg magnum,weingut schloss lieser, Deutschland ,Mosel,white,niederberg helden riesling spätlese feinherb,weingut thanisch,Deutschland,Mosel,white
+71043,0.43311068678396875,674_left,9705_right,riesling niederberg helden gg magnum,weingut schloss lieser, Deutschland ,Mosel,white,niederberg helden riesling spätlese feinherb,weingut thanisch,Deutschland,Mosel,white
+86776,0.43311068678396875,866_left,9705_right,riesling niederberg helden gg magnum,weingut schloss lieser, Deutschland ,Mosel,white,niederberg helden riesling spätlese feinherb,weingut thanisch,Deutschland,Mosel,white
+87275,0.43311068678396875,875_left,9705_right,riesling niederberg helden gg magnum,weingut schloss lieser, Deutschland ,Mosel,white,niederberg helden riesling spätlese feinherb,weingut thanisch,Deutschland,Mosel,white
+67275,0.4311924561486903,629_left,3111_right,blanc de noir spätburgunder trocken,weingut k.-h. milch, Deutschland ,Rheinhessen,white,blanc de noir spätburgunder trocken,manz,Deutschland,Rheinhessen,white
+71594,0.43036806470434436,682_left,8632_right,riesling selection „ried pfaffenberg“,weingut emmerich knoll, Österreich ,Wachau,white,loibner riesling federspiel,weingut knoll,Österreich,Wachau,white
+62988,0.427489216643213,577_left,121_right,riesling spätlese graacher himmelreich,weingut joh. jos. prüm, Deutschland ,Mosel,white,bernkasteler badstube riesling spätlese,joh. jos. prüm,Deutschland,Bernkastel,white
+50711,0.427489216643213,397_left,121_right,riesling spätlese graacher himmelreich,weingut joh. jos. prüm, Deutschland ,Mosel,white,bernkasteler badstube riesling spätlese,joh. jos. prüm,Deutschland,Bernkastel,white
+4712,0.4261693551685714,57_left,1757_right,saffredi,fattoria le pupille, Italien ,Toscana,red,poggio valente,fattoria le pupille,Italien,Toscana,red
+29773,0.4261693551685714,231_left,1757_right,saffredi,fattoria le pupille, Italien ,Toscana,red,poggio valente,fattoria le pupille,Italien,Toscana,red
+89213,0.4229744187016778,926_left,10964_right,champagne 'les rocheforts' premier cru extra brut,champagne etienne calsac, Frankreich ,Champagne,sparkling,blanc de blancs extra brut champagne premier cru,champagne de saint-gall,Frankreich,Champagne Premier Cru,sparkling
+60546,0.42199005796485195,520_left,1846_right,weißburgunder trocken,weingut dönnhoff, Deutschland ,Nahe,white,weissburgunder trocken,weingut metzger,Deutschland,Pfalz,white
+10301,0.421540506575514,95_left,3489_right,châteauneuf-du-pape rouge 'deus ex machina',clos saint jean, Frankreich ,Rhône,red,châteauneuf-du-pape,clos saint jean,Frankreich,Châteauneuf-du-Pape,red
+48303,0.42084099336449865,352_left,708_right,grauburgunder oktav,weinhaus heger, Deutschland ,Baden,white,sonett grauburgunder,heger,Deutschland,Baden,white
+2353,0.4203933093505293,33_left,1935_right,côtes du rhône rouge 'réserve',château de beaucastel/familie perrin, Frankreich ,Rhône,red,coudoulet de beaucastel côtes-du-rhône,château de beaucastel,Frankreich,Côtes-du-Rhône,red
+71879,0.41688237845197595,686_left,8632_right,riesling smaragd „ried schütt“,weingut emmerich knoll, Österreich ,Wachau,white,loibner riesling federspiel,weingut knoll,Österreich,Wachau,white
+49325,0.41688237845197595,376_left,8632_right,riesling smaragd „ried schütt“,weingut emmerich knoll, Österreich ,Wachau,white,loibner riesling federspiel,weingut knoll,Österreich,Wachau,white
+61981,0.41688237845197595,550_left,8632_right,riesling smaragd „ried schütt“,weingut emmerich knoll, Österreich ,Wachau,white,loibner riesling federspiel,weingut knoll,Österreich,Wachau,white
+62203,0.412790520444412,560_left,1846_right,weissburgunder trocken,weingut walter, Deutschland ,Mosel,white,weissburgunder trocken,weingut metzger,Deutschland,Pfalz,white
+17047,0.41210837365462977,139_left,6156_right,dolcetto d'alba doc 'tre vigne',vietti, Italien ,Piemont,red,barbera d'alba tre vigne,vietti,Italien,Barbera d'Alba,red
+71878,0.40568930838786954,685_left,8632_right,riesling smaragd „ried kellerberg“,weingut emmerich knoll, Österreich ,Wachau,white,loibner riesling federspiel,weingut knoll,Österreich,Wachau,white
+61972,0.40568930838786954,544_left,8632_right,riesling smaragd „ried kellerberg“,weingut emmerich knoll, Österreich ,Wachau,white,loibner riesling federspiel,weingut knoll,Österreich,Wachau,white
+49312,0.40568930838786954,367_left,8632_right,riesling smaragd „ried kellerberg“,weingut emmerich knoll, Österreich ,Wachau,white,loibner riesling federspiel,weingut knoll,Österreich,Wachau,white
+61035,0.40537136432207965,528_left,6372_right,riesling trocken literflasche,weingut winter, Deutschland ,Rheinhessen,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+74877,0.404930621230464,731_left,9828_right,"rosa dei frati, riviera del garda classico",cà dei frati, Italien ,Lombardei,sparkling,cuvée dei frati brut,cà dei frati,Italien,Lombardia,sparkling
+52806,0.40275618725561263,435_left,1846_right,weissburgunder trocken,weingut knebel, Deutschland ,Mosel,white,weissburgunder trocken,weingut metzger,Deutschland,Pfalz,white
+24233,0.40018979748663214,191_left,2214_right,rosso di montalcino,caparzo, Italien ,Toscana,red,rosso di montalcino,caparzo,Italien,Rosso di Montalcino,red
+34102,0.39860552672326743,265_left,1536_right,châteauneuf-du-pape rouge magnum,château de beaucastel/familie perrin, Frankreich ,Rhône,red,châteauneuf-du-pape,château de beaucastel,Frankreich,Châteauneuf-du-Pape,red
+83765,0.3956090915994595,827_left,8937_right,riesling trocken zellerweg am schwarzen herrgott gg magnum,weingut battenfeld-spanier, Deutschland ,Rheinhessen,white,riesling trocken,battenfeld spanier,Deutschland,Rheinhessen,white
+71924,0.3956090915994595,691_left,8937_right,riesling trocken zellerweg am schwarzen herrgott gg magnum,weingut battenfeld-spanier, Deutschland ,Rheinhessen,white,riesling trocken,battenfeld spanier,Deutschland,Rheinhessen,white
+87363,0.3956090915994595,881_left,8937_right,riesling trocken zellerweg am schwarzen herrgott gg magnum,weingut battenfeld-spanier, Deutschland ,Rheinhessen,white,riesling trocken,battenfeld spanier,Deutschland,Rheinhessen,white
+63635,0.3893635727698651,585_left,6279_right,chablis premier cru 'montée de tonnerre',domaine moreau naudet, Frankreich ,Bourgogne,white,chablis premier cru 'montée de tonnerre',louis michel & fils,Frankreich,Chablis Premier Cru,white
+56341,0.3886423011176888,469_left,1578_right,riesling trocken roxheimer höllenpfad,weingut dönnhoff, Deutschland ,Nahe,white,riesling trocken,dönnhoff,Deutschland,Nahe,white
+48304,0.3878118752898146,353_left,708_right,grauburgunder liter,weinhaus heger, Deutschland ,Baden,white,sonett grauburgunder,heger,Deutschland,Baden,white
+76330,0.386644630487291,741_left,932_right,dolomiti rosso 'réserve del conte',manincor, Italien ,Südtirol/Alto Adige,red,réserve della contessa,manincor,Italien,Südtirol - Alto Adige,white
+212,0.386644630487291,11_left,932_right,dolomiti rosso 'réserve del conte',manincor, Italien ,Südtirol/Alto Adige,red,réserve della contessa,manincor,Italien,Südtirol - Alto Adige,white
+48294,0.38365970601264004,350_left,4631_right,sauvignon blanc trocken,weingut weedenborn, Deutschland ,Rheinhessen,white,sauvignon blanc trocken,hofmann,Deutschland,Rheinhessen,white
+55558,0.37938647080805465,462_left,1388_right,"riesling auslese *** zeltinger sonnenuhr, weiße kapsel",weingut markus molitor, Deutschland ,Mosel,white,zeltinger himmelreich riesling kabinett,markus molitor,Deutschland,Mosel,white
+61997,0.37858172778817184,557_left,8632_right,riesling selection „ried pfaffenberg“ magnum,weingut emmerich knoll, Österreich ,Wachau,white,loibner riesling federspiel,weingut knoll,Österreich,Wachau,white
+52788,0.37858172778817184,426_left,8632_right,riesling selection „ried pfaffenberg“ magnum,weingut emmerich knoll, Österreich ,Wachau,white,loibner riesling federspiel,weingut knoll,Österreich,Wachau,white
+70213,0.3777825669391683,664_left,1578_right,riesling trocken norheimer dellchen gg,weingut dönnhoff, Deutschland ,Nahe,white,riesling trocken,dönnhoff,Deutschland,Nahe,white
+87222,0.3777825669391683,874_left,1578_right,riesling trocken norheimer dellchen gg,weingut dönnhoff, Deutschland ,Nahe,white,riesling trocken,dönnhoff,Deutschland,Nahe,white
+77684,0.3759803952282311,755_left,6372_right,westhofener riesling trocken,weingut wittmann, Deutschland ,Rheinhessen,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+51812,0.3759803952282311,409_left,6372_right,westhofener riesling trocken,weingut wittmann, Deutschland ,Rheinhessen,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+4714,0.3743830182523989,58_left,1757_right,saffredi magnum,fattoria le pupille, Italien ,Toscana,red,poggio valente,fattoria le pupille,Italien,Toscana,red
+89969,0.37118808178550533,936_left,10964_right,champagne 'les rocheforts' premier cru extra brut magnum,champagne etienne calsac, Frankreich ,Champagne,sparkling,blanc de blancs extra brut champagne premier cru,champagne de saint-gall,Frankreich,Champagne Premier Cru,sparkling
+66264,0.3699007216969617,618_left,6150_right,"riesling großes gewächs felseneck, 5 liter",weingut schäfer-fröhlich, Deutschland ,Nahe,white,riesling trocken,schäfer-fröhlich,Deutschland,Nahe,white
+86151,0.3699007216969617,860_left,6150_right,"riesling großes gewächs felseneck, 5 liter",weingut schäfer-fröhlich, Deutschland ,Nahe,white,riesling trocken,schäfer-fröhlich,Deutschland,Nahe,white
+10137,0.3697541696593415,94_left,3489_right,châteauneuf-du-pape rouge 'deus ex machina' magnum,clos saint jean, Frankreich ,Rhône,red,châteauneuf-du-pape,clos saint jean,Frankreich,Châteauneuf-du-Pape,red
+81952,0.3687117102469518,801_left,3604_right,riesling großes gewächs (forster) pechstein,weingut reichsrat von buhl, Deutschland ,Pfalz,white,riesling trocken,reichsrat von buhl,Deutschland,Pfalz,white
+65404,0.3687117102469518,608_left,3604_right,riesling großes gewächs (forster) pechstein,weingut reichsrat von buhl, Deutschland ,Pfalz,white,riesling trocken,reichsrat von buhl,Deutschland,Pfalz,white
+85651,0.3687117102469518,855_left,3604_right,riesling großes gewächs (forster) pechstein,weingut reichsrat von buhl, Deutschland ,Pfalz,white,riesling trocken,reichsrat von buhl,Deutschland,Pfalz,white
+52790,0.3650960415358035,428_left,8632_right,riesling smaragd „ried schütt“ magnum,weingut emmerich knoll, Österreich ,Wachau,white,loibner riesling federspiel,weingut knoll,Österreich,Wachau,white
+71592,0.3650960415358035,680_left,8632_right,riesling smaragd „ried schütt“ magnum,weingut emmerich knoll, Österreich ,Wachau,white,loibner riesling federspiel,weingut knoll,Österreich,Wachau,white
+49326,0.3650960415358035,377_left,8632_right,riesling smaragd „ried schütt“ magnum,weingut emmerich knoll, Österreich ,Wachau,white,loibner riesling federspiel,weingut knoll,Österreich,Wachau,white
+75443,0.36281525524081437,736_left,11579_right,côtes de provence rosé,château miraval, Frankreich ,Provence,sparkling,côtes de provence rosé,château d'astros,Frankreich,Côtes de Provence,rosé
+36776,0.3624661042442335,282_left,3489_right,châteauneuf-du-pape rouge 'la combe des fous',clos saint jean, Frankreich ,Rhône,red,châteauneuf-du-pape,clos saint jean,Frankreich,Châteauneuf-du-Pape,red
+39401,0.3624661042442335,298_left,3489_right,châteauneuf-du-pape rouge 'la combe des fous',clos saint jean, Frankreich ,Rhône,red,châteauneuf-du-pape,clos saint jean,Frankreich,Châteauneuf-du-Pape,red
+70119,0.36208354490205197,663_left,1997_right,riesling brut -b-,weingut metzger, Deutschland ,Pfalz,white,well done riesling trocken,weingut metzger,Deutschland,Pfalz,white
+87569,0.36208354490205197,893_left,1997_right,riesling brut -b-,weingut metzger, Deutschland ,Pfalz,white,well done riesling trocken,weingut metzger,Deutschland,Pfalz,white
+77686,0.3600763534042424,756_left,6372_right,niersteiner riesling trocken,weingut wittmann, Deutschland ,Rheinhessen,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+51814,0.3600763534042424,410_left,6372_right,niersteiner riesling trocken,weingut wittmann, Deutschland ,Rheinhessen,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+77688,0.3600763534042424,757_left,6372_right,gundersheimer riesling trocken,weingut wittmann, Deutschland ,Rheinhessen,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+51816,0.3600763534042424,411_left,6372_right,gundersheimer riesling trocken,weingut wittmann, Deutschland ,Rheinhessen,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+53656,0.3600158312451713,444_left,4012_right,escherndorf silvaner trocken,weingut horst sauer, Deutschland ,Franken,white,muschelkalk silvaner vdp.ortswein escherndorf,rainer sauer,Deutschland,Franken,white
+107,0.3600005847199044,5_left,6572_right,côtes du rhône rouge,domaine de la janasse, Frankreich ,Rhône,red,côtes du rhône,domaine de la solitude - famille lancon,Frankreich,Côtes-du-Rhône,red
+88461,0.355344530480256,908_left,10377_right,saumur brut trésor blanc,bouvet ladubay, Frankreich ,Loire,sparkling,crémant de loire blanc de blancs brut,bouvet-ladubay,Frankreich,Crémant de Loire,sparkling
+87692,0.354762161697376,897_left,10474_right,reserve brut weißburgunder & chardonnay 375 ml,weingut reichsrat von buhl, Deutschland ,Pfalz,sparkling,riesling brut,reichsrat von buhl,Deutschland,Pfalz,sparkling
+52789,0.3539029714716971,427_left,8632_right,riesling smaragd „ried kellerberg“ magnum,weingut emmerich knoll, Österreich ,Wachau,white,loibner riesling federspiel,weingut knoll,Österreich,Wachau,white
+61973,0.3539029714716971,545_left,8632_right,riesling smaragd „ried kellerberg“ magnum,weingut emmerich knoll, Österreich ,Wachau,white,loibner riesling federspiel,weingut knoll,Österreich,Wachau,white
+71593,0.3539029714716971,681_left,8632_right,riesling smaragd „ried kellerberg“ magnum,weingut emmerich knoll, Österreich ,Wachau,white,loibner riesling federspiel,weingut knoll,Österreich,Wachau,white
+65508,0.3522208027111625,610_left,2687_right,riesling spätlese piesporter goldtröpfchen,weingut schloss lieser, Deutschland ,Mosel,white,sl helden riesling spätlese trocken,schloss lieser,Deutschland,Mosel,white
+26474,0.3518175544723963,209_left,3669_right,fontalloro toscana rosso,fèlsina società agricola, Italien ,Toscana,red,fontalloro,fèlsina,Italien,Toscana,red
+5797,0.3518175544723963,69_left,3669_right,fontalloro toscana rosso,fèlsina società agricola, Italien ,Toscana,red,fontalloro,fèlsina,Italien,Toscana,red
+88462,0.351756586265638,909_left,11779_right,saumur brut trésor rosé,bouvet ladubay, Frankreich ,Loire,sparkling,crémant de loire brut rosé,bouvet-ladubay,Frankreich,Crémant de Loire,sparkling
+62363,0.35066296675180525,561_left,9099_right,tradition 50 jahre 'jubiläums edition 850' magnum,schloss gobelsburg, Österreich ,Kamptal,white,riesling tradition,schloss gobelsburg,Österreich,Kamptal,white
+62633,0.34896950344913064,571_left,8632_right,riesling selection „ried pfaffenberg“ doppelmagnum,weingut emmerich knoll, Österreich ,Wachau,white,loibner riesling federspiel,weingut knoll,Österreich,Wachau,white
+52796,0.34896950344913064,433_left,8632_right,riesling selection „ried pfaffenberg“ doppelmagnum,weingut emmerich knoll, Österreich ,Wachau,white,loibner riesling federspiel,weingut knoll,Österreich,Wachau,white
+50528,0.34754044585766464,392_left,915_right,riesling auslese wehlener sonnenuhr 375 ml,weingut joh. jos. prüm, Deutschland ,Mosel,white,wehlener sonnenuhr riesling alte reben gg,s.a. prüm,Deutschland,Mosel,white
+61984,0.3439115692580175,553_left,2496_right,hauswein weiß literflasche,weingut metzger, Deutschland ,Pfalz,white,chardonnay trocken,weingut metzger,Deutschland,Pfalz,white
+64008,0.3354838171967623,592_left,8632_right,riesling smaragd „ried schütt“ doppelmagnum,weingut emmerich knoll, Österreich ,Wachau,white,loibner riesling federspiel,weingut knoll,Österreich,Wachau,white
+52794,0.3354838171967623,431_left,8632_right,riesling smaragd „ried schütt“ doppelmagnum,weingut emmerich knoll, Österreich ,Wachau,white,loibner riesling federspiel,weingut knoll,Österreich,Wachau,white
+76006,0.33502036816009156,739_left,5024_right,blanc de noir trocken -b-,weingut metzger, Deutschland ,Pfalz,sparkling,blanc de noir,weingut seckinger,Deutschland,Pfalz,white
+89441,0.3344477817804133,930_left,12381_right,champagne brut sous bois,champagne billecart salmon, Frankreich ,Champagne,sparkling,extra brut champagne,billecart-salmon,Frankreich,Schaumwein,sparkling
+78256,0.3340430777175002,765_left,2893_right,côtes du roussillon villages 'agly brothers',domaine de bila haut, Frankreich ,Roussillon,red,côtes du roussillon villages,château de jau,Frankreich,Côtes du Roussillon Villages,red
+9620,0.3340430777175002,91_left,2893_right,côtes du roussillon villages 'agly brothers',domaine de bila haut, Frankreich ,Roussillon,red,côtes du roussillon villages,château de jau,Frankreich,Côtes du Roussillon Villages,red
+26135,0.3340430777175002,207_left,2893_right,côtes du roussillon villages 'agly brothers',domaine de bila haut, Frankreich ,Roussillon,red,côtes du roussillon villages,château de jau,Frankreich,Côtes du Roussillon Villages,red
+51777,0.3318556956900118,408_left,366_right,win win riesling gutswein trocken,weingut von winning, Deutschland ,Pfalz,white,riesling trocken (gutswein),dr. von bassermann-jordan,Deutschland,Pfalz,white
+72451,0.33085042146312066,698_left,1388_right,riesling auslese *** goldkapsel zeltinger sonnenuhr 375 ml,weingut markus molitor, Deutschland ,Mosel,white,zeltinger himmelreich riesling kabinett,markus molitor,Deutschland,Mosel,white
+58812,0.32837893840468113,505_left,372_right,lugana doc le creete,ottella, Italien ,Veneto,white,le creete,ottella,Italien,Lugana,white
+67904,0.3253309284041143,638_left,7685_right,weißburgunder trocken mandelberg gg,ökonomierat rebholz, Deutschland ,Pfalz,white,vom buntsandstein riesling trocken,ökonomierat rebholz,Deutschland,Pfalz,white
+86555,0.3253309284041143,863_left,7685_right,weißburgunder trocken mandelberg gg,ökonomierat rebholz, Deutschland ,Pfalz,white,vom buntsandstein riesling trocken,ökonomierat rebholz,Deutschland,Pfalz,white
+83259,0.3253309284041143,810_left,7685_right,weißburgunder trocken mandelberg gg,ökonomierat rebholz, Deutschland ,Pfalz,white,vom buntsandstein riesling trocken,ökonomierat rebholz,Deutschland,Pfalz,white
+61561,0.3238833906258713,532_left,5793_right,rueda blanco d.o. 'basa',telmo rodriguez, Spanien ,Kastilien-Léon,white,basa blanco,telmo rodriguez,Spanien,Rueda,white
+60533,0.3238437495275719,519_left,2584_right,grauburgunder trocken,weingut dönnhoff, Deutschland ,Nahe,white,grauburgunder trocken,weingut metzger,Deutschland,Pfalz,white
+70903,0.32337577275112006,673_left,10176_right,pinot blanc reserve,schlossgut diel, Deutschland ,Nahe,white,reserve,diel,Deutschland,Nahe,sparkling
+4279,0.32272271399734453,52_left,1298_right,pinot noir laumersheimer réserve trocken,weingut philipp kuhn, Deutschland ,Pfalz,red,kirschgarten gg pinot noir,philipp kuhn,Deutschland,Pfalz,red
+53514,0.31727978376388705,443_left,835_right,franken silvaner trocken liter,weingut horst sauer, Deutschland ,Franken,white,escherndorfer lump silvaner,horst sauer,Deutschland,Franken,white
+52321,0.31595165386602303,419_left,366_right,riesling trocken gutswein 'drache',weingut von winning, Deutschland ,Pfalz,white,riesling trocken (gutswein),dr. von bassermann-jordan,Deutschland,Pfalz,white
+65352,0.315613925794669,607_left,3604_right,riesling großes gewächs (forster) kirchenstück,weingut reichsrat von buhl, Deutschland ,Pfalz,white,riesling trocken,reichsrat von buhl,Deutschland,Pfalz,white
+85599,0.315613925794669,854_left,3604_right,riesling großes gewächs (forster) kirchenstück,weingut reichsrat von buhl, Deutschland ,Pfalz,white,riesling trocken,reichsrat von buhl,Deutschland,Pfalz,white
+13329,0.31368618954878913,112_left,6942_right,barbera d'alba doc supériore,reva, Italien ,Piemont,red,barbera d'alba,borgogno,Italien,Piemont,red
+24772,0.31299492272187857,198_left,67_right,côtes du rhône rouge 'la réserve',le clos du caillou, Frankreich ,Rhône,red,côtes-du-rhône réserve rouge,famille perrin,Frankreich,Côtes-du-Rhône,red
+81703,0.31299492272187857,797_left,67_right,côtes du rhône rouge 'la réserve',le clos du caillou, Frankreich ,Rhône,red,côtes-du-rhône réserve rouge,famille perrin,Frankreich,Côtes-du-Rhône,red
+37140,0.310679767328061,284_left,3489_right,châteauneuf-du-pape rouge 'la combe des fous' magnum,clos saint jean, Frankreich ,Rhône,red,châteauneuf-du-pape,clos saint jean,Frankreich,Châteauneuf-du-Pape,red
+85703,0.30557959260586964,856_left,3604_right,riesling großes gewächs (forster) jesuitengarten,weingut reichsrat von buhl, Deutschland ,Pfalz,white,riesling trocken,reichsrat von buhl,Deutschland,Pfalz,white
+65456,0.30557959260586964,609_left,3604_right,riesling großes gewächs (forster) jesuitengarten,weingut reichsrat von buhl, Deutschland ,Pfalz,white,riesling trocken,reichsrat von buhl,Deutschland,Pfalz,white
+82004,0.30557959260586964,802_left,3604_right,riesling großes gewächs (forster) jesuitengarten,weingut reichsrat von buhl, Deutschland ,Pfalz,white,riesling trocken,reichsrat von buhl,Deutschland,Pfalz,white
+39397,0.3007697272178164,297_left,6274_right,nebbiolo d'alba,albino rocca, Italien ,Piemont,red,nebbiolo d’alba,bruno giacosa,Italien,Piemont,red
+20885,0.3007697272178164,171_left,6274_right,nebbiolo d'alba,albino rocca, Italien ,Piemont,red,nebbiolo d’alba,bruno giacosa,Italien,Piemont,red
+34083,0.3007697272178164,263_left,6274_right,nebbiolo d'alba,albino rocca, Italien ,Piemont,red,nebbiolo d’alba,bruno giacosa,Italien,Piemont,red
+64824,0.30004543663967914,601_left,1948_right,rioja blanco,granja de remelluri, Spanien ,Rioja,white,rioja blanco,marqués de cáceres,Spanien,Rioja,white
+34117,0.3000312175562238,266_left,3669_right,fontalloro toscana rosso magnum,fèlsina società agricola, Italien ,Toscana,red,fontalloro,fèlsina,Italien,Toscana,red
+88951,0.29997024934946553,920_left,11779_right,saumur brut trésor rosé magnum,bouvet ladubay, Frankreich ,Loire,sparkling,crémant de loire brut rosé,bouvet-ladubay,Frankreich,Crémant de Loire,sparkling
+34087,0.2980100563771712,264_left,1536_right,châteauneuf-du-pape rouge 375 ml,château de beaucastel/familie perrin, Frankreich ,Rhône,red,châteauneuf-du-pape,château de beaucastel,Frankreich,Châteauneuf-du-Pape,red
+55626,0.2968918083015529,464_left,2498_right,chablis grand cru 'valmur',domaine moreau naudet, Frankreich ,Bourgogne,white,chablis,moreau-naudet,Frankreich,Chablis,white
+63482,0.2968918083015529,583_left,2498_right,chablis grand cru 'valmur',domaine moreau naudet, Frankreich ,Bourgogne,white,chablis,moreau-naudet,Frankreich,Chablis,white
+24230,0.2954894533184326,190_left,6942_right,barbera d'alba doc,albino rocca, Italien ,Piemont,red,barbera d'alba,borgogno,Italien,Piemont,red
+83666,0.29155472905608665,819_left,4897_right,chardonnay reserve trocken,weingut wittmann, Deutschland ,Rheinhessen,white,westhofener weisser burgunder - chardonnay trocken,wittmann,Deutschland,Rheinhessen,white
+70319,0.29155472905608665,667_left,4897_right,chardonnay reserve trocken,weingut wittmann, Deutschland ,Rheinhessen,white,westhofener weisser burgunder - chardonnay trocken,wittmann,Deutschland,Rheinhessen,white
+51847,0.2914579574161705,413_left,7728_right,sauvignon blanc i,weingut von winning, Deutschland ,Pfalz,white,sauvignon blanc trocken,weingut metzger,Deutschland,Pfalz,white
+1093,0.2902594135402821,15_left,7424_right,camalaione igt toscana,podere le cinciole, Italien ,Toscana,red,camalaione,cinciole,Italien,Chianti,red
+77200,0.2902594135402821,746_left,7424_right,camalaione igt toscana,podere le cinciole, Italien ,Toscana,red,camalaione,cinciole,Italien,Chianti,red
+49027,0.28399135196373737,365_left,1896_right,bourgogne blanc 'les chataigners',domaine hubert lamy, Frankreich ,Bourgogne,white,bourgogne blanc,domaine roulot,Frankreich,Bourgogne,white
+83838,0.27454488149550893,829_left,9292_right,riesling sekt extra brut,ökonomierat rebholz, Deutschland ,Pfalz,sparkling,frankweiler biengarten riesling,ökonomierat rebholz,Deutschland,Pfalz,white
+62869,0.26165193213920235,574_left,915_right,riesling auslese wehlener sonnenuhr goldkapsel 375 ml,weingut joh. jos. prüm, Deutschland ,Mosel,white,wehlener sonnenuhr riesling alte reben gg,s.a. prüm,Deutschland,Mosel,white
+50473,0.26165193213920235,391_left,915_right,riesling auslese wehlener sonnenuhr goldkapsel 375 ml,weingut joh. jos. prüm, Deutschland ,Mosel,white,wehlener sonnenuhr riesling alte reben gg,s.a. prüm,Deutschland,Mosel,white
+88405,0.257816091061621,907_left,10377_right,saumur blanc extra brut 'zéro',bouvet ladubay, Frankreich ,Loire,sparkling,crémant de loire blanc de blancs brut,bouvet-ladubay,Frankreich,Crémant de Loire,sparkling
+20553,0.2575208570963253,166_left,1344_right,chianti classico,az. agr. fontodi, Italien ,Toscana,red,chianti classico,fontodi,Italien,Chianti Classico,red
+58140,0.2527491470780621,483_left,2118_right,grüner veltliner trocken 'classic',weingut prechtl, Österreich ,Weinviertel DAC,white,hund grüner veltliner reserve,weingut r&a pfaffl,Österreich,Weinviertel,white
+16973,0.2502454135754975,135_left,6942_right,barbera d'alba vigna scarrone,vietti, Italien ,Piemont,red,barbera d'alba,borgogno,Italien,Piemont,red
+74248,0.2487721755235336,728_left,11453_right,aix rosé coteaux d'aix-en-provence magnum,maison saint aix, Frankreich ,Provence,sparkling,coteaux d'aix-en-provence rosé,château paradis,Frankreich,Coteaux d'Aix-en-Provence,rosé
+24610,0.24638209346472284,196_left,1768_right,châteauneuf-du-pape rouge 'la réserve',le clos du caillou, Frankreich ,Rhône,red,châteauneuf-du-pape les safres,clos du caillou,Frankreich,Châteauneuf-du-Pape,red
+81541,0.24638209346472284,795_left,1768_right,châteauneuf-du-pape rouge 'la réserve',le clos du caillou, Frankreich ,Rhône,red,châteauneuf-du-pape les safres,clos du caillou,Frankreich,Châteauneuf-du-Pape,red
+83397,0.24638209346472284,814_left,1768_right,châteauneuf-du-pape rouge 'la réserve',le clos du caillou, Frankreich ,Rhône,red,châteauneuf-du-pape les safres,clos du caillou,Frankreich,Châteauneuf-du-Pape,red
+33193,0.24638209346472284,256_left,1768_right,châteauneuf-du-pape rouge 'la réserve',le clos du caillou, Frankreich ,Rhône,red,châteauneuf-du-pape les safres,clos du caillou,Frankreich,Châteauneuf-du-Pape,red
+48241,0.24503127844884956,348_left,7728_right,"sauvignon blanc ""fumé""",weingut oliver zeter, Deutschland ,Pfalz,white,sauvignon blanc trocken,weingut metzger,Deutschland,Pfalz,white
+89342,0.23674061673309107,929_left,9873_right,champagne rosé brut,champagne billecart salmon, Frankreich ,Champagne,sparkling,cuvée rosée brut champagne,champagne devaux,Frankreich,Schaumwein,sparkling
+64708,0.23507783824623044,599_left,277_right,weisser burgunder trocken,weingut schäfer-fröhlich, Deutschland ,Nahe,white,weisser burgunder trocken,wittmann,Deutschland,Rheinhessen,white
+59844,0.23507783824623044,510_left,277_right,weisser burgunder trocken,weingut schäfer-fröhlich, Deutschland ,Nahe,white,weisser burgunder trocken,wittmann,Deutschland,Rheinhessen,white
+2569,0.2350590080970041,36_left,6942_right,barbera d’alba doc,giuseppe rinaldi, Italien ,Piemont,red,barbera d'alba,borgogno,Italien,Piemont,red
+70392,0.23162078677188272,670_left,227_right,riesling spätlese niederhäuser hermannshöhle,weingut dönnhoff, Deutschland ,Nahe,white,riesling,dönnhoff,Deutschland,Nahe,white
+73274,0.23143271835522114,714_left,465_right,sämling trockenbeerenauslese 375 ml,weingut velich, Österreich ,Burgenland,white,to,velich,Österreich,Burgenland,white
+6902,0.2310999605986418,76_left,42_right,morgon 'côte du py',domaine mee godard, Frankreich ,Bourgogne,red,morgon côte du py,jean foillard,Frankreich,Morgon,red
+19702,0.22940503906962692,156_left,6572_right,côtes du rhône rouge,domaine la soumade, Frankreich ,Rhône,red,côtes du rhône,domaine de la solitude - famille lancon,Frankreich,Côtes-du-Rhône,red
+2352,0.22815572553541286,32_left,8923_right,primitivo di manduria il bacca luccarelli,farnese vini srl, Italien ,Manduria,red,il bacca old vine primitivo di manduria,luccarelli,Italien,Primitivo di Manduria,red
+66988,0.2269880677437836,624_left,1828_right,eiswein 375 ml,weingut kracher, Österreich ,Burgenland,white,zweigelt trocken,kracher,Österreich,Burgenland,red
+58015,0.22612911244123743,482_left,6015_right,gelber muskateller 'ried maulavern',weingut prechtl, Österreich ,Weinviertel DAC,white,ried steinriegl gelber muskateller,wohlmuth,Österreich,Südsteiermark,white
+87664,0.22580820453422526,895_left,11877_right,cuvée vaux brut 375 ml,sektmanufaktur schloss vaux, Deutschland ,Pfalz,sparkling,sauvignon blanc brut,schloss vaux,Deutschland,Pfalz,sparkling
+89127,0.22420752374761055,923_left,9918_right,champagne brut blanc de noir 'le faîte',champagne didier doué, Frankreich ,Champagne,sparkling,blanc de noirs brut champagne,champagne lombardi,Frankreich,Schaumwein,sparkling
+17173,0.2233405165845153,140_left,9559_right,monte bello,ridge vineyards, USA ,Dry Creek Valley,red,lytton springs,ridge vineyards,Vereinigte Staaten,Dry Creek Valley,red
+85544,0.22329228862146644,853_left,283_right,riesling großes gewächs wehlener sonnenuhr,weingut schloss lieser, Deutschland ,Mosel,white,wehlener sonnenuhr riesling spätlese,markus molitor,Deutschland,Mosel,white
+65297,0.22329228862146644,606_left,283_right,riesling großes gewächs wehlener sonnenuhr,weingut schloss lieser, Deutschland ,Mosel,white,wehlener sonnenuhr riesling spätlese,markus molitor,Deutschland,Mosel,white
+4716,0.222793244025841,59_left,6274_right,nebbiolo d'alba doc,albino rocca, Italien ,Piemont,red,nebbiolo d’alba,bruno giacosa,Italien,Piemont,red
+52785,0.2195884719936305,425_left,6372_right,grauburgunder trocken,weingut winter, Deutschland ,Rheinhessen,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+58351,0.2178833879120511,488_left,6372_right,grauburgunder trocken,weingut dreissigacker, Deutschland ,Rheinhessen,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+78429,0.2178833879120511,767_left,6372_right,grauburgunder trocken,weingut dreissigacker, Deutschland ,Rheinhessen,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+60577,0.21395418503563127,523_left,6372_right,riesling trocken,weingut dönnhoff, Deutschland ,Nahe,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+49361,0.20950341085739416,380_left,4897_right,chardonnay & weißer burgunder trocken 'vom kalkstein',weingut k.-h. milch, Deutschland ,Rheinhessen,white,westhofener weisser burgunder - chardonnay trocken,wittmann,Deutschland,Rheinhessen,white
+60559,0.2031829944987475,521_left,1846_right,weißburgunder & grauburgunder trocken „doppelstück“,weingut dönnhoff, Deutschland ,Nahe,white,weissburgunder trocken,weingut metzger,Deutschland,Pfalz,white
+90264,0.20257182246021752,939_left,12703_right,cuvée cristal brut blanc,champagne louis roederer, Frankreich ,Champagne,sparkling,brut premier champagne,louis roederer,Frankreich,Champagne Premier Cru,sparkling
+52356,0.20117332006631766,420_left,2729_right,chardonnay trocken 'vom kalkstein',weingut k.-h. milch, Deutschland ,Rheinhessen,white,riesling vom kalkstein trocken,wittmann,Deutschland,Rheinhessen,white
+26006,0.19922069319100402,206_left,7959_right,plumbago rosso sicilia doc,aziende agricole planeta s.s., Italien ,Sizilien,red,plumbago nero d'avola sicilia,planeta,Italien,Sizilien,red
+46995,0.19892859356128023,341_left,3816_right,château troplong-mondot premier grand cru classé,château troplong-mondot, Frankreich ,Bordeaux,red,château margaux (premier grand cru classé),château margaux,Frankreich,Margaux,red
+56394,0.1985799175821329,470_left,227_right,riesling spätlese norheimer kirschheck,weingut dönnhoff, Deutschland ,Nahe,white,riesling,dönnhoff,Deutschland,Nahe,white
+41836,0.19845907665932502,313_left,6942_right,"barbera d'alba ""vigna scarrone"" magnum",vietti, Italien ,Piemont,red,barbera d'alba,borgogno,Italien,Piemont,red
+48371,0.19809514540247503,359_left,2409_right,gewürztraminer reserve,markus schneider, Deutschland ,Pfalz,white,chardonnay,schneider,Deutschland,Pfalz,white
+78432,0.19772819496453448,768_left,6687_right,bourgogne rouge,domaine christian clerget, Frankreich ,Bourgogne,red,pinot noir bourgogne,domaine faiveley,Frankreich,Bourgogne,red
+11089,0.19772819496453448,100_left,6687_right,bourgogne rouge,domaine christian clerget, Frankreich ,Bourgogne,red,pinot noir bourgogne,domaine faiveley,Frankreich,Bourgogne,red
+72561,0.19757461584997793,700_left,2406_right,riesling spätlese zeltinger sonnenuhr magnum,weingut markus molitor, Deutschland ,Mosel,white,brauneberger juffer-sonnenuhr riesling spätlese trocken,weingut paulinshof,Deutschland,Mosel,white
+58806,0.19613744828393181,504_left,2584_right,grauer burgunder trocken,weingut von winning, Deutschland ,Pfalz,white,grauburgunder trocken,weingut metzger,Deutschland,Pfalz,white
+51850,0.1945184623219248,414_left,227_right,riesling großes gewächs norheimer dellchen,weingut dönnhoff, Deutschland ,Nahe,white,riesling,dönnhoff,Deutschland,Nahe,white
+84447,0.1945184623219248,839_left,227_right,riesling großes gewächs norheimer dellchen,weingut dönnhoff, Deutschland ,Nahe,white,riesling,dönnhoff,Deutschland,Nahe,white
+7523,0.19381215148522132,81_left,5638_right,gevrey-chambertin 1er cru 'les cazetiers',domaine faiveley, Frankreich ,Bourgogne,red,gevrey-chambertin vieilles vignes,domaine faiveley,Frankreich,Gevrey-Chambertin,red
+41399,0.19353292978886547,309_left,3816_right,château croix figeac premier grand cru classé,château croix figeac, Frankreich ,Bordeaux,red,château margaux (premier grand cru classé),château margaux,Frankreich,Margaux,red
+48311,0.19092454710086723,355_left,1638_right,riesling schiefersteil,weingut markus molitor, Deutschland ,Mosel,white,haus klosterberg riesling trocken,markus molitor,Deutschland,Mosel,white
+45508,0.18984502748978216,332_left,1372_right,sammarco,castello dei rampolla, Italien ,Toscana,red,chianti classico,castello dei rampolla,Italien,Chianti Classico,red
+57022,0.18540828354390027,476_left,227_right,chardonnay -s -,weingut dönnhoff, Deutschland ,Nahe,white,riesling,dönnhoff,Deutschland,Nahe,white
+55422,0.18306360129480553,458_left,1846_right,weißburgunder *** selektion trocken,weingut holger koch, Deutschland ,Baden,white,weissburgunder trocken,weingut metzger,Deutschland,Pfalz,white
+54319,0.1821765783093441,449_left,1739_right,chablis 1er cru 'fourchaume',bessin - tremblay (domaine bessin), Frankreich ,Bourgogne,white,chablis 1er cru 'fourchaume',la chablisienne,Frankreich,Chablis 1er Cru 'Fourchaume',white
+67315,0.1821765783093441,635_left,1739_right,chablis 1er cru 'fourchaume',bessin - tremblay (domaine bessin), Frankreich ,Bourgogne,white,chablis 1er cru 'fourchaume',la chablisienne,Frankreich,Chablis 1er Cru 'Fourchaume',white
+87361,0.18115951055779714,880_left,6372_right,riesling trocken hipping gg,weingut kühling-gillot, Deutschland ,Rheinhessen,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+71922,0.18115951055779714,690_left,6372_right,riesling trocken hipping gg,weingut kühling-gillot, Deutschland ,Rheinhessen,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+83763,0.18115951055779714,826_left,6372_right,riesling trocken hipping gg,weingut kühling-gillot, Deutschland ,Rheinhessen,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+72178,0.1806092866147753,696_left,465_right,chardonnay beerenauslese sw 375 ml,weingut velich, Österreich ,Burgenland,white,to,velich,Österreich,Burgenland,white
+72719,0.17983444985571023,703_left,227_right,riesling spätlese niederhäuser hermannshöhle magnum,weingut dönnhoff, Deutschland ,Nahe,white,riesling,dönnhoff,Deutschland,Nahe,white
+87663,0.17730667123181973,894_left,10194_right,pink cuvee 22 vino spumante extra dry,borgo molino, Italien ,Veneto,sparkling,motivo rosé extra dry,borgo molino,Italien,Veneto,sparkling
+56853,0.17558513269624818,473_left,227_right,riesling spätlese oberhäuser brücke,weingut dönnhoff, Deutschland ,Nahe,white,riesling,dönnhoff,Deutschland,Nahe,white
+52797,0.17526493107173738,434_left,5942_right,riesling,weingut knebel, Deutschland ,Mosel,white,rotschiefer riesling,weingut würtzberg,Deutschland,Mosel,white
+55448,0.17471241211906333,460_left,428_right,"riesling auslese *** erdener treppchen, weiße kapsel",weingut markus molitor, Deutschland ,Mosel,white,saarburger rausch auslese riesling **,markus molitor,Deutschland,Mosel,white
+51988,0.1712194621773908,416_left,227_right,riesling großes gewächs kreuznacher krötenpfuhl,weingut dönnhoff, Deutschland ,Nahe,white,riesling,dönnhoff,Deutschland,Nahe,white
+84585,0.1712194621773908,841_left,227_right,riesling großes gewächs kreuznacher krötenpfuhl,weingut dönnhoff, Deutschland ,Nahe,white,riesling,dönnhoff,Deutschland,Nahe,white
+87825,0.17013970101195958,900_left,11779_right,saumur brut 'saphir',bouvet ladubay, Frankreich ,Loire,sparkling,crémant de loire brut rosé,bouvet-ladubay,Frankreich,Crémant de Loire,sparkling
+55911,0.1686438628870925,466_left,2498_right,chablis 1er cru 'les forêts',domaine moreau naudet, Frankreich ,Bourgogne,white,chablis,moreau-naudet,Frankreich,Chablis,white
+52966,0.16834635578677312,436_left,2930_right,riesling kabinett 'röttgen',weingut knebel, Deutschland ,Mosel,white,riesling,reinhard knebel,Deutschland,Mosel,white
+87321,0.1652554687338084,878_left,6372_right,riesling trocken pettenthal gg,weingut kühling-gillot, Deutschland ,Rheinhessen,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+83723,0.1652554687338084,824_left,6372_right,riesling trocken pettenthal gg,weingut kühling-gillot, Deutschland ,Rheinhessen,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+71882,0.1652554687338084,688_left,6372_right,riesling trocken pettenthal gg,weingut kühling-gillot, Deutschland ,Rheinhessen,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+71223,0.16485983949809838,677_left,1828_right,beerenauslese cuvée 375 ml,weingut kracher, Österreich ,Burgenland,white,zweigelt trocken,kracher,Österreich,Burgenland,red
+72683,0.16482801875916495,702_left,1638_right,riesling auslese *** trocken zeltinger sonnenuhr magnum,weingut markus molitor, Deutschland ,Mosel,white,haus klosterberg riesling trocken,markus molitor,Deutschland,Mosel,white
+25297,0.164398405149936,201_left,6687_right,bourgogne rouge ac,domaine hudelot-noëllat, Frankreich ,Bourgogne,red,pinot noir bourgogne,domaine faiveley,Frankreich,Bourgogne,red
+72920,0.16353140781659842,711_left,2833_right,riesling spätlese oberhäuser brücke *monopol* magnum,weingut dönnhoff, Deutschland ,Nahe,white,oberhäuser leistenberg riesling kabinett,dönnhoff,Deutschland,Nahe,white
+51477,0.1618707114760525,404_left,6372_right,weissburgunder trocken literflasche,weingut weedenborn, Deutschland ,Rheinhessen,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+69657,0.1605703157546085,660_left,153_right,riesling trocken felsenberg gg,weingut schäfer-fröhlich, Deutschland ,Nahe,white,felsenberg gg,dönnhoff,Deutschland,Nahe,white
+86976,0.1605703157546085,872_left,153_right,riesling trocken felsenberg gg,weingut schäfer-fröhlich, Deutschland ,Nahe,white,felsenberg gg,dönnhoff,Deutschland,Nahe,white
+1463,0.1585622230414098,18_left,9658_right,vernatsch 'der keil',manincor, Italien ,Südtirol/Alto Adige,red,cassiano,manincor,Italien,Südtirol - Alto Adige,red
+77595,0.1585622230414098,750_left,9658_right,vernatsch 'der keil',manincor, Italien ,Südtirol/Alto Adige,red,cassiano,manincor,Italien,Südtirol - Alto Adige,red
+10028,0.15761756086857467,93_left,6567_right,menage à trois,weingut prechtl, Österreich ,Weinviertel DAC,red,toreye ménage à trois,eymann,Deutschland,Pfalz,white
+55408,0.15742944154066668,456_left,1846_right,weißburgunder kaiserstuhl trocken,weingut holger koch, Deutschland ,Baden,white,weissburgunder trocken,weingut metzger,Deutschland,Pfalz,white
+69653,0.15246079714190675,659_left,40_right,chardonnay 'reserve',weingut weedenborn, Deutschland ,Rheinhessen,white,chardonnay réserve,knewitz,Deutschland,Rheinhessen,white
+16700,0.15172004474090436,133_left,6674_right,6er set  primitivo di manduria 'luccarelli old vines',farnese vini srl, Italien ,Manduria,red,old vines primitivo di manduria,luccarelli,Italien,Primitivo di Manduria,red
+62634,0.15003448322012145,572_left,1846_right,weißburgunder herrenstück trocken,weingut holger koch, Deutschland ,Baden,white,weissburgunder trocken,weingut metzger,Deutschland,Pfalz,white
+66869,0.1495926823483812,622_left,227_right,riesling beerenauslese niederhäuser hermannshöhle 'goldkapsel',weingut dönnhoff, Deutschland ,Nahe,white,riesling,dönnhoff,Deutschland,Nahe,white
+74082,0.14923309284683844,725_left,2930_right,riesling winninger uhlen,weingut knebel, Deutschland ,Mosel,white,riesling,reinhard knebel,Deutschland,Mosel,white
+56188,0.1455096821631273,468_left,2498_right,chablis vieilles vignes 'les pargues',domaine moreau naudet, Frankreich ,Bourgogne,white,chablis,moreau-naudet,Frankreich,Chablis,white
+87521,0.14518680235620968,889_left,6372_right,riesling trocken frauenberg gg,weingut battenfeld-spanier, Deutschland ,Rheinhessen,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+84279,0.14518680235620968,837_left,6372_right,riesling trocken frauenberg gg,weingut battenfeld-spanier, Deutschland ,Rheinhessen,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+74137,0.14518680235620968,726_left,6372_right,riesling trocken frauenberg gg,weingut battenfeld-spanier, Deutschland ,Rheinhessen,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+73070,0.14518680235620968,712_left,6372_right,riesling trocken frauenberg gg,weingut battenfeld-spanier, Deutschland ,Rheinhessen,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+87567,0.14518680235620968,892_left,6372_right,riesling trocken frauenberg gg,weingut battenfeld-spanier, Deutschland ,Rheinhessen,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+58244,0.14262462429414624,485_left,2118_right,grüner veltliner trocken 'alte reben',weingut prechtl, Österreich ,Weinviertel DAC,white,hund grüner veltliner reserve,weingut r&a pfaffl,Österreich,Weinviertel,white
+25978,0.1405530541834022,205_left,2473_right,sangiovese rosso toscana,caparzo, Italien ,Toscana,red,toscana rosso,altesino,Italien,Toscana,red
+59918,0.1404755173358814,512_left,277_right,weisser burgunder 's' trocken,weingut schäfer-fröhlich, Deutschland ,Nahe,white,weisser burgunder trocken,wittmann,Deutschland,Rheinhessen,white
+50257,0.14019265074236661,389_left,6803_right,nahesteiner grauburgunder trocken,schlossgut diel, Deutschland ,Nahe,white,grauburgunder trocken,dönnhoff,Deutschland,Nahe,white
+63622,0.14000725749302056,584_left,3557_right,chablis 1er cru 'vaillons',domaine moreau naudet, Frankreich ,Bourgogne,white,chablis 1er cru 'vaillons',domaine servin,Frankreich,Chablis 1er Cru 'Vaillons',white
+55613,0.14000725749302056,463_left,3557_right,chablis 1er cru 'vaillons',domaine moreau naudet, Frankreich ,Bourgogne,white,chablis 1er cru 'vaillons',domaine servin,Frankreich,Chablis 1er Cru 'Vaillons',white
+14972,0.13990102160366452,122_left,866_right,côtes du rhône villages 'la jérôme',domaine des bosquets, Frankreich ,Rhône,red,côtes du rhône,domaine gassier,Frankreich,Côtes-du-Rhône,red
+13655,0.138270385638919,116_left,2575_right,barolo cannubi,reva, Italien ,Piemont,red,cannubi barolo,brezza,Italien,Barolo,red
+18781,0.13820887560296666,150_left,2319_right,les vignes de bila haut rouge,domaine de bila haut, Frankreich ,Roussillon,red,les vignes de bila-haut côtes du roussillon villages,m. chapoutier,Frankreich,Côtes du Roussillon Villages,red
+29333,0.13820887560296666,227_left,2319_right,les vignes de bila haut rouge,domaine de bila haut, Frankreich ,Roussillon,red,les vignes de bila-haut côtes du roussillon villages,m. chapoutier,Frankreich,Côtes du Roussillon Villages,red
+1817,0.13820887560296666,26_left,2319_right,les vignes de bila haut rouge,domaine de bila haut, Frankreich ,Roussillon,red,les vignes de bila-haut côtes du roussillon villages,m. chapoutier,Frankreich,Côtes du Roussillon Villages,red
+55766,0.13561474481240843,465_left,2498_right,chablis 1er cru 'les montmains',domaine moreau naudet, Frankreich ,Bourgogne,white,chablis,moreau-naudet,Frankreich,Chablis,white
+85272,0.1354415196564802,850_left,2930_right,riesling großes gewächs 'röttgen',weingut knebel, Deutschland ,Mosel,white,riesling,reinhard knebel,Deutschland,Mosel,white
+64769,0.1354415196564802,600_left,2930_right,riesling großes gewächs 'röttgen',weingut knebel, Deutschland ,Mosel,white,riesling,reinhard knebel,Deutschland,Mosel,white
+60632,0.13469943953439045,525_left,772_right,le blanc de château lynch bages pauillac,château lynch bages, Frankreich ,Bordeaux,white,pauillac (grand cru classé),château lynch-bages,Frankreich,Pauillac,red
+73685,0.13246760609768587,718_left,227_right,riesling auslese niederhäuser hermannshöhle 'goldkapsel',weingut dönnhoff, Deutschland ,Nahe,white,riesling,dönnhoff,Deutschland,Nahe,white
+88953,0.13232925289968114,922_left,12001_right,"champagne brut 'le truchat"" chardonnay de montgueux",champagne didier doué, Frankreich ,Champagne,sparkling,la chanose sélection brut champagne,didier doué,Frankreich,Schaumwein,sparkling
+48244,0.1309387954442961,349_left,1822_right,tradition heritage cuvée 10 jahre,schloss gobelsburg, Österreich ,Kamptal,white,grüner veltliner,schloss gobelsburg,Österreich,Kamptal,white
+72881,0.12937317364162468,708_left,6372_right,riesling trocken hipping gg magnum,weingut kühling-gillot, Deutschland ,Rheinhessen,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+87482,0.12937317364162468,886_left,6372_right,riesling trocken hipping gg magnum,weingut kühling-gillot, Deutschland ,Rheinhessen,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+84205,0.12937317364162468,833_left,6372_right,riesling trocken hipping gg magnum,weingut kühling-gillot, Deutschland ,Rheinhessen,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+63075,0.12868553958546708,578_left,2406_right,riesling spätlese wehlener sonnenuhr,weingut joh. jos. prüm, Deutschland ,Mosel,white,brauneberger juffer-sonnenuhr riesling spätlese trocken,weingut paulinshof,Deutschland,Mosel,white
+50638,0.12868553958546708,394_left,2406_right,riesling spätlese wehlener sonnenuhr,weingut joh. jos. prüm, Deutschland ,Mosel,white,brauneberger juffer-sonnenuhr riesling spätlese trocken,weingut paulinshof,Deutschland,Mosel,white
+42251,0.1274283171297223,316_left,1038_right,château bellevue grand cru classé,château bellevue, Frankreich ,Bordeaux,red,château giscours (grand cru classé),château giscours,Frankreich,Margaux,red
+67279,0.1265744178343643,631_left,1760_right,pinot grigio 'ciari',borgo molino, Italien ,Veneto,white,pinot grigio,gorgo,Italien,Veneto,white
+79155,0.12578908266472283,773_left,7685_right,weißer burgunder trocken vdp.gutswein,ökonomierat rebholz, Deutschland ,Pfalz,white,vom buntsandstein riesling trocken,ökonomierat rebholz,Deutschland,Pfalz,white
+58432,0.12578908266472283,492_left,7685_right,weißer burgunder trocken vdp.gutswein,ökonomierat rebholz, Deutschland ,Pfalz,white,vom buntsandstein riesling trocken,ökonomierat rebholz,Deutschland,Pfalz,white
+50702,0.12281583095027769,396_left,2406_right,riesling spätlese zeltinger sonnenuhr,weingut joh. jos. prüm, Deutschland ,Mosel,white,brauneberger juffer-sonnenuhr riesling spätlese trocken,weingut paulinshof,Deutschland,Mosel,white
+62979,0.12281583095027769,576_left,2406_right,riesling spätlese zeltinger sonnenuhr,weingut joh. jos. prüm, Deutschland ,Mosel,white,brauneberger juffer-sonnenuhr riesling spätlese trocken,weingut paulinshof,Deutschland,Mosel,white
+64642,0.12246208099375239,597_left,277_right,weisser burgunder 'r' trocken,weingut schäfer-fröhlich, Deutschland ,Nahe,white,weisser burgunder trocken,wittmann,Deutschland,Rheinhessen,white
+17044,0.11991369242161096,138_left,6942_right,barbera d'alba scarrone vigna vecchia,vietti, Italien ,Piemont,red,barbera d'alba,borgogno,Italien,Piemont,red
+79105,0.11939289845675903,772_left,7685_right,grauer burgunder trocken vdp.gutswein,ökonomierat rebholz, Deutschland ,Pfalz,white,vom buntsandstein riesling trocken,ökonomierat rebholz,Deutschland,Pfalz,white
+58382,0.11939289845675903,491_left,7685_right,grauer burgunder trocken vdp.gutswein,ökonomierat rebholz, Deutschland ,Pfalz,white,vom buntsandstein riesling trocken,ökonomierat rebholz,Deutschland,Pfalz,white
+83559,0.1187811437242813,816_left,1445_right,grüner veltliner trocken feuersbrunner spiegel,weingut bernhard ott, Österreich ,Wagram,white,fass 4,bernhard ott,Österreich,Wagram,white
+52578,0.1187811437242813,422_left,1445_right,grüner veltliner trocken feuersbrunner spiegel,weingut bernhard ott, Österreich ,Wagram,white,fass 4,bernhard ott,Österreich,Wagram,white
+77742,0.1187811437242813,759_left,1445_right,grüner veltliner trocken feuersbrunner spiegel,weingut bernhard ott, Österreich ,Wagram,white,fass 4,bernhard ott,Österreich,Wagram,white
+68713,0.1187811437242813,647_left,1445_right,grüner veltliner trocken feuersbrunner spiegel,weingut bernhard ott, Österreich ,Wagram,white,fass 4,bernhard ott,Österreich,Wagram,white
+88947,0.11835336409578713,918_left,11779_right,saumur brut 'saphir' magnum,bouvet ladubay, Frankreich ,Loire,sparkling,crémant de loire brut rosé,bouvet-ladubay,Frankreich,Crémant de Loire,sparkling
+56463,0.11741347809472588,471_left,2833_right,riesling auslese oberhäuser brücke goldkapsel 375 ml,weingut dönnhoff, Deutschland ,Nahe,white,oberhäuser leistenberg riesling kabinett,dönnhoff,Deutschland,Nahe,white
+56972,0.11512850221633193,475_left,1846_right,weißburgunder -s-,weingut dönnhoff, Deutschland ,Nahe,white,weissburgunder trocken,weingut metzger,Deutschland,Pfalz,white
+52630,0.1146165191706713,423_left,1445_right,grüner veltliner trocken feuersbrunner rosenberg,weingut bernhard ott, Österreich ,Wagram,white,fass 4,bernhard ott,Österreich,Wagram,white
+68765,0.1146165191706713,648_left,1445_right,grüner veltliner trocken feuersbrunner rosenberg,weingut bernhard ott, Österreich ,Wagram,white,fass 4,bernhard ott,Österreich,Wagram,white
+83611,0.1146165191706713,817_left,1445_right,grüner veltliner trocken feuersbrunner rosenberg,weingut bernhard ott, Österreich ,Wagram,white,fass 4,bernhard ott,Österreich,Wagram,white
+77794,0.1146165191706713,760_left,1445_right,grüner veltliner trocken feuersbrunner rosenberg,weingut bernhard ott, Österreich ,Wagram,white,fass 4,bernhard ott,Österreich,Wagram,white
+83721,0.11346913181763593,823_left,6372_right,riesling trocken pettenthal gg magnum,weingut kühling-gillot, Deutschland ,Rheinhessen,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+87319,0.11346913181763593,877_left,6372_right,riesling trocken pettenthal gg magnum,weingut kühling-gillot, Deutschland ,Rheinhessen,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+71880,0.11346913181763593,687_left,6372_right,riesling trocken pettenthal gg magnum,weingut kühling-gillot, Deutschland ,Rheinhessen,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+20889,0.11250553348128906,172_left,5859_right,barolo docg parussi,massolino, Italien ,Piemont,red,barolo,massolino,Italien,Barolo,red
+39760,0.11250553348128906,300_left,5859_right,barolo docg parussi,massolino, Italien ,Piemont,red,barolo,massolino,Italien,Barolo,red
+39852,0.11250553348128906,301_left,5859_right,barolo docg margheria,massolino, Italien ,Piemont,red,barolo,massolino,Italien,Barolo,red
+46277,0.11250553348128906,337_left,5859_right,barolo docg margheria,massolino, Italien ,Piemont,red,barolo,massolino,Italien,Barolo,red
+58192,0.11207887747672693,484_left,2118_right,grüner veltliner trocken 'ried längen',weingut prechtl, Österreich ,Weinviertel DAC,white,hund grüner veltliner reserve,weingut r&a pfaffl,Österreich,Weinviertel,white
+52526,0.11197714430241712,421_left,1445_right,grüner veltliner trocken engabrunner stein,weingut bernhard ott, Österreich ,Wagram,white,fass 4,bernhard ott,Österreich,Wagram,white
+77690,0.11197714430241712,758_left,1445_right,grüner veltliner trocken engabrunner stein,weingut bernhard ott, Österreich ,Wagram,white,fass 4,bernhard ott,Österreich,Wagram,white
+35465,0.11163242439684473,273_left,51_right,"château du roc, côtes de castillon",château du roc, Frankreich ,Bordeaux,red,castillon - côtes de bordeaux,château d'aiguilhe,Frankreich,Castillon - Côtes de Bordeaux,red
+83705,0.11163242439684473,822_left,51_right,"château du roc, côtes de castillon",château du roc, Frankreich ,Bordeaux,red,castillon - côtes de bordeaux,château d'aiguilhe,Frankreich,Castillon - Côtes de Bordeaux,red
+48860,0.1109066693521587,363_left,2319_right,les vignes de bila haut blanc,domaine de bila haut, Frankreich ,Roussillon,white,les vignes de bila-haut côtes du roussillon villages,m. chapoutier,Frankreich,Côtes du Roussillon Villages,red
+81799,0.11050060259996795,798_left,2797_right,riesling großes gewächs zellerweg am schwarzen herrgott,weingut battenfeld-spanier, Deutschland ,Rheinhessen,white,mölsheim riesling,battenfeld spanier,Deutschland,Rheinhessen,white
+85170,0.11050060259996795,848_left,2797_right,riesling großes gewächs zellerweg am schwarzen herrgott,weingut battenfeld-spanier, Deutschland ,Rheinhessen,white,mölsheim riesling,battenfeld spanier,Deutschland,Rheinhessen,white
+63903,0.11050060259996795,588_left,2797_right,riesling großes gewächs zellerweg am schwarzen herrgott,weingut battenfeld-spanier, Deutschland ,Rheinhessen,white,mölsheim riesling,battenfeld spanier,Deutschland,Rheinhessen,white
+79433,0.11003172718634063,779_left,6372_right,weisser burgunder trocken,weingut wittmann, Deutschland ,Rheinhessen,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+58762,0.11003172718634063,499_left,6372_right,weisser burgunder trocken,weingut wittmann, Deutschland ,Rheinhessen,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+83256,0.11003172718634063,809_left,6372_right,weisser burgunder trocken,weingut wittmann, Deutschland ,Rheinhessen,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+67276,0.11003172718634063,630_left,6372_right,weisser burgunder trocken,weingut wittmann, Deutschland ,Rheinhessen,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+78426,0.10793223140024784,766_left,6372_right,weissburgunder trocken 'eintausender',weingut dreissigacker, Deutschland ,Rheinhessen,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+58348,0.10793223140024784,487_left,6372_right,weissburgunder trocken 'eintausender',weingut dreissigacker, Deutschland ,Rheinhessen,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+60126,0.10482985486614567,516_left,3562_right,riesling kabinett scharzhofberger,weingut egon müller, Deutschland ,Saar,white,riesling,egon müller - scharzhof,Deutschland,Wiltingen,white
+97,0.10472598000030917,4_left,6572_right,côtes du rhône villages 'terre d'argile',domaine de la janasse, Frankreich ,Rhône,red,côtes du rhône,domaine de la solitude - famille lancon,Frankreich,Côtes-du-Rhône,red
+58766,0.10363554297837686,501_left,6372_right,grauer burgunder trocken,weingut wittmann, Deutschland ,Rheinhessen,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+79437,0.10363554297837686,781_left,6372_right,grauer burgunder trocken,weingut wittmann, Deutschland ,Rheinhessen,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+28040,0.10340613170113884,219_left,4490_right,zweigelt beerenauslese 375 ml,weingut kracher, Österreich ,Burgenland,red,zweigelt,weingut bründlmayer,Österreich,Niederösterreich,red
+46185,0.10247120029248968,336_left,5859_right,barolo docg parafada,massolino, Italien ,Piemont,red,barolo,massolino,Italien,Barolo,red
+51480,0.10005554521109274,405_left,6372_right,grauburgunder trocken liter,weingut weedenborn, Deutschland ,Rheinhessen,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+2330,0.09991455284373336,30_left,6200_right,toscana igt 'solaia',marchesi antinori, Italien ,Toscana,red,tenuta tignanello 'solaia',antinori,Italien,Toscana,red
+26964,0.09991455284373336,213_left,6200_right,toscana igt 'solaia',marchesi antinori, Italien ,Toscana,red,tenuta tignanello 'solaia',antinori,Italien,Toscana,red
+21872,0.09834818242904163,178_left,1008_right,belvento sireno toscana igt,azienda agricola petra, Italien ,Maremma,red,belvento sireno toscana (i vini del mare),petra,Italien,Toscana,red
+89543,0.09547923797643722,933_left,9918_right,champagne blanc de blanc vintage,champagne pol roger, Frankreich ,Champagne,sparkling,blanc de noirs brut champagne,champagne lombardi,Frankreich,Schaumwein,sparkling
+89444,0.09542232984835546,931_left,9918_right,champagne brut vintage blanc,champagne pol roger, Frankreich ,Champagne,sparkling,blanc de noirs brut champagne,champagne lombardi,Frankreich,Schaumwein,sparkling
+58296,0.0949538012260316,486_left,2118_right,grüner veltliner trocken 'ried altenberg',weingut prechtl, Österreich ,Weinviertel DAC,white,hund grüner veltliner reserve,weingut r&a pfaffl,Österreich,Weinviertel,white
+49760,0.09431227853478891,383_left,506_right,weißer burgunder trocken laumersheimer 'vom kalksteinfels',weingut philipp kuhn, Deutschland ,Pfalz,white,laumersheimer kapellenberg riesling,philipp kuhn,Deutschland,Pfalz,white
+79240,0.09187126643031755,775_left,7685_right,riesling trocken frankweiler biengarten vdp.erste lage,ökonomierat rebholz, Deutschland ,Pfalz,white,vom buntsandstein riesling trocken,ökonomierat rebholz,Deutschland,Pfalz,white
+58517,0.09187126643031755,494_left,7685_right,riesling trocken frankweiler biengarten vdp.erste lage,ökonomierat rebholz, Deutschland ,Pfalz,white,vom buntsandstein riesling trocken,ökonomierat rebholz,Deutschland,Pfalz,white
+50798,0.09076883008825039,398_left,1388_right,riesling kabinett graacher himmelreich,weingut joh. jos. prüm, Deutschland ,Mosel,white,zeltinger himmelreich riesling kabinett,markus molitor,Deutschland,Mosel,white
+67115,0.08811181165294317,625_left,2584_right,grauburgunder kabinett trocken gutswein,weingut salwey, Deutschland ,Baden,white,grauburgunder trocken,weingut metzger,Deutschland,Pfalz,white
+49914,0.08791609432682514,386_left,506_right,grauer burgunder trocken laumersheimer 'vom löss',weingut philipp kuhn, Deutschland ,Pfalz,white,laumersheimer kapellenberg riesling,philipp kuhn,Deutschland,Pfalz,white
+74945,0.08737622321723171,732_left,11277_right,rosé saigner,markus schneider, Deutschland ,Pfalz,sparkling,bubbly brut,schneider,Deutschland,Pfalz,sparkling
+59905,0.08517787894776434,511_left,2584_right,grauburgunder 's' trocken,weingut schäfer-fröhlich, Deutschland ,Nahe,white,grauburgunder trocken,weingut metzger,Deutschland,Pfalz,white
+39396,0.08504032592483675,296_left,3307_right,zweigelt schwarz rot imperial,hans schwarz, Österreich ,Burgenland,red,blauer zweigelt,anita nittnaus hans,Österreich,Burgenland,red
+55435,0.08491729285752547,459_left,2584_right,grauburgunder *** selektion trocken,weingut holger koch, Deutschland ,Baden,white,grauburgunder trocken,weingut metzger,Deutschland,Pfalz,white
+84207,0.08385690747859469,834_left,6372_right,riesling trocken pettenthal gg doppelmagnum,weingut kühling-gillot, Deutschland ,Rheinhessen,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+87484,0.08385690747859469,887_left,6372_right,riesling trocken pettenthal gg doppelmagnum,weingut kühling-gillot, Deutschland ,Rheinhessen,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+72883,0.08385690747859469,709_left,6372_right,riesling trocken pettenthal gg doppelmagnum,weingut kühling-gillot, Deutschland ,Rheinhessen,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+67128,0.08279047341792503,626_left,3562_right,riesling auslese scharzhofberger,weingut egon müller, Deutschland ,Saar,white,riesling,egon müller - scharzhof,Deutschland,Wiltingen,white
+16650,0.07919708415353727,132_left,584_right,primitivo di manduria 'luccarelli old vines',farnese vini srl, Italien ,Manduria,red,60 sessantanni old vines primitivo di manduria,san marzano,Italien,Primitivo di Manduria,red
+60572,0.07622750556119949,522_left,6372_right,riesling trocken „tonschiefer“,weingut dönnhoff, Deutschland ,Nahe,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+51919,0.07475973170652699,415_left,227_right,riesling gg schloßböckelheimer felsenberg felsentürmchen,weingut dönnhoff, Deutschland ,Nahe,white,riesling,dönnhoff,Deutschland,Nahe,white
+84516,0.07475973170652699,840_left,227_right,riesling gg schloßböckelheimer felsenberg felsentürmchen,weingut dönnhoff, Deutschland ,Nahe,white,riesling,dönnhoff,Deutschland,Nahe,white
+73348,0.07306505561577542,715_left,227_right,riesling trockenbeerenauslese niederhäuser hermannshöhle 375 ml,weingut dönnhoff, Deutschland ,Nahe,white,riesling,dönnhoff,Deutschland,Nahe,white
+63422,0.07220191133800902,581_left,2584_right,weisser burgunder ii trocken,weingut von winning, Deutschland ,Pfalz,white,grauburgunder trocken,weingut metzger,Deutschland,Pfalz,white
+64703,0.06989063536617271,598_left,6372_right,riesling trocken,weingut schäfer-fröhlich, Deutschland ,Nahe,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+59988,0.06989063536617271,514_left,6372_right,riesling trocken,weingut schäfer-fröhlich, Deutschland ,Nahe,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+45837,0.06834554568501469,334_left,1757_right,toscana igt rosso 'saffredi' goliath,fattoria le pupille, Italien ,Toscana,red,poggio valente,fattoria le pupille,Italien,Toscana,red
+87445,0.06378824110099594,884_left,6372_right,riesling trocken frauenberg gg doppelmagnum,weingut battenfeld-spanier, Deutschland ,Rheinhessen,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+84168,0.06378824110099594,831_left,6372_right,riesling trocken frauenberg gg doppelmagnum,weingut battenfeld-spanier, Deutschland ,Rheinhessen,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+72788,0.06378824110099594,704_left,6372_right,riesling trocken frauenberg gg doppelmagnum,weingut battenfeld-spanier, Deutschland ,Rheinhessen,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+71550,0.06307808266054833,679_left,5330_right,chassagne-montrachet blanc 1er cru caillerets,domaine blain-gagnard, Frankreich ,Bourgogne,white,chassagne-montrachet blanc,domaine michel niellon,Frankreich,Chassagne-Montrachet,white
+71836,0.06307808266054833,684_left,5330_right,chassagne-montrachet blanc 1er cru boudriotte,domaine blain-gagnard, Frankreich ,Bourgogne,white,chassagne-montrachet blanc,domaine michel niellon,Frankreich,Chassagne-Montrachet,white
+75667,0.06201800976480915,737_left,4026_right,studio by miraval rosé mediterranée igp,château miraval, Frankreich ,Provence,sparkling,studio blanc,miraval,Frankreich,Provence,white
+20680,0.059797466099881944,167_left,3666_right,pinot noir,markus schneider, Deutschland ,Pfalz,red,pinot noir,matthias gaul,Deutschland,Pfalz,red
+68704,0.059626681130353396,646_left,2406_right,riesling spätlese zeltinger sonnenuhr weiße kapsel,weingut markus molitor, Deutschland ,Mosel,white,brauneberger juffer-sonnenuhr riesling spätlese trocken,weingut paulinshof,Deutschland,Mosel,white
+55395,0.0592831331033866,455_left,2584_right,grauburgunder kaiserstuhl trocken,weingut holger koch, Deutschland ,Baden,white,grauburgunder trocken,weingut metzger,Deutschland,Pfalz,white
+65044,0.059120481678927105,603_left,2927_right,riesling großes gewächs steinbuckel,weingut philipp kuhn, Deutschland ,Rheinhessen,white,riesling tradition,philipp kuhn,Deutschland,Pfalz,white
+85327,0.059120481678927105,851_left,2927_right,riesling großes gewächs steinbuckel,weingut philipp kuhn, Deutschland ,Rheinhessen,white,riesling tradition,philipp kuhn,Deutschland,Pfalz,white
+2793,0.058710474990810294,38_left,6942_right,barbera d'alba doc 'vigna francia',giacomo conterno, Italien ,Piemont,red,barbera d'alba,borgogno,Italien,Piemont,red
+42301,0.055589609354881026,317_left,1038_right,château la confession grand cru classé,château la confession, Frankreich ,Bordeaux,red,château giscours (grand cru classé),château giscours,Frankreich,Margaux,red
+49362,0.05325077304373773,381_left,2927_right,riesling großes gewächs saumagen,weingut philipp kuhn, Deutschland ,Rheinhessen,white,riesling tradition,philipp kuhn,Deutschland,Pfalz,white
+84281,0.05325077304373773,838_left,2927_right,riesling großes gewächs saumagen,weingut philipp kuhn, Deutschland ,Rheinhessen,white,riesling tradition,philipp kuhn,Deutschland,Pfalz,white
+59993,0.05230093827844298,515_left,6681_right,weisswein 'hensel & gretel',markus schneider & thomas hensel, Deutschland ,Pfalz,white,aufwind cuvée weisswein,hensel,Deutschland,Pfalz,white
+15242,0.051727855315517074,124_left,983_right,châteaunef-du-pape 'le castellas',domaine des bosquets, Frankreich ,Rhône,red,châteauneuf-du-pape,domaine des sénéchaux,Frankreich,Châteauneuf-du-Pape,red
+6347,0.04992713703382386,73_left,11378_right,barolo,reva, Italien ,Piemont,red,solonoir,réva,Italien,Piemont,sparkling
+13336,0.04992713703382386,114_left,11378_right,barolo,reva, Italien ,Piemont,red,solonoir,réva,Italien,Piemont,sparkling
+5331,0.048866682997808115,66_left,3942_right,chianti classico riserva berardenga,fèlsina società agricola, Italien ,Toscana,red,rancia chianti classico riserva,fèlsina,Italien,Chianti Classico,red
+26619,0.048866682997808115,210_left,3942_right,chianti classico riserva berardenga,fèlsina società agricola, Italien ,Toscana,red,rancia chianti classico riserva,fèlsina,Italien,Chianti Classico,red
+26945,0.04812821592756089,212_left,6200_right,toscana igt 'solaia' magnum,marchesi antinori, Italien ,Toscana,red,tenuta tignanello 'solaia',antinori,Italien,Toscana,red
+12274,0.04586719478394314,107_left,10624_right,valpolicella doc,ottella, Italien ,Veneto,red,rosesroses,ottella,Italien,Veneto,rosé
+10720,0.044439721355497196,97_left,3272_right,châteauneuf-du-pape rouge,clos saint jean, Frankreich ,Rhône,red,châteauneuf du pape rouge,château cabrières,Frankreich,Châteauneuf-du-Pape,red
+74139,0.044237592006353944,727_left,6372_right,pinot noir rosé trocken,weingut winter, Deutschland ,Rheinhessen,sparkling,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+61285,0.042432553634695294,530_left,229_right,roero arneis,vietti, Italien ,Piemont,white,roero arneis,cornarea,Italien,Roero,white
+87719,0.038835988795809406,898_left,11690_right,moscato spumante dolce,borgo molino, Italien ,Veneto,sparkling,moscato spumante,scavi & ray,Italien,Veneto,sparkling
+83344,0.03584284786914401,812_left,3570_right,"rioja 'lanzaga', bodega lanzaga",bodegas lanzaga, Spanien ,Rioja,red,roda reserva rioja,bodegas roda,Spanien,Rioja,red
+31943,0.03584284786914401,245_left,3570_right,"rioja 'lanzaga', bodega lanzaga",bodegas lanzaga, Spanien ,Rioja,red,roda reserva rioja,bodegas roda,Spanien,Rioja,red
+13332,0.03573657528869022,113_left,6942_right,dolcetto d'alba doc,reva, Italien ,Piemont,red,barbera d'alba,borgogno,Italien,Piemont,red
+88944,0.03564924786151672,916_left,10372_right,solonoir spumante brut,reva, Italien ,Piemont,sparkling,spumante extra brut,bruno giacosa,Italien,Piemont,sparkling
+72791,0.03405961413634561,706_left,428_right,riesling auslese ** fruchtsüß bernkasteler badstube grüne kapsel,weingut markus molitor, Deutschland ,Mosel,white,saarburger rausch auslese riesling **,markus molitor,Deutschland,Mosel,white
+1466,0.03280632853097837,19_left,81_right,primitivo puglia 'i muri',farnese vini srl, Italien ,Abruzzen,red,fantini primitivo puglia,farnese,Italien,Puglia,red
+1893,0.032637207111820436,27_left,4240_right,"l'esquerda, côtes du roussillon villages lesquerde",domaine de bila haut, Frankreich ,Roussillon,red,côtes du roussillon 'le clos',domaine boudau,Frankreich,Côtes du Roussillon,red
+73684,0.02899294731987978,717_left,2406_right,riesling auslese *** trocken zeltinger sonnenuhr,weingut markus molitor, Deutschland ,Mosel,white,brauneberger juffer-sonnenuhr riesling spätlese trocken,weingut paulinshof,Deutschland,Mosel,white
+70316,0.027412131504420335,666_left,6372_right,weisser burgunder reserve trocken,weingut wittmann, Deutschland ,Rheinhessen,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+70320,0.027412131504420335,668_left,6372_right,weisser burgunder reserve trocken,weingut wittmann, Deutschland ,Rheinhessen,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+83667,0.027412131504420335,820_left,6372_right,weisser burgunder reserve trocken,weingut wittmann, Deutschland ,Rheinhessen,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+83663,0.027412131504420335,818_left,6372_right,weisser burgunder reserve trocken,weingut wittmann, Deutschland ,Rheinhessen,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+61661,0.02524884657041161,533_left,22_right,spätlese cuvée,weingut kracher, Österreich ,Burgenland,white,grande cuvée,keringer,Österreich,Burgenland,red
+23831,0.02427283320474157,187_left,2361_right,barbaresco docg,albino rocca, Italien ,Piemont,red,barbaresco vigneto brich ronchi,albino rocca,Italien,Barbaresco,red
+4720,0.02427283320474157,60_left,2361_right,barbaresco docg,albino rocca, Italien ,Piemont,red,barbaresco vigneto brich ronchi,albino rocca,Italien,Barbaresco,red
+32135,0.023580449946682555,247_left,2531_right,steinsatz rotwein,markus schneider, Deutschland ,Pfalz,red,ursprung,schneider,Deutschland,Pfalz,red
+1521,0.023580449946682555,21_left,2531_right,steinsatz rotwein,markus schneider, Deutschland ,Pfalz,red,ursprung,schneider,Deutschland,Pfalz,red
+71962,0.021954411397827674,692_left,227_right,riesling spätlese oberhäuser brücke *monopol*,weingut dönnhoff, Deutschland ,Nahe,white,riesling,dönnhoff,Deutschland,Nahe,white
+70323,0.021954411397827674,669_left,227_right,riesling spätlese oberhäuser brücke *monopol*,weingut dönnhoff, Deutschland ,Nahe,white,riesling,dönnhoff,Deutschland,Nahe,white
+41055,0.02060470906410177,307_left,1372_right,vigna d'alceo,castello dei rampolla, Italien ,Toscana,red,chianti classico,castello dei rampolla,Italien,Chianti Classico,red
+89229,0.020571877593853476,928_left,12740_right,cuvée mo brut nature,schlossgut diel, Deutschland ,Nahe,sparkling,brut nature,korrell,Deutschland,Nahe,sparkling
+70266,0.016982193779051875,665_left,2584_right,grauburgunder -s -,weingut dönnhoff, Deutschland ,Nahe,white,grauburgunder trocken,weingut metzger,Deutschland,Pfalz,white
+66938,0.016982193779051875,623_left,2584_right,grauburgunder -s -,weingut dönnhoff, Deutschland ,Nahe,white,grauburgunder trocken,weingut metzger,Deutschland,Pfalz,white
+56922,0.016982193779051875,474_left,2584_right,grauburgunder -s -,weingut dönnhoff, Deutschland ,Nahe,white,grauburgunder trocken,weingut metzger,Deutschland,Pfalz,white
+26983,0.015053628991148042,214_left,201_right,rioja lindes de remelluri 'san vincente',granja de remelluri, Spanien ,Rioja,red,rioja reserva,remelluri,Spanien,Rioja,red
+72075,0.013442121521812567,695_left,5024_right,blanc de blanc brut -a- 100% chardonnay,weingut metzger, Deutschland ,Pfalz,white,blanc de noir,weingut seckinger,Deutschland,Pfalz,white
+87722,0.013442121521812567,899_left,5024_right,blanc de blanc brut -a- 100% chardonnay,weingut metzger, Deutschland ,Pfalz,white,blanc de noir,weingut seckinger,Deutschland,Pfalz,white
+32686,0.01275346322861218,250_left,5233_right,chassagne-montrachet rouge 1er cru morgeot,domaine blain-gagnard, Frankreich ,Bourgogne,red,chassagne-montrachet rouge,bertrand bachelet,Frankreich,Chassagne-Montrachet,red
+3446,0.0105997817393448,44_left,2473_right,borgonero rosso toscana,borgo scopeto, Italien ,Toscana,red,toscana rosso,altesino,Italien,Toscana,red
+55421,0.010221902231279912,457_left,2496_right,chardonnay *** selektion trocken,weingut holger koch, Deutschland ,Baden,white,chardonnay trocken,weingut metzger,Deutschland,Pfalz,white
+53941,0.009744910710740181,446_left,3352_right,chablis vieilles vignes,bessin - tremblay (domaine bessin), Frankreich ,Bourgogne,white,chablis vieilles vignes,daniel-etienne defaix,Frankreich,Chablis,white
+8995,0.009584754554813798,88_left,3169_right,crozes hermitage rouge 'cuvée particulière',domaine des remizières, Frankreich ,Rhône,red,crozes-hermitage rouge,e. guigal,Frankreich,Crozes-Hermitage,red
+36022,0.00932572103536874,278_left,408_right,barolo lazzarito,vietti, Italien ,Piemont,red,barolo castiglione,vietti,Italien,Barolo,red
+41743,0.00932572103536874,312_left,408_right,barolo lazzarito,vietti, Italien ,Piemont,red,barolo castiglione,vietti,Italien,Barolo,red
+41650,0.00932572103536874,311_left,408_right,barolo ravera,vietti, Italien ,Piemont,red,barolo castiglione,vietti,Italien,Barolo,red
+35929,0.00932572103536874,277_left,408_right,barolo ravera,vietti, Italien ,Piemont,red,barolo castiglione,vietti,Italien,Barolo,red
+2796,0.0069241380746378235,39_left,6942_right,barbera d'alba doc 'vigna francia' magnum,giacomo conterno, Italien ,Piemont,red,barbera d'alba,borgogno,Italien,Piemont,red
+1764,0.0037305104895155577,23_left,7681_right,"spätburgunder trocken ""vom kalkstein""",weingut metzger, Deutschland ,Pfalz,red,spätburgunder trocken,stern,Deutschland,Pfalz,red
+58771,0.003523415304725422,503_left,3604_right,riesling trocken deidesheimer paradiesgarten,weingut von winning, Deutschland ,Pfalz,white,riesling trocken,reichsrat von buhl,Deutschland,Pfalz,white
+7067,0.0035117835690838092,78_left,2531_right,"""tohuwabohu"" rotweincuvée",markus schneider, Deutschland ,Pfalz,red,ursprung,schneider,Deutschland,Pfalz,red
+58355,0.0008944397701158828,490_left,3384_right,châteauneuf-du-pape blanc,le vieux donjon, Frankreich ,Rhône,white,châteauneuf-du-pape blanc,château la nerthe,Frankreich,Châteauneuf-du-Pape,white
+72790,0.00035549169476273783,705_left,2406_right,"riesling sl spätlese trocken ""helden""",weingut schloss lieser, Deutschland ,Mosel,white,brauneberger juffer-sonnenuhr riesling spätlese trocken,weingut paulinshof,Deutschland,Mosel,white
+82056,-0.0016649632614412781,803_left,7585_right,sancerre ac 'monoparcelle 469',claude riffault, Frankreich ,Loire,white,les boucauds sancerre blanc,claude riffault,Frankreich,Sancerre,white
+66668,-0.0016649632614412781,621_left,7585_right,sancerre ac 'monoparcelle 469',claude riffault, Frankreich ,Loire,white,les boucauds sancerre blanc,claude riffault,Frankreich,Sancerre,white
+29502,-0.006578320788620003,229_left,408_right,barolo brunate,vietti, Italien ,Piemont,red,barolo castiglione,vietti,Italien,Barolo,red
+64839,-0.012550289546507599,602_left,10176_right,cuvée diel de diel,schlossgut diel, Deutschland ,Nahe,white,reserve,diel,Deutschland,Nahe,sparkling
+27873,-0.012599341308112383,218_left,2944_right,gsm,bodegas castaño, Spanien ,Yecla,red,solanera viñas viejas,castaño,Spanien,Yecla,red
+76508,-0.017733638494892272,743_left,5201_right,petresco igt toscana,podere le cinciole, Italien ,Toscana,red,botrosecco maremma toscana,le mortelle,Italien,Maremma Toscana,red
+387,-0.017733638494892272,12_left,5201_right,petresco igt toscana,podere le cinciole, Italien ,Toscana,red,botrosecco maremma toscana,le mortelle,Italien,Maremma Toscana,red
+56613,-0.0199142011645828,472_left,227_right,riesling auslese niederhäuser hermannshöhle 'goldkapsel' 375 ml,weingut dönnhoff, Deutschland ,Nahe,white,riesling,dönnhoff,Deutschland,Nahe,white
+59609,-0.0199142011645828,509_left,227_right,riesling auslese niederhäuser hermannshöhle 'goldkapsel' 375 ml,weingut dönnhoff, Deutschland ,Nahe,white,riesling,dönnhoff,Deutschland,Nahe,white
+54945,-0.0199483986235813,452_left,7445_right,chardonnay igp,domaine girard, Frankreich ,Languedoc,white,novellum chardonnay,domaine lafage,Frankreich,Languedoc-Roussillon,white
+69447,-0.02301265295492185,658_left,4118_right,sauvignon blanc terra rossa westhofen,weingut weedenborn, Deutschland ,Rheinhessen,white,terra fusca sauvignon blanc,russbach,Deutschland,Rheinhessen,white
+61999,-0.03599563554889898,559_left,6372_right,grande réserve,weingut weedenborn, Deutschland ,Rheinhessen,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+55166,-0.03599563554889898,453_left,6372_right,grande réserve,weingut weedenborn, Deutschland ,Rheinhessen,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+64009,-0.03692074117033125,593_left,2584_right,grauburgunder trocken '232 über null',weingut weedenborn, Deutschland ,Rheinhessen,white,grauburgunder trocken,weingut metzger,Deutschland,Pfalz,white
+38494,-0.037158727109706816,292_left,772_right,château haut-bages libéral grand cru classé,château haut-bages libéral, Frankreich ,Bordeaux,red,pauillac (grand cru classé),château lynch-bages,Frankreich,Pauillac,red
+24385,-0.04118655517682768,192_left,2473_right,borgonero rosso toscana magnum,borgo scopeto, Italien ,Toscana,red,toscana rosso,altesino,Italien,Toscana,red
+53021,-0.041613117982775984,437_left,2930_right,riesling trocken 'von den terrassen',weingut knebel, Deutschland ,Mosel,white,riesling,reinhard knebel,Deutschland,Mosel,white
+45082,-0.04228050429435385,330_left,1536_right,"châteauneuf-du-pape rouge ""hommage à jacques perrin""",château de beaucastel/familie perrin, Frankreich ,Rhône,red,châteauneuf-du-pape,château de beaucastel,Frankreich,Châteauneuf-du-Pape,red
+39546,-0.04228050429435385,299_left,1536_right,"châteauneuf-du-pape rouge ""hommage à jacques perrin""",château de beaucastel/familie perrin, Frankreich ,Rhône,red,châteauneuf-du-pape,château de beaucastel,Frankreich,Châteauneuf-du-Pape,red
+34502,-0.04228050429435385,268_left,1536_right,"châteauneuf-du-pape rouge ""hommage à jacques perrin""",château de beaucastel/familie perrin, Frankreich ,Rhône,red,châteauneuf-du-pape,château de beaucastel,Frankreich,Châteauneuf-du-Pape,red
+35719,-0.04246061588080373,276_left,408_right,barolo lazzarito magnum,vietti, Italien ,Piemont,red,barolo castiglione,vietti,Italien,Barolo,red
+54075,-0.04254200030656348,448_left,9110_right,chablis,bessin - tremblay (domaine bessin), Frankreich ,Bourgogne,white,bourgogne chardonnay,domaine faiveley,Frankreich,Bourgogne,white
+11932,-0.04358167650357097,105_left,11102_right,rosso igt 'serna 932',borgo molino, Italien ,Veneto,red,rosa rosé,borgo molino,Italien,Venezia,rosé
+1562,-0.04465626299125067,22_left,5299_right,château ferran pessac-léognan,château ferran, Frankreich ,Bordeaux,red,pessac-léognan,château la louvière,Frankreich,Pessac-Léognan,red
+43097,-0.04998820327638977,321_left,1038_right,château rol valentin grand cru classé,château rol-valentin, Frankreich ,Bordeaux,red,château giscours (grand cru classé),château giscours,Frankreich,Margaux,red
+13460,-0.05477042436592382,115_left,11378_right,barolo ravera,reva, Italien ,Piemont,red,solonoir,réva,Italien,Piemont,sparkling
+71326,-0.05904107681580652,678_left,8632_right,riesling selection „ried pfaffenberg“ magnum,weingut emmerich knoll, Österreich ,Niederösterreich,white,loibner riesling federspiel,weingut knoll,Österreich,Wachau,white
+73417,-0.06549593093230882,716_left,872_right,chardonnay trocken nonnengarten,weingut k.-h. milch, Deutschland ,Rheinhessen,white,riesling trocken,k.wechsler,Deutschland,Rheinhessen,white
+88722,-0.06589858000613216,914_left,672_right,sauvignon blanc sekt brut nature,weingut weedenborn, Deutschland ,Rheinhessen,sparkling,sauvignon blanc,knewitz,Deutschland,Rheinhessen,white
+45633,-0.0689840468749418,333_left,1038_right,vieux château certan grand cru classé,vieux château certan, Frankreich ,Bordeaux,red,château giscours (grand cru classé),château giscours,Frankreich,Margaux,red
+77359,-0.06951997541106474,747_left,5201_right,petresco igt toscana magnum,podere le cinciole, Italien ,Toscana,red,botrosecco maremma toscana,le mortelle,Italien,Maremma Toscana,red
+1252,-0.06951997541106474,16_left,5201_right,petresco igt toscana magnum,podere le cinciole, Italien ,Toscana,red,botrosecco maremma toscana,le mortelle,Italien,Maremma Toscana,red
+8320,-0.06976063627796066,85_left,6942_right,dolcetto d’alba,cantina bartolo mascarello, Italien ,Piemont,red,barbera d'alba,borgogno,Italien,Piemont,red
+3001,-0.06980941350003138,41_left,7043_right,barolo cerretta,giacomo conterno, Italien ,Piemont,red,barolo villero,giacomo fenocchio,Italien,Barolo,red
+12855,-0.0715182482025954,110_left,3354_right,vinha do infante,quinta do infantado, Portugal ,Douro,red,reserva vinhas velhas,quinta do crasto,Portugal,Douro,red
+3474,-0.07953810270069103,45_left,2030_right,"novello ""fantini""",farnese vini srl, Italien ,Abruzzen,red,news novello,farnese,Italien,Abruzzo,red
+2799,-0.07984374668883075,40_left,7043_right,barolo arione,giacomo conterno, Italien ,Piemont,red,barolo villero,giacomo fenocchio,Italien,Barolo,red
+89767,-0.08345855991467735,935_left,9761_right,champagne 'clos des maladries' grand cru avize,champagne etienne calsac, Frankreich ,Champagne,sparkling,rose de craie rosé champagne,etienne calsac,Frankreich,Schaumwein,sparkling
+70461,-0.08528066665495651,671_left,2893_right,"occultum lapidem blanc, côtes du roussillon villages latour de france",domaine de bila haut, Frankreich ,Roussillon,white,côtes du roussillon villages,château de jau,Frankreich,Côtes du Roussillon Villages,red
+8117,-0.08528977413049459,84_left,7597_right,langhe nebbiolo,cantina bartolo mascarello, Italien ,Piemont,red,langhe nebbiolo,batasiolo,Italien,Langhe,red
+33355,-0.09103032927318193,258_left,2421_right,langhe nebbiolo 'gavarini',azienda agricola elio grasso, Italien ,Piemont,red,langhe nebbiolo,elio filippino,Italien,Langhe,red
+41839,-0.0937538181710231,314_left,1038_right,château grand-mayne grand cru classé impérial,château grand-mayne, Frankreich ,Bordeaux,red,château giscours (grand cru classé),château giscours,Frankreich,Margaux,red
+35254,-0.09453738481970762,272_left,2034_right,"ronan by clinet, bordeaux rouge",ronan laborde, Frankreich ,Bordeaux,red,bordeaux rouge,château vircoulon,Frankreich,Bordeaux,red
+10465,-0.09487516969029525,96_left,3489_right,les calades,clos saint jean, Frankreich ,Rhône,red,châteauneuf-du-pape,clos saint jean,Frankreich,Châteauneuf-du-Pape,red
+50051,-0.09852179784926933,388_left,10176_right,prestige cuvée victor,schlossgut diel, Deutschland ,Nahe,white,reserve,diel,Deutschland,Nahe,sparkling
+45983,-0.09965365922609615,335_left,408_right,barolo riserva villero,vietti, Italien ,Piemont,red,barolo castiglione,vietti,Italien,Barolo,red
+42866,-0.10162078739951036,320_left,1038_right,château croix de labrie grand cru classé,château croix de labrie, Frankreich ,Bordeaux,red,château giscours (grand cru classé),château giscours,Frankreich,Margaux,red
+44834,-0.10162078739951036,329_left,1038_right,château croix de labrie grand cru classé,château croix de labrie, Frankreich ,Bordeaux,red,château giscours (grand cru classé),château giscours,Frankreich,Margaux,red
+44368,-0.10162078739951036,327_left,1038_right,château croix de labrie grand cru classé,château croix de labrie, Frankreich ,Bordeaux,red,château giscours (grand cru classé),château giscours,Frankreich,Margaux,red
+42382,-0.10162078739951036,318_left,1038_right,château croix de labrie grand cru classé,château croix de labrie, Frankreich ,Bordeaux,red,château giscours (grand cru classé),château giscours,Frankreich,Margaux,red
+42623,-0.10162078739951036,319_left,1038_right,château croix de labrie grand cru classé,château croix de labrie, Frankreich ,Bordeaux,red,château giscours (grand cru classé),château giscours,Frankreich,Margaux,red
+46525,-0.10162078739951036,339_left,1038_right,château croix de labrie grand cru classé,château croix de labrie, Frankreich ,Bordeaux,red,château giscours (grand cru classé),château giscours,Frankreich,Margaux,red
+42042,-0.10177454019256224,315_left,1038_right,château rol valentin grand cru classé magnum,château rol-valentin, Frankreich ,Bordeaux,red,château giscours (grand cru classé),château giscours,Frankreich,Margaux,red
+24015,-0.10306176416540275,189_left,6942_right,dolcetto d'alba doc,albino rocca, Italien ,Piemont,red,barbera d'alba,borgogno,Italien,Piemont,red
+60805,-0.10455135453524671,527_left,4758_right,langhe bianco 'grey',reva, Italien ,Piemont,white,langhe bianco,parusso,Italien,Langhe,white
+80304,-0.10664473121954408,787_left,3721_right,rouge 'perdrizière',domaine sérol, Frankreich ,Loire,red,rouge,domaine houchart,Frankreich,Côtes de Provence,red
+82730,-0.10664473121954408,807_left,3721_right,rouge 'perdrizière',domaine sérol, Frankreich ,Loire,red,rouge,domaine houchart,Frankreich,Côtes de Provence,red
+82508,-0.10664473121954408,806_left,3721_right,rouge 'oudan',domaine sérol, Frankreich ,Loire,red,rouge,domaine houchart,Frankreich,Côtes de Provence,red
+28701,-0.10664473121954408,224_left,3721_right,rouge 'perdrizière',domaine sérol, Frankreich ,Loire,red,rouge,domaine houchart,Frankreich,Côtes de Provence,red
+17799,-0.10664473121954408,145_left,3721_right,rouge 'perdrizière',domaine sérol, Frankreich ,Loire,red,rouge,domaine houchart,Frankreich,Côtes de Provence,red
+28479,-0.10664473121954408,223_left,3721_right,rouge 'oudan',domaine sérol, Frankreich ,Loire,red,rouge,domaine houchart,Frankreich,Côtes de Provence,red
+30053,-0.12005666396577584,234_left,2473_right,toscana rosso 'troncone',azienda agricola le ragnaie, Italien ,Toscana,red,toscana rosso,altesino,Italien,Toscana,red
+16449,-0.12005666396577584,131_left,2473_right,toscana rosso 'troncone',azienda agricola le ragnaie, Italien ,Toscana,red,toscana rosso,altesino,Italien,Toscana,red
+3203,-0.12159575041620387,42_left,7043_right,barolo cerretta magnum,giacomo conterno, Italien ,Piemont,red,barolo villero,giacomo fenocchio,Italien,Barolo,red
+88464,-0.12277346335381045,911_left,11374_right,chardonnay sekt brut nature,weingut weedenborn, Deutschland ,Rheinhessen,sparkling,cuvée katharina brut nature,raumland,Deutschland,Rheinhessen,sparkling
+29777,-0.1271031977851125,233_left,1829_right,brunello di montalcino,azienda agricola le ragnaie, Italien ,Toscana,red,brunello di montalcino,la rasina,Italien,Brunello di Montalcino,red
+22407,-0.1271031977851125,181_left,1829_right,brunello di montalcino,azienda agricola le ragnaie, Italien ,Toscana,red,brunello di montalcino,la rasina,Italien,Brunello di Montalcino,red
+87830,-0.12875786945093617,903_left,11266_right,prosecco spumante conegliano valdobbiadene docg extra brut,cantina gregoletto, Italien ,Veneto,sparkling,prosecco conegliano valdobbiadene superiore extra dry,la marca,Italien,Conegliano-Valdobbiadene Prosecco,sparkling
+3619,-0.13230524787629616,46_left,6061_right,primitivo di manduria 'zolla',farnese vini srl, Italien ,Abruzzen,red,primitivo di manduria zolla,vigneti del salento,Italien,Primitivo di Manduria,red
+71595,-0.13428724617780344,683_left,5330_right,chassagne-montrachet blanc 1er cru clos saint jean,domaine blain-gagnard, Frankreich ,Bourgogne,white,chassagne-montrachet blanc,domaine michel niellon,Frankreich,Chassagne-Montrachet,white
+2367,-0.1363027070438378,35_left,7043_right,barolo docg francia,giacomo conterno, Italien ,Piemont,red,barolo villero,giacomo fenocchio,Italien,Barolo,red
+21031,-0.13800255934907107,174_left,1038_right,château langoa barton grand cru classé,château léoville barton/langoa barton, Frankreich ,Bordeaux,red,château giscours (grand cru classé),château giscours,Frankreich,Margaux,red
+21234,-0.13800255934907107,175_left,1038_right,château langoa barton grand cru classé,château léoville barton/langoa barton, Frankreich ,Bordeaux,red,château giscours (grand cru classé),château giscours,Frankreich,Margaux,red
+65635,-0.13804050080376437,613_left,5330_right,chassagne-montrachet blanc 'le concis du champs',domaine hubert lamy, Frankreich ,Bourgogne,white,chassagne-montrachet blanc,domaine michel niellon,Frankreich,Chassagne-Montrachet,white
+19268,-0.14446922033696624,153_left,6696_right,cornas 'temenos',maison chapoutier, Frankreich ,Rhône,red,cornas les arènes ,m. chapoutier,Frankreich,Cornas,red
+831,-0.14623976149771514,14_left,3502_right,chianti classico gran selecione aluigi,podere le cinciole, Italien ,Toscana,red,chianti classico gran selezione,fonterutoli,Italien,Chianti Classico,red
+76978,-0.14623976149771514,745_left,3502_right,chianti classico gran selecione aluigi,podere le cinciole, Italien ,Toscana,red,chianti classico gran selezione,fonterutoli,Italien,Chianti Classico,red
+67685,-0.157050162156018,637_left,6372_right,riesling trocken '55 grad' sonderedition,weingut walter, Deutschland ,Mosel,white,riesling trocken,weingut geil,Deutschland,Rheinhessen,white
+49528,-0.1587800559215733,382_left,2927_right,riesling großkarlbacher burgweg 1. lage,weingut philipp kuhn, Deutschland ,Rheinhessen,white,riesling tradition,philipp kuhn,Deutschland,Pfalz,white
+2572,-0.16349220938683126,37_left,6942_right,dolcetto d’alba doc,giuseppe rinaldi, Italien ,Piemont,red,barbera d'alba,borgogno,Italien,Piemont,red
+76115,-0.16925730793944307,740_left,6672_right,cerasuolo d'abruzzo doc,azienda agricola valentini, Italien ,Abruzzen,sparkling,trebbiano d'abruzzo,valentini,Italien,Trebbiano d'Abruzzo,white
+50258,-0.16978538268454865,390_left,9149_right,moscato d'asti docg,albino rocca, Italien ,Piemont,white,moscato,dilé,Italien,Piemont,white
+9790,-0.16998301938144958,92_left,3994_right,"occultum lapidem rouge, cts. du roussillon vill. latour de france",domaine de bila haut, Frankreich ,Roussillon,red,authentique côtes du roussillon rouge,domaine lafage,Frankreich,Côtes du Roussillon,red
+23113,-0.17888953470128496,184_left,1829_right,brunello di montalcino magnum,azienda agricola le ragnaie, Italien ,Toscana,red,brunello di montalcino,la rasina,Italien,Brunello di Montalcino,red
+19479,-0.17948903742235134,154_left,7163_right,nero di troia 'canace',cantina diomede, Italien ,Apulien & Abruzzen,red,nero di troia,zensa,Italien,Puglia,red
+80977,-0.18374150284571752,790_left,5960_right,rosso di montalcino,azienda agricola le ragnaie, Italien ,Toscana,red,rosso di montalcino,la poderina,Italien,Rosso di Montalcino,red
+81333,-0.18374150284571752,793_left,5960_right,rosso di montalcino,azienda agricola le ragnaie, Italien ,Toscana,red,rosso di montalcino,la poderina,Italien,Rosso di Montalcino,red
+23584,-0.18374150284571752,186_left,5960_right,rosso di montalcino,azienda agricola le ragnaie, Italien ,Toscana,red,rosso di montalcino,la poderina,Italien,Rosso di Montalcino,red
+19755,-0.18374150284571752,159_left,5960_right,rosso di montalcino,azienda agricola le ragnaie, Italien ,Toscana,red,rosso di montalcino,la poderina,Italien,Rosso di Montalcino,red
+32844,-0.1846118656097396,251_left,5233_right,chassagne-montrachet rouge 1er cru clos saint jean,domaine blain-gagnard, Frankreich ,Bourgogne,red,chassagne-montrachet rouge,bertrand bachelet,Frankreich,Chassagne-Montrachet,red
+74656,-0.18548187208277594,730_left,10705_right,rosé méditerranée,domaine de triennes, Frankreich ,Provence,sparkling,rosé,domaine houchart,Frankreich,Côtes de Provence,rosé
+44134,-0.18816990594945485,326_left,1038_right,château côte de baleau grand cru classé magnum,château côte de baleau, Frankreich ,Bordeaux,red,château giscours (grand cru classé),château giscours,Frankreich,Margaux,red
+90032,-0.19239772420299298,938_left,12381_right,cuvée elisabeth salmon rosé,champagne billecart salmon, Frankreich ,Champagne,sparkling,extra brut champagne,billecart-salmon,Frankreich,Schaumwein,sparkling
+13953,-0.20594760438502274,118_left,404_right,gigondas 'réserve' rouge,domaine des bosquets, Frankreich ,Rhône,red,reserve rouge,domaine des deux cles,Frankreich,Vallee du Paradis,red
+51241,-0.20739206520616343,402_left,7076_right,"ronan by clinet, bordeaux blanc",ronan laborde, Frankreich ,Bordeaux,white,bordeaux blanc,château pierrail,Frankreich,Bordeaux,white
+21442,-0.20913092952268073,176_left,1752_right,tempranillo literflasche,bodegas eguren ugarte, Spanien ,Kastilien-Léon,red,épico tempranillo,dominio de eguren,Spanien,Castilla,red
+68494,-0.2197606951354767,643_left,3982_right,"pinot grigio ""fantini"" terre di siciliani",farnese vini srl, Italien ,Sizilien,white,pinot grigio,stemmari,Italien,Sizilien,white
+57331,-0.22700381907708975,478_left,7285_right,crozes hermitage blanc 'cuvée particulière',domaine des remizières, Frankreich ,Rhône,white,les galets crozes-hermitage,domaine des hauts châssis,Frankreich,Crozes-Hermitage,red
+76717,-0.23158572615537348,744_left,6418_right,chianti classico docg,podere le cinciole, Italien ,Toscana,red,cinciorosso,cinciole,Italien,Chianti,red
+596,-0.23158572615537348,13_left,6418_right,chianti classico docg,podere le cinciole, Italien ,Toscana,red,cinciorosso,cinciole,Italien,Chianti,red
+22176,-0.23767046782004952,180_left,1829_right,brunello di montalcino 'fornace',azienda agricola le ragnaie, Italien ,Toscana,red,brunello di montalcino,la rasina,Italien,Brunello di Montalcino,red
+7671,-0.23852039029697422,82_left,4435_right,corton grand cru 'clos des cortons faiveley' monopole,domaine faiveley, Frankreich ,Bourgogne,red,beaune 1er cru 'clos de l'ecu' (monopole),domaine faiveley,Frankreich,Beaune,red
+14195,-0.23981730674874185,119_left,2631_right,le petit vin,domaine des bosquets, Frankreich ,Rhône,red,petit chablis,domaine des hâtes,Frankreich,Petit Chablis,white
+26788,-0.24069622393740545,211_left,303_right,masseto,masseto, Italien ,Toscana,red,tignanello,antinori,Italien,Toscana,red
+6698,-0.24254646192614776,75_left,5983_right,moulin à vent 'au michelon',domaine mee godard, Frankreich ,Bourgogne,red,la rochelle moulin à vent,domaine anita,Frankreich,Moulin-à-Vent,red
+90436,-0.24418406111916544,940_left,12381_right,cuvée elisabeth salmon rosé magnum,champagne billecart salmon, Frankreich ,Champagne,sparkling,extra brut champagne,billecart-salmon,Frankreich,Schaumwein,sparkling
+7322,-0.2471451823173871,80_left,4435_right,chambertin-clos de bèze grand cru,domaine faiveley, Frankreich ,Bourgogne,red,beaune 1er cru 'clos de l'ecu' (monopole),domaine faiveley,Frankreich,Beaune,red
+80526,-0.2502411193291652,788_left,3721_right,rouge 'chez coste',domaine sérol, Frankreich ,Loire,red,rouge,domaine houchart,Frankreich,Côtes de Provence,red
+82989,-0.2502411193291652,808_left,3721_right,rouge 'chez coste',domaine sérol, Frankreich ,Loire,red,rouge,domaine houchart,Frankreich,Côtes de Provence,red
+18021,-0.2502411193291652,146_left,3721_right,rouge 'chez coste',domaine sérol, Frankreich ,Loire,red,rouge,domaine houchart,Frankreich,Côtes de Provence,red
+28948,-0.2502411193291652,225_left,3721_right,rouge 'chez coste',domaine sérol, Frankreich ,Loire,red,rouge,domaine houchart,Frankreich,Côtes de Provence,red
+3828,-0.2541993788592058,47_left,9723_right,toscana rosso 'hebo',azienda agricola petra, Italien ,Maremma,red,bradisismo veneto rosso,inama azienda agricola,Italien,Veneto,red
+19065,-0.26083678404365096,152_left,5315_right,pinot noir trocken barrique,gantenbein, Schweiz ,Graubünden,red,prago pinot noir,weingut metzger,Deutschland,Pfalz,red
+9377,-0.2688512875119039,90_left,3169_right,hermitage rouge 'autrement',domaine des remizières, Frankreich ,Rhône,red,crozes-hermitage rouge,e. guigal,Frankreich,Crozes-Hermitage,red
+75001,-0.26953656986112223,733_left,9919_right,rosé 'cabochard',domaine sérol, Frankreich ,Loire,sparkling,rosé de loire,domaine de terrebrune,Frankreich,Rosé de Loire,rosé
+79869,-0.26953656986112223,785_left,9919_right,rosé 'cabochard',domaine sérol, Frankreich ,Loire,sparkling,rosé de loire,domaine de terrebrune,Frankreich,Rosé de Loire,rosé
+36316,-0.28297041705542836,280_left,7222_right,gigondas 'l'argnée' vieilles vignes familie perrin,château de beaucastel/familie perrin, Frankreich ,Rhône,red,gigondas la gille,famille perrin,Frankreich,Gigondas,red
+4052,-0.28297041705542836,50_left,7222_right,gigondas 'l'argnée' vieilles vignes familie perrin,château de beaucastel/familie perrin, Frankreich ,Rhône,red,gigondas la gille,famille perrin,Frankreich,Gigondas,red
+59373,-0.28468090159690734,508_left,1441_right,blanc 'les auréliens',domaine de triennes, Frankreich ,Provence,white,sauvignon blanc les mariés,domaine de la baume,Frankreich,Languedoc-Roussillon,white
+79646,-0.28468090159690734,784_left,1441_right,blanc 'les auréliens',domaine de triennes, Frankreich ,Provence,white,sauvignon blanc les mariés,domaine de la baume,Frankreich,Languedoc-Roussillon,white
+23344,-0.28945680473622204,185_left,1829_right,brunello di montalcino 'fornace' magnum,azienda agricola le ragnaie, Italien ,Toscana,red,brunello di montalcino,la rasina,Italien,Brunello di Montalcino,red
+34968,-0.292402520768768,270_left,9110_right,chambolle-musigny ac,domaine hudelot-noëllat, Frankreich ,Bourgogne,red,bourgogne chardonnay,domaine faiveley,Frankreich,Bourgogne,white
+12428,-0.292402520768768,108_left,9110_right,chambolle-musigny ac,domaine hudelot-noëllat, Frankreich ,Bourgogne,red,bourgogne chardonnay,domaine faiveley,Frankreich,Bourgogne,white
+25526,-0.292402520768768,203_left,9110_right,chambolle-musigny ac,domaine hudelot-noëllat, Frankreich ,Bourgogne,red,bourgogne chardonnay,domaine faiveley,Frankreich,Bourgogne,white
+6471,-0.2947312191050096,74_left,9110_right,morgon 'corcelette',domaine mee godard, Frankreich ,Bourgogne,red,bourgogne chardonnay,domaine faiveley,Frankreich,Bourgogne,white
+67990,-0.30103530774421744,641_left,1896_right,"mercurey blanc 1er cru ""pièce 15""",domaine lorenzon, Frankreich ,Bourgogne,white,bourgogne blanc,domaine roulot,Frankreich,Bourgogne,white
+62647,-0.30151473642321014,573_left,11741_right,chardonnay langhe 'da bertü',albino rocca, Italien ,Piemont,white,chardonnay brut,borgo maragliano,Italien,Piemont,sparkling
+7883,-0.30469838805999855,83_left,193_right,barolo,cantina bartolo mascarello, Italien ,Piemont,red,barolo,prunotto,Italien,Barolo,red
+27639,-0.30469838805999855,217_left,193_right,barolo,cantina bartolo mascarello, Italien ,Piemont,red,barolo,prunotto,Italien,Barolo,red
+47248,-0.30691410167694694,343_left,1038_right,château leoville las cases grand cru classé magnum,château léoville las cases, Frankreich ,Bordeaux,red,château giscours (grand cru classé),château giscours,Frankreich,Margaux,red
+80758,-0.3149567421979206,789_left,3721_right,rouge 'eclat de granite',domaine sérol, Frankreich ,Loire,red,rouge,domaine houchart,Frankreich,Côtes de Provence,red
+18251,-0.3149567421979206,147_left,3721_right,rouge 'eclat de granite',domaine sérol, Frankreich ,Loire,red,rouge,domaine houchart,Frankreich,Côtes de Provence,red
+37925,-0.31538726442047815,289_left,293_right,"v. i. t., côtes du roussillon villages latour de france",domaine de bila haut, Frankreich ,Roussillon,red,les terroirs côtes du roussillon villages,calmel & joseph,Frankreich,Côtes du Roussillon Villages,red
+49069,-0.3210580002164813,366_left,1896_right,saint-aubin blanc 'la princée',domaine hubert lamy, Frankreich ,Bourgogne,white,bourgogne blanc,domaine roulot,Frankreich,Bourgogne,white
+57094,-0.3216881505689702,477_left,131_right,() blanc 'le merley',domaine des remizières, Frankreich ,Rhône,white,chablis,domaine des malandes,Frankreich,Chablis,white
+33784,-0.3221230497132505,261_left,5923_right,dolcetto d'alba dei grassi,azienda agricola elio grasso, Italien ,Piemont,red,barbera d’alba vigna martina,elio grasso,Italien,Barbera d'Alba,red
+39198,-0.3232761197461278,295_left,408_right,"barolo docg ""faletto""",az. agr. falletto, Italien ,Piemont,red,barolo castiglione,vietti,Italien,Barolo,red
+79442,-0.3237810972815312,783_left,10692_right,viognier sainte fleur,domaine de triennes, Frankreich ,Provence,white,sainte-victoire rosé,domaine houchart,Frankreich,Côtes de Provence,rosé
+59160,-0.3237810972815312,507_left,10692_right,viognier sainte fleur,domaine de triennes, Frankreich ,Provence,white,sainte-victoire rosé,domaine houchart,Frankreich,Côtes de Provence,rosé
+21650,-0.3246082174927537,177_left,7366_right,cabernet sauvignon mercedes eguren,bodegas eguren ugarte, Spanien ,Castilla,red,protocolo tinto,dominio de eguren,Spanien,Castilla,red
+21945,-0.32816907147738783,179_left,1829_right,brunello di montalcino 'casanovina montosoli',azienda agricola le ragnaie, Italien ,Toscana,red,brunello di montalcino,la rasina,Italien,Brunello di Montalcino,red
+17365,-0.334426594011582,143_left,2160_right,cabernet sauvignon estate,ridge vineyards, USA ,Santa Cruz Montains,red,cabernet sauvignon,lievland vineyards,Südafrika,Küstenregion,red
+40348,-0.33532757115979245,304_left,5448_right,château la tour du pin grand cru classé magnum,château la tour du pin, Frankreich ,Bordeaux,red,château la roque de by,château la tour de by,Frankreich,Médoc,red
+47865,-0.3365263260159882,346_left,1038_right,château leoville las cases grand cru classé doppelmagnum,château léoville las cases, Frankreich ,Bordeaux,red,château giscours (grand cru classé),château giscours,Frankreich,Margaux,red
+73072,-0.33927089496629204,713_left,1828_right,"chardonnay tba nr. 10 ""nouvelle vague"" 375 ml",weingut kracher, Österreich ,Burgenland,white,zweigelt trocken,kracher,Österreich,Burgenland,red
+54460,-0.33980526929942706,450_left,3557_right,chablis 1er cru 'la forêt',bessin - tremblay (domaine bessin), Frankreich ,Bourgogne,white,chablis 1er cru 'vaillons',domaine servin,Frankreich,Chablis 1er Cru 'Vaillons',white
+67456,-0.33980526929942706,636_left,3557_right,chablis 1er cru 'la forêt',bessin - tremblay (domaine bessin), Frankreich ,Bourgogne,white,chablis 1er cru 'vaillons',domaine servin,Frankreich,Chablis 1er Cru 'Vaillons',white
+40808,-0.3446761393495414,306_left,1158_right,château clos chaumont,château clos chaumont, Frankreich ,Bordeaux,red,bordeaux,château malbec,Frankreich,Bordeaux,red
+17183,-0.34956620516143677,142_left,2545_right,geyserville,ridge vineyards, USA ,Alexander Valley,red,cabernet sauvignon,jordan,Vereinigte Staaten,Alexander Valley,red
+7108,-0.35103519698704005,79_left,2631_right,minervois tradition,domaine des aires hautes, Frankreich ,Languedoc,red,petit chablis,domaine des hâtes,Frankreich,Petit Chablis,white
+34262,-0.35785710656778164,267_left,3414_right,"mercurey village rouge ""clos du chapître""",domaine lorenzon, Frankreich ,Bourgogne,red,mercurey clos rochette,domaine faiveley,Frankreich,Mercurey,white
+36921,-0.3669798507377646,283_left,3416_right,gigondas ac rouge 'le lieu dit',domaine des bosquets, Frankreich ,Rhône,red,gigondas aux lieux-dits,domaine santa duc,Frankreich,Gigondas,red
+15026,-0.3669798507377646,123_left,3416_right,gigondas ac rouge 'le lieu dit',domaine des bosquets, Frankreich ,Rhône,red,gigondas aux lieux-dits,domaine santa duc,Frankreich,Gigondas,red
+39944,-0.3669798507377646,302_left,3416_right,gigondas ac rouge 'le lieu dit',domaine des bosquets, Frankreich ,Rhône,red,gigondas aux lieux-dits,domaine santa duc,Frankreich,Gigondas,red
+37656,-0.37260746662544947,287_left,154_right,rosso di montalcino,baricci colombaio montosoli s. s., Italien ,Toscana,red,rosso di montalcino,banfi,Italien,Rosso di Montalcino,red
+90682,-0.3734146337361603,941_left,9918_right,clos du mesnil,champagne krug, Frankreich ,Champagne,sparkling,blanc de noirs brut champagne,champagne lombardi,Frankreich,Schaumwein,sparkling
+58924,-0.37894047446538953,506_left,9110_right,meursault 'clos des ecoles',domaine hudelot-noëllat, Frankreich ,Bourgogne,white,bourgogne chardonnay,domaine faiveley,Frankreich,Bourgogne,white
+63171,-0.37894047446538953,580_left,9110_right,meursault 'clos des ecoles',domaine hudelot-noëllat, Frankreich ,Bourgogne,white,bourgogne chardonnay,domaine faiveley,Frankreich,Bourgogne,white
+30254,-0.37995540839356035,235_left,1829_right,brunello di montalcino 'casanovina montosoli' magnum,azienda agricola le ragnaie, Italien ,Toscana,red,brunello di montalcino,la rasina,Italien,Brunello di Montalcino,red
+72235,-0.3847490433710425,697_left,1896_right,"mercurey blanc premier cru ""les champs martin""",domaine lorenzon, Frankreich ,Bourgogne,white,bourgogne blanc,domaine roulot,Frankreich,Bourgogne,white
+48648,-0.3898943322563357,362_left,1441_right,collioure blanc 'chrysopée',domaine de bila haut, Frankreich ,Roussillon,white,sauvignon blanc les mariés,domaine de la baume,Frankreich,Languedoc-Roussillon,white
+14480,-0.3908781103901253,120_left,2948_right,gigondas ac rouge 'les routes',domaine des bosquets, Frankreich ,Rhône,red,gigondas les hautes garrigues,domaine santa duc,Frankreich,Gigondas,red
+47658,-0.39285444423520627,345_left,1038_right,château leoville las cases grand cru classé impérial,château léoville las cases, Frankreich ,Bordeaux,red,château giscours (grand cru classé),château giscours,Frankreich,Margaux,red
+9164,-0.3931091940919375,89_left,3721_right,hermitage rouge 'cuvée emilie',domaine des remizières, Frankreich ,Rhône,red,rouge,domaine houchart,Frankreich,Côtes de Provence,red
+25072,-0.40009953290522593,200_left,5923_right,dolcetto d'alba doc dei grassi,azienda agricola elio grasso, Italien ,Piemont,red,barbera d’alba vigna martina,elio grasso,Italien,Barbera d'Alba,red
+36115,-0.4002154360690879,279_left,1544_right,barolo docg,azienda agricola elio grasso, Italien ,Piemont,red,centenario,azienda agricola accornero,Italien,Monferrato,red
+54714,-0.400279153368416,451_left,7445_right,chardonnay 'elevé sur lies fines',domaine girard, Frankreich ,Languedoc,white,novellum chardonnay,domaine lafage,Frankreich,Languedoc-Roussillon,white
+69903,-0.4102419529985646,662_left,1896_right,"mercurey blanc 1er cru ""les champs martin""",domaine lorenzon, Frankreich ,Bourgogne,white,bourgogne blanc,domaine roulot,Frankreich,Bourgogne,white
+61037,-0.4102419529985646,529_left,1896_right,"mercurey blanc 1er cru ""les champs martin""",domaine lorenzon, Frankreich ,Bourgogne,white,bourgogne blanc,domaine roulot,Frankreich,Bourgogne,white
+68246,-0.4102419529985646,642_left,1896_right,"mercurey blanc 1er cru ""les champs martin""",domaine lorenzon, Frankreich ,Bourgogne,white,bourgogne blanc,domaine roulot,Frankreich,Bourgogne,white
+18857,-0.4126086372340228,151_left,5315_right,pinot noir trocken barrique magnum,gantenbein, Schweiz ,Bündner Herrschaft,red,prago pinot noir,weingut metzger,Deutschland,Pfalz,red
+57564,-0.41615093803540737,479_left,131_right,hermitage blanc 'cuvée emilie',domaine des remizières, Frankreich ,Rhône,white,chablis,domaine des malandes,Frankreich,Chablis,white
+45304,-0.4222590727673125,331_left,2323_right,château d'aurilhac cru bourgeois magnum,château d’aurilhac, Frankreich ,Bordeaux,red,pauillac (grand cru classé),château d'armailhac,Frankreich,Pauillac,red
+14729,-0.4239072284648094,121_left,2948_right,gigondas ac rouge 'les roches',domaine des bosquets, Frankreich ,Rhône,red,gigondas les hautes garrigues,domaine santa duc,Frankreich,Gigondas,red
+11090,-0.44150594510378915,101_left,3721_right,morey saint denis rouge,domaine christian clerget, Frankreich ,Bourgogne,red,rouge,domaine houchart,Frankreich,Côtes de Provence,red
+78433,-0.44150594510378915,769_left,3721_right,morey saint denis rouge,domaine christian clerget, Frankreich ,Bourgogne,red,rouge,domaine houchart,Frankreich,Côtes de Provence,red
+22873,-0.44877067470112425,183_left,1829_right,brunello di montalcino 'casanovina montosoli' magum,azienda agricola le ragnaie, Italien ,Toscana,red,brunello di montalcino,la rasina,Italien,Brunello di Montalcino,red
+22642,-0.44877067470112425,182_left,1829_right,brunello di montalcino 'casanovina montosoli' doppelmagum,azienda agricola le ragnaie, Italien ,Toscana,red,brunello di montalcino,la rasina,Italien,Brunello di Montalcino,red
+40160,-0.4511331359323679,303_left,7063_right,soester rotspon,cheval-quancard, Frankreich ,Bordeaux Supérieur,red,bordeaux supérieur,château pierrail,Frankreich,Bordeaux Supérieur,red
+43308,-0.4694454640373238,322_left,1038_right,château beauséjour duffau-lagarosse 1er grand cru classé magnum,château beauséjour duffau-lagarosse, Frankreich ,Bordeaux,red,château giscours (grand cru classé),château giscours,Frankreich,Margaux,red
+47045,-0.47101548991122294,342_left,6629_right,château bahans haut brion magnum,château haut-brion, Frankreich ,Bordeaux,red,pessac-léognan,château larrivet haut-brion,Frankreich,Pessac-Léognan,red
+24868,-0.4711948660893418,199_left,8983_right,navarra tinto finca artea 5 liter weinschlauch,bodegas nekeas, Spanien ,Navarra,red,los olivos reserva,bodegas nekeas,Spanien,Navarra,red
+43536,-0.4717854417594066,323_left,8723_right,château d'escurac cru bourgeois magnum,château d'escurac, Frankreich ,Bordeaux,red,bordeaux rouge,château d'haurets,Frankreich,Bordeaux,red
+15733,-0.4726938154188931,128_left,7576_right,"mercurey village rouge ""le chapître""",domaine lorenzon, Frankreich ,Bourgogne,red,le manpôt rouge,domaine bassac,Frankreich,Côtes de Thongue,red
+30486,-0.4726938154188931,237_left,7576_right,"mercurey village rouge ""le chapître""",domaine lorenzon, Frankreich ,Bourgogne,red,le manpôt rouge,domaine bassac,Frankreich,Côtes de Thongue,red
+27100,-0.47288323315899616,215_left,2960_right,santenay rouge 'clos des hâtes',domaine hubert lamy, Frankreich ,Bourgogne,red,bandol rouge,domaine dupuy de lôme,Frankreich,Bandol,red
+27373,-0.47288323315899616,216_left,2960_right,santenay rouge 'clos des hâtes',domaine hubert lamy, Frankreich ,Bourgogne,red,bandol rouge,domaine dupuy de lôme,Frankreich,Bandol,red
+17581,-0.474644455397657,144_left,418_right,rouge 'les blondins',vignobles des blondins, Frankreich ,Loire,red,les terrasses rouge,vallombrosa,Frankreich,Côtes de Provence,red
+80086,-0.474644455397657,786_left,418_right,rouge 'les blondins',vignobles des blondins, Frankreich ,Loire,red,les terrasses rouge,vallombrosa,Frankreich,Côtes de Provence,red
+40574,-0.4824028188239732,305_left,1158_right,château clos chaumont impérial,château clos chaumont, Frankreich ,Bordeaux,red,bordeaux,château malbec,Frankreich,Bordeaux,red
+13748,-0.48809111438027414,117_left,3721_right,gigondas ac rouge 'la colline',domaine des bosquets, Frankreich ,Rhône,red,rouge,domaine houchart,Frankreich,Côtes de Provence,red
+37449,-0.48809111438027414,286_left,3721_right,gigondas ac rouge 'la colline',domaine des bosquets, Frankreich ,Rhône,red,rouge,domaine houchart,Frankreich,Côtes de Provence,red
+78666,-0.4913750782403417,770_left,1896_right,vosne romanée 'les violettes',domaine christian clerget, Frankreich ,Bourgogne,red,bourgogne blanc,domaine roulot,Frankreich,Bourgogne,white
+11332,-0.4913750782403417,102_left,1896_right,vosne romanée 'les violettes',domaine christian clerget, Frankreich ,Bourgogne,red,bourgogne blanc,domaine roulot,Frankreich,Bourgogne,white
+47455,-0.5006277142502642,344_left,6629_right,château bahans haut brion doppelmagnum,château haut-brion, Frankreich ,Bordeaux,red,pessac-léognan,château larrivet haut-brion,Frankreich,Pessac-Léognan,red
+44600,-0.5008491038460529,328_left,2793_right,"château clos chaumont ""une passion de chaumont""",château clos chaumont, Frankreich ,Bordeaux,red,cuvée passion bordeaux,château tour de mirambeau,Frankreich,Bordeaux,red
+35481,-0.5029194728485404,274_left,7063_right,soester rotspon magnum,cheval-quancard, Frankreich ,Bordeaux Supérieur,red,bordeaux supérieur,château pierrail,Frankreich,Bordeaux Supérieur,red
+11536,-0.5148935517822012,103_left,9110_right,echezaux grand cru 'en orveaux',domaine christian clerget, Frankreich ,Bourgogne,red,bourgogne chardonnay,domaine faiveley,Frankreich,Bourgogne,white
+46757,-0.5168190427017262,340_left,2445_right,château l`eglise-clinet,château l'eglise-clinet, Frankreich ,Bordeaux,red,caractère,château de la grave,Frankreich,Bordeaux,red
+41179,-0.5168190427017262,308_left,2445_right,château l`eglise-clinet,château l'eglise-clinet, Frankreich ,Bordeaux,red,caractère,château de la grave,Frankreich,Bordeaux,red
+88068,-0.5229349829905534,904_left,9862_right,pétillant rosé méthode ancestrale 'turbullent',domaine sérol, Frankreich ,Loire,sparkling,cerdon méthode ancestrale,renardat-fache alain,Frankreich,Bugey,sparkling
+78870,-0.5362178109225646,771_left,1896_right,echezaux grand cru 'en orveaux',domaine christian clerget, Frankreich ,Bourgogne,red,bourgogne blanc,domaine roulot,Frankreich,Bourgogne,white
+32428,-0.5457767237692498,249_left,3721_right,volnay rouge 1er cru champans,domaine blain-gagnard, Frankreich ,Bourgogne,red,rouge,domaine houchart,Frankreich,Côtes de Provence,red
+28047,-0.5498488591611645,221_left,1344_right,"syrah ""case via""",az. agr. fontodi, Italien ,Toscana,red,chianti classico,fontodi,Italien,Chianti Classico,red
+74438,-0.5560215243023364,729_left,341_right,bourgogne passetoutgrain rosé sur lie 'cuvée rosalie',maxime dubuet boillot, Frankreich ,Bourgogne,sparkling,bourgogne chardonnay,laroche,Frankreich,Bourgogne,white
+78050,-0.5688653552292339,764_left,163_right,oudan 'de butte en blanc' vdp,domaine sérol, Frankreich ,Loire,white,sancerre blanc,domaine cédrick bardin,Frankreich,Obere Loire,white
+57798,-0.5688653552292339,480_left,163_right,oudan 'de butte en blanc' vdp,domaine sérol, Frankreich ,Loire,white,sancerre blanc,domaine cédrick bardin,Frankreich,Obere Loire,white
+83967,-0.5860657026399599,830_left,3169_right,"crozes hermitage ""terre d'eclat""",domaine de la ville rouge, Frankreich ,Rhône,red,crozes-hermitage rouge,e. guigal,Frankreich,Crozes-Hermitage,red
+38169,-0.5860657026399599,290_left,3169_right,"crozes hermitage ""terre d'eclat""",domaine de la ville rouge, Frankreich ,Rhône,red,crozes-hermitage rouge,e. guigal,Frankreich,Crozes-Hermitage,red
+16195,-0.5889984585838798,130_left,3414_right,mercurey rouge 'carline' 1er cru clos champ martin,domaine lorenzon, Frankreich ,Bourgogne,red,mercurey clos rochette,domaine faiveley,Frankreich,Mercurey,white
+28263,-0.5899771404116824,222_left,5379_right,pago la jara,gago viticultores de toro, Spanien ,Toro,red,la jefa,matsu,Spanien,Toro,white
+82259,-0.5899771404116824,805_left,5379_right,pago la jara,gago viticultores de toro, Spanien ,Toro,red,la jefa,matsu,Spanien,Toro,white
+2104,-0.5915183326521691,29_left,2247_right,maya,dalla valle vineyards, USA ,Napa Valley,red,cabernet sauvignon,honig,Vereinigte Staaten,Napa Valley,red
+25298,-0.5970175417703683,202_left,9110_right,vougeot 1er cru 'les petits vougeots',domaine hudelot-noëllat, Frankreich ,Bourgogne,red,bourgogne chardonnay,domaine faiveley,Frankreich,Bourgogne,white
+41449,-0.598050975994428,310_left,1544_right,barolo docg 'gavarini chiniera',azienda agricola elio grasso, Italien ,Piemont,red,centenario,azienda agricola accornero,Italien,Monferrato,red
+31124,-0.598050975994428,241_left,1544_right,barolo docg 'gavarini chiniera',azienda agricola elio grasso, Italien ,Piemont,red,centenario,azienda agricola accornero,Italien,Monferrato,red
+5943,-0.598050975994428,71_left,1544_right,barolo docg 'gavarini chiniera',azienda agricola elio grasso, Italien ,Piemont,red,centenario,azienda agricola accornero,Italien,Monferrato,red
+38714,-0.6005888841325339,293_left,7405_right,barbaresco docg riserva asili di barbaresco rotes label,az. agr. falletto, Italien ,Piemont,red,spezie barbaresco riserva,vite colte,Italien,Barbaresco,red
+8542,-0.6068589684697749,86_left,9110_right,chambolle-musigny ac dujac père & fils,domaine dujac, Frankreich ,Bourgogne,red,bourgogne chardonnay,domaine faiveley,Frankreich,Bourgogne,white
+48426,-0.6080526972257776,361_left,4204_right,saint péray 'pic & chapoutier',maison chapoutier, Frankreich ,Rhône,white,saint-peray,pierre gaillard,Frankreich,Saint-Péray,white
+34717,-0.6183418009107317,269_left,1896_right,vougeot 1er cru 'les petits vougeots',domaine hudelot-noëllat, Frankreich ,Bourgogne,red,bourgogne blanc,domaine roulot,Frankreich,Bourgogne,white
+32176,-0.626118875502523,248_left,3721_right,volnay rouge 1er cru les pitures,domaine blain-gagnard, Frankreich ,Bourgogne,red,rouge,domaine houchart,Frankreich,Côtes de Provence,red
+13074,-0.6273394320626118,111_left,10243_right,minervois 1er cru la livinière,domaine des aires hautes, Frankreich ,Languedoc,red,la triple rosé,domaine lafage,Frankreich,Languedoc-Roussillon,sparkling
+50940,-0.6285808540258127,400_left,3656_right,vin santo del chianti 375 ml,fèlsina società agricola, Italien ,Toscana,white,i sistri chardonnay,fèlsina,Italien,Toscana,white
+61339,-0.6365434912797874,531_left,6476_right,chardonnay estate santa cruz,ridge vineyards, USA ,Santa Cruz Montains,white,panamera chardonnay,story ridge vineyards,Vereinigte Staaten,Kalifornien,white
+31729,-0.6485536383957775,244_left,1544_right,barolo docg riserva 'rüncot' magnum,azienda agricola elio grasso, Italien ,Piemont,red,centenario,azienda agricola accornero,Italien,Monferrato,red
+31528,-0.6498373129106005,243_left,1544_right,barolo docg 'gavarini chiniera' magnum,azienda agricola elio grasso, Italien ,Piemont,red,centenario,azienda agricola accornero,Italien,Monferrato,red
+25750,-0.6590548788287381,204_left,985_right,nuits st. georges 'les bas du combe',domaine hudelot-noëllat, Frankreich ,Bourgogne,red,nuits-saint-georges 'les argillats',philippe gavignet,Frankreich,Nuits-Saint-Georges,red
+12652,-0.6590548788287381,109_left,985_right,nuits st. georges 'les bas du combe',domaine hudelot-noëllat, Frankreich ,Bourgogne,red,nuits-saint-georges 'les argillats',philippe gavignet,Frankreich,Nuits-Saint-Georges,red
+38936,-0.6811906173483976,294_left,151_right,"barolo riserva docg ""faletto vigna le rocche""",az. agr. falletto, Italien ,Piemont,red,le volte,ornellaia,Italien,Toscana,red
+30717,-0.6844177578661808,238_left,3721_right,"mercurey rouge 1er cru ""les champs martin""",domaine lorenzon, Frankreich ,Bourgogne,red,rouge,domaine houchart,Frankreich,Côtes de Provence,red
+15992,-0.6844177578661808,129_left,3721_right,mercurey rouge 1er cru 'les champs martin',domaine lorenzon, Frankreich ,Bourgogne,red,rouge,domaine houchart,Frankreich,Côtes de Provence,red
+8766,-0.7104591533104714,87_left,341_right,volnay 'sur roches',maxime dubuet boillot, Frankreich ,Bourgogne,red,bourgogne chardonnay,laroche,Frankreich,Bourgogne,white
+6144,-0.7331382806006057,72_left,1544_right,barolo docg 'ginestra casa maté',azienda agricola elio grasso, Italien ,Piemont,red,centenario,azienda agricola accornero,Italien,Monferrato,red
+30921,-0.7331382806006057,240_left,1544_right,barolo docg 'ginestra casa maté',azienda agricola elio grasso, Italien ,Piemont,red,centenario,azienda agricola accornero,Italien,Monferrato,red
+70664,-0.7361103462235405,672_left,6994_right,quarts de chaume grd. cru 'la martinière',domaine ogereau, Frankreich ,Loire,white,charme de loire sauvignon blanc,domaine de la villaudière,Frankreich,Val de Loire,white
+31325,-0.7849246175167781,242_left,1544_right,barolo docg 'ginestra casa maté' magnum,azienda agricola elio grasso, Italien ,Piemont,red,centenario,azienda agricola accornero,Italien,Monferrato,red
+88289,-0.8085458485067356,905_left,1578_right,apfelschaumwein boskoop trocken,sektmanufaktur joachim döhne, Deutschland ,Nordhessen,,riesling trocken,dönnhoff,Deutschland,Nahe,white
+36536,-0.8244345768245886,281_left,1935_right,vinsobres vieilles vignes 'les hauts de julien' familie perrin,château de beaucastel/familie perrin, Frankreich ,Rhône,red,coudoulet de beaucastel côtes-du-rhône,château de beaucastel,Frankreich,Côtes-du-Rhône,red
+72570,-0.9139182833668357,701_left,12734_right,eiswein 'ice wine 375 ml,liliac, Rumänien ,Transsilvanien,white,ice cuvée especial,freixenet,Spanien,Cava,sparkling
+43900,-0.9246829510583482,325_left,1158_right,château phélan ségur cru bourgeois exceptionnel impérial,château phélan-ségur, Frankreich ,Bordeaux,red,bordeaux,château malbec,Frankreich,Bordeaux,red

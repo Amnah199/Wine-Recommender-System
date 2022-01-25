@@ -182,8 +182,38 @@ class WineDto:
 
     def toJSON(self):
         return json.dumps(self, default=lambda o: o.__dict__,
-            sort_keys=True, indent=4)
+                          sort_keys=True, indent=4)
 
 
+class WineDetailsDto:
+    def __init__(self, id, name, picture_url='', description='', facts=[], taste_data=[]):
+        self.id = id,
+        self.name = name,
+        self.picture_url = picture_url,
+        self.description = description,
+        self.facts = facts,
+        self.taste_data = taste_data
+
+    def toJSON(self):
+        return json.dumps(self, default=lambda o: o.__dict__,
+                          sort_keys=False, indent=4)
 
 
+class WineDetailsFacts:
+    def __init__(self, label, content):
+        self.label = label
+        self.content = content
+
+    def toJSON(self):
+        return json.dumps(self, default=lambda o: o.__dict__,
+                          sort_keys=False, indent=4)
+
+
+class WineDetailsTasteData:
+    def __init__(self, label, percentage):
+        self.label = label
+        self.content = percentage
+
+    def toJSON(self):
+        return json.dumps(self, default=lambda o: o.__dict__,
+                          sort_keys=False, indent=4)
