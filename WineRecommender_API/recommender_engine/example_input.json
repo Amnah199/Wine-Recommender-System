@@ -1,0 +1,104 @@
+[    {
+    "wine_id": 77658,
+    "wine_structure": {
+        "acidity": 0.3651303,
+        "fizziness": 0,
+        "intensity": 0.7317925,
+        "sweetness": 0.4346559,
+        "tannin": 0
+    },
+    "wine_tastes": {
+        "black_fruit": 0.011428571428571429,
+        "citrus_fruit": 0.2742857142857143,
+        "dried_fruit": 0.011428571428571429,
+        "earth": 0.49142857142857144,
+        "floral": 0.17142857142857143,
+        "microbio": 0.14857142857142858,
+        "non_oak": 0.04,
+        "oak": 0.09142857142857143,
+        "red_fruit": 0.005714285714285714,
+        "spices": 0.045714285714285714,
+        "tree_fruit": 0.5657142857142857,
+        "tropical_fruit": 1.0,
+        "vegetal": 0.10857142857142857
+    },
+    "wine_rating": 3.9
+},
+{
+    "wine_id": 1125483,
+    "wine_structure": {
+        "acidity": 0.32160475,
+        "fizziness": 0,
+        "intensity": 0.735873875,
+        "sweetness": 0.34328567499999996,
+        "tannin": 0.446152
+    },
+    "wine_tastes": {
+        "black_fruit": 0.6164874551971327,
+        "citrus_fruit": 0.017921146953405017,
+        "dried_fruit": 0.10752688172043011,
+        "earth": 0.5806451612903226,
+        "floral": 0.02867383512544803,
+        "microbio": 0.03225806451612903,
+        "non_oak": 0.03942652329749104,
+        "oak": 1.0,
+        "red_fruit": 0.6774193548387096,
+        "spices": 0.17204301075268819,
+        "tree_fruit": 0,
+        "tropical_fruit": 0,
+        "vegetal": 0.025089605734767026
+    },
+    "wine_rating": 4.3
+},
+{
+    "wine_id": 73456,
+    "wine_structure": {
+        "acidity": 0.70047925,
+        "fizziness": 0,
+        "intensity": 0.8207311749999999,
+        "sweetness": 0.14430955,
+        "tannin": 0.726551425
+    },
+    "wine_tastes": {
+        "black_fruit": 0.7629179331306991,
+        "citrus_fruit": 0.0243161094224924,
+        "dried_fruit": 0.03343465045592705,
+        "earth": 0.601823708206687,
+        "floral": 0.03951367781155015,
+        "microbio": 0.03951367781155015,
+        "non_oak": 0.02127659574468085,
+        "oak": 1.0,
+        "red_fruit": 0.2127659574468085,
+        "spices": 0.1762917933130699,
+        "tree_fruit": 0.0121580547112462,
+        "tropical_fruit": 0.00911854103343465,
+        "vegetal": 0.02127659574468085
+    },
+    "wine_rating": 4.1
+},
+{
+    "wine_id": 1661659,
+    "wine_structure": {
+        "acidity": 0.39700395,
+        "fizziness": 0,
+        "intensity": 0.8520233749999999,
+        "sweetness": 0.10201274999999999,
+        "tannin": 0.564976875
+    },
+    "wine_tastes": {
+        "black_fruit": 0.4329896907216495,
+        "citrus_fruit": 0,
+        "dried_fruit": 0.010309278350515464,
+        "earth": 0.28865979381443296,
+        "floral": 0.020618556701030927,
+        "microbio": 0.07216494845360824,
+        "non_oak": 0.05154639175257732,
+        "oak": 1.0,
+        "red_fruit": 0.31958762886597936,
+        "spices": 0.17525773195876287,
+        "tree_fruit": 0,
+        "tropical_fruit": 0,
+        "vegetal": 0.0
+    },
+    "wine_rating": 4.1
+}]

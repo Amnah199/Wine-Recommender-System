@@ -19,6 +19,38 @@ def wineType(id):
 
     return switch.get(id, 'sparkling')
 
+def normalizeTaste(val, max_mentions):
+    if val is None:
+        val = 0
+    else: 
+        val = val/max_mentions
+    return val
+
+def get_wine_profile(data, keys):
+    out = {}
+
+    # get highest mention count
+    max_mentions = max(data.values())
+    
+    # compute normalized mention count
+    for key in keys:
+        try:
+            out[key] = normalizeTaste(data[key], max_mentions)
+        except:
+            out[key] = 0
+
+    
+    return out
+
+def normalizeStructure(wine_structure):
+    keys = ["acidity", "fizziness", "intensity", "sweetness", "tannin"]
+    normalized = {}
+    for key in keys:
+        if wine_structure[key] is None:
+            normalized[key] = 0
+        else:
+            normalized[key] = (wine_structure[key] - 1)/4
+    return normalized
 
 taste_path = []
 vintage_path = []
@@ -31,8 +63,8 @@ white = 0
 sparkling = 0
 others = 0
 wine_name = "none"
-
-
+#define fixed list of taste group keys
+keys = ['black_fruit', 'citrus_fruit', 'dried_fruit', 'earth', 'floral', 'microbio', 'non_oak', 'oak', 'red_fruit', 'spices', 'tree_fruit', 'tropical_fruit', 'vegetal']
 # get working directory and iterate over folders to generate dataset
 path = os.getcwd()
 wineDirs = os.listdir(path)
@@ -92,24 +124,25 @@ for wineFolder in wineFolders:
         try:
             taste = taste_data["tastes"]
             flavor = taste["flavor"]
-
             wine_structure = taste["structure"]
-            taste_list = []
+            wine_tastes = {}
             for g in flavor:
-                stats = {}
-                stats["group"] = g["group"]
-                stats["score"] = g["stats"]["score"]
-                stats["mentions"] = g["stats"]["mentions_count"]
-                stats["keywords"] = []
-                if "primary_keywords" in g.keys():
-                    primary_key = g["primary_keywords"]
-                    for key in primary_key:
-                        stats["keywords"].append((key["name"], key["count"]))
-                taste_list.append(stats)
+                wine_tastes[g["group"]] = g["stats"]["mentions_count"]
+                
+            try:
+                wine_tastes = get_wine_profile(wine_tastes, keys)        
+            except Exception as e:
+                print('Errored during wine profile generation with: '+e)
+            
+            try:
+                wine_structure = normalizeStructure(wine_structure)
+            except Exception as e:
+                print('Errored during structure normalization with: '+e)
         except:
             print('no flavor data present')
-            taste_list = None
+            wine_tastes = None
 
+        
 
 
         
@@ -124,7 +157,7 @@ for wineFolder in wineFolders:
             "wine_region": wine_region,
             "wine_price" : wine_price,
             "wine_structure": wine_structure,
-            "wine_tastes": taste_list,
+            "wine_tastes": wine_tastes,
             "wine_rating" : wine_rating,
             "wine_thumb" : wine_thumb
             
@@ -137,7 +170,7 @@ for wineFolder in wineFolders:
         
 
 # writing the data in json file 
-data_file = open('home/p/wines/winerecommender/data-matching/vivino_data_combined.json',mode="w", encoding="utf-8" )
+data_file = open('/home/p/wines/winerecommender/data-matching/vivino_data_combined_fm.json',mode="w", encoding="utf-8" )
 jsonString = json.dumps(dictList)
 
 data_file.write(jsonString)
