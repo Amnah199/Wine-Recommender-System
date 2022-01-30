@@ -2,8 +2,8 @@
 
 # Packages to be installed
 import pip
-pip.main(['install', 'beautifulsoup4'])
-pip.main(['install', 'HTMLParser'])
+#pip.main(['install', 'beautifulsoup4'])
+#pip.main(['install', 'HTMLParser'])
 
 from bs4 import BeautifulSoup
 import requests
@@ -48,6 +48,7 @@ all_origins = []
 all_strength = []
 all_characteristics = []
 all_types = []
+all_urls = []
 
 counter = 0
 
@@ -60,18 +61,20 @@ for countryWine in red_wine_urls:
     
     for wines in total_wines:
         
-        names = wines.find('div', attrs={'class' : 'description'}).text
         price = wines.find('div', attrs = {'class' : 'Price'}).text.replace(" ", "")        
         div_names = wines.find('div', attrs = {'class' : "description"})
         
         url_specific_wine = div_names.find('a', {'href' : True})['href']
-       
+        all_urls.append(url_specific_wine)
+               
         details = requests.get(url_specific_wine, headers = headers)
         soup2 = BeautifulSoup(details.content, 'html.parser')
         description = soup2.find('div', attrs = {'class':'row description'}).text
         specific_wine_info = soup2.find_all('div', attrs = {'class':'products-informations'})
-        
+        names = soup2.find('h1', attrs = {"class":"name"}).text
+    
         for rows in specific_wine_info:
+            names_s = rows.find('h1', attrs = {"class":"name"})
             strength = rows.find('div', attrs = {'class':'colC'})
             characteristics = rows.find('div', attrs = {'itemprop':'color'})            
             all_characteristics.append(characteristics)
@@ -119,23 +122,24 @@ for countryWine in white_wine_urls:
     
     for wines in total_wines:
         
-        names = wines.find('div', attrs={'class' : 'description'}).text
         price = wines.find('div', attrs = {'class' : 'Price'}).text.replace(" ", "")        
         div_names = wines.find('div', attrs = {'class' : "description"})
         
         url_specific_wine = div_names.find('a', {'href' : True})['href']
+        all_urls.append(url_specific_wine)
        
         details = requests.get(url_specific_wine, headers = headers)
         soup2 = BeautifulSoup(details.content, 'html.parser')
         description = soup2.find('div', attrs = {'class':'row description'}).text
         specific_wine_info = soup2.find_all('div', attrs = {'class':'products-informations'})
+        names = soup2.find('h1', attrs = {"class":"name"}).text                 
         
         for rows in specific_wine_info:
             strength = rows.find('div', attrs = {'class':'colC'})
             characteristics = rows.find('div', attrs = {'itemprop':'color'})            
             all_characteristics.append(characteristics)
             all_strength.append(strength)
-            
+        
         all_names.append(names)
         all_price.append(price)
         all_descriptions.append(description)        
@@ -145,9 +149,9 @@ for countryWine in white_wine_urls:
     counter += 1
     
     
-data = list(zip(all_names, all_types, all_price, all_descriptions, all_strength, all_characteristics, all_origins))
-jacques_data_frame = pd.DataFrame(data, columns = ['Name', 'Typ', 'Preis in euro', 'Beschreibung', 'Alkoholgehalt', 'Weinstil', 'Herkunft'])
+data = list(zip(all_names, all_types, all_price, all_descriptions, all_strength, all_characteristics, all_origins, all_urls))
+jacques_data_frame = pd.DataFrame(data, columns = ['Name', 'Typ', 'Preis in euro', 'Beschreibung', 'Alkoholgehalt', 'Weinstil', 'Herkunft', 'URL'])
 
 # Location for output file
-jacques_data_frame.to_csv('jacques_wines.csv')
+jacques_data_frame.to_csv('jacques.csv')
 print("\n Dataset created. \n")

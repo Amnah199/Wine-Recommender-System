@@ -1,274 +1,274 @@
-,best_match_score,__id_left,__id_right,full_name_left,wine_country_left,wine_region_left,wine_type_left,full_name_right,wine_country_right,wine_region_right,wine_type_right
-19923,1.1547806683926516,141_left,7320_right,ZANTHO Zweigelt,Österreich,Burgenland,red,Zantho Zweigelt,Österreich,Burgenland,red
-2406,1.0616479395258507,12_left,2454_right,PAUL MAS VIGNES DE NICOLE Rouge,Frankreich,Languedoc,red,Paul Mas Vignes de Nicole Rouge,Frankreich,Pays d'Oc,red
-10182,0.8358280586764959,66_left,5370_right,LA LUNA E I FALÒ Barbera d'Asti,Italien,Apulien,red,Vite Colte La Luna e i Falò Barbera d'Asti Superiore,Italien,Barbera d'Asti,red
-36171,0.7796469749239251,264_left,6509_right,WINZER KREMS Grüner Veltliner,Österreich,South Eastern Australia,white,Winzer Krems Chremisa Edition Grüner Veltliner,Österreich,Kremstal,white
-29381,0.7636882634523646,201_left,9038_right,"MONTE ZOVO Lugana ""Le Civaie""",Italien,Trentino-Südtirol,white,Monte Zovo Lugana Le Civaie,Italien,Lugana,white
-22227,0.7117288183276216,158_left,10546_right,LE BLANC DE MONSIEUR HENRI,Frankreich,Bordeaux,white,Monsieur Henri Le Rosé de Monsieur Henri Merlot,Frankreich,Bordeaux,rosé
-31681,0.6985238138811638,222_left,6056_right,WINTER Grauburgunder,Deutschland,Rheinhessen,white,Stefan Winter Grauburgunder,Deutschland,Rheinhessen,white
-19711,0.6942499523597102,139_left,4196_right,BRAZIN Lodi Old Vine Zinfandel,USA,Kalifornien,red,Brazin (B) Old Vine Zinfandel Lodi,Vereinigte Staaten,Lodi,red
-35965,0.658997642150642,262_left,452_right,RAWSON'S RETREAT Chardonnay,Australien,Franken,white,Rawson's Retreat Sémillon - Chardonnay,Australien,South Australia,white
-27108,0.6563795820464956,187_left,800_right,FEUDO ARANCIO Grillo,Italien,Friaul,white,Feudo Arancio Grillo Sicilia,Italien,Sizilien,white
-17277,0.6394001199652816,120_left,3830_right,MONTES Alpha Syrah,Chile,Valle Central,red,Montes Alpha Syrah,Chile,Colchagua Valley,red
-11540,0.5887460802600025,78_left,5201_right,LE MORTELLE Botrosecco,Italien,Toskana,red,Le Mortelle Botrosecco Maremma Toscana,Italien,Maremma Toscana,red
-11541,0.5786662819418278,79_left,1503_right,CARPINETO Chianti Classico Riserva,Italien,Venetien,red,Carpineto Chianti Classico Riserva,Italien,Chianti Classico,red
-36323,0.5412308615812452,266_left,7929_right,GÖTTWEIG Grüner Veltliner,Österreich,Niederösterreich,white,Weingut Bründlmayer Grüner Veltliner,Österreich,Niederösterreich,white
-19496,0.5374663631216416,137_left,3996_right,BEYERSKLOOF Synergy,Südafrika,,red,Beyerskloof Synergy Cape Blend,Südafrika,Stellenbosch,red
-16921,0.5290112462756658,117_left,9187_right,MONTES Cabernet Sauvignon Reserva,Chile,Valle Central,red,de Gras Reserva Cabernet Sauvignon,Chile,Central Valley,red
-16929,0.5112738455066432,118_left,10104_right,MONTES Angel's Selection,Chile,Valle Central,red,Montes Sparkling Angel Brut,Chile,Central Valley,sparkling
-16896,0.4792991898145233,115_left,9187_right,EDWARDS Cabernet Sauvignon Reserva,Chile,Valle Central,red,de Gras Reserva Cabernet Sauvignon,Chile,Central Valley,red
-8525,0.4580381919366127,54_left,3807_right,SAN NICOLAO Barbera d'Asti,Italien,Piemont,red,Vite Colte San Nicolao Barbera d'Asti,Italien,Barbera d'Asti,red
-31702,0.45210246185388114,224_left,758_right,SONNENHOF Grauer Burgunder,Deutschland,Rheinhessen,white,Wittmann Grauer Burgunder Trocken,Deutschland,Rheinhessen,white
-5661,0.4499498087268478,31_left,5448_right,CHÂTEAU LA TOUR DE BY Magnum,Frankreich,Languedoc,red,Château La Tour de By Château la Roque de By,Frankreich,Médoc,red
-31176,0.4292907311577397,217_left,1053_right,TABERNUS Grauer Burgunder,Deutschland,Pfalz,white,Von Winning Grauer Burgunder,Deutschland,Pfalz,white
-19292,0.4214117479701256,135_left,6824_right,KAIKEN Ultra Cabernet Sauvignon,Argentinien,Western Cape,red,Kaiken Cabernet Sauvignon,Argentinien,Mendoza,red
-7109,0.41867897201143356,41_left,5448_right,CHÂTEAU LA TOUR DE BY Heritage,Frankreich,Burgund,red,Château La Tour de By Château la Roque de By,Frankreich,Médoc,red
-12147,0.3946064245769916,83_left,4876_right,PAOLO MANZONE Barolo,Italien,Piemont,red,Paolo Manzone Barolo Meriame,Italien,Barolo,red
-23395,0.3937633000657725,167_left,7801_right,CHÂTEAU PAUL MAS Belluguette,Frankreich,Elsass,white,Paul Mas Château Paul Mas Parcelle Belluguette Languedoc Blanc,Frankreich,Languedoc,white
-35559,0.3928144240957377,256_left,6196_right,TABERNUS Riesling-Gewürztraminer,Deutschland,Pfalz,white,Knipser Gewürztraminer - Riesling Trocken,Deutschland,Pfalz,white
-36506,0.37911733048953633,268_left,11903_right,ERZHERZOG JOHANN Sauvignon Blanc,Österreich,Niederösterreich,white,Johann Topf Brut Rosé,Österreich,Niederösterreich,sparkling
-8337,0.37347111545109996,51_left,4865_right,LUIGI AVOGADRI Nero d'Avola,Italien,Sizilien,red,Epicuro Nero d'Avola,Italien,Sizilien,red
-10574,0.3508814139004628,70_left,12330_right,VECCHIA TORRE Leverano Riserva,Italien,Apulien,red,Vecchia Torre Leverano Rosato,Italien,Leverano,rosé
-765,0.342341639027289,4_left,3130_right,PAUL MAS Cabernet de Cabernet,Frankreich,Languedoc,red,Paul Mas Syrah,Frankreich,Languedoc-Roussillon,red
-30592,0.33850590182900403,211_left,5715_right,RUPPERTSBERGER Riesling,Deutschland,Coquimbo,white,Fußer Ruppertsberger Riesling,Deutschland,Pfalz,white
-12565,0.33529504239463187,86_left,5960_right,LA PODERINA Brunello di Montalcino,Italien,Sizilien,red,La Poderina Rosso di Montalcino,Italien,Rosso di Montalcino,red
-30820,0.33376884378423816,213_left,1051_right,KARL PFAFFMANN Riesling,Deutschland,Pfalz,white,Karl Pfaffmann Markus Pfaffmann Weissburgunder Trocken,Deutschland,Pfalz,white
-33661,0.32215634103050367,242_left,6892_right,MARKUS MOLITOR Zeltinger Ortswein,Deutschland,Rheingau,white,Markus Molitor Zeltinger Sonnenuhr Riesling Kabinett,Deutschland,Mosel,white
-21741,0.318094092253916,154_left,2071_right,SAINT-PEYRE Picpoul de Pinet,Frankreich,Languedoc,white,Paul Mas Picpoul De Pinet Réserve,Frankreich,Languedoc,white
-14858,0.27803074724374954,101_left,1155_right,VIÑA DIEZMO Crianza,Spanien,La Rioja,red,Viña Olabarri Crianza,Spanien,Rioja,red
-25722,0.26133056347304895,179_left,424_right,JADOT Pouilly-Fuissé Petites Pierres,Frankreich,,white,Louis Jadot Pouilly-Fuissé,Frankreich,Pouilly-Fuissé,white
-18967,0.25349996575358497,132_left,6761_right,PIRRAMIMMA Classic Shiraz,Australien,South Australia,red,Penfolds Koonunga Hill Shiraz,Australien,South Australia,red
-31044,0.2521683204432274,215_left,7422_right,WINTER Riesling,Deutschland,Baden,white,Stefan Winter Riesling Trocken,Deutschland,Rheinhessen,white
-6162,0.2513891026737343,34_left,7785_right,CHÂTEAU DE ROCHEMORIN Rouge,Frankreich,Bordeaux,red,Château Roc de Levraut Bordeaux,Frankreich,Bordeaux,red
-17400,0.2478821122237372,121_left,3898_right,MONTES Alpha Cabernet Sauvignon,Chile,Valle Central,red,Mas Andes Cabernet Sauvignon,Chile,Central Valley,red
-35560,0.24107457417390832,257_left,412_right,GEIL Weißburgunder,Deutschland,Rheinhessen,white,Juwel - Juliane Eller Weine Weissburgunder,Deutschland,Rheinhessen,white
-31357,0.22561894538513927,219_left,1085_right,IHRINGER Grauburgunder,Deutschland,Pfalz,white,Schneider Grauburgunder,Deutschland,Pfalz,white
-15290,0.22053334505745292,104_left,3713_right,VIÑA DIEZMO Reserva,Spanien,La Rioja,red,Viña Otano Reserva,Spanien,Rioja,red
-28698,0.21766109397743633,196_left,11977_right,LOREDAN GASPARINI Prosecco Frizzante,Italien,Venetien,white,Loredan Gasparini Asolo Prosecco Superiore,Italien,Asolo Prosecco,sparkling
-16226,0.2116605285682911,111_left,490_right,BERONIA Gran Reserva,Spanien,Kastilien-La Mancha,red,Beronia Rioja Gran Reserva,Spanien,Rioja,red
-8532,0.21001687224955823,55_left,4865_right,RIPORTA Nero d'Avola,Italien,Apulien,red,Epicuro Nero d'Avola,Italien,Sizilien,red
-22386,0.20423023144603208,159_left,8132_right,JEAN GEILER Pinot Blanc,Frankreich,Elsass,white,Mader Pinot Blanc,Frankreich,Elsass,white
-11542,0.20157841294741988,80_left,4402_right,PRÀ Morandina Valpolicella Ripasso,Italien,Toskana,red,Prà Morandina Amarone della Valpolicella,Italien,Amarone della Valpolicella,red
-29261,0.1989350623517459,200_left,10888_right,BOSCO DEL MERLO Sauvignon Blanc,Italien,Piemont,white,Bosco del Merlo Brut Rosé,Italien,Prosecco,sparkling
-35555,0.1936622476486988,255_left,8117_right,MATHILDE Weißburgunder,Deutschland,Mosel,white,Dr. Loosen Weißburgunder,Deutschland,Mosel,white
-32295,0.19326985657268125,230_left,1051_right,KARL PFAFFMANN Riesling Hölle,Deutschland,Pfalz,white,Karl Pfaffmann Markus Pfaffmann Weissburgunder Trocken,Deutschland,Pfalz,white
-10418,0.1840576998045907,68_left,1931_right,WALCH - von Keller Lagrein,Italien,Trentino-Südtirol,red,Wilhelm Walch Lagrein,Italien,Südtirol - Alto Adige,red
-7775,0.18156676405761601,47_left,2759_right,CASTEL FIRMIAN Teroldego,Italien,Trentino-Südtirol,red,Mezzacorona Castel Firmian Lagrein Riserva,Italien,Trentino,red
-35564,0.18097893427337122,258_left,2409_right,TABERNUS Chardonnay,Deutschland,Pfalz,white,Schneider Chardonnay,Deutschland,Pfalz,white
-21797,0.18003499366307943,155_left,8860_right,LES FUMÉES BLANCHES Blanc,Frankreich,,white,François Lurton Les Fumées Blanches Sauvignon Blanc Côtes de Gascogne,Frankreich,Côtes de Gascogne,white
-6849,0.17947104308926737,39_left,7836_right,CHÂTEAU LA COMMANDERIE,Frankreich,Roussillon,red,Château La Commanderie Saint-Estèphe,Frankreich,Saint-Estèphe,red
-30288,0.17685519088202378,208_left,2266_right,MONTES Sauvignon Blanc,Chile,Kastilien-León,white,Montes Reserva Sauvignon Blanc (Classic),Chile,Curico Valley,white
-34172,0.17678306563564913,246_left,6147_right,KÜNSTLER Riesling 1648,Deutschland,Mosel,white,Künstler Riesling Trocken,Deutschland,Rheingau,white
-31683,0.17392568168564673,223_left,1085_right,MATHILDE Grauburgunder,Deutschland,Pfalz,white,Schneider Grauburgunder,Deutschland,Pfalz,white
-29004,0.17309353006942313,198_left,1760_right,KURTATSCH Pinot Grigio,Italien,Piemont,white,Gorgo Pinot Grigio,Italien,Veneto,white
-10978,0.1702547865992681,73_left,2117_right,TORCICODA Primitivo,Italien,Toskana,red,Tormaresca Primitivo Salento Torcicoda,Italien,Salento,red
-12403,0.16587957024562053,85_left,9089_right,SAROTTO Barbaresco Riserva,Italien,Venetien,red,Ceretto Barbaresco,Italien,Barbaresco,red
-14599,0.16587510217097098,99_left,9537_right,GRAN MARIUS Reserva,Spanien,La Rioja,red,Belezos Gran Reserva,Spanien,Rioja,red
-35251,0.15546654515300445,253_left,988_right,"GRANS Trittenheimer Apotheke 0,375 L",Deutschland,Mosel,white,Ansgar Clüsserath Trittenheimer Apotheke Riesling Trocken,Deutschland,Mosel,white
-28609,0.15209887646808706,195_left,9442_right,PRÀ Soave,Italien,Piemont,white,Prà Otto Soave,Italien,Soave,white
-34049,0.14773320787605154,245_left,6372_right,GEIL Riesling Rosengarten,Deutschland,Baden,white,Weingut Geil Riesling Trocken,Deutschland,Rheinhessen,white
-22398,0.1441992269327431,160_left,7076_right,CHÂTEAU BONNET Blanc,Frankreich,Bordeaux,white,Château Pierrail Bordeaux Blanc,Frankreich,Bordeaux,white
-17410,0.1400601497586654,122_left,3830_right,MONTES Alpha M,Chile,Württemberg,red,Montes Alpha Syrah,Chile,Colchagua Valley,red
-36770,0.13694124633272237,270_left,7752_right,GÖTTWEIG Grüner Veltliner Reserve,Österreich,Steiermark,white,Steininger Kamptal Reserve Grüner Veltliner,Österreich,Kamptal,white
-8502,0.1363540537680387,53_left,5013_right,SALICE SALENTINO,Italien,Apulien,red,Epicuro Salice Salentino,Italien,Salice Salentino,red
-3995,0.13599212822022286,21_left,5574_right,Rhônetal RASTEAU Rouge,Frankreich,Languedoc,red,Dourbie Marius Rouge,Frankreich,Languedoc,red
-31756,0.13305365157606916,226_left,6772_right,GRANS-FASSIAN Fuder 12 Riesling,Deutschland,Baden,white,Grans-Fassian Mineralschiefer Riesling - Trocken,Deutschland,Mosel,white
-3310,0.12492174363791762,17_left,3719_right,CHÂTEAU CAZAL VIEL Vieilles Vignes,Frankreich,Rhônetal,red,Château Fontarèche Vieilles Vignes Sélection,Frankreich,Corbières,red
-21360,0.12038475242445723,150_left,5037_right,CÔTÉ MAS Sauvignon Blanc,Frankreich,Südwesten,white,Paul Mas Sauvignon Blanc,Frankreich,Pays d'Oc,white
-29505,0.12008424878803929,202_left,9447_right,VILLA DUGO Sauvignon Blanc,Italien,Friaul,white,Bidoli Sauvignon Blanc,Italien,Friuli,white
-15934,0.11090194395101592,109_left,669_right,VALSERRANO Reserva,Spanien,La Rioja,red,Muga Reserva,Spanien,Rioja,red
-21740,0.10841987650599352,153_left,7445_right,DOMAINE BOSQUET Chardonnay,Frankreich,Languedoc,white,Domaine Lafage Novellum Chardonnay,Frankreich,Languedoc-Roussillon,white
-14319,0.10824459760709822,96_left,6007_right,PRINCIPIO Garnacha,Spanien,Valencia,red,Los Frailes Garnacha - Monastrell,Spanien,Valencia,red
-30062,0.10641345284380019,206_left,1618_right,MONTESPINA Verdejo,Spanien,Kastilien-León,white,Menade Verdejo,Spanien,Castilla y León,white
-22404,0.10516364495346979,161_left,2071_right,PAUL MAS Vignes de Nicole Blanc,Frankreich,Languedoc,white,Paul Mas Picpoul De Pinet Réserve,Frankreich,Languedoc,white
-25724,0.1025434805224864,180_left,1159_right,JADOT Chassagne-Montrachet Baudines,Frankreich,Languedoc,white,Paul Pillot Chassagne-Montrachet,Frankreich,Chassagne-Montrachet,white
-32998,0.1009382363858901,236_left,8117_right,DR. CRUSIUS Porphyr Weißburgunder,Deutschland,Rheingau,white,Dr. Loosen Weißburgunder,Deutschland,Mosel,white
-16904,0.0957624110976017,116_left,6671_right,EDWARDS Carmenère Reserva,Chile,Valle Central,red,Santa Rita 120 Reserva Especial Carmenère,Chile,Central Valley,red
-31878,0.09511386729392607,227_left,374_right,VILLA HUESGEN Riesling Kabinett,Deutschland,Rheingau,white,Kloster Eberbach Riesling Kabinett,Deutschland,Rheingau,white
-35915,0.09111567485935214,261_left,227_right,HOFKELLER Riesling Leiste,Deutschland,Nahe,white,Dönnhoff Riesling,Deutschland,Nahe,white
-7746,0.08359024187550639,46_left,4247_right,Sangiovese,Italien,Apulien,red,Caparzo Sangiovese Toscana,Italien,Toscana,red
-36273,0.08051235305107302,265_left,1087_right,ZIMMERMANN Grüner Veltliner,Österreich,South Australia,white,Meinklang Grüner Veltliner,Österreich,Burgenland,white
-21125,0.07887455776589233,148_left,5377_right,CAZAL VIEL Sauvignon Blanc,Frankreich,Südwesten,white,Le Val Sauvignon Blanc,Frankreich,Pays d'Oc,white
-19194,0.07862495893471569,134_left,11007_right,BLEASDALE Bremerview Shiraz,Australien,Mendoza,red,Bleasdale Sparkling Shiraz,Australien,Langhorne Creek,sparkling
-7110,0.07714451375557739,42_left,5574_right,CHÂTEAU MARZY,Frankreich,Languedoc,red,Dourbie Marius Rouge,Frankreich,Languedoc,red
-15514,0.07388168038100854,106_left,490_right,BERONIA Reserva,Spanien,Kastilien-León,red,Beronia Rioja Gran Reserva,Spanien,Rioja,red
-4636,0.07312962775664351,25_left,2474_right,DOMAINE DE VILLEMAJOU Rouge,Frankreich,Bordeaux,red,Domaine de Cambes Bordeaux,Frankreich,Bordeaux,red
-9352,0.06954196115192361,61_left,133_right,DOGAJOLO,Italien,Apulien,red,Carpineto Toscana Dogajolo Rosso,Italien,Toscana,red
-23765,0.06761434900481819,169_left,8679_right,CHÂTEAU DE ROCHEMORIN Blanc,Frankreich,Bordeaux,white,Château Clarke Le Merle Blanc de Château Clarke Bordeaux Blanc,Frankreich,Bordeaux,white
-31172,0.06557778109638596,216_left,2886_right,KARL PFAFFMANN Weißburgunder,Deutschland,Rheinhessen,white,Stefan Winter Weissburgunder,Deutschland,Rheinhessen,white
-14321,0.06230713457849494,97_left,669_right,MUCHO MÁS,Spanien,La Rioja,red,Muga Reserva,Spanien,Rioja,red
-34031,0.05712509317313112,244_left,283_right,SCHARZHOFBERGER Riesling Spätlese,Deutschland,Mosel,white,Markus Molitor Wehlener Sonnenuhr Riesling Spätlese,Deutschland,Mosel,white
-17705,0.05375124819360381,124_left,1599_right,SONNENHOF Pinot Noir,Deutschland,Rheingau,red,Heitlinger Pinot Noir,Deutschland,Baden,red
-5484,0.05293209659923785,30_left,4344_right,CHÂTEAU PAUL MAS Clos de Savignac,Frankreich,Bordeaux,red,Paul Mas Château Paul Mas Coteaux du Languedoc Clos des Mures,Frankreich,Languedoc,red
-6630,0.05056597634175437,37_left,2034_right,CIGALUS Rouge,Frankreich,Bordeaux,red,Château Vircoulon Bordeaux Rouge,Frankreich,Bordeaux,red
-27993,0.04697901287462672,192_left,1760_right,CONTI DI COLLOREDO Pinot Grigio,Italien,Toskana,white,Gorgo Pinot Grigio,Italien,Veneto,white
-10923,0.046546020905354986,72_left,470_right,LE BOCCE Chianti Classico Riserva,Italien,Apulien,red,Brancaia Chianti Classico Riserva,Italien,Chianti Classico,red
-634,0.04393893097221453,3_left,9853_right,CHÂTEAU PECH-CÉLEYRAN,Frankreich,Languedoc,red,Château Puech-Haut Argali Rosé,Frankreich,Languedoc-Roussillon,rosé
-32499,0.039818319787096726,232_left,5356_right,DR. CRUSIUS Rhyolith Riesling,Deutschland,Pfalz,white,Dr. Bürklin-Wolf Riesling Trocken,Deutschland,Pfalz,white
-13482,0.03656288236662042,91_left,2830_right,AVOGADRI Primitivo-Negroamaro,Italien,Piemont,red,Mezzatia Primitivo - Negroamaro,Italien,Puglia,red
-7913,0.03468306325313571,48_left,5901_right,LA CARRAIA Sangiovese,Italien,Umbrien,red,La Mozza Sangiovese,Italien,Maremma Toscana,red
-33167,0.03135887404501524,238_left,244_right,WINTER Alte Reben Riesling,Deutschland,Nahe,white,Markus Molitor Saar Alte Reben Riesling,Deutschland,Mosel,white
-17761,0.025761716143734126,126_left,11637_right,BECKER Pinot Noir Tradition,Deutschland,Rheingau,red,Barth Pinot Noir Rosé Brut,Deutschland,Rheingau,sparkling
-27581,0.01915368949795758,190_left,9412_right,VECCHIA TORRE Vermentino,Italien,Marken,white,Aia Vecchia Vermentino Toscana,Italien,Toscana,white
-34325,0.015529461119352723,247_left,3732_right,BECKER Grauburgunder Tradition,Deutschland,Rheinhessen,white,Hofmann Grauburgunder Trocken,Deutschland,Rheinhessen,white
-36624,0.012602949418208366,269_left,12140_right,ZIMMERMANN Rosshimmel,Österreich,Niederösterreich,white,Loimer Rosé,Österreich,Niederösterreich,rosé
-17755,0.010331742365853238,125_left,3666_right,KLOSTER EBERBACH Pinot Noir,Deutschland,Pfalz,red,Matthias Gaul Pinot Noir,Deutschland,Pfalz,red
-30563,0.01010807831159379,210_left,6235_right,RUPPERTSBERGER Weißburgunder,Deutschland,Aconcagua,white,Schneider Weissburgunder,Deutschland,Pfalz,white
-35580,0.009120119030161623,259_left,2886_right,WINTER Bodenständig,Deutschland,Pfalz,white,Stefan Winter Weissburgunder,Deutschland,Rheinhessen,white
-31706,0.005622969119397141,225_left,2132_right,KLOSTER EBERBACH Riesling,Deutschland,Rheinhessen,white,Dreissigacker Riesling,Deutschland,Rheinhessen,white
-33467,0.004390183577624807,240_left,2132_right,KÜNSTLER Riesling Edition,Deutschland,Rheinhessen,white,Dreissigacker Riesling,Deutschland,Rheinhessen,white
-7502,0.004220016237374583,44_left,625_right,JADOT Aloxe-Corton,Frankreich,Rhônetal,red,Joseph Drouhin Aloxe-Corton,Frankreich,Aloxe-Corton,red
-33138,0.002529633664964865,237_left,6235_right,REINHARDT Weißburgunder,Deutschland,Mittelrhein,white,Schneider Weissburgunder,Deutschland,Pfalz,white
-21585,0.002225633944717846,152_left,1473_right,CHÂTEAU LE RAZ Le Dauphin,Frankreich,Languedoc,white,Château le Reysse Médoc,Frankreich,Médoc,red
-6189,-0.0013563219868681091,35_left,3110_right,CHÂTEAU LA CROIX ROMANE,Frankreich,Rhônetal,red,Château La Croix du Duc Bordeaux,Frankreich,Bordeaux,red
-19323,-0.0014697019101656756,136_left,7702_right,SURVIVOR Pinotage,Südafrika,Coastal Region,red,Simonsig Pinotage,Südafrika,Stellenbosch,red
-28791,-0.002137054078648302,197_left,10987_right,GARETTO Moscato d’Asti,Italien,Venetien,white,Prunotto Moscato d'Asti,Italien,Moscato d'Asti,sparkling
-31538,-0.011197927022012751,221_left,1085_right,SCHÖNLAUB Grauburgunder,Deutschland,,white,Schneider Grauburgunder,Deutschland,Pfalz,white
-28170,-0.011911836384653877,193_left,1335_right,LE ROSE DI ORNELLA Pinot Grigio,Italien,Friaul,white,La Tunella Pinot Grigio,Italien,Colli Orientali del Friuli,white
-14649,-0.01530583136509236,100_left,6868_right,CLUB PRIVADO,Spanien,Kastilien-La Mancha,red,Bodegas Artero Crianza,Spanien,La Mancha,red
-34755,-0.016691249095777117,250_left,6147_right,KÜNSTLER Pfandloch,Deutschland,Pfalz,white,Künstler Riesling Trocken,Deutschland,Rheingau,white
-36777,-0.01902164790368542,271_left,12140_right,SCHMELZ Federspiel,Österreich,Niederösterreich,white,Loimer Rosé,Österreich,Niederösterreich,rosé
-16277,-0.022534608350055146,112_left,3147_right,VALSERRANO Gran Reserva,Spanien,,red,Lan Gran Reserva Rioja,Spanien,Rioja,red
-35725,-0.02313895315334235,260_left,1461_right,HAACK Scheurebe Alte Reben,Deutschland,Rheinhessen,white,Schneider Alte Reben Riesling,Deutschland,Pfalz,white
-29531,-0.024965210680266,203_left,10988_right,TERRE DEL SOLE Grillo,Italien,Lombardei,white,Contri Terre del Sole Fragolino,Italien,Veneto,sparkling
-5260,-0.02570143480068916,29_left,3679_right,CHÂTEAU L'HOSPITALET,Frankreich,Bordeaux,red,Château l'Hospitalet La Clape Grand Vin Rouge,Frankreich,La Clape,red
-31928,-0.02571494502548407,228_left,1085_right,MESSMER Grauburgunder,Deutschland,Mosel,white,Schneider Grauburgunder,Deutschland,Pfalz,white
-14392,-0.030248056406328872,98_left,2332_right,TORRE ORIA Crianza,Spanien,La Rioja,red,Izadi Crianza,Spanien,Rioja,red
-18315,-0.040982584756331104,129_left,4086_right,SONNENHOF Edition 962,Deutschland,Rheingau,red,Schloss Vollrads Edition Riesling,Deutschland,Rheingau,white
-11316,-0.04240914076362641,76_left,1596_right,NINO NEGRI Sassella,Italien,Apulien,red,Nino Negri Sfursat Carlo Negri,Italien,Valtellina,red
-15782,-0.044253088614563146,108_left,776_right,CELESTE Crianza,Spanien,Katalonien,red,Pago del Cielo Celeste Crianza,Spanien,Ribera del Duero,red
-1124,-0.04703663849535417,6_left,5574_right,CHÂTEAU DE JAU Rouge,Frankreich,Languedoc,red,Dourbie Marius Rouge,Frankreich,Languedoc,red
-36954,-0.04844763578997703,272_left,2118_right,PFAFFL Hund,Österreich,Niederösterreich,white,Weingut R&A Pfaffl Hund Grüner Veltliner Reserve,Österreich,Weinviertel,white
-25297,-0.05153395016780763,177_left,946_right,CHABLIS 1er CRU Beauroy,Frankreich,Burgund,white,Alain Geoffroy Beauroy Chablis Premier Cru,Frankreich,Chablis Premier Cru,white
-23528,-0.05206489979478683,168_left,3655_right,LURTON Diane Sauvignon Blanc,Frankreich,Bordeaux,white,Château La Verriere Bordeaux Sauvignon Blanc,Frankreich,Bordeaux,white
-11703,-0.05593304046372517,81_left,1018_right,FARNITO Cabernet Sauvignon,Italien,Piemont,red,Lanzerac Cabernet Sauvignon,Südafrika,Stellenbosch,red
-30598,-0.05609569766968756,212_left,12705_right,TABERNUS Rosé,Deutschland,Pfalz,white,Philipp Kuhn Rosé,Deutschland,Pfalz,rosé
-23768,-0.05848596649506464,170_left,9532_right,MONTAGNY 1er CRU Montcuchot,Frankreich,Burgund,white,Louis Latour Montagny 1er Cru La Grande Roche,Frankreich,Montagny Premier Cru,white
-19924,-0.05866590239710922,142_left,7320_right,UNGER Donauschotter,Österreich,Burgenland,red,Zantho Zweigelt,Österreich,Burgenland,red
-20077,-0.05866590239710922,143_left,7320_right,UNGER Distelwiese,Österreich,Burgenland,red,Zantho Zweigelt,Österreich,Burgenland,red
-20454,-0.059067502904007835,145_left,2624_right,FONFILE Chardonnay,Frankreich,Languedoc,white,Paul Mas Grande Réserve Chardonnay,Frankreich,Languedoc,white
-13006,-0.06742404416059547,89_left,1374_right,VECCHIA TORRE Syrah Primitivo,Italien,Sizilien,red,Stemmari Syrah,Italien,Sizilien,red
-11189,-0.06793746022342316,75_left,193_right,PRUNOTTO Bansella,Italien,Lombardei,red,Prunotto Barolo,Italien,Barolo,red
-35301,-0.06875638624821254,254_left,3045_right,TABERNUS Blanc de Noirs,Deutschland,Rheingau,white,Ilha Blanc de Noirs,Portugal,Madeirense,white
-36333,-0.07164920238985273,267_left,12140_right,PFAFFL Zeisen,Österreich,Niederösterreich,white,Loimer Rosé,Österreich,Niederösterreich,rosé
-24887,-0.07285316639851154,175_left,7087_right,SANCERRE Les Vignolles,Frankreich,Burgund,white,Dauny Sancerre 'Les Caillottes',Frankreich,Sancerre,white
-26676,-0.07868757409668618,185_left,5402_right,CHABLIS 1er CRU Les Lys,Frankreich,Burgund,white,Louis Latour Chablis Premier Cru,Frankreich,Chablis Premier Cru,white
-5030,-0.0833787178849866,28_left,22_right,CASTELMAURE Grande Cuvée,Frankreich,Rhônetal,red,Keringer Grande Cuvée,Österreich,Burgenland,red
-6426,-0.08401663613559097,36_left,3679_right,CHÂTEAU DE LA SOUJEOLE Grand Vin,Frankreich,Rhônetal,red,Château l'Hospitalet La Clape Grand Vin Rouge,Frankreich,La Clape,red
-5912,-0.08408788038740418,33_left,798_right,CHÂTEAU DE BARBE BLANCHE,Frankreich,Languedoc,red,Château de Sancerre Sancerre Blanc,Frankreich,Sancerre,white
-34905,-0.08447325166297505,251_left,6772_right,GRANS-FASSIAN Laurentiuslay GG,Deutschland,Rheingau,white,Grans-Fassian Mineralschiefer Riesling - Trocken,Deutschland,Mosel,white
-8582,-0.08965671360227762,56_left,9840_right,VECCHIA TORRE Primitivo,Italien,Apulien,red,Vecchia Torre Negroamaro Salento Rosato,Italien,Salento,rosé
-19497,-0.09091939188698074,138_left,7702_right,SURVIVOR Pinotage Reserve,Südafrika,Coastal Region,red,Simonsig Pinotage,Südafrika,Stellenbosch,red
-32379,-0.09294407320503859,231_left,3874_right,WILLEMS-WILLEMS Rosenberg,Deutschland,Württemberg,white,Lauffener Riesling Trocken,Deutschland,Württemberg,white
-34520,-0.09381436402271784,249_left,6147_right,KÜNSTLER Terroir Blanc,Deutschland,Pfalz,white,Künstler Riesling Trocken,Deutschland,Rheingau,white
-13813,-0.09506485992039222,93_left,6868_right,ANDERGASSEN Lagrein,Italien,Kastilien-La Mancha,red,Bodegas Artero Crianza,Spanien,La Mancha,red
-26433,-0.09580755721076181,184_left,798_right,CHÂTEAU DE VILLEMAJOU Grand V. Blanc,Frankreich,Languedoc,white,Château de Sancerre Sancerre Blanc,Frankreich,Sancerre,white
-3313,-0.09646432640234423,18_left,1495_right,DOMAINE DE L'ARJOLLE Cabernet,Frankreich,Languedoc,red,Domaine de la Baume Viognier Elisabeth,Frankreich,Languedoc-Roussillon,white
-15564,-0.09908888805493259,107_left,1175_right,ABADÍA LA ARROYADA Crianza,Spanien,La Rioja,red,Berceo Crianza,Spanien,Rioja,red
-7559,-0.10373940221471126,45_left,4472_right,JADOT Volnay,Frankreich,Languedoc,red,Louis Jadot Chablis,Frankreich,Chablis,white
-29054,-0.10394256005378684,199_left,8234_right,WALCH - von Keller Weißburgunder,Italien,Trentino-Südtirol,white,Kellerei . Cantina KALTERN Pinot Bianco (Weißburgunder),Italien,Trentino-Alto Adige,white
-24222,-0.1078060388019111,172_left,3997_right,POUILLY-FUMÉ Les Genièvres,Frankreich,Südwesten,white,de Ladoucette Pouilly-Fumé,Frankreich,Pouilly-Fumé,white
-20673,-0.109216563483975,146_left,1441_right,DOMAINE PUGIBET Le Blanc,Frankreich,Languedoc,white,Domaine de la Baume Sauvignon Blanc Les Mariés,Frankreich,Languedoc-Roussillon,white
-26238,-0.10962574553366274,183_left,11357_right,CHÂTEAU BÉTHANIE,Frankreich,Loiretal,white,Château Béthanie Crémant du Jura Brut,Frankreich,Crémant du Jura,sparkling
-9951,-0.11514339689166074,65_left,5122_right,LE BOCCE Chianti Classico,Italien,Piemont,red,Le Corbinie Chianti,Italien,Chianti,red
-24439,-0.11692566775515195,173_left,798_right,CHÂTEAU DE NAVAILLES,Frankreich,Loiretal,white,Château de Sancerre Sancerre Blanc,Frankreich,Sancerre,white
-22486,-0.12222797515454892,162_left,11050_right,MONTAGNY Vieilles Vignes,Frankreich,Languedoc,white,Dehours Vieilles Vignes Extra Brut Champagne,Frankreich,Schaumwein,sparkling
-14864,-0.12935353685320625,102_left,675_right,LAR DE PAULA Oak Aged,Spanien,La Rioja,red,Pago de Cirsus Oak Aged Red Blend,Spanien,Navarra,red
-27110,-0.13822407283211854,188_left,11083_right,SOLIGO L'Arcata Prosecco Frizzante,Italien,Sizilien,white,San Simone Prosecco Frizzante,Italien,Prosecco,sparkling
-3777,-0.14140166321516584,20_left,9978_right,CHÂTEAU BONNET Réserve,Frankreich,Südwesten,red,Alexandre Bonnet Grande Réserve Brut Champagne,Frankreich,Schaumwein,sparkling
-24012,-0.1424242569154088,171_left,3810_right,JEAN GEILER Gewürztraminer,Frankreich,Loiretal,white,Cleebourg Gewürztraminer,Frankreich,Elsass,white
-13248,-0.14531737118516622,90_left,1813_right,TERRE DEL SOLE Nero d'Avola,Italien,Trentino-Südtirol,red,Cusumano Nero d'Avola,Italien,Terre Siciliane,red
-20230,-0.1507142994576666,144_left,5377_right,LE TAPIE Blanc,Frankreich,Südwesten,white,Le Val Sauvignon Blanc,Frankreich,Pays d'Oc,white
-30904,-0.15316765492576537,214_left,2409_right,MARKGRÄFLER Gutedel,Deutschland,Pfalz,white,Schneider Chardonnay,Deutschland,Pfalz,white
-0,-0.16092896950923366,0_left,2960_right,LE TAPIE Rouge,Frankreich,Rhônetal,red,Domaine Dupuy de Lôme Bandol Rouge,Frankreich,Bandol,red
-1540,-0.16160056740071777,8_left,2474_right,DOMAINE SAINTE SOPHIE,Frankreich,Bordeaux,red,Domaine de Cambes Bordeaux,Frankreich,Bordeaux,red
-6886,-0.16276003380127552,40_left,9920_right,CHÂTEAU DES FINES ROCHES,Frankreich,Burgund,red,Domaine des Roches Neuves Bulles de Roche,Frankreich,Saumur,sparkling
-12803,-0.16318482949597196,88_left,4402_right,PRÀ Amarone,Italien,Sizilien,red,Prà Morandina Amarone della Valpolicella,Italien,Amarone della Valpolicella,red
-7290,-0.16675919900560102,43_left,1837_right,Les 49 Lignes,Frankreich,Languedoc,red,Château de l'Engarran Les Angelots,Frankreich,Languedoc,red
-4825,-0.16836645539689038,27_left,8723_right,CHÂTEAU DE LANCYRE Coste d'Aleyrac,Frankreich,Bordeaux,red,Château d'Haurets Bordeaux Rouge,Frankreich,Bordeaux,red
-18731,-0.17066306674664253,131_left,6761_right,PIRRAMIMMA Petit Verdot,Australien,South Australia,red,Penfolds Koonunga Hill Shiraz,Australien,South Australia,red
-33517,-0.17567079216623088,241_left,5120_right,BRENNFLECK Sylvaner,Deutschland,Pfalz,white,Stefan Vetter Sylvaner,Deutschland,Franken,white
-4423,-0.17640504607197208,24_left,10691_right,CHÂTEAU PLAISANCE,Frankreich,Languedoc,red,Château La Sauvageonne Volcanic Rosé,Frankreich,Languedoc,rosé
-14146,-0.18575305962859748,95_left,3713_right,VIÑA BOLANTA,Spanien,,red,Viña Otano Reserva,Spanien,Rioja,red
-21362,-0.18677834080336617,151_left,7561_right,LA CABANE DU GASCON Blanc,Frankreich,Südwesten,white,Domaine de Pellehaut L'Été Gascon Blanc,Frankreich,Côtes de Gascogne,white
-7963,-0.18710505025116045,49_left,1417_right,IL PUMO Primitivo,Italien,Apulien,red,Luccarelli Primitivo,Italien,Puglia,red
-21798,-0.19021290782276665,156_left,6589_right,DOMAINE DE LA QUILLA Muscadet,Frankreich,Loiretal,white,Domaine de la Villaudière Sancerre,Frankreich,Sancerre,white
-32111,-0.19088739388792123,229_left,1459_right,HERZOG VON WÜRTTEMBERG,Deutschland,Mosel,white,Van Volxem Saar Riesling,Deutschland,Mosel,white
-9786,-0.19323758868730448,64_left,3278_right,PASQUA Valpolicella,Italien,Apulien,red,Zenato Valpolicella Superiore,Italien,Valpolicella,red
-23074,-0.1936595905455307,165_left,2474_right,DOMAINE DE REUILLY,Frankreich,Südwesten,white,Domaine de Cambes Bordeaux,Frankreich,Bordeaux,red
-8351,-0.1957149170405992,52_left,2410_right,SALBANELLO Rosso,Italien,Venetien,red,Antinori Villa Antinori Rosso,Italien,Toscana,red
-10700,-0.19855036652369448,71_left,4865_right,LOMBARDO Nero d`Altura,Italien,Toskana,red,Epicuro Nero d'Avola,Italien,Sizilien,red
-17042,-0.2033585177860236,119_left,9187_right,DE MARTINO Enigma,Chile,Valle Central,red,de Gras Reserva Cabernet Sauvignon,Chile,Central Valley,red
-17519,-0.20383858126006338,123_left,4606_right,HIRSCH Lemberger,Deutschland,Baden,red,Salwey Spätburgunder,Deutschland,Baden,red
-31180,-0.2039253067754158,218_left,1353_right,TABERNUS Kleine Blume Weiß,Deutschland,Pfalz,white,Marto Weiss,Deutschland,Rheinhessen,white
-33804,-0.2048668631810691,243_left,5274_right,SONNENHOF Grande Réserve,Deutschland,Franken,white,Castell Silvaner,Deutschland,Franken,white
-29876,-0.207638164004908,205_left,4525_right,PULPITO,Spanien,Sizilien,white,Stemmari Grillo,Italien,Sizilien,white
-6643,-0.20934709682934655,38_left,10480_right,CASTELMAURE N°3,Frankreich,Bordeaux,red,Dourthe N°1 Bordeaux Rosé,Frankreich,Bordeaux,rosé
-9078,-0.21033607136964355,59_left,3400_right,LUIGI AVOGADRI Primitivo,Italien,Toskana,red,Luigi Tacchino Gavi,Italien,Gavi,white
-8883,-0.21734054983057322,58_left,1417_right,SURANI Primitivo,Italien,Piemont,red,Luccarelli Primitivo,Italien,Puglia,red
-15995,-0.2184553285424495,110_left,669_right,FERRAL Priorat,Spanien,La Rioja,red,Muga Reserva,Spanien,Rioja,red
-23275,-0.21885702955530287,166_left,5374_right,VIEIL ARMAND Gewurztraminer,Frankreich,Loiretal,white,Wolfberger Gewurztraminer Alsace,Frankreich,Elsass,white
-26033,-0.22246555787564243,182_left,11764_right,DISSENAY Chardonnay,Frankreich,Jura,white,Francois Montand Brut Rosé,Frankreich,Jura,sparkling
-32517,-0.22278181383821244,233_left,4405_right,CORVERS Sonnenberg Riesling,Deutschland,Mosel,white,Corvers Kauter R3 Riesling Remastered,Deutschland,Rheingau,white
-33261,-0.22471095315148348,239_left,11516_right,TABERNUS Edition S,Deutschland,Pfalz,white,Neiss That's Neiss Rosé,Deutschland,Pfalz,rosé
-8165,-0.2248188936583518,50_left,5904_right,ANTICOSASSO Merlot,Italien,Abruzzen,red,Tramin Merlot,Italien,Südtirol - Alto Adige,red
-17864,-0.2251461518046949,127_left,3257_right,KÜNSTLER Spätburgunder Edition,Deutschland,Württemberg,red,Lauffener Whyne,Deutschland,Württemberg,red
-12239,-0.22567289997656054,84_left,193_right,FRANCO FIORINA Barolo,Italien,Toskana,red,Prunotto Barolo,Italien,Barolo,red
-18984,-0.22577015053915397,133_left,6761_right,BLEASDALE Frank Potts,Australien,South Australia,red,Penfolds Koonunga Hill Shiraz,Australien,South Australia,red
-20904,-0.22623668432462118,147_left,2624_right,CAZAL VIEL Chardonnay-Viognier,Frankreich,Languedoc,white,Paul Mas Grande Réserve Chardonnay,Frankreich,Languedoc,white
-2872,-0.23062667779287144,15_left,12914_right,Rhônetal DOMAINE SAINTE-ANNE Saint-Gervais,Frankreich,Languedoc,red,Chartogne-Taillet Sainte Anne Brut,Frankreich,Schaumwein,sparkling
-25517,-0.23928869892276292,178_left,1564_right,CIGALUS Blanc BIO**,Frankreich,Burgund,white,Gérard Bertrand Domaine De Cigalus Blanc,Frankreich,Vin de Pays,white
-1780,-0.2507054733199143,9_left,7172_right,LES ORMIÈRES,Frankreich,,red,Calmel & Joseph Les Terroirs Corbières,Frankreich,Corbières,red
-28389,-0.254959553050236,194_left,2145_right,LA ZERBETTA Arneis,Italien,Friaul,white,Prunotto Langhe Arneis,Italien,Langhe,white
-404,-0.2560421026046228,2_left,1837_right,LA CLOUTADE D'AMBRE,Frankreich,Languedoc,red,Château de l'Engarran Les Angelots,Frankreich,Languedoc,red
-16709,-0.25654322284481224,114_left,6098_right,PURGATORI,Spanien,Valle Central,red,Valdivieso Chardonnay,Chile,Central Valley,white
-1339,-0.2593272199138241,7_left,1495_right,DOMAINE DE GRANGENEUVE L'Initiale H,Frankreich,Languedoc,red,Domaine de la Baume Viognier Elisabeth,Frankreich,Languedoc-Roussillon,white
-2668,-0.2597042925173557,14_left,3796_right,LE CHAMP DES MURAILLES,Frankreich,Languedoc,red,Domaine la Croix Belle Le Champ des Lys,Frankreich,Côtes de Thongue,white
-31376,-0.2632590653688249,220_left,8567_right,GLASKLAR Feine Perlen,Deutschland,Baden,white,Kopp Chardonnay,Deutschland,Baden,white
-18079,-0.2649014695394383,128_left,3190_right,HIRSCH Großes Geweih,Deutschland,Baden,red,Salwey GG Henkenberg Spätburgunder,Deutschland,Baden,red
-16494,-0.2679342795475257,113_left,65_right,THE GREAT TINTO 1 Liter,Spanien,Katalonien,red,Casa Rojo Alexander (The Great),Spanien,Ribera del Duero,red
-4210,-0.2752451027728358,23_left,10691_right,CHÂTEAU LAVILLE BERTROU,Frankreich,Languedoc,red,Château La Sauvageonne Volcanic Rosé,Frankreich,Languedoc,rosé
-18521,-0.28244043074077463,130_left,6761_right,EBERBACH Höllenberg,Deutschland,South Australia,red,Penfolds Koonunga Hill Shiraz,Australien,South Australia,red
-5670,-0.28480583023508693,32_left,7780_right,CHÂTEAU JACQUES NOIR,Frankreich,Languedoc,red,Jean-Jacques Auchère Sancerre,Frankreich,Sancerre,white
-25830,-0.29038041561679234,181_left,1045_right,L'ARJOLLE Perce-Neige,Frankreich,Elsass,white,Hugel Riesling Grossi Laüe,Frankreich,Elsass,white
-1983,-0.294912495189295,10_left,9768_right,CHÂTEAU BONNET Classique,Frankreich,Languedoc,red,Jean-Louis Denois Brut Classique,Frankreich,Languedoc-Roussillon,sparkling
-35108,-0.29828646241366197,252_left,1299_right,PRINZ Jungfer,Deutschland,Rheingau,white,Prinz von Hessen Johannisberger Klaus Riesling GG,Deutschland,Rheingau,white
-9354,-0.30408489707681857,62_left,2684_right,IL PUMO D'ORO,Italien,Venetien,red,Biserno Il Pino di Biserno,Italien,Toscana,red
-22001,-0.307779923701902,157_left,6836_right,DOMAINE DU CLOS DU BOURG,Frankreich,Loiretal,white,Domaine du Colombier Chablis,Frankreich,Chablis,white
-27378,-0.30915125680078703,189_left,2348_right,LE VELE Verdicchio,Italien,Venetien,white,Le Val Merlot,Frankreich,Vin de Pays,red
-32681,-0.309670186987881,234_left,9986_right,PRINZ Quarzit BIO**,Deutschland,Nahe,white,Prinz Salm La Principessa Rosé Brut,Deutschland,Nahe,sparkling
-22687,-0.3110512507863419,163_left,1601_right,Ferrandière Grand Vin Blanc,Frankreich,Burgund,white,Château l'Hospitalet Grand Vin La Clape Blanc,Frankreich,La Clape,white
-11433,-0.31384206550679916,77_left,303_right,AVOGADRI Diamante,Italien,Toskana,red,Antinori Tignanello,Italien,Toscana,red
-10184,-0.314630522458519,67_left,3015_right,TERRE DI SAN QUIRICO Silenzio,Italien,Piemont,red,Terre da Vino Surpass Appassimento,Italien,Piemont,red
-910,-0.32595900361767544,5_left,3721_right,CANTE CIGALE Rouge,Frankreich,Roussillon,red,Domaine Houchart Rouge,Frankreich,Côtes de Provence,red
-15317,-0.3267496788722032,105_left,669_right,CLUB PRIVADO Reserva,Spanien,Kastilien-León,red,Muga Reserva,Spanien,Rioja,red
-221,-0.33067515775002143,1_left,3130_right,GUY BOYER,Frankreich,Languedoc,red,Paul Mas Syrah,Frankreich,Languedoc-Roussillon,red
-3089,-0.34717541215590236,16_left,1837_right,Rhônetal DOMAINE DE LA PRÉSIDENTE Cairanne,Frankreich,Languedoc,red,Château de l'Engarran Les Angelots,Frankreich,Languedoc,red
-8778,-0.35062207029237613,57_left,303_right,GIARDINIERE,Italien,Apulien,red,Antinori Tignanello,Italien,Toscana,red
-13656,-0.35948467936340994,92_left,9149_right,PARADISO Edizione,Italien,Piemont,red,Dilé Moscato,Italien,Piemont,white
-35968,-0.360522054397754,263_left,5274_right,PIRRAMIMMA Katunga Chardonnay,Australien,Franken,white,Castell Silvaner,Deutschland,Franken,white
-21149,-0.3676060565349709,149_left,2760_right,JURANÇON Grain Sauvage Sec,Frankreich,Languedoc,white,Pascal Jolivet Sancerre Sauvage Blanc,Frankreich,Sancerre,white
-25088,-0.3722198829179204,176_left,3467_right,"CHÂTEAU DU LEVANT Sauternes 0,5 L",Frankreich,Languedoc,white,Château du Cèdre Le Cèdre,Frankreich,Cahors,red
-3552,-0.37227196152312564,19_left,660_right,"L'ARJOLLE Cabernet Magnum 1,5 Liter",Frankreich,Bordeaux,red,Château La Freynelle Bordeaux (Merlot - Cabernet Sauvignon),Frankreich,Bordeaux,red
-9245,-0.37389684851695987,60_left,4336_right,SAROTTO Briccorossa,Italien,Apulien,red,Roberto Sarotto Virgilio Gavi,Italien,Gavi,white
-26900,-0.37429208769677624,186_left,2624_right,CONTI DI COLLOREDO Chardonnay,Italien,Languedoc,white,Paul Mas Grande Réserve Chardonnay,Frankreich,Languedoc,white
-4640,-0.37681062184531106,26_left,1158_right,MADIRAN Tannat Paradox,Frankreich,Bordeaux,red,Château Malbec Bordeaux,Frankreich,Bordeaux,red
-3996,-0.38098924101192116,22_left,6848_right,Rhônetal DOMAINE SAINTE-ANNE Cuvée Notre Dame,Frankreich,Languedoc,red,Notre Dame des Pallières Gigondas,Frankreich,Gigondas,red
-15068,-0.3825511774028218,103_left,6619_right,La Mancha LUCIO MUÑOZ Colección Familiar,Spanien,La Rioja,red,Sierra Cantabria Colección Privada,Spanien,Rioja,red
-27724,-0.386514985049928,191_left,3047_right,PODERE LA CASA ROSSA BIO**,Italien,Apulien,white,Cabreo La Pietra Chardonnay,Italien,Toscana,white
-12579,-0.3897040524542264,87_left,10897_right,SARTORI Corte Brà Amarone Riserva,Italien,Apulien,red,Sartori di Verona Bardolino Chiaretto ,Italien,Bardolino,rosé
-30327,-0.38975795806162133,209_left,6098_right,DE MARTINO Legado Chardonnay,Chile,Galicien,white,Valdivieso Chardonnay,Chile,Central Valley,white
-29740,-0.3984273600562609,204_left,727_right,TRAMOYA,Spanien,Friaul,white,Valdecuevas Verdejo,Spanien,Rueda,white
-11929,-0.4014776525462033,82_left,3146_right,ELENA LA LUNA,Italien,Apulien,red,Elena Walch Gewürztraminer,Italien,Südtirol - Alto Adige,white
-32856,-0.4035309290811299,235_left,1559_right,FENDEL Froher Weingarten,Deutschland,Rheingau,white,Barth Riesling Fructus,Deutschland,Rheingau,white
-10468,-0.412349667180668,69_left,303_right,REGOLO,Italien,Venetien,red,Antinori Tignanello,Italien,Toscana,red
-9561,-0.4164901770260187,63_left,2684_right,"IL PUMO D'ORO Magnum 1,5 Liter",Italien,Toskana,red,Biserno Il Pino di Biserno,Italien,Toscana,red
-2195,-0.4167777089250456,11_left,3130_right,PUGIBET Cabernet Noir,Frankreich,Languedoc,red,Paul Mas Syrah,Frankreich,Languedoc-Roussillon,red
-19813,-0.43334109218760913,140_left,1374_right,CREST Syrah,USA,Washington State,red,Stemmari Syrah,Italien,Sizilien,red
-2456,-0.45169386147744084,13_left,798_right,ABBAYE DE VALMAGNE,Frankreich,Rhônetal,red,Château de Sancerre Sancerre Blanc,Frankreich,Sancerre,white
-14017,-0.46512430395283805,94_left,4816_right,LUCIO MUÑOZ Las Canteras,Spanien,,red,Viñedos y Bodegas Muñoz Blas Muñoz Chardonnay,Spanien,Castilla,white
-10982,-0.4735167877421499,74_left,6891_right,FATTORIA DEL CERRO Vino Nobile,Italien,Piemont,red,Patrizi Passo del Bricco,Italien,Piemont,red
-22905,-0.47686203785658904,164_left,9240_right,JURANÇON Pavillon Royal Doux,Frankreich,Languedoc,white,Anciens Temps Réserve Royale,Frankreich,Languedoc-Roussillon,red
-30069,-0.47795024235413075,207_left,403_right,VAL DO SOSEGO Albariño,Spanien,Kastilien-León,white,Lagar de Besada Albariño,Spanien,Rías Baixas,white
-24676,-0.4893106025347091,174_left,1640_right,LES CHÊNES DE MON GRAND-PÈRE,Frankreich,Bordeaux,white,Grand Theatre Bordeaux Rouge,Frankreich,Bordeaux,red
-34375,-0.5180915412798986,248_left,1559_right,"TABERNUS Beerenauslese 0,375 Liter",Deutschland,Rheingau,white,Barth Riesling Fructus,Deutschland,Rheingau,white
+,best_match_score,__id_left,__id_right,full_name_left,wine_country_left,wine_type_left,full_name_right,wine_country_right,wine_type_right
+1805,1.3538806079888106,12_left,2454_right,PAUL MAS VIGNES DE NICOLE Rouge,Frankreich,red,Paul Mas Vignes de Nicole Rouge,Frankreich,red
+23359,1.1734160530329945,264_left,6509_right,WINZER KREMS Grüner Veltliner,Österreich,white,Winzer Krems Chremisa Edition Grüner Veltliner,Österreich,white
+7568,1.0965149964081327,66_left,5370_right,LA LUNA E I FALÒ Barbera d'Asti,Italien,red,Vite Colte La Luna e i Falò Barbera d'Asti Superiore,Italien,red
+15363,0.9892885363928176,161_left,8192_right,PAUL MAS Vignes de Nicole Blanc,Frankreich,white,Paul Mas Vignes de Nicole l'Assemblage Blanc,Frankreich,white
+19041,0.9859724057987533,201_left,9038_right,"MONTE ZOVO Lugana ""Le Civaie""",Italien,white,Monte Zovo Lugana Le Civaie,Italien,white
+23176,0.94135526322605,262_left,452_right,RAWSON'S RETREAT Chardonnay,Australien,white,Rawson's Retreat Sémillon - Chardonnay,Australien,white
+12135,0.9207190959342776,121_left,4365_right,MONTES Alpha Cabernet Sauvignon,Chile,red,Montes Alpha Cabernet Sauvignon,Chile,red
+13716,0.8958978855169061,141_left,7320_right,ZANTHO Zweigelt,Österreich,red,Zantho Zweigelt,Österreich,red
+13610,0.8764637713079847,139_left,4196_right,BRAZIN Lodi Old Vine Zinfandel,USA,red,Brazin (B) Old Vine Zinfandel Lodi,Vereinigte Staaten,red
+17606,0.7942862705430402,187_left,800_right,FEUDO ARANCIO Grillo,Italien,white,Feudo Arancio Grillo Sicilia,Italien,white
+8728,0.767405051471926,79_left,1503_right,CARPINETO Chianti Classico Riserva,Italien,red,Carpineto Chianti Classico Riserva,Italien,red
+6179,0.7650859316651158,54_left,3807_right,SAN NICOLAO Barbera d'Asti,Italien,red,Vite Colte San Nicolao Barbera d'Asti,Italien,red
+12134,0.7488362067016789,120_left,3830_right,MONTES Alpha Syrah,Chile,red,Montes Alpha Syrah,Chile,red
+11838,0.7268502594110551,117_left,4450_right,MONTES Cabernet Sauvignon Reserva,Chile,red,Montes Reserva Cabernet Sauvignon (Classic),Chile,red
+20465,0.6988508178415029,216_left,1051_right,KARL PFAFFMANN Weißburgunder,Deutschland,white,Karl Pfaffmann Markus Pfaffmann Weissburgunder Trocken,Deutschland,white
+13554,0.6521052889078831,135_left,6824_right,KAIKEN Ultra Cabernet Sauvignon,Argentinien,red,Kaiken Cabernet Sauvignon,Argentinien,red
+13606,0.6516599297979967,137_left,3996_right,BEYERSKLOOF Synergy,Südafrika,red,Beyerskloof Synergy Cape Blend,Südafrika,red
+20856,0.6509081331484198,225_left,2253_right,KLOSTER EBERBACH Riesling,Deutschland,white,Kloster Eberbach Riesling Trocken,Deutschland,white
+18762,0.6423773679616183,198_left,5204_right,KURTATSCH Pinot Grigio,Italien,white,Cantina Kurtatsch Pinot Grigio,Italien,white
+4282,0.6298833571490063,31_left,5448_right,CHÂTEAU LA TOUR DE BY Magnum,Frankreich,red,Château La Tour de By Château la Roque de By,Frankreich,red
+8727,0.6193120795968667,78_left,5201_right,LE MORTELLE Botrosecco,Italien,red,Le Mortelle Botrosecco Maremma Toscana,Italien,red
+16075,0.5652627728348345,167_left,7801_right,CHÂTEAU PAUL MAS Belluguette,Frankreich,white,Paul Mas Château Paul Mas Parcelle Belluguette Languedoc Blanc,Frankreich,white
+9021,0.5651951264390124,83_left,4876_right,PAOLO MANZONE Barolo,Italien,red,Paolo Manzone Barolo Meriame,Italien,red
+5311,0.562286051625525,41_left,5448_right,CHÂTEAU LA TOUR DE BY Heritage,Frankreich,red,Château La Tour de By Château la Roque de By,Frankreich,red
+20800,0.5554395945456662,222_left,6056_right,WINTER Grauburgunder,Deutschland,white,Stefan Winter Grauburgunder,Deutschland,white
+15129,0.554905125502938,158_left,10546_right,LE BLANC DE MONSIEUR HENRI,Frankreich,white,Monsieur Henri Le Rosé de Monsieur Henri Merlot,Frankreich,rosé
+7995,0.5389031088450744,70_left,12330_right,VECCHIA TORRE Leverano Riserva,Italien,red,Vecchia Torre Leverano Rosato,Italien,rosé
+20979,0.5279631713763616,227_left,3085_right,VILLA HUESGEN Riesling Kabinett,Deutschland,white,Villa Huesgen By the Glass Riesling,Deutschland,white
+11537,0.5238120002960264,111_left,490_right,BERONIA Gran Reserva,Spanien,red,Beronia Rioja Gran Reserva,Spanien,red
+16868,0.4994687457600801,179_left,424_right,JADOT Pouilly-Fuissé Petites Pierres,Frankreich,white,Louis Jadot Pouilly-Fuissé,Frankreich,white
+19734,0.49714410070862036,208_left,2266_right,MONTES Sauvignon Blanc,Chile,white,Montes Reserva Sauvignon Blanc (Classic),Chile,white
+20034,0.4823249395887104,211_left,5715_right,RUPPERTSBERGER Riesling,Deutschland,white,Fußer Ruppertsberger Riesling,Deutschland,white
+22116,0.4634000842873448,242_left,6892_right,MARKUS MOLITOR Zeltinger Ortswein,Deutschland,white,Markus Molitor Zeltinger Sonnenuhr Riesling Kabinett,Deutschland,white
+18667,0.4563771283422169,196_left,11977_right,LOREDAN GASPARINI Prosecco Frizzante,Italien,white,Loredan Gasparini Asolo Prosecco Superiore,Italien,sparkling
+5086,0.45164909080312543,39_left,7836_right,CHÂTEAU LA COMMANDERIE,Frankreich,red,Château La Commanderie Saint-Estèphe,Frankreich,red
+14890,0.44114119499413224,155_left,8860_right,LES FUMÉES BLANCHES Blanc,Frankreich,white,François Lurton Les Fumées Blanches Sauvignon Blanc Côtes de Gascogne,Frankreich,white
+16870,0.4250384343530918,180_left,1159_right,JADOT Chassagne-Montrachet Baudines,Frankreich,white,Paul Pillot Chassagne-Montrachet,Frankreich,white
+21820,0.4074001670365542,238_left,1461_right,WINTER Alte Reben Riesling,Deutschland,white,Schneider Alte Reben Riesling,Deutschland,white
+20461,0.40064293713127436,215_left,7422_right,WINTER Riesling,Deutschland,white,Stefan Winter Riesling Trocken,Deutschland,white
+20466,0.3818727950837806,217_left,2277_right,TABERNUS Grauer Burgunder,Deutschland,white,Korrell Grauer Burgunder,Deutschland,white
+13435,0.38100307169191633,134_left,11007_right,BLEASDALE Bremerview Shiraz,Australien,red,Bleasdale Sparkling Shiraz,Australien,sparkling
+12139,0.3791663819068013,122_left,3830_right,MONTES Alpha M,Chile,red,Montes Alpha Syrah,Chile,red
+6160,0.37833868334513887,53_left,5013_right,SALICE SALENTINO,Italien,red,Epicuro Salice Salentino,Italien,red
+14489,0.37822401697860647,150_left,5037_right,CÔTÉ MAS Sauvignon Blanc,Frankreich,white,Paul Mas Sauvignon Blanc,Frankreich,white
+20847,0.3718384618949812,224_left,2277_right,SONNENHOF Grauer Burgunder,Deutschland,white,Korrell Grauer Burgunder,Deutschland,white
+11126,0.35922149193231095,106_left,1631_right,BERONIA Reserva,Spanien,red,Beronia Rioja Reserva,Spanien,red
+9348,0.3568658498079553,86_left,5797_right,LA PODERINA Brunello di Montalcino,Italien,red,La Gerla Brunello di Montalcino,Italien,red
+18927,0.3551711501703868,200_left,10888_right,BOSCO DEL MERLO Sauvignon Blanc,Italien,white,Bosco del Merlo Brut Rosé,Italien,sparkling
+23411,0.3488989972017484,266_left,1087_right,GÖTTWEIG Grüner Veltliner,Österreich,white,Meinklang Grüner Veltliner,Österreich,white
+23361,0.3488989972017484,265_left,1087_right,ZIMMERMANN Grüner Veltliner,Österreich,white,Meinklang Grüner Veltliner,Österreich,white
+23740,0.3456014391790096,270_left,7752_right,GÖTTWEIG Grüner Veltliner Reserve,Österreich,white,Steininger Kamptal Reserve Grüner Veltliner,Österreich,white
+6180,0.3384801864559845,55_left,1813_right,RIPORTA Nero d'Avola,Italien,red,Cusumano Nero d'Avola,Italien,red
+14296,0.3367138223200416,148_left,5377_right,CAZAL VIEL Sauvignon Blanc,Frankreich,white,Le Val Sauvignon Blanc,Frankreich,white
+22367,0.33116585942083365,247_left,2315_right,BECKER Grauburgunder Tradition,Deutschland,white,Friedrich Becker Grauburgunder,Deutschland,white
+18663,0.3307447781450411,195_left,9442_right,PRÀ Soave,Italien,white,Prà Otto Soave,Italien,white
+22358,0.31802680889249024,246_left,6147_right,KÜNSTLER Riesling 1648,Deutschland,white,Künstler Riesling Trocken,Deutschland,white
+9186,0.3179285569886447,85_left,9089_right,SAROTTO Barbaresco Riserva,Italien,red,Ceretto Barbaresco,Italien,red
+5531,0.30881656688183906,44_left,625_right,JADOT Aloxe-Corton,Frankreich,red,Joseph Drouhin Aloxe-Corton,Frankreich,red
+22356,0.2962078245640985,245_left,6372_right,GEIL Riesling Rosengarten,Deutschland,white,Weingut Geil Riesling Trocken,Deutschland,white
+8388,0.29559460503459956,73_left,2117_right,TORCICODA Primitivo,Italien,red,Tormaresca Primitivo Salento Torcicoda,Italien,red
+12420,0.29245932963219184,126_left,7634_right,BECKER Pinot Noir Tradition,Deutschland,red,Friedrich Becker Schweigen Pinot Noir,Deutschland,red
+2578,0.2901977471653107,17_left,3719_right,CHÂTEAU CAZAL VIEL Vieilles Vignes,Frankreich,red,Château Fontarèche Vieilles Vignes Sélection,Frankreich,red
+11839,0.28715389316583123,118_left,10104_right,MONTES Angel's Selection,Chile,red,Montes Sparkling Angel Brut,Chile,sparkling
+3636,0.2844221123132478,25_left,5731_right,DOMAINE DE VILLEMAJOU Rouge,Frankreich,red,Domaine de l'Horizon Rouge,Frankreich,red
+5728,0.282084857162136,48_left,5901_right,LA CARRAIA Sangiovese,Italien,red,La Mozza Sangiovese,Italien,red
+20864,0.27896003104628486,226_left,6772_right,GRANS-FASSIAN Fuder 12 Riesling,Deutschland,white,Grans-Fassian Mineralschiefer Riesling - Trocken,Deutschland,white
+16292,0.2761438529515736,169_left,798_right,CHÂTEAU DE ROCHEMORIN Blanc,Frankreich,white,Château de Sancerre Sancerre Blanc,Frankreich,white
+4122,0.2710006375305431,29_left,3679_right,CHÂTEAU L'HOSPITALET,Frankreich,red,Château l'Hospitalet La Clape Grand Vin Rouge,Frankreich,red
+22961,0.2697135898818939,256_left,6196_right,TABERNUS Riesling-Gewürztraminer,Deutschland,white,Knipser Gewürztraminer - Riesling Trocken,Deutschland,white
+16318,0.26872214438982384,170_left,9532_right,MONTAGNY 1er CRU Montcuchot,Frankreich,white,Louis Latour Montagny 1er Cru La Grande Roche,Frankreich,white
+7806,0.2650598007839827,68_left,1931_right,WALCH - von Keller Lagrein,Italien,red,Wilhelm Walch Lagrein,Italien,red
+17194,0.26414820015403745,183_left,11357_right,CHÂTEAU BÉTHANIE,Frankreich,white,Château Béthanie Crémant du Jura Brut,Frankreich,sparkling
+710,0.25528018684604636,6_left,2893_right,CHÂTEAU DE JAU Rouge,Frankreich,red,Château de Jau Côtes du Roussillon Villages,Frankreich,red
+11788,0.25517923747371124,115_left,9187_right,EDWARDS Cabernet Sauvignon Reserva,Chile,red,de Gras Reserva Cabernet Sauvignon,Chile,red
+21787,0.24218197964273122,236_left,8117_right,DR. CRUSIUS Porphyr Weißburgunder,Deutschland,white,Dr. Loosen Weißburgunder,Deutschland,white
+5959,0.23811853199962513,51_left,1813_right,LUIGI AVOGADRI Nero d'Avola,Italien,red,Cusumano Nero d'Avola,Italien,red
+11365,0.22782355162095447,108_left,776_right,CELESTE Crianza,Spanien,red,Pago del Cielo Celeste Crianza,Spanien,red
+8333,0.2252504572466538,72_left,470_right,LE BOCCE Chianti Classico Riserva,Italien,red,Brancaia Chianti Classico Riserva,Italien,red
+4123,0.22079342038746416,30_left,4344_right,CHÂTEAU PAUL MAS Clos de Savignac,Frankreich,red,Paul Mas Château Paul Mas Coteaux du Languedoc Clos des Mures,Frankreich,red
+20242,0.21066800957039442,213_left,1051_right,KARL PFAFFMANN Riesling,Deutschland,white,Karl Pfaffmann Markus Pfaffmann Weissburgunder Trocken,Deutschland,white
+21791,0.20767922445885156,237_left,6235_right,REINHARDT Weißburgunder,Deutschland,white,Schneider Weissburgunder,Deutschland,white
+13556,0.20617243528780316,136_left,7702_right,SURVIVOR Pinotage,Südafrika,red,Simonsig Pinotage,Südafrika,red
+12398,0.20524485938088538,124_left,1599_right,SONNENHOF Pinot Noir,Deutschland,red,Heitlinger Pinot Noir,Deutschland,red
+11814,0.20292705309411618,116_left,1945_right,EDWARDS Carmenère Reserva,Chile,red,Caliterra Reserva Carmenère,Chile,red
+9854,0.19831281439832607,91_left,2830_right,AVOGADRI Primitivo-Negroamaro,Italien,red,Mezzatia Primitivo - Negroamaro,Italien,red
+10729,0.1937653588104404,101_left,1155_right,VIÑA DIEZMO Crianza,Spanien,red,Viña Olabarri Crianza,Spanien,red
+4716,0.18970612164757078,36_left,3679_right,CHÂTEAU DE LA SOUJEOLE Grand Vin,Frankreich,red,Château l'Hospitalet La Clape Grand Vin Rouge,Frankreich,red
+5697,0.18770540688845222,46_left,4247_right,Sangiovese,Italien,red,Caparzo Sangiovese Toscana,Italien,red
+14673,0.18215918236687628,152_left,1473_right,CHÂTEAU LE RAZ Le Dauphin,Frankreich,white,Château le Reysse Médoc,Frankreich,red
+11538,0.181541578481895,112_left,1315_right,VALSERRANO Gran Reserva,Spanien,red,Protos Gran Reserva,Spanien,red
+19476,0.17675957713738372,206_left,4497_right,MONTESPINA Verdejo,Spanien,white,Protos Verdejo,Spanien,white
+20005,0.17605462713695777,210_left,6235_right,RUPPERTSBERGER Weißburgunder,Deutschland,white,Schneider Weissburgunder,Deutschland,white
+6889,0.17365712616486947,61_left,133_right,DOGAJOLO,Italien,red,Carpineto Toscana Dogajolo Rosso,Italien,red
+8776,0.17318209969072657,81_left,6319_right,FARNITO Cabernet Sauvignon,Italien,red,Alturis Cabernet Sauvignon,Italien,red
+22962,0.1660202939481584,257_left,6235_right,GEIL Weißburgunder,Deutschland,white,Schneider Weissburgunder,Deutschland,white
+14828,0.15931112138772052,153_left,2972_right,DOMAINE BOSQUET Chardonnay,Frankreich,white,Domaine Montrose Chardonnay,Frankreich,white
+22932,0.15598596075935903,255_left,6235_right,MATHILDE Weißburgunder,Deutschland,white,Schneider Weissburgunder,Deutschland,white
+16808,0.1500514278163409,177_left,1739_right,CHABLIS 1er CRU Beauroy,Frankreich,white,La Chablisienne Chablis 1er Cru 'Fourchaume',Frankreich,white
+10939,0.14630228981294316,104_left,4119_right,VIÑA DIEZMO Reserva,Spanien,red,Viña Pedrosa Reserva,Spanien,red
+9578,0.14573511125673472,88_left,4402_right,PRÀ Amarone,Italien,red,Prà Morandina Amarone della Valpolicella,Italien,red
+23879,0.14256719462936823,272_left,2118_right,PFAFFL Hund,Österreich,white,Weingut R&A Pfaffl Hund Grüner Veltliner Reserve,Österreich,white
+23016,0.1399214124447725,259_left,2886_right,WINTER Bodenständig,Deutschland,white,Stefan Winter Weissburgunder,Deutschland,white
+15364,0.1385800720648885,162_left,8417_right,MONTAGNY Vieilles Vignes,Frankreich,white,Les Mougeottes Vieilles Vignes Chardonnay,Frankreich,white
+14835,0.13652744574488967,154_left,2071_right,SAINT-PEYRE Picpoul de Pinet,Frankreich,white,Paul Mas Picpoul De Pinet Réserve,Frankreich,white
+22327,0.13626722743282768,244_left,3949_right,SCHARZHOFBERGER Riesling Spätlese,Deutschland,white,Schloss Vollrads Riesling Spätlese,Deutschland,white
+9799,0.13620786303615745,90_left,1813_right,TERRE DEL SOLE Nero d'Avola,Italien,red,Cusumano Nero d'Avola,Italien,red
+18222,0.13609921050834287,193_left,1335_right,LE ROSE DI ORNELLA Pinot Grigio,Italien,white,La Tunella Pinot Grigio,Italien,white
+10436,0.1356703220883199,98_left,11316_right,TORRE ORIA Crianza,Spanien,red,Torre Oria Cava Chardonnay Brut,Spanien,sparkling
+4713,0.13211159789254748,35_left,3110_right,CHÂTEAU LA CROIX ROMANE,Frankreich,red,Château La Croix du Duc Bordeaux,Frankreich,red
+10574,0.12568369022879247,99_left,1315_right,GRAN MARIUS Reserva,Spanien,red,Protos Gran Reserva,Spanien,red
+19068,0.12247368612388211,203_left,10988_right,TERRE DEL SOLE Grillo,Italien,white,Contri Terre del Sole Fragolino,Italien,sparkling
+22011,0.1179072970666685,240_left,4086_right,KÜNSTLER Riesling Edition,Deutschland,white,Schloss Vollrads Edition Riesling,Deutschland,white
+22720,0.11712903881806837,250_left,6147_right,KÜNSTLER Pfandloch,Deutschland,white,Künstler Riesling Trocken,Deutschland,white
+10736,0.11590385288883716,102_left,675_right,LAR DE PAULA Oak Aged,Spanien,red,Pago de Cirsus Oak Aged Red Blend,Spanien,red
+8615,0.11550955461458713,76_left,1596_right,NINO NEGRI Sassella,Italien,red,Nino Negri Sfursat Carlo Negri,Italien,red
+2581,0.11529489898892333,18_left,5731_right,DOMAINE DE L'ARJOLLE Cabernet,Frankreich,red,Domaine de l'Horizon Rouge,Frankreich,red
+23025,0.10766234026126854,260_left,1461_right,HAACK Scheurebe Alte Reben,Deutschland,white,Schneider Alte Reben Riesling,Deutschland,white
+13979,0.10712496509648263,144_left,5377_right,LE TAPIE Blanc,Frankreich,white,Le Val Sauvignon Blanc,Frankreich,white
+23595,0.10527211310061106,268_left,2065_right,ERZHERZOG JOHANN Sauvignon Blanc,Österreich,white,Sattlerhof Sauvignon Blanc,Österreich,white
+20611,0.10251811117129553,219_left,1085_right,IHRINGER Grauburgunder,Deutschland,white,Schneider Grauburgunder,Deutschland,white
+20755,0.10251811117129553,221_left,1085_right,SCHÖNLAUB Grauburgunder,Deutschland,white,Schneider Grauburgunder,Deutschland,white
+20981,0.10251811117129553,228_left,1085_right,MESSMER Grauburgunder,Deutschland,white,Schneider Grauburgunder,Deutschland,white
+7513,0.09044689900352486,65_left,77_right,LE BOCCE Chianti Classico,Italien,red,Banfi Chianti Classico,Italien,red
+4484,0.08685828365434234,33_left,798_right,CHÂTEAU DE BARBE BLANCHE,Frankreich,red,Château de Sancerre Sancerre Blanc,Frankreich,white
+8597,0.08639343920812938,75_left,193_right,PRUNOTTO Bansella,Italien,red,Prunotto Barolo,Italien,red
+14034,0.08525666228469148,146_left,4744_right,DOMAINE PUGIBET Le Blanc,Frankreich,white,Domaine de l'Horizon Blanc,Frankreich,white
+13607,0.083824312603047,138_left,2635_right,SURVIVOR Pinotage Reserve,Südafrika,red,Wildekrans Barrel Select Reserve Pinotage,Südafrika,red
+16341,0.08318920506631791,173_left,798_right,CHÂTEAU DE NAVAILLES,Frankreich,white,Château de Sancerre Sancerre Blanc,Frankreich,white
+526,0.08218256680984556,4_left,447_right,PAUL MAS Cabernet de Cabernet,Frankreich,red,Paul Mas Vignes de Nicole Cabernet Sauvignon - Merlot Pays d'Oc,Frankreich,red
+15318,0.07765199698484235,160_left,798_right,CHÂTEAU BONNET Blanc,Frankreich,white,Château de Sancerre Sancerre Blanc,Frankreich,white
+9977,0.0776115740695458,93_left,4695_right,ANDERGASSEN Lagrein,Italien,red,Tramin Lagrein,Italien,red
+14491,0.07626092542694289,151_left,7561_right,LA CABANE DU GASCON Blanc,Frankreich,white,Domaine de Pellehaut L'Été Gascon Blanc,Frankreich,white
+17327,0.0751386068309847,184_left,798_right,CHÂTEAU DE VILLEMAJOU Grand V. Blanc,Frankreich,white,Château de Sancerre Sancerre Blanc,Frankreich,white
+13161,0.07044908108276084,131_left,11567_right,PIRRAMIMMA Petit Verdot,Australien,red,Rustenberg Petit Verdot Rosé,Südafrika,rosé
+21173,0.07016902235883753,230_left,1051_right,KARL PFAFFMANN Riesling Hölle,Deutschland,white,Karl Pfaffmann Markus Pfaffmann Weissburgunder Trocken,Deutschland,white
+6230,0.07011217580815342,56_left,12330_right,VECCHIA TORRE Primitivo,Italien,red,Vecchia Torre Leverano Rosato,Italien,rosé
+5725,0.06757992933820134,47_left,2759_right,CASTEL FIRMIAN Teroldego,Italien,red,Mezzacorona Castel Firmian Lagrein Riserva,Italien,red
+18126,0.0647359588510014,192_left,234_right,CONTI DI COLLOREDO Pinot Grigio,Italien,white,Zenato Pinot Grigio,Italien,white
+16336,0.06298432421715168,172_left,1288_right,POUILLY-FUMÉ Les Genièvres,Frankreich,white,Domaine A Cailbourdin Les Cris Pouilly-Fumé,Frankreich,white
+5588,0.06233582730442734,45_left,4472_right,JADOT Volnay,Frankreich,red,Louis Jadot Chablis,Frankreich,white
+16589,0.061766528835168026,175_left,7087_right,SANCERRE Les Vignolles,Frankreich,white,Dauny Sancerre 'Les Caillottes',Frankreich,white
+16319,0.05824392463337642,171_left,3810_right,JEAN GEILER Gewürztraminer,Frankreich,white,Cleebourg Gewürztraminer,Frankreich,white
+22991,0.057878100059527496,258_left,2409_right,TABERNUS Chardonnay,Deutschland,white,Schneider Chardonnay,Deutschland,white
+17759,0.057674601145244614,190_left,12330_right,VECCHIA TORRE Vermentino,Italien,white,Vecchia Torre Leverano Rosato,Italien,rosé
+4005,0.056632356832561244,28_left,22_right,CASTELMAURE Grande Cuvée,Frankreich,red,Keringer Grande Cuvée,Österreich,red
+2022,0.05605077501737323,14_left,3796_right,LE CHAMP DES MURAILLES,Frankreich,red,Domaine la Croix Belle Le Champ des Lys,Frankreich,white
+10298,0.05493648088667637,96_left,7244_right,PRINCIPIO Garnacha,Spanien,red,Intruso Garnacha,Spanien,red
+19042,0.05282431341296361,202_left,225_right,VILLA DUGO Sauvignon Blanc,Italien,white,Attems Sauvignon Blanc,Italien,white
+17758,0.05242581043378756,189_left,5277_right,LE VELE Verdicchio,Italien,white,Moncaro Verdicchio Dei Castelli Di Jesi Classico Le Vele,Italien,white
+20802,0.050824847471803,223_left,1085_right,MATHILDE Grauburgunder,Deutschland,white,Schneider Grauburgunder,Deutschland,white
+3047,0.050414455232265024,21_left,4765_right,Rhônetal RASTEAU Rouge,Frankreich,red,Domaine Montrose Rouge,Frankreich,red
+17353,0.047824653559926954,185_left,290_right,CHABLIS 1er CRU Les Lys,Frankreich,white,La Chablisienne Chablis Grand Cru 'Les Preuses',Frankreich,white
+15306,0.044638483059319764,159_left,8132_right,JEAN GEILER Pinot Blanc,Frankreich,white,Mader Pinot Blanc,Frankreich,white
+22570,0.040005923891127636,249_left,6147_right,KÜNSTLER Terroir Blanc,Deutschland,white,Künstler Riesling Trocken,Deutschland,white
+12409,0.0392894782377216,125_left,1599_right,KLOSTER EBERBACH Pinot Noir,Deutschland,red,Heitlinger Pinot Noir,Deutschland,red
+18760,0.0357930126217793,197_left,8294_right,GARETTO Moscato d’Asti,Italien,white,Rivetti Massimo Maggiorina Moscato d'Asti,Italien,white
+5932,0.03538382383046593,50_left,5904_right,ANTICOSASSO Merlot,Italien,red,Tramin Merlot,Italien,red
+14891,0.0339072751122351,156_left,1271_right,DOMAINE DE LA QUILLA Muscadet,Frankreich,white,Domaine de la Renaudie Sauvignon,Frankreich,white
+5481,0.028926734497614317,43_left,3576_right,Les 49 Lignes,Frankreich,red,Delas Les Launes Crozes-Hermitage,Frankreich,red
+4662,0.02845056501201787,34_left,5448_right,CHÂTEAU DE ROCHEMORIN Rouge,Frankreich,red,Château La Tour de By Château la Roque de By,Frankreich,red
+21395,0.028047764005086552,232_left,852_right,DR. CRUSIUS Rhyolith Riesling,Deutschland,white,Dr. Loosen Riesling Trocken,Deutschland,white
+22927,0.027925076601319022,254_left,3611_right,TABERNUS Blanc de Noirs,Deutschland,white,Fußer Blanc de Pinot Noir,Deutschland,white
+16818,0.026958767313823576,178_left,1564_right,CIGALUS Blanc BIO**,Frankreich,white,Gérard Bertrand Domaine De Cigalus Blanc,Frankreich,white
+11368,0.02663655551770679,109_left,669_right,VALSERRANO Reserva,Spanien,red,Muga Reserva,Spanien,red
+8729,0.019792519531631317,80_left,2180_right,PRÀ Morandina Valpolicella Ripasso,Italien,red,Bertani Valpolicella Ripasso,Italien,red
+17144,0.019251565251079163,182_left,1775_right,DISSENAY Chardonnay,Frankreich,white,Laroche Chardonnay,Frankreich,white
+13984,0.019251565251079163,145_left,1775_right,FONFILE Chardonnay,Frankreich,white,Laroche Chardonnay,Frankreich,white
+22831,0.017518800253169407,253_left,988_right,"GRANS Trittenheimer Apotheke 0,375 L",Deutschland,white,Ansgar Clüsserath Trittenheimer Apotheke Riesling Trocken,Deutschland,white
+0,0.017338319844012063,0_left,7576_right,LE TAPIE Rouge,Frankreich,red,Domaine Bassac Le Manpôt Rouge,Frankreich,red
+18764,0.011922285757545727,199_left,7209_right,WALCH - von Keller Weißburgunder,Italien,white,Van Volxem Weissburgunder,Deutschland,white
+13261,0.008812525188005377,132_left,2434_right,PIRRAMIMMA Classic Shiraz,Australien,red,Heartland Shiraz,Australien,red
+4881,0.008755524721571864,37_left,4765_right,CIGALUS Rouge,Frankreich,red,Domaine Montrose Rouge,Frankreich,red
+17608,0.006165759720303292,188_left,11083_right,SOLIGO L'Arcata Prosecco Frizzante,Italien,white,San Simone Prosecco Frizzante,Italien,sparkling
+11588,0.004142360687991952,113_left,65_right,THE GREAT TINTO 1 Liter,Spanien,red,Casa Rojo Alexander (The Great),Spanien,red
+22729,0.0011350022112562748,251_left,3006_right,GRANS-FASSIAN Laurentiuslay GG,Deutschland,white,Grans-Fassian Apotheke Riesling GG VDP. Grosse Lage,Deutschland,white
+5088,-0.007329125699625445,40_left,9920_right,CHÂTEAU DES FINES ROCHES,Frankreich,red,Domaine des Roches Neuves Bulles de Roche,Frankreich,sparkling
+16076,-0.010017218837968472,168_left,5377_right,LURTON Diane Sauvignon Blanc,Frankreich,white,Le Val Sauvignon Blanc,Frankreich,white
+22123,-0.01151068167065788,243_left,2450_right,SONNENHOF Grande Réserve,Deutschland,white,DiamAndes Grande Réserve,Argentinien,red
+22013,-0.016528242762731037,241_left,5120_right,BRENNFLECK Sylvaner,Deutschland,white,Stefan Vetter Sylvaner,Deutschland,white
+15961,-0.018188848006517603,166_left,5374_right,VIEIL ARMAND Gewurztraminer,Frankreich,white,Wolfberger Gewurztraminer Alsace,Frankreich,white
+19526,-0.02167873601039241,207_left,2072_right,VAL DO SOSEGO Albariño,Spanien,white,Fefiñanes Albariño de Fefiñanes,Spanien,white
+9579,-0.022278045154780306,89_left,12330_right,VECCHIA TORRE Syrah Primitivo,Italien,red,Vecchia Torre Leverano Rosato,Italien,rosé
+13311,-0.02516289132234058,133_left,11007_right,BLEASDALE Frank Potts,Australien,red,Bleasdale Sparkling Shiraz,Australien,sparkling
+2829,-0.02625614073135938,20_left,9978_right,CHÂTEAU BONNET Réserve,Frankreich,red,Alexandre Bonnet Grande Réserve Brut Champagne,Frankreich,sparkling
+7350,-0.03340013468014031,64_left,7871_right,PASQUA Valpolicella,Italien,red,Pasqua Vigneti e Cantine Amarone della Valpolicella,Italien,red
+23461,-0.03378335796193968,267_left,4146_right,PFAFFL Zeisen,Österreich,white,Weingut R&A Pfaffl Grüner Veltliner ZEISEN Weinviertel DAC,Österreich,white
+15734,-0.0338701527636434,165_left,2806_right,DOMAINE DE REUILLY,Frankreich,white,Domaine de Fondrèche Nature,Frankreich,red
+15378,-0.039261557902436364,163_left,1601_right,Ferrandière Grand Vin Blanc,Frankreich,white,Château l'Hospitalet Grand Vin La Clape Blanc,Frankreich,white
+1201,-0.041472748320228174,9_left,2447_right,LES ORMIÈRES,Frankreich,red,Les Jamelles Merlot,Frankreich,red
+5312,-0.04150788117305349,42_left,1158_right,CHÂTEAU MARZY,Frankreich,red,Château Malbec Bordeaux,Frankreich,red
+3468,-0.04150788117305349,24_left,1158_right,CHÂTEAU PLAISANCE,Frankreich,red,Château Malbec Bordeaux,Frankreich,red
+21293,-0.04562961760905538,231_left,1179_right,WILLEMS-WILLEMS Rosenberg,Deutschland,white,Markowitsch Rosenberg,Österreich,red
+761,-0.047567994522556535,7_left,5731_right,DOMAINE DE GRANGENEUVE L'Initiale H,Frankreich,red,Domaine de l'Horizon Rouge,Frankreich,red
+530,-0.048425601468598714,5_left,4765_right,CANTE CIGALE Rouge,Frankreich,red,Domaine Montrose Rouge,Frankreich,red
+14076,-0.0533858124997557,147_left,2661_right,CAZAL VIEL Chardonnay-Viognier,Frankreich,white,Les Jamelles Viognier,Frankreich,white
+6463,-0.05559061779886754,58_left,1417_right,SURANI Primitivo,Italien,red,Luccarelli Primitivo,Italien,red
+6615,-0.059894289583850444,59_left,3299_right,LUIGI AVOGADRI Primitivo,Italien,red,Luigi Einaudi Dogliani,Italien,red
+12431,-0.06091082188039011,127_left,4606_right,KÜNSTLER Spätburgunder Edition,Deutschland,red,Salwey Spätburgunder,Deutschland,red
+8121,-0.061757803210048194,71_left,1813_right,LOMBARDO Nero d`Altura,Italien,red,Cusumano Nero d'Avola,Italien,red
+20040,-0.06199654481650837,212_left,11237_right,TABERNUS Rosé,Deutschland,white,Heitlinger Rosé,Deutschland,rosé
+10129,-0.06350229313730911,95_left,4119_right,VIÑA BOLANTA,Spanien,red,Viña Pedrosa Reserva,Spanien,red
+13002,-0.06459214765888809,130_left,12616_right,EBERBACH Höllenberg,Deutschland,red,Kloster Eberbach Riesling Brut,Deutschland,sparkling
+5730,-0.07171592021632112,49_left,1417_right,IL PUMO Primitivo,Italien,red,Luccarelli Primitivo,Italien,red
+20475,-0.0731240133608049,218_left,1353_right,TABERNUS Kleine Blume Weiß,Deutschland,white,Marto Weiss,Deutschland,white
+23052,-0.07644361522666669,261_left,227_right,HOFKELLER Riesling Leiste,Deutschland,white,Dönnhoff Riesling,Deutschland,white
+13717,-0.07858209715550157,142_left,4968_right,UNGER Donauschotter,Österreich,red,Petra Unger Riesling Stein Gaisberg Reserve,Österreich,white
+13848,-0.07858209715550157,143_left,4968_right,UNGER Distelwiese,Österreich,red,Petra Unger Riesling Stein Gaisberg Reserve,Österreich,white
+2154,-0.08108775140025423,15_left,12914_right,Rhônetal DOMAINE SAINTE-ANNE Saint-Gervais,Frankreich,red,Chartogne-Taillet Sainte Anne Brut,Frankreich,sparkling
+21433,-0.08153807058137132,233_left,4405_right,CORVERS Sonnenberg Riesling,Deutschland,white,Corvers Kauter R3 Riesling Remastered,Deutschland,white
+6009,-0.081565418838854,52_left,2410_right,SALBANELLO Rosso,Italien,red,Antinori Villa Antinori Rosso,Italien,red
+23747,-0.08582419604262916,271_left,4383_right,SCHMELZ Federspiel,Österreich,white,Domäne Wachau Riesling Federspiel Terrassen,Österreich,white
+11418,-0.08922308208437668,110_left,2654_right,FERRAL Priorat,Spanien,red,Gratavinum 2πR Priorat,Spanien,red
+9022,-0.09311575100418609,84_left,193_right,FRANCO FIORINA Barolo,Italien,red,Prunotto Barolo,Italien,red
+14911,-0.10028854243101212,157_left,4240_right,DOMAINE DU CLOS DU BOURG,Frankreich,white,Domaine Boudau Côtes du Roussillon 'Le Clos',Frankreich,red
+3775,-0.10053283878005334,27_left,12284_right,CHÂTEAU DE LANCYRE Coste d'Aleyrac,Frankreich,red,Château La Coste Rosé d’une Nuit,Frankreich,rosé
+977,-0.10155993931163344,8_left,10692_right,DOMAINE SAINTE SOPHIE,Frankreich,red,Domaine Houchart Sainte-Victoire Rosé,Frankreich,rosé
+21026,-0.10206561152019997,229_left,118_right,HERZOG VON WÜRTTEMBERG,Deutschland,white,Von Winning Win Win Riesling,Deutschland,white
+10331,-0.10673578774216745,97_left,3976_right,MUCHO MÁS,Spanien,red,Berceo Más de Berceo Graciano,Spanien,red
+18443,-0.11007754381008021,194_left,2145_right,LA ZERBETTA Arneis,Italien,white,Prunotto Langhe Arneis,Italien,white
+4283,-0.1138596661933404,32_left,7780_right,CHÂTEAU JACQUES NOIR,Frankreich,red,Jean-Jacques Auchère Sancerre,Frankreich,white
+21840,-0.11741473755271202,239_left,4086_right,TABERNUS Edition S,Deutschland,white,Schloss Vollrads Edition Riesling,Deutschland,white
+10971,-0.12389676488264947,105_left,669_right,CLUB PRIVADO Reserva,Spanien,red,Muga Reserva,Spanien,red
+13611,-0.13478557150008105,140_left,1079_right,CREST Syrah,USA,red,Cusumano Syrah,Italien,red
+7570,-0.13748396880060765,67_left,3999_right,TERRE DI SAN QUIRICO Silenzio,Italien,red,Nativ Eremo San Quirico,Italien,red
+3300,-0.14034793787391725,23_left,1158_right,CHÂTEAU LAVILLE BERTROU,Frankreich,red,Château Malbec Bordeaux,Frankreich,red
+358,-0.14034793787391725,3_left,1158_right,CHÂTEAU PECH-CÉLEYRAN,Frankreich,red,Château Malbec Bordeaux,Frankreich,red
+8392,-0.14271838514618793,74_left,2644_right,FATTORIA DEL CERRO Vino Nobile,Italien,red,Poliziano Vino Nobile di Montepulciano,Italien,red
+4931,-0.14790302312139264,38_left,4097_right,CASTELMAURE N°3,Frankreich,red,Uby No. 3 Colombard - Sauvignon,Frankreich,white
+11684,-0.15460683834753494,114_left,5589_right,PURGATORI,Spanien,red,Familia Torres Purgatori Costers del Segre,Spanien,red
+11129,-0.1551843418210998,107_left,1722_right,ABADÍA LA ARROYADA Crianza,Spanien,red,Protos Crianza,Spanien,red
+12248,-0.16043976905499543,123_left,1216_right,HIRSCH Lemberger,Deutschland,red,Hirsch Zöbing Riesling,Österreich,white
+19737,-0.1677871596346986,209_left,6098_right,DE MARTINO Legado Chardonnay,Chile,white,Valdivieso Chardonnay,Chile,white
+23177,-0.16817476464340883,263_left,8673_right,PIRRAMIMMA Katunga Chardonnay,Australien,white,Vasse Felix Chardonnay,Australien,white
+16600,-0.17255047548171656,176_left,3467_right,"CHÂTEAU DU LEVANT Sauternes 0,5 L",Frankreich,white,Château du Cèdre Le Cèdre,Frankreich,red
+17361,-0.1745248346835114,186_left,3484_right,CONTI DI COLLOREDO Chardonnay,Italien,white,Vie di Romans Chardonnay,Italien,white
+8803,-0.18141226781258304,82_left,3146_right,ELENA LA LUNA,Italien,red,Elena Walch Gewürztraminer,Italien,white
+3097,-0.18844916090722005,22_left,6848_right,Rhônetal DOMAINE SAINTE-ANNE Cuvée Notre Dame,Frankreich,red,Notre Dame des Pallières Gigondas,Frankreich,red
+6891,-0.1899353988750734,62_left,2684_right,IL PUMO D'ORO,Italien,red,Biserno Il Pino di Biserno,Italien,red
+12838,-0.19010479309029787,129_left,4086_right,SONNENHOF Edition 962,Deutschland,red,Schloss Vollrads Edition Riesling,Deutschland,white
+1404,-0.19643015501483643,10_left,1158_right,CHÂTEAU BONNET Classique,Frankreich,red,Château Malbec Bordeaux,Frankreich,red
+14320,-0.19665989249322438,149_left,2760_right,JURANÇON Grain Sauvage Sec,Frankreich,white,Pascal Jolivet Sancerre Sauvage Blanc,Frankreich,white
+20656,-0.19781717603768334,220_left,118_right,GLASKLAR Feine Perlen,Deutschland,white,Von Winning Win Win Riesling,Deutschland,white
+19204,-0.1983090942365185,204_left,70_right,TRAMOYA,Spanien,white,Abadal Blanc,Spanien,white
+19340,-0.1983090942365185,205_left,70_right,PULPITO,Spanien,white,Abadal Blanc,Spanien,white
+9863,-0.22683342369697834,92_left,342_right,PARADISO Edizione,Italien,red,Farnese Edizione Cinque Autoctoni,Italien,red
+3642,-0.22864775179004432,26_left,794_right,MADIRAN Tannat Paradox,Frankreich,red,Domaine Berthoumieu Constance Madiran,Frankreich,red
+1600,-0.2322208939673335,11_left,1526_right,PUGIBET Cabernet Noir,Frankreich,red,Les Jamelles Pinot Noir,Frankreich,red
+6,-0.23892830526193173,1_left,567_right,GUY BOYER,Frankreich,red,Naia K-Naia,Spanien,white
+6782,-0.23963461546300605,60_left,4336_right,SAROTTO Briccorossa,Italien,red,Roberto Sarotto Virgilio Gavi,Italien,white
+7889,-0.2463064948645727,69_left,5673_right,REGOLO,Italien,red,Sartori di Verona Regolo Valpolicella Ripasso Superiore,Italien,red
+6358,-0.24650690527943028,57_left,303_right,GIARDINIERE,Italien,red,Antinori Tignanello,Italien,red
+9354,-0.2522994888388777,87_left,10897_right,SARTORI Corte Brà Amarone Riserva,Italien,red,Sartori di Verona Bardolino Chiaretto ,Italien,rosé
+12632,-0.2592798257558592,128_left,1216_right,HIRSCH Großes Geweih,Deutschland,red,Hirsch Zöbing Riesling,Österreich,white
+23619,-0.2604900787118273,269_left,2065_right,ZIMMERMANN Rosshimmel,Österreich,white,Sattlerhof Sauvignon Blanc,Österreich,white
+21559,-0.26708250790687715,234_left,4108_right,PRINZ Quarzit BIO**,Deutschland,white,Weingut Pflüger Weissburgunder Quarzit,Deutschland,white
+8620,-0.2690853512761848,77_left,1841_right,AVOGADRI Diamante,Italien,red,Bodegas Franco-Españolas Diamante Crianza,Spanien,red
+144,-0.27141324074694567,2_left,1271_right,LA CLOUTADE D'AMBRE,Frankreich,red,Domaine de la Renaudie Sauvignon,Frankreich,white
+20362,-0.2773413853010886,214_left,227_right,MARKGRÄFLER Gutedel,Deutschland,white,Dönnhoff Riesling,Deutschland,white
+17892,-0.28239982003698216,191_left,3047_right,PODERE LA CASA ROSSA BIO**,Italien,white,Cabreo La Pietra Chardonnay,Italien,white
+1807,-0.291427794676409,13_left,10264_right,ABBAYE DE VALMAGNE,Frankreich,red,Jaillance Cuvée de L'Abbaye Crémant de Bordeaux Brut,Frankreich,sparkling
+22730,-0.30317282764119297,252_left,9986_right,PRINZ Jungfer,Deutschland,white,Prinz Salm La Principessa Rosé Brut,Deutschland,sparkling
+10000,-0.3270462941345464,94_left,4816_right,LUCIO MUÑOZ Las Canteras,Spanien,red,Viñedos y Bodegas Muñoz Blas Muñoz Chardonnay,Spanien,white
+15610,-0.33342212775708263,164_left,11795_right,JURANÇON Pavillon Royal Doux,Frankreich,white,Ackerman Royal Crémant de Loire Brut,Frankreich,sparkling
+16969,-0.3510565358082979,181_left,4744_right,L'ARJOLLE Perce-Neige,Frankreich,white,Domaine de l'Horizon Blanc,Frankreich,white
+10738,-0.35522171941218267,103_left,6125_right,La Mancha LUCIO MUÑOZ Colección Familiar,Spanien,red,Comenge Colección Verdejo,Spanien,white
+2361,-0.3625465502982253,16_left,1271_right,Rhônetal DOMAINE DE LA PRÉSIDENTE Cairanne,Frankreich,red,Domaine de la Renaudie Sauvignon,Frankreich,white
+21688,-0.3761814420019523,235_left,227_right,FENDEL Froher Weingarten,Deutschland,white,Dönnhoff Riesling,Deutschland,white
+10624,-0.39554527476231344,100_left,70_right,CLUB PRIVADO,Spanien,red,Abadal Blanc,Spanien,white
+16382,-0.39817726953180266,174_left,520_right,LES CHÊNES DE MON GRAND-PÈRE,Frankreich,white,Bouchard Père & Fils Meursault Les Clous,Frankreich,white
+11939,-0.4230783990515371,119_left,1321_right,DE MARTINO Enigma,Chile,red,Olivini Notte a San Martino,Italien,red
+2609,-0.4275615998111537,19_left,475_right,"L'ARJOLLE Cabernet Magnum 1,5 Liter",Frankreich,red,Maison de La Villette Cabernet Sauvignon,Frankreich,red
+7118,-0.47961967082140744,63_left,2684_right,"IL PUMO D'ORO Magnum 1,5 Liter",Italien,red,Biserno Il Pino di Biserno,Italien,red
+22468,-0.4907420542007211,248_left,227_right,"TABERNUS Beerenauslese 0,375 Liter",Deutschland,white,Dönnhoff Riesling,Deutschland,white
