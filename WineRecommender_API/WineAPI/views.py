@@ -3,15 +3,10 @@ import json
 from django.http import HttpResponse
 from django.http import HttpResponseBadRequest
 from django.http import HttpResponseServerError
-from WineAPI.models import Wine
-from WineAPI.models import FlavorWine
-from WineAPI.models import WineDto
-from WineAPI.models import WineDetailsFacts
-from WineAPI.models import WineDetailsTasteData
-from WineAPI.models import WineDetailsDto
 from django.core import serializers
 from json import JSONEncoder
 from rest_framework.decorators import api_view
+
 
 @api_view(['GET'])
 def search_wines(request, criteria=""):
@@ -22,12 +17,12 @@ def search_wines(request, criteria=""):
     :return: List of wines found based on criteria
     """
     try:
-        wines = Wine.objects.all().filter(wine_name__icontains=criteria)[:30]
-        wines_list = list(wines)
+      #  wines = Wine.objects.all().filter(wine_name__icontains=criteria)[:30]
+      #  wines_list = list(wines)
         wines_result = '{ "wines": ['
 
-        for wine in wines_list:
-            wines_result = wines_result + (WineDto(wine.wine_id, wine.wine_name, '')).toJSON() + ','
+     #   for wine in wines_list:
+     #       wines_result = wines_result + (WineDto(wine.wine_id, wine.wine_name, '')).toJSON() + ','
 
         wines_result = wines_result + '] }'
     except BaseException as ex:
@@ -135,15 +130,16 @@ def get_profile(request, wine_id=0):
     if wine_id == 0:
         return HttpResponseBadRequest("Wine id must not be null or 0")
 
-    try:
-        wines = Wine.objects.filter(wine_id=wine_id)
-        wine_flavor = FlavorWine.objects.filter(wine_id__in=wines.values('wine_id'))
+    #try:
+     #   wines = Wine.objects.filter(wine_id=wine_id)
+     #   wine_flavor = FlavorWine.objects.filter(wine_id__in=wines.values('wine_id'))
 
-    except:
-        return HttpResponseServerError()
+   # except:
+  #      return HttpResponseServerError()
 
-    return HttpResponse(
-        serializers.serialize('json', wine_flavor, fields=('wine_id', 'flavor_group', 'flavor_count', 'flavor_id')))
+    return HttpResponse()
+       # serializers.serialize('json', wine_flavor, fields=('wine_id', 'flavor_group', 'flavor_count', 'flavor_id')))
+
 
 @api_view(['GET'])
 def get_wine_details(request, id=0):
@@ -156,25 +152,22 @@ def get_wine_details(request, id=0):
     if id == 0:
         return HttpResponseBadRequest("Wine id must not be null or 0")
 
-    try:
-        wines = Wine.objects.filter(wine_id=id)
-        wine_flavor = FlavorWine.objects.filter(wine_id__in=wines.values('wine_id'))
+#    try:
+#        wines = Wine.objects.filter(wine_id=id)
+#        wine_flavor = FlavorWine.objects.filter(wine_id__in=wines.values('wine_id'))
+#
+#        wine = list(wines)[0]
+#
+#        taste_data = [{'label': 'tree fruit', 'percentage': 0.2}, {'label': 'red fruit', 'percentage': 0.1},
+#                      {'label': 'citrus fruit', 'percentage': 0.5}, {'label': 'cinnamon', 'percentage': 0.3}]
+#        facts = [{'label': 'region', 'content': wine.wine_country}, {'label': 'style', 'content': wine.wine_type},
+#                 {'label': 'alc', 'content': wine.wine_alcohol}]
+#
+#        wine_details_dto = {'id': wine.wine_id, 'name': wine.wine_name, 'description': '', 'picture_url': '',
+#                            'facts': facts, 'taste_data': taste_data}
+#
+#        wine_details_dto = json.dumps(wine_details_dto)
+#    except BaseException as ex:
+#        return HttpResponseServerError()
 
-        wine = list(wines)[0]
-
-        taste_data = [{'label': 'tree fruit', 'percentage' : 0.2}, {'label': 'red fruit', 'percentage' : 0.1}, {'label': 'citrus fruit', 'percentage' : 0.5}, {'label': 'cinnamon', 'percentage' : 0.3}]
-        facts = [{'label' : 'region', 'content': wine.wine_country}, {'label' : 'style', 'content': wine.wine_type}, {'label' : 'alc', 'content': wine.wine_alcohol}]
-
-        wine_details_dto = {}
-        wine_details_dto['id'] = wine.wine_id
-        wine_details_dto['name'] = wine.wine_name
-        wine_details_dto['description'] = ''
-        wine_details_dto['picture_url'] = ''
-        wine_details_dto['facts'] = facts
-        wine_details_dto['taste_data'] = taste_data
-
-        wine_details_dto = json.dumps(wine_details_dto)
-    except BaseException as ex:
-        return HttpResponseServerError()
-
-    return HttpResponse(wine_details_dto)
+    return HttpResponse("wine_details_dto")

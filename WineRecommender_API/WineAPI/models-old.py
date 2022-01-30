@@ -120,7 +120,7 @@ import json
 #     class Meta:
 #         managed = False
 #         db_table = 'django_session'
-import WineAPI.models
+#import WineAPI.models
 
 
 class Flavor(models.Model):
