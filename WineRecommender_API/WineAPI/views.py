@@ -184,7 +184,7 @@ def get_profile(request, wine_ids=[]):
         return HttpResponseBadRequest("Wine id must not be null or 0")
 
     try:
-        wines = list(LocalWine.objects.filter(lw_id__in=wine_ids))
+        wines = list(Wine.objects.filter(wine_id__in=wine_ids))
         wine_flavors = list(FlavorWineGroup.objects.all().filter(
             wine_id__in=[w.wine_id for w in wines]))
         wine_flavor_groups = list(FlavorGroup.objects.all())
