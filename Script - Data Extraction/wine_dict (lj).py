@@ -132,15 +132,17 @@ for wineFolder in wineFolders:
             try:
                 wine_tastes = get_wine_profile(wine_tastes, keys)        
             except Exception as e:
-                print('Errored during wine profile generation with: '+e)
+                print("no taste data")
+                continue
             
             try:
+                
                 wine_structure = normalizeStructure(wine_structure)
             except Exception as e:
                 print('Errored during structure normalization with: '+e)
         except:
             print('no flavor data present')
-            wine_tastes = None
+            continue
 
         
 
