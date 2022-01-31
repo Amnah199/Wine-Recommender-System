@@ -135,8 +135,6 @@ def get_recommendations(request, profile):
             wine["id"] = lw.lw_id
             wine["picture_url"] = lw.lw_thumb
             wine["seller"] = lw.lw_seller
-            wine["seller_name"] = next(
-                (item["name"] for item in sellers if item["id"] == lw.lw_seller), None)
             wine_flavor_dict = WineFlavor.objects.get(wine_id=lw.wine).__dict__
             wine_flavor = np.asarray([wine_flavor_dict[key]
                                      for key in keys_taste])
@@ -337,8 +335,9 @@ def get_wine_details(request, id=0):
         facts = [{'label': 'region', 'content': wine.lw_region},
                  {'label': 'style', 'content': wine.lw_type},
                  {'label': 'country', 'content': wine.lw_country},
-                 {'label': 'price', 'content': wine.lw_price},
-                 {'label': 'seller', 'content': wine.lw_seller},
+                 {'label': 'price', 'content': str(wine.lw_price) + '€'},
+                 {'label': 'seller', 'content': next(
+                (item["name"] for item in sellers if item["id"] == lw.lw_seller), None)},
                  {'label': 'year', 'content': wine.lw_year}]
 
         wine_details_dto = {'id': wine.lw_id, 'name': wine.lw_name, 'description': wine.lw_description, 'link': wine.lw_url, 'picture_url': wine.lw_thumb,
