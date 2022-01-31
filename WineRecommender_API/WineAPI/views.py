@@ -24,7 +24,8 @@ def search_wines(request, criteria=""):
         wines_result = '{ "wines": ['
 
         for wine in wines_list:
-            wines_result = wines_result + (WineDto(wine.wine_id, wine.wine_name, wine.wine_thumb)).toJSON() + ','
+            wines_result = wines_result + \
+                (WineDto(wine.wine_id, wine.wine_name, wine.wine_thumb)).toJSON() + ','
 
         wines_result = wines_result + '] }'
     except BaseException as ex:
@@ -67,13 +68,16 @@ def get_recommendations(request):
     }
 
     wines = list(Wine.objects.filter(wine_id__in=wine_ids))
-    wine_flavors = list(FlavorWineGroup.objects.all().filter(wine_id__in=[w.wine_id for w in wines]))
-    wine_structure = list(WineStructure.objects.all().filter(wine_id__in=[w.wine_id for w in wines]))
+    wine_flavors = list(FlavorWineGroup.objects.all().filter(
+        wine_id__in=[w.wine_id for w in wines]))
+    wine_structure = list(WineStructure.objects.all().filter(
+        wine_id__in=[w.wine_id for w in wines]))
 
     wines_for_recommender_engine = []
 
     for wine in wines:
-        wine_flavors_current = list(filter(lambda x: (x.wine_id == wine.wine_id), wine_flavors))
+        wine_flavors_current = list(
+            filter(lambda x: (x.wine_id == wine.wine_id), wine_flavors))
         wine_tastes = {}
         wine_structure_obj = {}
 
@@ -107,7 +111,8 @@ def get_recommendations(request):
             wine_tastes['tropical_fruit'] = 0
             wine_tastes['vegetal'] = 0
 
-        wine_structure_current = list(filter(lambda x: (x.wine_id == wine.wine_id), wine_structure))
+        wine_structure_current = list(
+            filter(lambda x: (x.wine_id == wine.wine_id), wine_structure))
 
         if wine_structure_current:
             wine_structure_obj['acidity'] = wine_structure_current[0].wine_acidity
@@ -115,15 +120,19 @@ def get_recommendations(request):
             wine_structure_obj['intensity'] = wine_structure_current[0].wine_intensity
             wine_structure_obj['sweetness'] = wine_structure_current[0].wine_sweetness
 
-        wines_for_recommender_engine.append({'wine_id': wine.wine_id, 'wine_tastes': wine_tastes, 'wine_structure': wine_structure_obj, 'wine_rating': wine.wine_rating})
+        wines_for_recommender_engine.append(
+            {'wine_id': wine.wine_id, 'wine_tastes': wine_tastes, 'wine_structure': wine_structure_obj, 'wine_rating': wine.wine_rating})
 
-    wines_recommendation_result = recommender_engine.recommender.calculate_recommendations(wines_for_recommender_engine, user_profile)
+    wines_recommendation_result = recommender_engine.recommender.calculate_recommendations(
+        wines_for_recommender_engine, user_profile)
 
-    local_wines = LocalWine.objects.all().filter(wine_id__in=[w['wine_id'] for w in wines_recommendation_result])
+    local_wines = LocalWine.objects.all().filter(
+        wine_id__in=[w['wine_id'] for w in wines_recommendation_result])
 
     wines_result = []
     for i in range(len(local_wines) - 1):
-        wines_result.append({'rank' : i + 1, 'name': local_wines[i].lw_name, 'type': local_wines[i].lw_type, 'picture_url': local_wines[i].lw_url, 'seller_id': local_wines[i].lw_seller})
+        wines_result.append({'rank': i + 1, 'name': local_wines[i].lw_name, 'type': local_wines[i].lw_type,
+                            'picture_url': local_wines[i].lw_url, 'seller_id': local_wines[i].lw_seller})
 
     json_result = '{' \
                   """  "sellers": [ 
@@ -162,21 +171,21 @@ def get_recommendations(request):
 
 
 @api_view(['GET'])
-def get_profile(request):
+def get_profile(request, wine_ids=[]):
     """
     Gets wine profile specific for a user
     :param request: http object
+    :param wine_ids: wineids
     :return: wine preferences profile
     """
-    wine_ids = request.GET.get('wineids')
-    wine_ids = wine_ids.split(',')
-
-    if wine_ids is None:
+    wine_ids = json.loads(wine_ids)
+    if len(wine_ids) == 0:
         return HttpResponseBadRequest("Wine id must not be null or 0")
 
     try:
         wines = list(LocalWine.objects.filter(lw_id__in=wine_ids))
-        wine_flavors = list(FlavorWineGroup.objects.all().filter(wine_id__in=[w.wine_id for w in wines]))
+        wine_flavors = list(FlavorWineGroup.objects.all().filter(
+            wine_id__in=[w.wine_id for w in wines]))
         wine_flavor_groups = list(FlavorGroup.objects.all())
 
         wine_count = len(wines)
@@ -200,12 +209,14 @@ def get_profile(request):
             for j in range(wine_count - 1):
                 wine_flavor_group_name = wine_flavor_groups[i].group_name
                 wine_flavor_group_id = wine_flavor_groups[i].group_id
-                wine_flavors_current = list(filter(lambda x: (x.wine_id == wines[j].wine_id), wine_flavors))
+                wine_flavors_current = list(
+                    filter(lambda x: (x.wine_id == wines[j].wine_id), wine_flavors))
 
                 if not wine_flavors_current:
                     continue
 
-                wine_flavors_current_percentage = list(filter(lambda y: (wine_flavor_group_id == y.group_id), wine_flavors_current))
+                wine_flavors_current_percentage = list(
+                    filter(lambda y: (wine_flavor_group_id == y.group_id), wine_flavors_current))
                 taste_data[wine_flavor_group_name] += wine_flavors_current_percentage[0].flavor_wine_group_score
 
         for i in range(len(wine_flavor_groups)):
@@ -214,9 +225,12 @@ def get_profile(request):
         wine_type_options = []
         wine_origin_options = []
         wine_price_options = []
-        multi_select_type = {'selection_type': 'multiselect', 'name': 'Type of Wine', 'options': wine_type_options}
-        multi_select_price = {'selection_type': 'multiselect', 'name': 'Price', 'options': wine_price_options}
-        search_field_origin = {'selection_type': 'search_field', 'name': 'Origin', 'options': wine_origin_options}
+        multi_select_type = {'selection_type': 'multiselect',
+                             'name': 'Type of Wine', 'options': wine_type_options}
+        multi_select_price = {'selection_type': 'multiselect',
+                              'name': 'Price', 'options': wine_price_options}
+        search_field_origin = {'selection_type': 'search_field',
+                               'name': 'Origin', 'options': wine_origin_options}
 
         distinct_types = []
         distinct_prices = {'<10': False, '10-20': False, '>20': False}
@@ -238,13 +252,16 @@ def get_profile(request):
         for w_origin in distinct_origin:
             wine_origin_options.append({'option': w_origin, 'selected': True})
 
-        wine_price_options.append({'option': 'under 10€', 'selected': distinct_prices['<10']})
-        wine_price_options.append({'option': '10-20€', 'selected': distinct_prices['10-20']})
-        wine_price_options.append({'option': 'over 20€', 'selected': distinct_prices['>20']})
-
+        wine_price_options.append(
+            {'option': 'under 10€', 'selected': distinct_prices['<10']})
+        wine_price_options.append(
+            {'option': '10-20€', 'selected': distinct_prices['10-20']})
+        wine_price_options.append(
+            {'option': 'over 20€', 'selected': distinct_prices['>20']})
 
         # construct json result object
-        result = '{ "wine_data": [' + json.dumps(multi_select_type) + ',' + json.dumps(multi_select_price) + ',' + json.dumps(search_field_origin) + '],'
+        result = '{ "wine_data": [' + json.dumps(multi_select_type) + ',' + json.dumps(
+            multi_select_price) + ',' + json.dumps(search_field_origin) + '],'
         result += '"taste_data": [' + json.dumps(taste_data) + '] }'
     except BaseException as ex:
         return HttpResponseServerError(ex)
@@ -270,7 +287,8 @@ def get_wine_details(request, id=0):
         if wine is None:
             return HttpResponseBadRequest()
 
-        wine_flavors = list(FlavorWineGroup.objects.all().filter(wine_id=wine.wine_id))
+        wine_flavors = list(
+            FlavorWineGroup.objects.all().filter(wine_id=wine.wine_id))
         wine_flavor_groups = list(FlavorGroup.objects.all())
 
         taste_data = []
