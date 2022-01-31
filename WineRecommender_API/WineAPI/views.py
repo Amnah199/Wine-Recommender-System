@@ -4,12 +4,9 @@ from django.http import HttpResponse
 from django.http import HttpResponseBadRequest
 from django.http import HttpResponseServerError
 from rest_framework.decorators import api_view
-import ast
 
 import recommender_engine.recommender
 from .models import *
-from recommender_engine import *
-
 
 wine_types = ['red', 'sparkling', 'white', 'rosé']
 
@@ -299,6 +296,9 @@ def get_wine_details(request, id=0):
     try:
         wines_list = LocalWine.objects.filter(lw_id=id)
 
+        if wines_list is None:
+            return HttpResponseBadRequest()
+
         wine = list(wines_list)[0]
 
         if wine is None:
@@ -321,7 +321,6 @@ def get_wine_details(request, id=0):
                  {'label': 'country', 'content': wine.lw_country},
                  {'label': 'price', 'content': wine.lw_price},
                  {'label:': 'seller', 'content': wine.lw_seller},
-
                  {'label:': 'year', 'content': wine.lw_year}]
 
         wine_details_dto = {'id': wine.wine_id, 'name': wine.lw_name, 'description': wine.lw_description, 'link': wine.lw_url,
@@ -329,6 +328,6 @@ def get_wine_details(request, id=0):
         wine_details_dto = json.dumps(wine_details_dto)
     except BaseException as ex:
         print(ex)
-        return HttpResponseServerError()
+        return HttpResponseServerError(ex)
 
     return HttpResponse(wine_details_dto)
