@@ -127,7 +127,7 @@ def get_recommendations(request, profile):
         for lw in local_wines:
             wine = {}
             wine["id"] = lw.lw_id 
-            wine["image"] = lw.lw_thumb
+            wine["picture_url"] = lw.lw_thumb
             wine["seller"] = lw.lw_seller
             wine["seller_name"] = next((item["name"] for item in sellers if item["id"] == lw.lw_seller), None)
             wine_flavor_dict = WineFlavor.get(wine_id = lw.wine).__dict__
@@ -140,6 +140,7 @@ def get_recommendations(request, profile):
             wines.append(wine)
 
         wines = sorted(wines, key=lambda k: k["score"], reverse=True)
+        
         vendors = sellers
         for v in vendors:
             v["score_total"] = np.sum(np.asarray([wine["score"] for wine in wines if wine["seller"] == seller_id]))
@@ -148,7 +149,10 @@ def get_recommendations(request, profile):
         for i in range(len(vendors)):
             vendors[i]["rank"] = i + 1
         
-        result = '{ "sellers":' + json.dumps(vendors) + ', "wines":' +json.dumps(wines[:num_recs])+ ' }'
+        wines = wines[:num_recs]
+        for i in range(len(wines)):
+            wine["rank"] = i + 1
+        result = '{ "sellers":' + json.dumps(vendors) + ', "wines":' +json.dumps(wines)+ ' }'
         
     except BaseException as ex:
         print(ex)
