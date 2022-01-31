@@ -337,7 +337,7 @@ def get_wine_details(request, id=0):
                  {'label': 'country', 'content': wine.lw_country},
                  {'label': 'price', 'content': str(wine.lw_price) + '€'},
                  {'label': 'seller', 'content': next(
-                (item["name"] for item in sellers if item["id"] == lw.lw_seller), None)},
+                (item["name"] for item in sellers if item["id"] == wine.lw_seller), None)},
                  {'label': 'year', 'content': wine.lw_year}]
 
         wine_details_dto = {'id': wine.lw_id, 'name': wine.lw_name, 'description': wine.lw_description, 'link': wine.lw_url, 'picture_url': wine.lw_thumb,
