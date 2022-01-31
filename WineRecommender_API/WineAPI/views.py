@@ -3,6 +3,7 @@ import json
 from django.http import HttpResponse
 from django.http import HttpResponseBadRequest
 from django.http import HttpResponseServerError
+from django.db.models import Avg
 from rest_framework.decorators import api_view
 
 import recommender_engine.recommender
@@ -197,43 +198,14 @@ def get_profile(request, wine_ids=[]):
         if not wines:
             return HttpResponseBadRequest("No wines found for specified Ids")
 
-        wine_flavors = list(WineFlavor.objects.all().filter(
-            wine_id__in=[w.wine_id for w in wines]))
+        wine_flavors = WineFlavor.objects.all().filter(
+            wine_id__in=[w.wine_id for w in wines])
 
-        wine_count = len(wines)
-
-        taste_data = {
-            "black_fruit": 0,
-            "citrus_fruit": 0,
-            "dried_fruit": 0,
-            "earth": 0,
-            "floral": 0,
-            "microbio": 0,
-            "non_oak": 0,
-            "oak": 0,
-            "red_fruit": 0,
-            "spices": 0,
-            "tree_fruit": 0,
-            "tropical_fruit": 0,
-            "vegetal": 0
-        }
-
-        for i in range(len(taste_data.keys()) - 1):
-            for j in range(wine_count - 1):
-                wine_flavor_group_name = wine_flavors[i].group_name
-                wine_flavor_group_id = wine_flavors[i].group_id
-                wine_flavors_current = list(
-                    filter(lambda x: (x.wine_id == wines[j].wine_id), wine_flavors))
-
-                if not wine_flavors_current:
-                    continue
-
-                wine_flavors_current_percentage = list(
-                    filter(lambda y: (wine_flavor_group_id == y.group_id), wine_flavors_current))
-                taste_data[wine_flavor_group_name] += wine_flavors_current_percentage[0].flavor_wine_group_score
-
-        for i in range(len(taste_data.keys() - 1)):
-            taste_data[taste_data.keys[i]] = taste_data[taste_data.keys[i].group_name] / wine_count
+        wine_flavors_averages = wine_flavors.aggregate(black_fruit = Avg('black_fruit'), citrus_fruit= Avg('citrus_fruit'), dried_fruit = Avg('dried_fruit'),
+                                                       earth = Avg('earth'), floral = Avg('floral'), microbio = Avg('microbio'),
+                                                       non_oak = Avg('non_oak'), oak = Avg('oak'), red_fruit = Avg('red_fruit'),
+                                                       spices = Avg('spices'), tree_fruit = Avg('tree_fruit'), tropical_fruit = Avg('tropical_fruit'),
+                                                       vegetal = Avg('vegetal'))
 
         wine_type_options = []
         wine_origin_options = []
@@ -280,7 +252,7 @@ def get_profile(request, wine_ids=[]):
         # construct json result object
         result = '{ "wine_data": [' + json.dumps(multi_select_type) + ',' + json.dumps(
             multi_select_price) + ',' + json.dumps(search_field_origin) + '],'
-        result += '"taste_data": ' + json.dumps(taste_data) + ' }'
+        result += '"taste_data": ' + json.dumps(wine_flavors_averages) + ' }'
     except BaseException as ex:
         print(ex)
         return HttpResponseServerError(ex)
