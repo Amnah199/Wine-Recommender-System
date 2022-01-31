@@ -118,6 +118,7 @@ def get_recommendations(request, profile):
                                     for key in keys_structure])
 
         local_wines = LocalWine.objects.none()
+        print(local_wines.values())
         if "over 20€" in ranges:
             local_wines.union(LocalWine.objects.filter(
                 lw_country__in=origins, lw_type__in=types, lw_price__gt=20))
@@ -127,6 +128,9 @@ def get_recommendations(request, profile):
         if "under 10€" in ranges:
             local_wines.union(LocalWine.objects.filter(
                 lw_country__in=origins, lw_type__in=types, lw_price__lt=10))
+
+        print('after:')
+        print(local_wines.values())
 
         wines = []
 
