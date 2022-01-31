@@ -69,8 +69,8 @@ def get_recommendations(request):
     }
 
     wines = list(Wine.objects.filter(wine_id__in=wine_ids))
-    wine_flavors = list(FlavorWineGroup.objects.all().filter(
-        wine_id__in=[w.wine_id for w in wines]))
+    wine_flavors = []#list(FlavorWineGroup.objects.all().filter(
+        #wine_id__in=[w.wine_id for w in wines]))
     wine_structure = list(WineStructure.objects.all().filter(
         wine_id__in=[w.wine_id for w in wines]))
 
@@ -197,11 +197,11 @@ def get_profile(request, wine_ids=[]):
         if not wines:
             return HttpResponseBadRequest("No wines found for specified Ids")
 
-        wine_flavors = list(FlavorWineGroup.objects.all().filter(
+        wine_flavors = list(WineFlavor.objects.all().filter(
             wine_id__in=[w.wine_id for w in wines]))
-        wine_flavor_groups = list(FlavorGroup.objects.all())
 
         wine_count = len(wines)
+
         taste_data = {
             "black_fruit": 0,
             "citrus_fruit": 0,
@@ -218,10 +218,10 @@ def get_profile(request, wine_ids=[]):
             "vegetal": 0
         }
 
-        for i in range(len(wine_flavor_groups) - 1):
+        for i in range(len(taste_data.keys()) - 1):
             for j in range(wine_count - 1):
-                wine_flavor_group_name = wine_flavor_groups[i].group_name
-                wine_flavor_group_id = wine_flavor_groups[i].group_id
+                wine_flavor_group_name = wine_flavors[i].group_name
+                wine_flavor_group_id = wine_flavors[i].group_id
                 wine_flavors_current = list(
                     filter(lambda x: (x.wine_id == wines[j].wine_id), wine_flavors))
 
@@ -232,8 +232,8 @@ def get_profile(request, wine_ids=[]):
                     filter(lambda y: (wine_flavor_group_id == y.group_id), wine_flavors_current))
                 taste_data[wine_flavor_group_name] += wine_flavors_current_percentage[0].flavor_wine_group_score
 
-        for i in range(len(wine_flavor_groups)):
-            taste_data[wine_flavor_groups[i].group_name] = taste_data[wine_flavor_groups[i].group_name] / wine_count
+        for i in range(len(taste_data.keys() - 1)):
+            taste_data[taste_data.keys[i]] = taste_data[taste_data.keys[i].group_name] / wine_count
 
         wine_type_options = []
         wine_origin_options = []
@@ -312,16 +312,12 @@ def get_wine_details(request, id=0):
             return HttpResponseBadRequest()
 
         wine_flavors = list(
-            FlavorWineGroup.objects.all().filter(wine_id=wine.wine_id))
-        wine_flavor_groups = list(FlavorGroup.objects.all())
-
-        print(FlavorWineGroup.objects.all().filter(
-            wine_id=wine.wine_id).values())
+            WineFlavor.objects.all().filter(wine_id=wine.wine_id))
 
         taste_data = []
-        for i in range(len(wine_flavor_groups)):
-            taste_data.append({'label': wine_flavor_groups[i].group_name,
-                               'percentage': wine_flavors[wine_flavor_groups[i].group_id].flavor_wine_group_score})
+        for i in range(len(wine_flavors)):
+            taste_data.append({'label': wine_flavors[i].group_name,
+                               'percentage': wine_flavors[wine_flavors[i].group_id].flavor_wine_group_score})
         facts = [{'label': 'region', 'content': wine.lw_region},
                  {'label': 'style', 'content': wine.lw_type},
                  {'label': 'country', 'content': wine.lw_country},
