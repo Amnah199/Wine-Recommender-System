@@ -46,7 +46,7 @@ def get_profile(wine_profile_array):
 
     for wine_profile in wine_profile_array:
         for group in wine_profile:
-            if(group["group"] in taste_dict.keys()):
+            if (group["group"] in taste_dict.keys()):
                 taste_dict[group["group"]].append(group["value"])
             else:
                 taste_dict[group["group"]] = [group["value"]]
