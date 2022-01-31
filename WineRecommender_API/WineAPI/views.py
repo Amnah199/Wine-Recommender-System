@@ -370,10 +370,9 @@ def get_wine_details(request, id=0):
         if wine is None:
             return HttpResponseBadRequest()
 
-        wine_flavors = list(
-            WineFlavor.objects.all().filter(wine_id=wine.wine_id))
+        wine_flavors = list(WineFlavor.objects.all().filter(wine_id=wine.wine_id))
 
-        if len(wine_flavors) > 1:
+        if len(wine_flavors) > 0:
             wine_flavors = wine_flavors[0]
 
         taste_data = [{'label': 'black_fruit', 'percentage': wine_flavors.black_fruit},
