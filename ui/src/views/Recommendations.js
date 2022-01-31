@@ -9,13 +9,13 @@ import { theme } from "../theming";
 
 export const Recommendations = (props) => {
   const navigate = useNavigate();
-
+  console.log(props);
   const defaultProps = {
     center: {
       lat: 51.96,
       lng: 7.65,
     },
-    zoom: 12,
+    zoom: 11,
   };
   return (
     <>

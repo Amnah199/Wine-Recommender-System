@@ -25,6 +25,7 @@ export const RecommendationPage = (props) => {
       setLoading(true);
 
       swagger.recommendations.recommendations_list().then((resp) => {
+        console.log(resp.body);
         setRecoData(resp.body);
         setLoading(false);
       });

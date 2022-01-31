@@ -12,7 +12,12 @@ import { Container } from "@mui/material";
 import { Button } from "@mui/material";
 
 export const CustomModal = (props) => (
-  <Dialog open={true} fullWidth maxWidth="md">
+  <Dialog
+    open={true}
+    fullWidth
+    maxWidth="md"
+    onClose={props.onClose ? props.onClose : null}
+  >
     <DialogTitle color="primary">{props.title}</DialogTitle>
     <DialogContent>{props.children}</DialogContent>
     {props.buttonDisabled ? (

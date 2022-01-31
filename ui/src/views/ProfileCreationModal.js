@@ -38,11 +38,15 @@ export const ProfileCreationModal = (props) => {
       setStep(1);
       setLoading(true);
 
-      //HERE ARE MISSING PARAMETERS
-      swagger.profile.profile_list().then((resp) => {
-        setProfile(resp.body);
-        setLoading(false);
-      });
+      let wine_ids = selectedWines.map((wine) => wine.id);
+      if (wine_ids.length > 0) {
+        swagger.profile
+          .profile_read({ wine_ids: JSON.stringify(wine_ids) })
+          .then((resp) => {
+            setProfile(resp.body);
+            setLoading(false);
+          });
+      }
     } else if (step == 1) {
       setStep(2);
     } else if (step == 2) {

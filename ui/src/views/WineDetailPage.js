@@ -34,6 +34,7 @@ import { SwaggerContext, CustomAppBar } from "../App";
 import { useCookies } from "react-cookie";
 import { useTheme } from "@emotion/react";
 import { ShoppingBasket } from "@mui/icons-material";
+import { WineBar } from "@mui/icons-material";
 
 ChartJS.register(
   RadialLinearScale,
@@ -51,6 +52,7 @@ export const WineDetailPage = (props) => {
 
   const swagger = useContext(SwaggerContext);
   const [data, setData] = useState(null);
+  const [backupVisible, setBackupVisible] = useState(false);
 
   useEffect(() => {
     swagger.details.details_read({ id: params.id }).then((resp) => {
@@ -61,7 +63,6 @@ export const WineDetailPage = (props) => {
   if (!data) {
     return <LoadingOverlay />;
   }
-
   let labels = data.taste_data.map((elem) => elem.label);
   let datapoints = data.taste_data.map((elem) => elem.percentage);
 
@@ -97,61 +98,59 @@ export const WineDetailPage = (props) => {
           <Grid container spacing={1}>
             <Grid item xs={12} sm={3}>
               <ImageListItem>
-                <img
-                  style={{
-                    flex: 1,
-                    alignSelf: "center",
-                    resizeMode: "contain",
-                  }}
-                  src={data.picture_url + "?w=161&fit=crop&auto=format"}
-                />
+                {!backupVisible ? (
+                  <img
+                    style={{
+                      flex: 1,
+                      width: "80%",
+                      marginLeft: "10%",
+                      alignSelf: "center",
+                      resizeMode: "contain",
+                    }}
+                    src={
+                      backupVisible
+                        ? data.picture_url + "?w=161&fit=crop&auto=format"
+                        : "http://localhost:8080/backup_bottle.jpeg"
+                    }
+                    onError={() => setBackupVisible(true)}
+                  />
+                ) : (
+                  <WineBar
+                    style={{
+                      fontSize: "220px",
+
+                      alignSelf: "center",
+                      resizeMode: "contain",
+                      width: "100%",
+                    }}
+                  />
+                )}
+
                 <ImageListItemBar title={data.name} />
               </ImageListItem>
             </Grid>
             <Grid item sm={9}>
               <Card>
                 <CardHeader title="Description" />
-                <CardContent>{data.description}</CardContent>
+                <CardContent>
+                  {data.description
+                    ? data.description
+                    : "no description available"}
+                </CardContent>
               </Card>
               <Grid item container spacing={1} style={{ marginTop: "0.25rem" }}>
                 <Grid item md={6} xs={12}>
-                  <Card>
-                    <CardHeader title="Where to buy?" />
-                    <CardContent>
-                      <Grid container>
-                        {data.availability.map((elem) => (
-                          <Grid container item justifyContent={"space-between"}>
-                            <Grid item>
-                              <Typography variant="body1">
-                                {elem.label}
-                              </Typography>
-                            </Grid>
-                            <Grid item>
-                              <Typography variant="body1">
-                                <Link href={elem.link}>{elem.value}</Link>
-                              </Typography>
-                            </Grid>
-                          </Grid>
-                        ))}
-                        <Grid item style={{ marginLeft: "auto" }}>
-                          <Button
-                            style={{ marginTop: "1rem" }}
-                            variant="contained"
-                            endIcon={<ShoppingBasket />}
-                            href={data.availability[0].link}
-                          >
-                            open at {data.availability[0].label}
-                          </Button>
-                        </Grid>
-                      </Grid>
-                    </CardContent>
-                  </Card>
                   <Card style={{ marginTop: "1rem" }}>
                     <CardHeader title="Facts" />
                     <CardContent>
                       <Grid container>
                         {data.facts.map((elem) => (
-                          <Grid container item justifyContent={"space-between"}>
+                          <Grid
+                            container
+                            item
+                            justifyContent={"space-between"}
+                            style={{ textTransform: "capitalize" }}
+                          >
                             <Grid item>
                               <Typography variant="body1">
                                 {elem.label}
@@ -165,6 +164,14 @@ export const WineDetailPage = (props) => {
                           </Grid>
                         ))}
                       </Grid>
+                      <Button
+                        style={{ marginTop: "1rem" }}
+                        variant="contained"
+                        endIcon={<ShoppingBasket />}
+                        href={data.link}
+                      >
+                        Buy here
+                      </Button>
                     </CardContent>
                   </Card>
                 </Grid>

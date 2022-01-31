@@ -5,12 +5,100 @@ from django.http import HttpResponseBadRequest
 from django.http import HttpResponseServerError
 from django.db.models import Avg
 from rest_framework.decorators import api_view
+import ast
 
 import recommender_engine.recommender
 from .models import *
+from recommender_engine import *
+from django.db.models import Avg
 
 wine_types = ['red', 'sparkling', 'white', 'rosé']
 countries = list(Wine.objects.values('wine_country').distinct())
+
+countries = LocalWine.objects.distinct("lw_country").all().values("lw_country")
+countries = set([elem["lw_country"].strip() for elem in countries])
+print(countries)
+
+
+sellers = [{
+      "rank": 1,
+      "id": 1,
+      "name": "Wein Direktimport Scholz GmbH",
+      "info": [
+        { "label": "address", "content": "Wolbecker Straße 302 48155 Münster" },
+        { "label": "tel", "content": "0251 39729960" },
+        { "label": "email", "content": "info@wein-direktimport.de" }
+      ]
+    },
+    {
+      "rank": 2,
+      "id": 2,
+      "name": "divino Weinhandel Tobias Voigt",
+      "info": [
+        { "label": "address", "content": "Vogelrohrsheide 80 48167 Münster" },
+        { "label": "tel", "content": "0251 62 79 184" },
+        { "label": "email", "content": "info@divino.de" }
+      ]
+    },
+    {
+      "rank": 3,
+      "id": 3,
+      "name": "Jacques",
+      "info": [
+        { "label": "address", "content": "Warendorfer Str. 22 48145 Münster-Mauritz" },
+        { "label": "tel", "content": "0251/36384" },
+        { "label": "email", "content": "mauritz@jacques.de" }]}]
+
+template = {
+  "wine_data": [
+    {
+      "selection_type": "multiselect",
+      "name": "Type of Wine",
+      "options": [
+        { "option": "red", "selected": False },
+        { "option": "white", "selected": False },
+        { "option": "sparkling", "selected": False }
+      ]
+    },
+    {
+      "selection_type": "multiselect",
+      "name": "Price",
+      "options": [
+        { "option": "under 10€", "selected": False },
+        { "option": "10-20€", "selected": False },
+        { "option": "over 20€", "selected": False }
+      ]
+    },
+    {
+      "selection_type": "search_field",
+      "name": "Origin",
+      "options": [
+        { "option": "germany", "selected": False },
+        { "option": "italy", "selected": False },
+        { "option": "france", "selected": False }
+      ]
+    }
+  ],
+  "taste_data": [
+    { "label": "tree fruit", "percentage": 0.2 },
+    { "label": "red fruit", "percentage": 0.1 },
+    { "label": "citrus fruit", "percentage": 0.5 },
+    { "label": "cinnamon", "percentage": 0.3 }
+  ]
+}
+keys_taste = ['black_fruit', 'citrus_fruit', 'dried_fruit', 'earth', 'floral', 'microbio', 'non_oak', 'oak',
+                  'red_fruit', 'spices', 'tree_fruit', 'tropical_fruit', 'vegetal']
+
+keys_structure = ["acidity", "fizziness", "intensity", "sweetness", "tannin"]
+
+
+x = LocalWine.objects.filter(lw_type='red').values_list('wine', flat=True)
+
+for key in keys_taste:
+    print(WineFlavor.objects.filter(wine_id__in=x).aggregate(Avg(key)))
+
+for key in keys_structure:
+    print(WineStructure.objects.filter(wine_id__in=x).aggregate(Avg('wine_'+key)))
 
 @api_view(['GET'])
 def search_wines(request, criteria=""):
@@ -47,7 +135,7 @@ def get_recommendations(request):
     :param request: http request object
     :return: list of wines recommended
     """
-    wine_ids = [1230065, 1171794, 18440]
+    
 
     user_profile = {
         "tastes": {
@@ -74,8 +162,8 @@ def get_recommendations(request):
     }
 
     wines = list(Wine.objects.filter(wine_id__in=wine_ids))
-    wine_flavors = []#list(FlavorWineGroup.objects.all().filter(
-        #wine_id__in=[w.wine_id for w in wines]))
+    wine_flavors = list(FlavorWineGroup.objects.all().filter(
+        wine_id__in=[w.wine_id for w in wines]))
     wine_structure = list(WineStructure.objects.all().filter(
         wine_id__in=[w.wine_id for w in wines]))
 
@@ -138,46 +226,12 @@ def get_recommendations(request):
     wines_result = []
     for i in range(len(local_wines) - 1):
         wines_result.append({'rank': i + 1, 'name': local_wines[i].lw_name, 'type': local_wines[i].lw_type,
-                            'picture_url': local_wines[i].lw_url, 'id': local_wines[i].lw_seller})
+                             'picture_url': local_wines[i].lw_url, 'id': local_wines[i].lw_seller})
 
     json_result = '{' \
                   """  "sellers": [ 
-    {
-      "rank": 1,
-      "id": 1,
-      "name": "Wein Direktimport Scholz GmbH",
-      "info": [
-        { "label": "address", "content": "Wolbecker Straße 302 48155 Münster" },
-        { "label": "tel", "content": "0251 39729960" },
-        { "label": "email", "content": "info@wein-direktimport.de" }
-      ],
-      lat: 51.95,
-      lon: 7.67
-    },
-    {
-      "rank": 2,
-      "id": 2,
-      "name": "divino Weinhandel Tobias Voigt",
-      "info": [
-        { "label": "address", "content": "Vogelrohrsheide 80 48167 Münster" },
-        { "label": "tel", "content": "0251 62 79 184" },
-        { "label": "email", "content": "info@divino.de" }
-      ],
-      lat: 51.92,
-      lon: 7.67
-    },
-    {
-      "rank": 3,
-      "id": 3,
-      "name": "Jacques Wein-Depot",
-      "info": [
-        { "label": "address", "content": "Warendorfer Str. 22 48145 Münster-Mauritz" },
-        { "label": "tel", "content": "0251/36384" },
-        { "label": "email", "content": "mauritz@jacques.de" }
-      ],
-      lat: 51.93,
-      lon: 7.61,
-
+    
+      ]
     }
   ], """ + '"wines": ' + json.dumps(wines_result) + ' }'
     return HttpResponse(json_result)
@@ -242,7 +296,7 @@ def get_profile(request, wine_ids=[]):
         distinct_origin = []
         for wine in wines:
             if wine.wine_type not in distinct_types:
-                distinct_types.append(wine.wine_type.strip())
+                distinct_types.append(wine.wine_type)
             if wine.wine_country.strip() not in distinct_origin:
                 distinct_origin.append(wine.wine_country.strip())
             if wine.wine_price < 10:
@@ -259,9 +313,7 @@ def get_profile(request, wine_ids=[]):
             wine_origin_options.append({'option': wine_country['wine_country'], 'selected': False})
 
         for w_type in distinct_types:
-            for opt in wine_type_options:
-                if opt['option'] == w_type:
-                    opt['selected'] = True
+            wine_type_options.append({'option': w_type, 'selected': True})
         for w_origin in distinct_origin:
             for opt in wine_origin_options:
                 if opt['option'] == w_origin:
@@ -300,16 +352,17 @@ def get_wine_details(request, id=0):
     try:
         wines_list = LocalWine.objects.filter(lw_id=id)
 
-        if wines_list is None:
-            return HttpResponseBadRequest()
-
         wine = list(wines_list)[0]
 
         if wine is None:
             return HttpResponseBadRequest()
 
         wine_flavors = list(
-            WineFlavor.objects.all().filter(wine_id=wine.wine_id))
+            FlavorWineGroup.objects.all().filter(wine_id=wine.wine_id))
+        wine_flavor_groups = list(FlavorGroup.objects.all())
+
+        print(FlavorWineGroup.objects.all().filter(
+            wine_id=wine.wine_id).values())
 
         if len(wine_flavors)> 1:
             wine_flavors = wine_flavors[0]
@@ -331,15 +384,16 @@ def get_wine_details(request, id=0):
         facts = [{'label': 'region', 'content': wine.lw_region},
                  {'label': 'style', 'content': wine.lw_type},
                  {'label': 'country', 'content': wine.lw_country},
-                 {'label': 'price', 'content': str(wine.lw_price)+"€"},
-                 {'label': 'seller', 'content': wine.lw_seller},
-                 {'label': 'year', 'content': wine.lw_year}]
+                 {'label': 'price', 'content': wine.lw_price},
+                 {'label:': 'seller', 'content': wine.lw_seller},
+
+                 {'label:': 'year', 'content': wine.lw_year}]
 
         wine_details_dto = {'id': wine.lw_id, 'name': wine.lw_name, 'description': wine.lw_description, 'link': wine.lw_url, 'picture_url': wine.lw_thumb,
                             'facts': facts, 'taste_data': taste_data, }
         wine_details_dto = json.dumps(wine_details_dto)
     except BaseException as ex:
         print(ex)
-        return HttpResponseServerError(ex)
+        return HttpResponseServerError()
 
     return HttpResponse(wine_details_dto)

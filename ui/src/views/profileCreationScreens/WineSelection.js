@@ -12,10 +12,9 @@ import { SearchResultModal } from "./SearchResultsModal";
 import { CustomImageList } from "../../components/CustomImageList";
 import { Delete } from "@mui/icons-material";
 
-export const WineSelection = () => {
+export const WineSelection = (props) => {
   const [searchString, setSearchString] = useState("");
   const [dialogOpen, setDialogOpen] = useState(false);
-  const [selectedWines, setSelectedWines] = useState([]);
   return (
     <>
       <TextField
@@ -38,11 +37,11 @@ export const WineSelection = () => {
           searchString={searchString}
           onClose={(elem) => {
             setDialogOpen(false);
-            if (elem && !selectedWines.includes(elem)) {
-              let newSelectedWines = [...selectedWines];
+            if (elem && !props.selectedWines.includes(elem)) {
+              let newSelectedWines = [...props.selectedWines];
               newSelectedWines.push(elem);
 
-              setSelectedWines(newSelectedWines);
+              props.setSelectedWines(newSelectedWines);
             }
           }}
         />
@@ -51,26 +50,25 @@ export const WineSelection = () => {
       )}
       <Divider style={{ marginBlock: "1rem" }} />
 
-      {selectedWines.length > 0 ? (
+      {props.selectedWines.length > 0 ? (
         <CustomImageList
           button={<Delete />}
           cols={3}
-          data={selectedWines}
+          data={props.selectedWines}
           id={"id"}
           pictureUrl={"picture_url"}
           label={"name"}
           onClick={(elem) => {
             let newSelectedWines = [
-              ...selectedWines.filter((value) => value != elem),
+              ...props.selectedWines.filter((value) => value != elem),
             ];
-            setSelectedWines(newSelectedWines);
+            props.setSelectedWines(newSelectedWines);
           }}
         />
       ) : (
         <Typography variant="body1">
           You have not selected any wines. <br />
-          Search for some wines you like or continue for default
-          recommendations.
+          Please select some wine you like to continue!
         </Typography>
       )}
     </>
