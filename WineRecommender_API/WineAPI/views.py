@@ -336,7 +336,7 @@ def get_profile(request, wine_ids=[]):
         wine_price_options.append(
             {'option': 'over 20€', 'selected': distinct_prices['>20']})
 
-        wine_structure_averages = WineStructure.objects.filter(wine_id__in=wine_ids).aggregate(wine_accidity=Avg('wine_acidity'), wine_fizziness=Avg('wine_fizziness'), wine_intensity=Avg('wine_intensity'),
+        wine_structure_averages = WineStructure.objects.filter(wine_id__in=wine_ids).aggregate(wine_acidity=Avg('wine_acidity'), wine_fizziness=Avg('wine_fizziness'), wine_intensity=Avg('wine_intensity'),
                                                        wine_tennin=Avg('wine_tannin'), wine_sweetness=Avg('wine_sweetness'))
 
         # construct json result object
