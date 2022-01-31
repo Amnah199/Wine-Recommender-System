@@ -112,14 +112,14 @@ def get_recommendations(request, profile):
 
         #user_structure_dict = {struc["label"]: struc["percentage"] for struc in structure_data}
         #user_structure = np.asarray([user_structure_dict[key] for key in keys_structure])
-        np.asarray([structure_data[key] for key in keys_structure])
+        user_structure = np.asarray([structure_data[key] for key in keys_structure])
 
         local_wines = LocalWine.objects.none()
-        if "over 20€" in options:
+        if "over 20€" in ranges:
             local_wines.union(LocalWine.objects.filter(lw_country__in = origins, lw_type__in = types, lw_price__gt=20))
-        if "10-20€" in options:
+        if "10-20€" in ranges:
             local_wines.union(LocalWine.objects.filter(lw_country__in = origins, lw_type__in = types, lw_price__gt=10, lw_price__lte=20))
-        if "under 10€" in options:
+        if "under 10€" in ranges:
             local_wines.union(LocalWine.objects.filter(lw_country__in = origins, lw_type__in = types, lw_price__lt=10))
         
 
@@ -136,7 +136,7 @@ def get_recommendations(request, profile):
             wine_structure_dict = WineStructure.get(wine_id = lw.wine).__dict__
             wine_structure = np.asarray([wine_structure_dict['wine_'+key] for key in keys_structure])
 
-            wine["score"] = (structure_param * np.sum(np.multiply(user_structure, wine_structure)) + tastes_param * np.sum(
+            wine["score"] = (structure_param * np.sum(np.multiply(user_structure, wine_structure)) + taste_param * np.sum(
             np.multiply(user_tastes, wine_tastes))) * (ratings_param * float(lw.wine.wine_rating) / 4)    
             wines.append(wine)
 
