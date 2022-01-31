@@ -15,6 +15,7 @@ from django.db.models import Avg
 wine_types = ['red', 'sparkling', 'white', 'rosé']
 countries = list(Wine.objects.values('wine_country').distinct())
 
+
 sellers = [{
     "rank": 1,
     "id": 1,
@@ -44,56 +45,11 @@ sellers = [{
         {"label": "tel", "content": "0251/36384"},
         {"label": "email", "content": "mauritz@jacques.de"}]}]
 
-template = {
-    "wine_data": [
-        {
-            "selection_type": "multiselect",
-            "name": "Type of Wine",
-            "options": [
-                {"option": "red", "selected": False},
-                {"option": "white", "selected": False},
-                {"option": "sparkling", "selected": False}
-            ]
-        },
-        {
-            "selection_type": "multiselect",
-            "name": "Price",
-            "options": [
-                {"option": "under 10€", "selected": False},
-                {"option": "10-20€", "selected": False},
-                {"option": "over 20€", "selected": False}
-            ]
-        },
-        {
-            "selection_type": "search_field",
-            "name": "Origin",
-            "options": [
-                {"option": "germany", "selected": False},
-                {"option": "italy", "selected": False},
-                {"option": "france", "selected": False}
-            ]
-        }
-    ],
-    "taste_data": [
-        {"label": "tree fruit", "percentage": 0.2},
-        {"label": "red fruit", "percentage": 0.1},
-        {"label": "citrus fruit", "percentage": 0.5},
-        {"label": "cinnamon", "percentage": 0.3}
-    ]
-}
 keys_taste = ['black_fruit', 'citrus_fruit', 'dried_fruit', 'earth', 'floral', 'microbio', 'non_oak', 'oak',
               'red_fruit', 'spices', 'tree_fruit', 'tropical_fruit', 'vegetal']
 
 keys_structure = ["acidity", "fizziness", "intensity", "sweetness", "tannin"]
 
-
-x = LocalWine.objects.filter(lw_type='red').values_list('wine', flat=True)
-
-for key in keys_taste:
-    print(WineFlavor.objects.filter(wine_id__in=x).aggregate(Avg(key)))
-
-# for key in keys_structure:
-#    print(WineStructure.objects.filter(wine_id__in=x).aggregate(Avg('wine_'+key)))
 
 
 @api_view(['GET'])
@@ -132,107 +88,75 @@ def get_recommendations(request, profile):
     :param profile: profile
     :return: list of wines recommended
     """
-
-    user_profile = json.loads(profile)
-    print(user_profile)
-
-    user_profile = {
-        "tastes": {
-            "black_fruit": 0.5,
-            "citrus_fruit": 0.5,
-            "dried_fruit": 0.2,
-            "earth": 0,
-            "floral": 0,
-            "microbio": 0,
-            "non_oak": 0.7,
-            "oak": 0.1,
-            "red_fruit": 0.1,
-            "spices": 0.9,
-            "tree_fruit": 0.3,
-            "tropical_fruit": 0,
-            "vegetal": 0
-        },
-        "structure": {
-            "acidity": 0.5,
-            "fizziness": 0.4,
-            "intensity": 0.6,
-            "sweetness": 0.1,
-        }
-    }
-
-    wines = []  # list(Wine.objects.filter(wine_id__in=wine_ids))
-    wine_flavors = []
-    wine_structure = list(WineStructure.objects.all().filter(
-        wine_id__in=[w.wine_id for w in wines]))
-
-    wines_for_recommender_engine = []
-
-    for wine in wines:
-        wine_flavors_current = list(
-            filter(lambda x: (x.wine_id == wine.wine_id), wine_flavors))
-        wine_tastes = {}
-        wine_structure_obj = {}
-
-        if wine_flavors_current:
-            flavor_list = wine_flavors_current[:13]
-            wine_tastes['black_fruit'] = flavor_list[0].flavor_wine_group_score
-            wine_tastes['citrus_fruit'] = flavor_list[1].flavor_wine_group_score
-            wine_tastes['dried_fruit'] = flavor_list[2].flavor_wine_group_score
-            wine_tastes['earth'] = flavor_list[3].flavor_wine_group_score
-            wine_tastes['floral'] = flavor_list[4].flavor_wine_group_score
-            wine_tastes['microbio'] = flavor_list[5].flavor_wine_group_score
-            wine_tastes['non_oak'] = flavor_list[6].flavor_wine_group_score
-            wine_tastes['oak'] = flavor_list[7].flavor_wine_group_score
-            wine_tastes['red_fruit'] = flavor_list[8].flavor_wine_group_score
-            wine_tastes['spices'] = flavor_list[9].flavor_wine_group_score
-            wine_tastes['tree_fruit'] = flavor_list[10].flavor_wine_group_score
-            wine_tastes['tropical_fruit'] = flavor_list[11].flavor_wine_group_score
-            wine_tastes['vegetal'] = flavor_list[12].flavor_wine_group_score
-        else:
-            wine_tastes['black_fruit'] = 0
-            wine_tastes['citrus_fruit'] = 0
-            wine_tastes['dried_fruit'] = 0
-            wine_tastes['earth'] = 0
-            wine_tastes['floral'] = 0
-            wine_tastes['microbio'] = 0
-            wine_tastes['non_oak'] = 0
-            wine_tastes['oak'] = 0
-            wine_tastes['red_fruit'] = 0
-            wine_tastes['spices'] = 0
-            wine_tastes['tree_fruit'] = 0
-            wine_tastes['tropical_fruit'] = 0
-            wine_tastes['vegetal'] = 0
-
-        wine_structure_current = list(
-            filter(lambda x: (x.wine_id == wine.wine_id), wine_structure))
-
-        if wine_structure_current:
-            wine_structure_obj['acidity'] = wine_structure_current[0].wine_acidity
-            wine_structure_obj['fizziness'] = wine_structure_current[0].wine_fizziness
-            wine_structure_obj['intensity'] = wine_structure_current[0].wine_intensity
-            wine_structure_obj['sweetness'] = wine_structure_current[0].wine_sweetness
-
-        wines_for_recommender_engine.append(
-            {'wine_id': wine.wine_id, 'wine_tastes': wine_tastes, 'wine_structure': wine_structure_obj, 'wine_rating': wine.wine_rating})
-
-    wines_recommendation_result = recommender_engine.recommender.calculate_recommendations(
-        wines_for_recommender_engine, user_profile)
-
-    local_wines = LocalWine.objects.all().filter(
-        wine_id__in=[w['wine_id'] for w in wines_recommendation_result])
-
-    wines_result = []
-    for i in range(len(local_wines) - 1):
-        wines_result.append({'rank': i + 1, 'name': local_wines[i].lw_name, 'type': local_wines[i].lw_type,
-                             'picture_url': local_wines[i].lw_url, 'id': local_wines[i].lw_seller})
-
-    json_result = '{' \
-                  """  "sellers": [ 
+    profile = json.loads(profile)
+    if len(profile) != 4:
+        return HttpResponseBadRequest("Incomplete request data")
+    wine_data = profile["wine_data"]
+    taste_data = profile["taste_data"]
+    structure_data = profile["structure_data"]
+    structure_param = 0.5
+    taste_param = 1
+    ratings_param = 1
+    num_recs = 10
     
-      ]
-    }
-  ], """ + '"wines": ' + json.dumps(wines_result) + ' }'
-    return HttpResponse(json_result)
+
+    try:
+        types = [option["option"] for option in wine_data[0]["options"] if option["selected"] == True]
+        origins = [option["option"] for option in wine_data[2]["options"] if option["selected"] == True]
+        ranges = [option["option"] for option in wine_data[1]["options"] if option["selected"] == True]
+
+
+        user_taste_dict = {taste["label"]: taste["percentage"] for taste in taste_data}
+        user_taste = np.asarray([user_taste_dict[key] for key in keys_taste])
+
+        #user_structure_dict = {struc["label"]: struc["percentage"] for struc in structure_data}
+        #user_structure = np.asarray([user_structure_dict[key] for key in keys_structure])
+        np.asarray([structure_data[key] for key in keys_structure])
+
+        local_wines = LocalWine.objects.none()
+        if "over 20€" in options:
+            local_wines.union(LocalWine.objects.filter(lw_country__in = origins, lw_type__in = types, lw_price__gt=20))
+        if "10-20€" in options:
+            local_wines.union(LocalWine.objects.filter(lw_country__in = origins, lw_type__in = types, lw_price__gt=10, lw_price__lte=20))
+        if "under 10€" in options:
+            local_wines.union(LocalWine.objects.filter(lw_country__in = origins, lw_type__in = types, lw_price__lt=10))
+        
+
+        wines = []
+
+        for lw in local_wines:
+            wine = {}
+            wine["id"] = lw.lw_id 
+            wine["image"] = lw.lw_thumb
+            wine["seller"] = lw.lw_seller
+            wine["seller_name"] = next((item["name"] for item in sellers if item["id"] == lw.lw_seller), None)
+            wine_flavor_dict = WineFlavor.get(wine_id = lw.wine).__dict__
+            wine_flavor = np.asarray([wine_flavor_dict[key] for key in keys_taste])
+            wine_structure_dict = WineStructure.get(wine_id = lw.wine).__dict__
+            wine_structure = np.asarray([wine_structure_dict[key] for key in keys_structure])
+
+            wine["score"] = (structure_param * np.sum(np.multiply(user_structure, wine_structure)) + tastes_param * np.sum(
+            np.multiply(user_tastes, wine_tastes))) * (ratings_param * float(lw.wine.wine_rating) / 4)    
+            wines.append(wine)
+
+        wines = sorted(wines, key=lambda k: k["score"], reverse=True)
+        vendors = sellers
+        for v in vendors:
+            v["score_total"] = np.sum(np.asarray([wine["score"] for wine in wines if wine["seller"] == seller_id]))
+        
+        vendors = [vendor for vendor in sorted(vendors, key=lambda k: k["score_total"], reverse=True) if vendor["score_total"] > 0]
+        for i in range(len(vendors)):
+            vendors[i]["rank"] = i + 1
+        
+        result = '{ "sellers":' + json.dumps(vendors) + ',' +json.dumps(wines[:num_recs])+ ' }'
+        
+    except BaseException as ex:
+        print(ex)
+        return HttpResponseServerError(ex)
+
+
+
+    return HttpResponse(result)
 
 
 @api_view(['GET'])
