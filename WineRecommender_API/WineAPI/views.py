@@ -294,8 +294,8 @@ def get_wine_details(request, id=0):
         taste_data = [{"label": key, 'percentage': wine_flavor_dict[key]} for key in keys_taste]
         
 
-        wine_structure_dict = WineStructure.objects.get(wine_id=wine.wine).__dict__    
-        structure_data = [{"label": key, 'percentage': wine_structure_dict[key]} for key in keys_taste]
+        wine_structure_dict = WineStructure.objects.get(wine_id=wine.wine).__dict__   
+        structure_data = [{"label": key, 'percentage': wine_structure_dict[key]} for key in keys_structure]
 
         facts = [{'label': 'region', 'content': wine.lw_region},
                  {'label': 'style', 'content': wine.lw_type},
