@@ -4,6 +4,7 @@ from django.http import HttpResponse
 from django.http import HttpResponseBadRequest
 from django.http import HttpResponseServerError
 from rest_framework.decorators import api_view
+import ast
 
 import recommender_engine.recommender
 from .models import *
@@ -24,7 +25,7 @@ def search_wines(request, criteria=""):
         wines_result = '{ "wines": ['
 
         for wine in wines_list:
-            wines_result = wines_result + (WineDto(wine.wine_id, wine.wine_name, wine.wine_thumb)).toJSON() + ','
+            wines_result = wines_result + (WineDto(wine.wine_id, wine.wine_name, wine.wine_thumb[2:])).toJSON() + ','
 
         wines_result = wines_result + '] }'
     except BaseException as ex:
@@ -162,20 +163,23 @@ def get_recommendations(request):
 
 
 @api_view(['GET'])
-def get_profile(request):
+def get_profile(request, ids):
     """
     Gets wine profile specific for a user
     :param request: http object
     :return: wine preferences profile
     """
-    wine_ids = request.GET.get('wineids')
-    wine_ids = wine_ids.split(',')
+    wine_ids = ast.literal_eval(ids)
 
     if wine_ids is None:
         return HttpResponseBadRequest("Wine id must not be null or 0")
 
     try:
         wines = list(LocalWine.objects.filter(lw_id__in=wine_ids))
+
+        if wines is None:
+            return HttpResponseBadRequest("No wines found for specified IDs")
+
         wine_flavors = list(FlavorWineGroup.objects.all().filter(wine_id__in=[w.wine_id for w in wines]))
         wine_flavor_groups = list(FlavorGroup.objects.all())
 
@@ -241,7 +245,6 @@ def get_profile(request):
         wine_price_options.append({'option': 'under 10€', 'selected': distinct_prices['<10']})
         wine_price_options.append({'option': '10-20€', 'selected': distinct_prices['10-20']})
         wine_price_options.append({'option': 'over 20€', 'selected': distinct_prices['>20']})
-
 
         # construct json result object
         result = '{ "wine_data": [' + json.dumps(multi_select_type) + ',' + json.dumps(multi_select_price) + ',' + json.dumps(search_field_origin) + '],'
