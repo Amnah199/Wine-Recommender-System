@@ -89,7 +89,7 @@ def get_recommendations(request, profile):
     :return: list of wines recommended
     """
     profile = json.loads(profile)
-    if len(profile) != 4:
+    if len(profile) != 3:
         return HttpResponseBadRequest("Incomplete request data")
     wine_data = profile["wine_data"]
     taste_data = profile["taste_data"]
