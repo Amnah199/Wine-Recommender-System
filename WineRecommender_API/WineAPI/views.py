@@ -69,7 +69,7 @@ def search_wines(request, criteria=""):
         for wine in wines_list:
             winethumb = ''
             if wine.wine_thumb:
-                winethumb = wine.wine_thumb[2:]
+                winethumb = 'https:'+wine.wine_thumb
             wines_result = wines_result + \
                 (WineDto(wine.wine_id, wine.wine_name, winethumb)).toJSON() + ','
 
