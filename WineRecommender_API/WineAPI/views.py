@@ -393,8 +393,8 @@ def get_wine_details(request, id=0):
                  {'label': 'style', 'content': wine.lw_type},
                  {'label': 'country', 'content': wine.lw_country},
                  {'label': 'price', 'content': wine.lw_price},
-                 {'label:': 'seller', 'content': wine.lw_seller},
-                 {'label:': 'year', 'content': wine.lw_year}]
+                 {'label': 'seller', 'content': wine.lw_seller},
+                 {'label': 'year', 'content': wine.lw_year}]
 
         wine_details_dto = {'id': wine.lw_id, 'name': wine.lw_name, 'description': wine.lw_description, 'link': wine.lw_url, 'picture_url': wine.lw_thumb,
                             'facts': facts, 'taste_data': taste_data, }
