@@ -118,19 +118,15 @@ def get_recommendations(request, profile):
                                     for key in keys_structure])
 
         local_wines = LocalWine.objects.none()
-        print(local_wines.values())
         if "over 20€" in ranges:
-            local_wines.union(LocalWine.objects.filter(
+            local_wines = local_wines.union(LocalWine.objects.filter(
                 lw_country__in=origins, lw_type__in=types, lw_price__gt=20))
         if "10-20€" in ranges:
-            local_wines.union(LocalWine.objects.filter(
+            local_wines = local_wines.union(LocalWine.objects.filter(
                 lw_country__in=origins, lw_type__in=types, lw_price__gt=10, lw_price__lte=20))
         if "under 10€" in ranges:
-            local_wines.union(LocalWine.objects.filter(
+            local_wines = local_wines.union(LocalWine.objects.filter(
                 lw_country__in=origins, lw_type__in=types, lw_price__lt=10))
-
-        print('after:')
-        print(local_wines.values())
 
         wines = []
 
@@ -141,12 +137,14 @@ def get_recommendations(request, profile):
             wine["seller"] = lw.lw_seller
             wine["seller_name"] = next(
                 (item["name"] for item in sellers if item["id"] == lw.lw_seller), None)
-            wine_flavor_dict = WineFlavor.get(wine_id=lw.wine).__dict__
+            wine_flavor_dict = WineFlavor.objects.get(wine_id=lw.wine).__dict__
             wine_flavor = np.asarray([wine_flavor_dict[key]
                                      for key in keys_taste])
-            wine_structure_dict = WineStructure.get(wine_id=lw.wine).__dict__
+
+            wine_structure_dict = WineStructure.objects.get(
+                wine_id=lw.wine).__dict__
             wine_structure = np.asarray(
-                [wine_structure_dict['wine_'+key] for key in keys_structure])
+                [wine_structure_dict[key] for key in keys_structure])
 
             wine["score"] = (structure_param * np.sum(np.multiply(user_structure, wine_structure)) + taste_param * np.sum(
                 np.multiply(user_taste, wine_flavor))) * (ratings_param * float(lw.wine.wine_rating) / 4)

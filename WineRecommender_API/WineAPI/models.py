@@ -68,7 +68,7 @@ class WineFlavor(models.Model):
 
 
 class WineStructure(models.Model):
-    wine_structure_id = models.IntegerField(blank=True, null=True)
+    wine_structure_id = models.IntegerField(primary_key=True)
     wine_acidity = models.FloatField(blank=True, null=True)
     wine_fizziness = models.FloatField(blank=True, null=True)
     wine_intensity = models.FloatField(blank=True, null=True)
@@ -79,6 +79,7 @@ class WineStructure(models.Model):
     class Meta:
         managed = False
         db_table = 'wine_structure'
+
 
 class WineDto:
     def __init__(self, id, name, url=""):
