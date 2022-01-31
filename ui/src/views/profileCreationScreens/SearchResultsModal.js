@@ -21,7 +21,10 @@ export const SearchResultModal = (props) => {
     <CustomModal
       buttonDisabled={true}
       title={"Results for: " + props.searchString}
-      onClose={props.onClose}
+      onClose={() => {
+        console.log("close");
+        props.onClose();
+      }}
     >
       {!results ? (
         <CircularProgress />
@@ -30,7 +33,7 @@ export const SearchResultModal = (props) => {
           button={<Add />}
           data={results}
           id={"id"}
-          pictureUrl={"picture_url"}
+          pictureUrl={"url"}
           label={"name"}
           cols={3}
           onClick={(elem) => props.onClose(elem)}

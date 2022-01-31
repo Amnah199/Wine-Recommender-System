@@ -26,6 +26,7 @@ ChartJS.register(
 );
 
 export const TasteCustomization = (props) => {
+  console.log(props.profile);
   let labels = props.profile.taste_data.map((elem) => elem.label);
   let datapoints = props.profile.taste_data.map((elem) => elem.percentage);
 
