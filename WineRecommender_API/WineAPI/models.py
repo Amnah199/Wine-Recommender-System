@@ -85,7 +85,7 @@ class WineDto:
     def __init__(self, id, name, url=""):
         self.id = id
         self.name = name
-        self.url = url
+        self.picture_url = url
 
     def toJSON(self):
         return json.dumps(self, default=lambda o: o.__dict__,
