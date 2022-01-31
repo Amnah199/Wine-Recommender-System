@@ -25,8 +25,11 @@ def search_wines(request, criteria=""):
         wines_result = '{ "wines": ['
 
         for wine in wines_list:
+            winethumb = ''
+            if wine.wine_thumb:
+                winethumb = wine.wine_thumb[2:]
             wines_result = wines_result + \
-                (WineDto(wine.wine_id, wine.wine_name, wine.wine_thumb[2:])).toJSON() + ','
+                (WineDto(wine.wine_id, wine.wine_name, winethumb)).toJSON() + ','
 
         wines_result = wines_result + '] }'
 
