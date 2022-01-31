@@ -112,10 +112,10 @@ def get_recommendations(request, profile):
                            for taste in taste_data}
         user_taste = np.asarray([user_taste_dict[key] for key in keys_taste])
 
-        #user_structure_dict = {struc["label"]: struc["percentage"] for struc in structure_data}
-        #user_structure = np.asarray([user_structure_dict[key] for key in keys_structure])
-        user_structure = np.asarray([structure_data[key]
-                                    for key in keys_structure])
+        user_structure_dict = {struc["label"]: struc["percentage"] for struc in structure_data}
+        user_structure = np.asarray([user_structure_dict[key] for key in keys_structure])
+        #user_structure = np.asarray([structure_data[key]for key in keys_structure])
+                                    
 
         local_wines = LocalWine.objects.none()
         if "over 20€" in ranges:
@@ -201,30 +201,7 @@ def get_profile(request, wine_ids=[]):
                                                        spices=Avg('spices'), tree_fruit=Avg('tree_fruit'), tropical_fruit=Avg('tropical_fruit'),
                                                        vegetal=Avg('vegetal'))
 
-        taste_data = [
-            {'label': 'black_fruit',
-                'percentage': wine_flavors_averages['black_fruit']},
-            {'label': 'citrus_fruit',
-                'percentage': wine_flavors_averages['citrus_fruit']},
-            {'label': 'dried_fruit',
-                'percentage': wine_flavors_averages['dried_fruit']},
-            {'label': 'earth', 'percentage': wine_flavors_averages['earth']},
-            {'label': 'floral', 'percentage': wine_flavors_averages['floral']},
-            {'label': 'microbio',
-                'percentage': wine_flavors_averages['microbio']},
-            {'label': 'non_oak',
-                'percentage': wine_flavors_averages['non_oak']},
-            {'label': 'oak', 'percentage': wine_flavors_averages['oak']},
-            {'label': 'red_fruit',
-                'percentage': wine_flavors_averages['red_fruit']},
-            {'label': 'spices', 'percentage': wine_flavors_averages['spices']},
-            {'label': 'tree_fruit',
-                'percentage': wine_flavors_averages['tree_fruit']},
-            {'label': 'tropical_fruit',
-                'percentage': wine_flavors_averages['tropical_fruit']},
-            {'label': 'vegetal',
-                'percentage': wine_flavors_averages['vegetal']}
-        ]
+        taste_data = [{"label": key, 'percentage': wine_flavor_averages[key]} for key in keys_taste]
 
         wine_type_options = []
         wine_origin_options = []
@@ -277,12 +254,15 @@ def get_profile(request, wine_ids=[]):
         wine_structure_averages = WineStructure.objects.filter(wine_id__in=wine_ids).aggregate(wine_acidity=Avg('wine_acidity'), wine_fizziness=Avg('wine_fizziness'), wine_intensity=Avg('wine_intensity'),
                                                                                                wine_tannin=Avg('wine_tannin'), wine_sweetness=Avg('wine_sweetness'))
 
+
+        structure_data = [{"label": key, 'percentage': wine_structure_averages[key]} for key in keys_structure]
+                          
         # construct json result object
         result = '{ "wine_data": [' + json.dumps(multi_select_type) + ',' + json.dumps(
             multi_select_price) + ',' + json.dumps(search_field_origin) + '],'
         result += '"taste_data": ' + \
             json.dumps(taste_data) + ', "structure_data": ' + \
-            json.dumps(wine_structure_averages) + ' }'
+            json.dumps(structure_data) + ' }'
     except BaseException as ex:
         print(ex)
         return HttpResponseServerError(ex)
