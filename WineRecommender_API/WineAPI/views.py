@@ -138,7 +138,7 @@ def get_recommendations(request):
     wines_result = []
     for i in range(len(local_wines) - 1):
         wines_result.append({'rank': i + 1, 'name': local_wines[i].lw_name, 'type': local_wines[i].lw_type,
-                            'picture_url': local_wines[i].lw_url, 'seller_id': local_wines[i].lw_seller})
+                            'picture_url': local_wines[i].lw_url, 'id': local_wines[i].lw_seller})
 
     json_result = '{' \
                   """  "sellers": [ 
@@ -172,7 +172,7 @@ def get_recommendations(request):
         { "label": "email", "content": "mauritz@jacques.de" }
       ]
     }
-  ], """ + '"wines": [' + json.dumps(wines_result) + '] }'
+  ], """ + '"wines": ' + json.dumps(wines_result) + ' }'
     return HttpResponse(json_result)
 
 
@@ -308,7 +308,6 @@ def get_wine_details(request, id=0):
         for i in range(len(wine_flavor_groups)):
             taste_data.append({'label': wine_flavor_groups[i].group_name,
                                'percentage': wine_flavors[wine_flavor_groups[i].group_id].flavor_wine_group_score})
-
         facts = [{'label': 'region', 'content': wine.lw_region},
                  {'label': 'style', 'content': wine.lw_type},
                  {'label': 'country', 'content': wine.lw_country},
