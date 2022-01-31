@@ -49,8 +49,6 @@ profile_template = {
 
 
 # assumes input to be a list of wines, as well as template to fill in
-
-
 def generate_profile(wines, profile_template):
     keys_taste = ['black_fruit', 'citrus_fruit', 'dried_fruit', 'earth', 'floral', 'microbio', 'non_oak', 'oak',
                   'red_fruit', 'spices', 'tree_fruit', 'tropical_fruit', 'vegetal']
