@@ -151,7 +151,7 @@ def get_recommendations(request, profile):
         
         wines = wines[:num_recs]
         for i in range(len(wines)):
-            wine["rank"] = i + 1
+            wines[i]["rank"] = i + 1
         result = '{ "sellers":' + json.dumps(vendors) + ', "wines":' +json.dumps(wines)+ ' }'
         
     except BaseException as ex:
