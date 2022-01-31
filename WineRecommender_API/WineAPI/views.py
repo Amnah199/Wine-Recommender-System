@@ -16,73 +16,73 @@ wine_types = ['red', 'sparkling', 'white', 'rosé']
 countries = list(Wine.objects.values('wine_country').distinct())
 
 sellers = [{
-      "rank": 1,
-      "id": 1,
-      "name": "Wein Direktimport Scholz GmbH",
-      "info": [
-        { "label": "address", "content": "Wolbecker Straße 302 48155 Münster" },
-        { "label": "tel", "content": "0251 39729960" },
-        { "label": "email", "content": "info@wein-direktimport.de" }
-      ]
-    },
+    "rank": 1,
+    "id": 1,
+    "name": "Wein Direktimport Scholz GmbH",
+    "info": [
+        {"label": "address", "content": "Wolbecker Straße 302 48155 Münster"},
+        {"label": "tel", "content": "0251 39729960"},
+        {"label": "email", "content": "info@wein-direktimport.de"}
+    ]
+},
     {
-      "rank": 2,
-      "id": 2,
-      "name": "divino Weinhandel Tobias Voigt",
-      "info": [
-        { "label": "address", "content": "Vogelrohrsheide 80 48167 Münster" },
-        { "label": "tel", "content": "0251 62 79 184" },
-        { "label": "email", "content": "info@divino.de" }
-      ]
-    },
+    "rank": 2,
+    "id": 2,
+    "name": "divino Weinhandel Tobias Voigt",
+    "info": [
+        {"label": "address", "content": "Vogelrohrsheide 80 48167 Münster"},
+        {"label": "tel", "content": "0251 62 79 184"},
+        {"label": "email", "content": "info@divino.de"}
+    ]
+},
     {
-      "rank": 3,
-      "id": 3,
-      "name": "Jacques",
-      "info": [
-        { "label": "address", "content": "Warendorfer Str. 22 48145 Münster-Mauritz" },
-        { "label": "tel", "content": "0251/36384" },
-        { "label": "email", "content": "mauritz@jacques.de" }]}]
+    "rank": 3,
+    "id": 3,
+    "name": "Jacques",
+    "info": [
+        {"label": "address", "content": "Warendorfer Str. 22 48145 Münster-Mauritz"},
+        {"label": "tel", "content": "0251/36384"},
+        {"label": "email", "content": "mauritz@jacques.de"}]}]
 
 template = {
-  "wine_data": [
-    {
-      "selection_type": "multiselect",
-      "name": "Type of Wine",
-      "options": [
-        { "option": "red", "selected": False },
-        { "option": "white", "selected": False },
-        { "option": "sparkling", "selected": False }
-      ]
-    },
-    {
-      "selection_type": "multiselect",
-      "name": "Price",
-      "options": [
-        { "option": "under 10€", "selected": False },
-        { "option": "10-20€", "selected": False },
-        { "option": "over 20€", "selected": False }
-      ]
-    },
-    {
-      "selection_type": "search_field",
-      "name": "Origin",
-      "options": [
-        { "option": "germany", "selected": False },
-        { "option": "italy", "selected": False },
-        { "option": "france", "selected": False }
-      ]
-    }
-  ],
-  "taste_data": [
-    { "label": "tree fruit", "percentage": 0.2 },
-    { "label": "red fruit", "percentage": 0.1 },
-    { "label": "citrus fruit", "percentage": 0.5 },
-    { "label": "cinnamon", "percentage": 0.3 }
-  ]
+    "wine_data": [
+        {
+            "selection_type": "multiselect",
+            "name": "Type of Wine",
+            "options": [
+                {"option": "red", "selected": False},
+                {"option": "white", "selected": False},
+                {"option": "sparkling", "selected": False}
+            ]
+        },
+        {
+            "selection_type": "multiselect",
+            "name": "Price",
+            "options": [
+                {"option": "under 10€", "selected": False},
+                {"option": "10-20€", "selected": False},
+                {"option": "over 20€", "selected": False}
+            ]
+        },
+        {
+            "selection_type": "search_field",
+            "name": "Origin",
+            "options": [
+                {"option": "germany", "selected": False},
+                {"option": "italy", "selected": False},
+                {"option": "france", "selected": False}
+            ]
+        }
+    ],
+    "taste_data": [
+        {"label": "tree fruit", "percentage": 0.2},
+        {"label": "red fruit", "percentage": 0.1},
+        {"label": "citrus fruit", "percentage": 0.5},
+        {"label": "cinnamon", "percentage": 0.3}
+    ]
 }
 keys_taste = ['black_fruit', 'citrus_fruit', 'dried_fruit', 'earth', 'floral', 'microbio', 'non_oak', 'oak',
-                  'red_fruit', 'spices', 'tree_fruit', 'tropical_fruit', 'vegetal']
+              'red_fruit', 'spices', 'tree_fruit', 'tropical_fruit', 'vegetal']
 
 keys_structure = ["acidity", "fizziness", "intensity", "sweetness", "tannin"]
 
@@ -92,8 +92,9 @@ x = LocalWine.objects.filter(lw_type='red').values_list('wine', flat=True)
 for key in keys_taste:
     print(WineFlavor.objects.filter(wine_id__in=x).aggregate(Avg(key)))
 
-#for key in keys_structure:
+# for key in keys_structure:
 #    print(WineStructure.objects.filter(wine_id__in=x).aggregate(Avg('wine_'+key)))
+
 
 @api_view(['GET'])
 def search_wines(request, criteria=""):
@@ -124,13 +125,16 @@ def search_wines(request, criteria=""):
 
 
 @api_view(['GET'])
-def get_recommendations(request):
+def get_recommendations(request, profile):
     """
     Gets wine-recommendations
     :param request: http request object
+    :param profile: profile
     :return: list of wines recommended
     """
-    
+
+    user_profile = json.loads(profile)
+    print(user_profile)
 
     user_profile = {
         "tastes": {
@@ -156,7 +160,7 @@ def get_recommendations(request):
         }
     }
 
-    wines = [] #list(Wine.objects.filter(wine_id__in=wine_ids))
+    wines = []  # list(Wine.objects.filter(wine_id__in=wine_ids))
     wine_flavors = []
     wine_structure = list(WineStructure.objects.all().filter(
         wine_id__in=[w.wine_id for w in wines]))
@@ -253,26 +257,35 @@ def get_profile(request, wine_ids=[]):
         wine_flavors = WineFlavor.objects.all().filter(
             wine_id__in=[w.wine_id for w in wines])
 
-        wine_flavors_averages = wine_flavors.aggregate(black_fruit = Avg('black_fruit'), citrus_fruit= Avg('citrus_fruit'), dried_fruit = Avg('dried_fruit'),
-                                                       earth = Avg('earth'), floral = Avg('floral'), microbio = Avg('microbio'),
-                                                       non_oak = Avg('non_oak'), oak = Avg('oak'), red_fruit = Avg('red_fruit'),
-                                                       spices = Avg('spices'), tree_fruit = Avg('tree_fruit'), tropical_fruit = Avg('tropical_fruit'),
-                                                       vegetal = Avg('vegetal'))
+        wine_flavors_averages = wine_flavors.aggregate(black_fruit=Avg('black_fruit'), citrus_fruit=Avg('citrus_fruit'), dried_fruit=Avg('dried_fruit'),
+                                                       earth=Avg('earth'), floral=Avg('floral'), microbio=Avg('microbio'),
+                                                       non_oak=Avg('non_oak'), oak=Avg('oak'), red_fruit=Avg('red_fruit'),
+                                                       spices=Avg('spices'), tree_fruit=Avg('tree_fruit'), tropical_fruit=Avg('tropical_fruit'),
+                                                       vegetal=Avg('vegetal'))
 
         taste_data = [
-            { 'label': 'black_fruit', 'percentage': wine_flavors_averages['black_fruit']},
-            { 'label': 'citrus_fruit', 'percentage': wine_flavors_averages['citrus_fruit']},
-            {'label': 'dried_fruit', 'percentage': wine_flavors_averages['dried_fruit']},
+            {'label': 'black_fruit',
+                'percentage': wine_flavors_averages['black_fruit']},
+            {'label': 'citrus_fruit',
+                'percentage': wine_flavors_averages['citrus_fruit']},
+            {'label': 'dried_fruit',
+                'percentage': wine_flavors_averages['dried_fruit']},
             {'label': 'earth', 'percentage': wine_flavors_averages['earth']},
             {'label': 'floral', 'percentage': wine_flavors_averages['floral']},
-            {'label': 'microbio', 'percentage': wine_flavors_averages['microbio']},
-            {'label': 'non_oak', 'percentage': wine_flavors_averages['non_oak']},
+            {'label': 'microbio',
+                'percentage': wine_flavors_averages['microbio']},
+            {'label': 'non_oak',
+                'percentage': wine_flavors_averages['non_oak']},
             {'label': 'oak', 'percentage': wine_flavors_averages['oak']},
-            {'label': 'red_fruit', 'percentage': wine_flavors_averages['red_fruit']},
+            {'label': 'red_fruit',
+                'percentage': wine_flavors_averages['red_fruit']},
             {'label': 'spices', 'percentage': wine_flavors_averages['spices']},
-            {'label': 'tree_fruit', 'percentage': wine_flavors_averages['tree_fruit']},
-            {'label': 'tropical_fruit', 'percentage': wine_flavors_averages['tropical_fruit']},
-            {'label': 'vegetal', 'percentage': wine_flavors_averages['vegetal']}
+            {'label': 'tree_fruit',
+                'percentage': wine_flavors_averages['tree_fruit']},
+            {'label': 'tropical_fruit',
+                'percentage': wine_flavors_averages['tropical_fruit']},
+            {'label': 'vegetal',
+                'percentage': wine_flavors_averages['vegetal']}
         ]
 
         wine_type_options = []
@@ -304,7 +317,8 @@ def get_profile(request, wine_ids=[]):
             wine_type_options.append({'option': wine_type, 'selected': False})
 
         for wine_country in countries:
-            wine_origin_options.append({'option': wine_country['wine_country'], 'selected': False})
+            wine_origin_options.append(
+                {'option': wine_country['wine_country'], 'selected': False})
 
         for w_type in distinct_types:
             wine_type_options.append({'option': w_type, 'selected': True})
@@ -354,11 +368,12 @@ def get_wine_details(request, id=0):
         wine_flavors = list(
             WineFlavor.objects.all().filter(wine_id=wine.wine_id))
 
-        if len(wine_flavors)> 1:
+        if len(wine_flavors) > 1:
             wine_flavors = wine_flavors[0]
 
         taste_data = [{'label': 'black_fruit', 'percentage': wine_flavors.black_fruit},
-                      {'label': 'citrus_fruit', 'percentage': wine_flavors.citrus_fruit},
+                      {'label': 'citrus_fruit',
+                          'percentage': wine_flavors.citrus_fruit},
                       {'label': 'dried_fruit', 'percentage': wine_flavors.dried_fruit},
                       {'label': 'earth', 'percentage': wine_flavors.earth},
                       {'label': 'floral', 'percentage': wine_flavors.floral},
@@ -368,7 +383,8 @@ def get_wine_details(request, id=0):
                       {'label': 'red_fruit', 'percentage': wine_flavors.red_fruit},
                       {'label': 'spices', 'percentage': wine_flavors.spices},
                       {'label': 'tree_fruit', 'percentage': wine_flavors.tree_fruit},
-                      {'label': 'tropical_fruit', 'percentage': wine_flavors.tropical_fruit},
+                      {'label': 'tropical_fruit',
+                          'percentage': wine_flavors.tropical_fruit},
                       {'label': 'vegetal', 'percentage': wine_flavors.vegetal}]
 
         facts = [{'label': 'region', 'content': wine.lw_region},
