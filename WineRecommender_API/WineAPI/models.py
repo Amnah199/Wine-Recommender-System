@@ -72,7 +72,7 @@ class WineStructure(models.Model):
     wine_acidity = models.FloatField(blank=True, null=True)
     wine_fizziness = models.FloatField(blank=True, null=True)
     wine_intensity = models.FloatField(blank=True, null=True)
-    wine_tennin = models.FloatField(blank=True, null=True)
+    wine_tannin = models.FloatField(blank=True, null=True)
     wine_sweetness = models.FloatField(blank=True, null=True)
     wine = models.ForeignKey(Wine, models.DO_NOTHING, blank=True, null=True)
 
