@@ -7,6 +7,7 @@ from django.db.models import Avg
 from rest_framework.decorators import api_view
 import ast
 
+import numpy as np
 import recommender_engine.recommender
 from .models import *
 from recommender_engine import *
