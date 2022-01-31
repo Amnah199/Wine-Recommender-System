@@ -321,7 +321,9 @@ def get_profile(request, wine_ids=[]):
                 {'option': wine_country['wine_country'], 'selected': False})
 
         for w_type in distinct_types:
-            wine_type_options.append({'option': w_type, 'selected': True})
+            for opt in wine_type_options:
+                if opt['option'] == w_type:
+                    opt['selected'] = True
         for w_origin in distinct_origin:
             for opt in wine_origin_options:
                 if opt['option'] == w_origin:
