@@ -336,10 +336,13 @@ def get_profile(request, wine_ids=[]):
         wine_price_options.append(
             {'option': 'over 20€', 'selected': distinct_prices['>20']})
 
+        wine_structure_averages = WineStructure.objects.filter(wine_id__in=wine_ids).aggregate(wine_accidity=Avg('wine_acidity'), wine_fizziness=Avg('wine_fizziness'), wine_intensity=Avg('wine_intensity'),
+                                                       wine_tennin=Avg('wine_tennin'), wine_sweetness=Avg('wine_sweetness'))
+
         # construct json result object
         result = '{ "wine_data": [' + json.dumps(multi_select_type) + ',' + json.dumps(
             multi_select_price) + ',' + json.dumps(search_field_origin) + '],'
-        result += '"taste_data": ' + json.dumps(taste_data) + ' }'
+        result += '"taste_data": ' + json.dumps(taste_data) + ', "structure_data": ' + json.dumps(wine_structure_averages) + ' }'
     except BaseException as ex:
         print(ex)
         return HttpResponseServerError(ex)
