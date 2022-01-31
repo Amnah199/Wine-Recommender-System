@@ -10,6 +10,7 @@ import recommender_engine.recommender
 from .models import *
 
 wine_types = ['red', 'sparkling', 'white', 'rosé']
+countries = list(Wine.objects.values('wine_country').distinct())
 
 @api_view(['GET'])
 def search_wines(request, criteria=""):
@@ -210,6 +211,22 @@ def get_profile(request, wine_ids=[]):
                                                        spices = Avg('spices'), tree_fruit = Avg('tree_fruit'), tropical_fruit = Avg('tropical_fruit'),
                                                        vegetal = Avg('vegetal'))
 
+        taste_data = [
+            { 'label': 'black_fruit', 'percentage': wine_flavors_averages['black_fruit']},
+            { 'label': 'citrus_fruit', 'percentage': wine_flavors_averages['citrus_fruit']},
+            {'label': 'dried_fruit', 'percentage': wine_flavors_averages['dried_fruit']},
+            {'label': 'earth', 'percentage': wine_flavors_averages['earth']},
+            {'label': 'floral', 'percentage': wine_flavors_averages['floral']},
+            {'label': 'microbio', 'percentage': wine_flavors_averages['microbio']},
+            {'label': 'non_oak', 'percentage': wine_flavors_averages['non_oak']},
+            {'label': 'oak', 'percentage': wine_flavors_averages['oak']},
+            {'label': 'red_fruit', 'percentage': wine_flavors_averages['red_fruit']},
+            {'label': 'spices', 'percentage': wine_flavors_averages['spices']},
+            {'label': 'tree_fruit', 'percentage': wine_flavors_averages['tree_fruit']},
+            {'label': 'tropical_fruit', 'percentage': wine_flavors_averages['tropical_fruit']},
+            {'label': 'vegetal', 'percentage': wine_flavors_averages['vegetal']}
+        ]
+
         wine_type_options = []
         wine_origin_options = []
         wine_price_options = []
@@ -227,7 +244,7 @@ def get_profile(request, wine_ids=[]):
             if wine.wine_type not in distinct_types:
                 distinct_types.append(wine.wine_type.strip())
             if wine.wine_country.strip() not in distinct_origin:
-                distinct_origin.append(wine.wine_country)
+                distinct_origin.append(wine.wine_country.strip())
             if wine.wine_price < 10:
                 distinct_prices['<10'] = True
             if 10 <= wine.wine_price <= 20:
@@ -238,12 +255,17 @@ def get_profile(request, wine_ids=[]):
         for wine_type in wine_types:
             wine_type_options.append({'option': wine_type, 'selected': False})
 
+        for wine_country in countries:
+            wine_origin_options.append({'option': wine_country['wine_country'], 'selected': False})
+
         for w_type in distinct_types:
             for opt in wine_type_options:
                 if opt['option'] == w_type:
                     opt['selected'] = True
         for w_origin in distinct_origin:
-            wine_origin_options.append({'option': w_origin, 'selected': True})
+            for opt in wine_origin_options:
+                if opt['option'] == w_origin:
+                    opt['selected'] = True
 
         wine_price_options.append(
             {'option': 'under 10€', 'selected': distinct_prices['<10']})
@@ -255,7 +277,7 @@ def get_profile(request, wine_ids=[]):
         # construct json result object
         result = '{ "wine_data": [' + json.dumps(multi_select_type) + ',' + json.dumps(
             multi_select_price) + ',' + json.dumps(search_field_origin) + '],'
-        result += '"taste_data": ' + json.dumps(wine_flavors_averages) + ' }'
+        result += '"taste_data": ' + json.dumps(taste_data) + ' }'
     except BaseException as ex:
         print(ex)
         return HttpResponseServerError(ex)
