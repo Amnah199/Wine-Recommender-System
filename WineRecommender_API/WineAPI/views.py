@@ -10,6 +10,10 @@ import recommender_engine.recommender
 from .models import *
 from recommender_engine import *
 
+countries = LocalWine.objects.distinct("lw_country").all().values("lw_country")
+countries = set([elem["lw_country"].strip() for elem in countries])
+print(countries)
+
 
 @api_view(['GET'])
 def search_wines(request, criteria=""):
@@ -29,6 +33,7 @@ def search_wines(request, criteria=""):
                 (WineDto(wine.wine_id, wine.wine_name, wine.wine_thumb)).toJSON() + ','
 
         wines_result = wines_result + '] }'
+
     except BaseException as ex:
         return HttpResponseServerError()
 
@@ -180,6 +185,7 @@ def get_profile(request, wine_ids=[]):
     :return: wine preferences profile
     """
     wine_ids = json.loads(wine_ids)
+    print(wine_ids)
     if len(wine_ids) == 0:
         return HttpResponseBadRequest("Wine id must not be null or 0")
 
@@ -237,15 +243,15 @@ def get_profile(request, wine_ids=[]):
         distinct_prices = {'<10': False, '10-20': False, '>20': False}
         distinct_origin = []
         for wine in wines:
-            if wine.lw_type not in distinct_types:
-                distinct_types.append(wine.lw_type)
-            if wine.lw_country.strip() not in distinct_origin:
-                distinct_origin.append(wine.lw_country)
-            if wine.lw_price < 10:
+            if wine.wine_type not in distinct_types:
+                distinct_types.append(wine.wine_type)
+            if wine.wine_country.strip() not in distinct_origin:
+                distinct_origin.append(wine.wine_country)
+            if wine.wine_price < 10:
                 distinct_prices['<10'] = True
-            if 10 <= wine.lw_price <= 20:
+            if 10 <= wine.wine_price <= 20:
                 distinct_prices['10-20'] = True
-            if wine.lw_price > 20:
+            if wine.wine_price > 20:
                 distinct_prices['>20'] = True
 
         for w_type in distinct_types:
@@ -265,6 +271,7 @@ def get_profile(request, wine_ids=[]):
             multi_select_price) + ',' + json.dumps(search_field_origin) + '],'
         result += '"taste_data": [' + json.dumps(taste_data) + '] }'
     except BaseException as ex:
+        print(ex)
         return HttpResponseServerError(ex)
 
     return HttpResponse(result)
@@ -293,6 +300,9 @@ def get_wine_details(request, id=0):
         wine_flavors = list(
             FlavorWineGroup.objects.all().filter(wine_id=wine.wine_id))
         wine_flavor_groups = list(FlavorGroup.objects.all())
+
+        print(FlavorWineGroup.objects.all().filter(
+            wine_id=wine.wine_id).values())
 
         taste_data = []
         for i in range(len(wine_flavor_groups)):
