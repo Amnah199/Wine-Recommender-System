@@ -134,7 +134,7 @@ def get_recommendations(request, profile):
             wine_flavor_dict = WineFlavor.get(wine_id = lw.wine).__dict__
             wine_flavor = np.asarray([wine_flavor_dict[key] for key in keys_taste])
             wine_structure_dict = WineStructure.get(wine_id = lw.wine).__dict__
-            wine_structure = np.asarray([wine_structure_dict[key] for key in keys_structure])
+            wine_structure = np.asarray([wine_structure_dict['wine_'+key] for key in keys_structure])
 
             wine["score"] = (structure_param * np.sum(np.multiply(user_structure, wine_structure)) + tastes_param * np.sum(
             np.multiply(user_tastes, wine_tastes))) * (ratings_param * float(lw.wine.wine_rating) / 4)    
