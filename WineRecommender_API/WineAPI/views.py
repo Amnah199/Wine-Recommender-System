@@ -25,12 +25,12 @@ def search_wines(request, criteria=""):
 
         for wine in wines_list:
             wines_result = wines_result + \
-                (WineDto(wine.wine_id, wine.wine_name, wine.wine_thumb)).toJSON() + ','
+                (WineDto(wine.wine_id, wine.wine_name, wine.wine_thumb[2:])).toJSON() + ','
 
         wines_result = wines_result + '] }'
 
     except BaseException as ex:
-        return HttpResponseServerError()
+        return HttpResponseServerError(ex)
 
     return HttpResponse(wines_result)
 
@@ -314,10 +314,23 @@ def get_wine_details(request, id=0):
         wine_flavors = list(
             WineFlavor.objects.all().filter(wine_id=wine.wine_id))
 
-        taste_data = []
-        for i in range(len(wine_flavors)):
-            taste_data.append({'label': wine_flavors[i].group_name,
-                               'percentage': wine_flavors[wine_flavors[i].group_id].flavor_wine_group_score})
+        if len(wine_flavors)> 1:
+            wine_flavors = wine_flavors[0]
+
+        taste_data = [{'label': 'black_fruit', 'percentage': wine_flavors.black_fruit},
+                      {'label': 'citrus_fruit', 'percentage': wine_flavors.citrus_fruit},
+                      {'label': 'dried_fruit', 'percentage': wine_flavors.dried_fruit},
+                      {'label': 'earth', 'percentage': wine_flavors.earth},
+                      {'label': 'floral', 'percentage': wine_flavors.floral},
+                      {'label': 'microbio', 'percentage': wine_flavors.microbio},
+                      {'label': 'non_oak', 'percentage': wine_flavors.non_oak},
+                      {'label': 'oak', 'percentage': wine_flavors.oak},
+                      {'label': 'red_fruit', 'percentage': wine_flavors.red_fruit},
+                      {'label': 'spices', 'percentage': wine_flavors.spices},
+                      {'label': 'tree_fruit', 'percentage': wine_flavors.tree_fruit},
+                      {'label': 'tropical_fruit', 'percentage': wine_flavors.tropical_fruit},
+                      {'label': 'vegetal', 'percentage': wine_flavors.vegetal}]
+
         facts = [{'label': 'region', 'content': wine.lw_region},
                  {'label': 'style', 'content': wine.lw_type},
                  {'label': 'country', 'content': wine.lw_country},
@@ -325,7 +338,7 @@ def get_wine_details(request, id=0):
                  {'label': 'seller', 'content': wine.lw_seller},
                  {'label': 'year', 'content': wine.lw_year}]
 
-        wine_details_dto = {'id': wine.wine_id, 'name': wine.lw_name, 'description': wine.lw_description, 'link': wine.lw_url,
+        wine_details_dto = {'id': wine.lw_id, 'name': wine.lw_name, 'description': wine.lw_description, 'link': wine.lw_url, 'picture_url': wine.lw_thumb,
                             'facts': facts, 'taste_data': taste_data, }
         wine_details_dto = json.dumps(wine_details_dto)
     except BaseException as ex:
