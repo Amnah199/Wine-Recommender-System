@@ -135,6 +135,7 @@ def get_recommendations(request, profile):
             wine["id"] = lw.lw_id
             wine["picture_url"] = lw.lw_thumb
             wine["seller"] = lw.lw_seller
+            wine["label"] = lw.lw_name
             wine_flavor_dict = WineFlavor.objects.get(wine_id=lw.wine).__dict__
             wine_flavor = np.asarray([wine_flavor_dict[key]
                                      for key in keys_taste])
