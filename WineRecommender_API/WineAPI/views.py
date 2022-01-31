@@ -10,10 +10,8 @@ import recommender_engine.recommender
 from .models import *
 from recommender_engine import *
 
-countries = LocalWine.objects.distinct("lw_country").all().values("lw_country")
-countries = set([elem["lw_country"].strip() for elem in countries])
-print(countries)
 
+wine_types = ['red', 'sparkling', 'white', 'rosé']
 
 @api_view(['GET'])
 def search_wines(request, criteria=""):
@@ -198,6 +196,10 @@ def get_profile(request, wine_ids=[]):
 
     try:
         wines = list(Wine.objects.filter(wine_id__in=wine_ids))
+
+        if not wines:
+            return HttpResponseBadRequest("No wines found for specified Ids")
+
         wine_flavors = list(FlavorWineGroup.objects.all().filter(
             wine_id__in=[w.wine_id for w in wines]))
         wine_flavor_groups = list(FlavorGroup.objects.all())
@@ -251,7 +253,7 @@ def get_profile(request, wine_ids=[]):
         distinct_origin = []
         for wine in wines:
             if wine.wine_type not in distinct_types:
-                distinct_types.append(wine.wine_type)
+                distinct_types.append(wine.wine_type.strip())
             if wine.wine_country.strip() not in distinct_origin:
                 distinct_origin.append(wine.wine_country)
             if wine.wine_price < 10:
@@ -261,8 +263,13 @@ def get_profile(request, wine_ids=[]):
             if wine.wine_price > 20:
                 distinct_prices['>20'] = True
 
+        for wine_type in wine_types:
+            wine_type_options.append({'option': wine_type, 'selected': False})
+
         for w_type in distinct_types:
-            wine_type_options.append({'option': w_type, 'selected': True})
+            for opt in wine_type_options:
+                if opt['option'] == w_type:
+                    opt['selected'] = True
         for w_origin in distinct_origin:
             wine_origin_options.append({'option': w_origin, 'selected': True})
 
@@ -276,7 +283,7 @@ def get_profile(request, wine_ids=[]):
         # construct json result object
         result = '{ "wine_data": [' + json.dumps(multi_select_type) + ',' + json.dumps(
             multi_select_price) + ',' + json.dumps(search_field_origin) + '],'
-        result += '"taste_data": [' + json.dumps(taste_data) + '] }'
+        result += '"taste_data": ' + json.dumps(taste_data) + ' }'
     except BaseException as ex:
         print(ex)
         return HttpResponseServerError(ex)
