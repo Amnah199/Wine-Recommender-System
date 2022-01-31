@@ -201,7 +201,7 @@ def get_profile(request, wine_ids=[]):
                                                        spices=Avg('spices'), tree_fruit=Avg('tree_fruit'), tropical_fruit=Avg('tropical_fruit'),
                                                        vegetal=Avg('vegetal'))
 
-        taste_data = [{"label": key, 'percentage': wine_flavor_averages[key]} for key in keys_taste]
+        taste_data = [{"label": key, 'percentage': wine_flavors_averages[key]} for key in keys_taste]
 
         wine_type_options = []
         wine_origin_options = []
@@ -283,34 +283,19 @@ def get_wine_details(request, id=0):
         return HttpResponseBadRequest("Wine id must not be null or 0")
 
     try:
-        wines_list = LocalWine.objects.filter(lw_id=id)
-
-        wine = list(wines_list)[0]
+        wine = LocalWine.objects.get(lw_id=id)
 
         if wine is None:
             return HttpResponseBadRequest()
 
-        wine_flavors = list(
-            WineFlavor.objects.all().filter(wine_id=wine.wine_id))
+      
 
-        if len(wine_flavors) > 0:
-            wine_flavors = wine_flavors[0]
+        wine_flavor_dict = WineFlavor.objects.get(wine_id=wine.wine).__dict__
+        taste_data = [{"label": key, 'percentage': wine_flavor_dict[key]} for key in keys_taste]
+        
 
-        taste_data = [{'label': 'black_fruit', 'percentage': wine_flavors.black_fruit},
-                      {'label': 'citrus_fruit',
-                          'percentage': wine_flavors.citrus_fruit},
-                      {'label': 'dried_fruit', 'percentage': wine_flavors.dried_fruit},
-                      {'label': 'earth', 'percentage': wine_flavors.earth},
-                      {'label': 'floral', 'percentage': wine_flavors.floral},
-                      {'label': 'microbio', 'percentage': wine_flavors.microbio},
-                      {'label': 'non_oak', 'percentage': wine_flavors.non_oak},
-                      {'label': 'oak', 'percentage': wine_flavors.oak},
-                      {'label': 'red_fruit', 'percentage': wine_flavors.red_fruit},
-                      {'label': 'spices', 'percentage': wine_flavors.spices},
-                      {'label': 'tree_fruit', 'percentage': wine_flavors.tree_fruit},
-                      {'label': 'tropical_fruit',
-                          'percentage': wine_flavors.tropical_fruit},
-                      {'label': 'vegetal', 'percentage': wine_flavors.vegetal}]
+        wine_structure_dict = WineStructure.objects.get(wine_id=wine.wine).__dict__    
+        structure_data = [{"label": key, 'percentage': wine_structure_dict[key]} for key in keys_taste]
 
         facts = [{'label': 'region', 'content': wine.lw_region},
                  {'label': 'style', 'content': wine.lw_type},
@@ -321,7 +306,7 @@ def get_wine_details(request, id=0):
                  {'label': 'year', 'content': wine.lw_year}]
 
         wine_details_dto = {'id': wine.lw_id, 'name': wine.lw_name, 'description': wine.lw_description, 'link': wine.lw_url, 'picture_url': wine.lw_thumb,
-                            'facts': facts, 'taste_data': taste_data, }
+                            'facts': facts, 'taste_data': taste_data, 'structure_data': structure_data }
         wine_details_dto = json.dumps(wine_details_dto)
     except BaseException as ex:
         print(ex)
