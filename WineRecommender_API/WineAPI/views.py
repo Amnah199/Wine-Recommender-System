@@ -277,11 +277,13 @@ def get_wine_details(request, id=0):
     :param id: id of the wine
     :return: details of specified wine
     """
+
     if id == 0:
         return HttpResponseBadRequest("Wine id must not be null or 0")
 
     try:
         wines_list = LocalWine.objects.filter(lw_id=id)
+
         wine = list(wines_list)[0]
 
         if wine is None:
@@ -301,14 +303,14 @@ def get_wine_details(request, id=0):
                  {'label': 'country', 'content': wine.lw_country},
                  {'label': 'price', 'content': wine.lw_price},
                  {'label:': 'seller', 'content': wine.lw_seller},
-                 {'label:': 'url', 'content': wine.lw_url},
+
                  {'label:': 'year', 'content': wine.lw_year}]
 
-        wine_details_dto = {'id': wine.wine_id, 'name': wine.lw_name, 'description': wine.lw_description, 'picture_url': wine.lw_url,
-                            'facts': facts, 'taste_data': taste_data}
-
+        wine_details_dto = {'id': wine.wine_id, 'name': wine.lw_name, 'description': wine.lw_description, 'link': wine.lw_url,
+                            'facts': facts, 'taste_data': taste_data, }
         wine_details_dto = json.dumps(wine_details_dto)
     except BaseException as ex:
+        print(ex)
         return HttpResponseServerError()
 
     return HttpResponse(wine_details_dto)
