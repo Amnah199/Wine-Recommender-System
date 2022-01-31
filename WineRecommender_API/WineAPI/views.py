@@ -15,11 +15,6 @@ from django.db.models import Avg
 wine_types = ['red', 'sparkling', 'white', 'rosé']
 countries = list(Wine.objects.values('wine_country').distinct())
 
-countries = LocalWine.objects.distinct("lw_country").all().values("lw_country")
-countries = set([elem["lw_country"].strip() for elem in countries])
-print(countries)
-
-
 sellers = [{
       "rank": 1,
       "id": 1,
@@ -97,8 +92,8 @@ x = LocalWine.objects.filter(lw_type='red').values_list('wine', flat=True)
 for key in keys_taste:
     print(WineFlavor.objects.filter(wine_id__in=x).aggregate(Avg(key)))
 
-for key in keys_structure:
-    print(WineStructure.objects.filter(wine_id__in=x).aggregate(Avg('wine_'+key)))
+#for key in keys_structure:
+#    print(WineStructure.objects.filter(wine_id__in=x).aggregate(Avg('wine_'+key)))
 
 @api_view(['GET'])
 def search_wines(request, criteria=""):
@@ -161,9 +156,8 @@ def get_recommendations(request):
         }
     }
 
-    wines = list(Wine.objects.filter(wine_id__in=wine_ids))
-    wine_flavors = list(FlavorWineGroup.objects.all().filter(
-        wine_id__in=[w.wine_id for w in wines]))
+    wines = [] #list(Wine.objects.filter(wine_id__in=wine_ids))
+    wine_flavors = []
     wine_structure = list(WineStructure.objects.all().filter(
         wine_id__in=[w.wine_id for w in wines]))
 
@@ -358,11 +352,7 @@ def get_wine_details(request, id=0):
             return HttpResponseBadRequest()
 
         wine_flavors = list(
-            FlavorWineGroup.objects.all().filter(wine_id=wine.wine_id))
-        wine_flavor_groups = list(FlavorGroup.objects.all())
-
-        print(FlavorWineGroup.objects.all().filter(
-            wine_id=wine.wine_id).values())
+            WineFlavor.objects.all().filter(wine_id=wine.wine_id))
 
         if len(wine_flavors)> 1:
             wine_flavors = wine_flavors[0]
@@ -386,7 +376,6 @@ def get_wine_details(request, id=0):
                  {'label': 'country', 'content': wine.lw_country},
                  {'label': 'price', 'content': wine.lw_price},
                  {'label:': 'seller', 'content': wine.lw_seller},
-
                  {'label:': 'year', 'content': wine.lw_year}]
 
         wine_details_dto = {'id': wine.lw_id, 'name': wine.lw_name, 'description': wine.lw_description, 'link': wine.lw_url, 'picture_url': wine.lw_thumb,
