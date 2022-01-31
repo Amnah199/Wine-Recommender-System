@@ -77,6 +77,12 @@ class WineStructure(models.Model):
         managed = False
         db_table = 'wine_structure'
 
+
+class UserProfile:
+    tastes = {}
+    structure = {}
+
+
 class WineDto:
     def __init__(self, id, name, url=""):
         self.id = id
