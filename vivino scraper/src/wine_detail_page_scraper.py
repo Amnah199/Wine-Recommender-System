@@ -18,6 +18,7 @@ import json
 
 import config
 import pathlib
+import datetime
 
 
 def parseWebsite(html):
@@ -62,11 +63,14 @@ df = pd.read_csv(str(filePath)+"/../temp/wines_export.csv")
 
 if not os.path.isdir(str(filePath) + "/../export"):
     os.mkdir(str(filePath) + "/../export")
-
+time0 = datetime.datetime.utcnow()
 for id, row in df.iterrows():
+    print(id, "/", len(df))
+
     link = "http://www.vivino.com" + row["link"]
 
-    current_wine_dir_path = str(filePath) + "/../export/" + str(id) + "/"
+    current_wine_dir_path = str(
+        filePath) + "/../export/" + str(id) + "/"
 
     secondCondition = (os.path.isfile(current_wine_dir_path+"taste.json"))
     secondCondition = True
@@ -75,6 +79,8 @@ for id, row in df.iterrows():
 
         if not os.path.isdir(current_wine_dir_path):
             os.mkdir(current_wine_dir_path)
+            file = open(current_wine_dir_path+"wine_id",
+                        "w").write(str(row["local_id"]))
 
         def interceptor(request, response):
             global body
@@ -101,7 +107,7 @@ for id, row in df.iterrows():
 
         counter = 0
 
-        while (counter < 2):
+        while (counter < 5):
             try:
                 WebDriverWait(driver, config.loadTime).until(
                     EC.presence_of_element_located(
@@ -123,3 +129,6 @@ for id, row in df.iterrows():
             counter += 1
 
         time.sleep(config.sleepTime)
+        time_now = datetime.datetime.utcnow()
+        print("secs per page:", (time_now - time0).total_seconds())
+        time0 = time_now

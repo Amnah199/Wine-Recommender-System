@@ -15,7 +15,9 @@ df = pd.concat(dfList, ignore_index=True)
 
 df = df.drop_duplicates("link")
 
-
-df = df.drop(columns=["Unnamed: 0"])
+try:
+    df = df.drop(columns=["Unnamed: 0"])
+except:
+    pass
 print(df.head())
 df.to_csv(str(filePath)+"/../temp/wines_export.csv", index=False)
