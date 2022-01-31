@@ -133,7 +133,7 @@ def get_recommendations(request):
     wines_result = []
     for i in range(len(local_wines) - 1):
         wines_result.append({'rank': i + 1, 'name': local_wines[i].lw_name, 'type': local_wines[i].lw_type,
-                            'picture_url': local_wines[i].lw_url, 'seller_id': local_wines[i].lw_seller})
+                            'picture_url': local_wines[i].lw_url, 'id': local_wines[i].lw_seller})
 
     json_result = '{' \
                   """  "sellers": [ 
@@ -145,7 +145,9 @@ def get_recommendations(request):
         { "label": "address", "content": "Wolbecker Straße 302 48155 Münster" },
         { "label": "tel", "content": "0251 39729960" },
         { "label": "email", "content": "info@wein-direktimport.de" }
-      ]
+      ],
+      lat: 51.95,
+      lon: 7.67
     },
     {
       "rank": 2,
@@ -155,19 +157,24 @@ def get_recommendations(request):
         { "label": "address", "content": "Vogelrohrsheide 80 48167 Münster" },
         { "label": "tel", "content": "0251 62 79 184" },
         { "label": "email", "content": "info@divino.de" }
-      ]
+      ],
+      lat: 51.92,
+      lon: 7.67
     },
     {
       "rank": 3,
       "id": 3,
-      "name": "Jacques",
+      "name": "Jacques Wein-Depot",
       "info": [
         { "label": "address", "content": "Warendorfer Str. 22 48145 Münster-Mauritz" },
         { "label": "tel", "content": "0251/36384" },
         { "label": "email", "content": "mauritz@jacques.de" }
-      ]
+      ],
+      lat: 51.93,
+      lon: 7.61,
+
     }
-  ], """ + '"wines": [' + json.dumps(wines_result) + '] }'
+  ], """ + '"wines": ' + json.dumps(wines_result) + ' }'
     return HttpResponse(json_result)
 
 
@@ -315,13 +322,13 @@ def get_wine_details(request, id=0):
         for i in range(len(wine_flavor_groups)):
             taste_data.append({'label': wine_flavor_groups[i].group_name,
                                'percentage': wine_flavors[wine_flavor_groups[i].group_id].flavor_wine_group_score})
-
         facts = [{'label': 'region', 'content': wine.lw_region},
                  {'label': 'style', 'content': wine.lw_type},
                  {'label': 'country', 'content': wine.lw_country},
-                 {'label': 'price', 'content': wine.lw_price},
-                 {'label:': 'seller', 'content': wine.lw_seller},
-                 {'label:': 'year', 'content': wine.lw_year}]
+                 {'label': 'price', 'content': str(wine.lw_price)+"€"},
+                 {'label': 'seller', 'content': wine.lw_seller},
+
+                 {'label': 'year', 'content': wine.lw_year}]
 
         wine_details_dto = {'id': wine.wine_id, 'name': wine.lw_name, 'description': wine.lw_description, 'link': wine.lw_url,
                             'facts': facts, 'taste_data': taste_data, }
