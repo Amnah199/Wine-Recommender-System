@@ -3,9 +3,11 @@ import json
 from django.http import HttpResponse
 from django.http import HttpResponseBadRequest
 from django.http import HttpResponseServerError
-from django.core import serializers
-from json import JSONEncoder
 from rest_framework.decorators import api_view
+
+import recommender_engine.recommender
+from .models import *
+from recommender_engine import *
 
 
 @api_view(['GET'])
@@ -17,12 +19,12 @@ def search_wines(request, criteria=""):
     :return: List of wines found based on criteria
     """
     try:
-      #  wines = Wine.objects.all().filter(wine_name__icontains=criteria)[:30]
-      #  wines_list = list(wines)
+        wines = Wine.objects.all().filter(wine_name__icontains=criteria)[:30]
+        wines_list = list(wines)
         wines_result = '{ "wines": ['
 
-     #   for wine in wines_list:
-     #       wines_result = wines_result + (WineDto(wine.wine_id, wine.wine_name, '')).toJSON() + ','
+        for wine in wines_list:
+            wines_result = wines_result + (WineDto(wine.wine_id, wine.wine_name, wine.wine_thumb)).toJSON() + ','
 
         wines_result = wines_result + '] }'
     except BaseException as ex:
@@ -38,85 +40,7 @@ def get_recommendations(request):
     :param request: http request object
     :return: list of wines recommended
     """
-    return HttpResponse("""{
-  sellers: [
-    {
-      rank: 1,
-      id: 1,
-      name: "Jacques",
-      lat: "51.94",
-      lon: "7.65",
-      info: [
-        { label: "address", content: "Spiegelturm 2 48143 Münster" },
-        { label: "whatever", content: "info we have on the wineseller" },
-      ],
-      url: "http://www.google.de",
-    },
-    {
-      rank: 2,
-      id: 3,
-      name: "second seller",
-      lat: "51.95",
-      lon: "7.66",
-      info: [
-        { label: "address", content: "Spiegelturm 2 48143 Münster" },
-        { label: "whatever", content: "info we have on the wineseller" },
-      ],
-      url: "http://www.google.de",
-    },
-    {
-      rank: 3,
-      id: 2,
-      name: "third seller",
-      lat: "51.96",
-      lon: "7.64",
-      info: [
-        { label: "address", content: "Spiegelturm 2 48143 Münster" },
-        { label: "whatever", content: "info we have on the wineseller" },
-      ],
-      url: "http://www.google.de",
-    },
-  ],
-  wines: [
-    {
-      rank: 1,
-      id: 1,
-      name: "abcd",
-      picture_url: "http://127.0.0.1:8080/testimage.png",
-    },
-    {
-      rank: 2,
-      id: 4,
-      name: "asdasd",
-      picture_url: "http://127.0.0.1:8080/testimage.png",
-    },
-    {
-      rank: 3,
-      id: 3,
-      name: "xcv",
-      picture_url: "http://127.0.0.1:8080/testimage.png",
-    },
-    {
-      rank: 4,
-      id: 2,
-      name: "xcvxvc",
-      picture_url: "http://127.0.0.1:8080/testimage.png",
-    },
-    {
-      rank: 5,
-      id: 5,
-      name: "xcvxvc",
-      picture_url: "http://127.0.0.1:8080/testimage.png",
-    },
-    {
-      rank: 6,
-      id: 6,
-      name: "xcvxvc",
-      picture_url: "http://127.0.0.1:8080/testimage.png",
-    },
-  ],
-}
-""")
+    return HttpResponse()
 
 
 @api_view(['GET'])
@@ -130,15 +54,24 @@ def get_profile(request, wine_id=0):
     if wine_id == 0:
         return HttpResponseBadRequest("Wine id must not be null or 0")
 
-    #try:
-     #   wines = Wine.objects.filter(wine_id=wine_id)
-     #   wine_flavor = FlavorWine.objects.filter(wine_id__in=wines.values('wine_id'))
+    try:
+        wines = list(LocalWine.objects.filter(wine_id__in=wine_id))
+        wine_flavors = list(FlavorWineGroup.objects.all().filter(wine_id__in=wines['wine_id']))
+        wine_flavor_groups = list(FlavorGroup.objects.all())
 
-   # except:
-  #      return HttpResponseServerError()
+        wine_count = len(wines)
+        taste_data = {}
+        for i in range(len(wine_flavor_groups)):
+            taste_data[wine_flavor_groups[i].group_name] += wine_flavors[wine_flavor_groups[i].group_id].flavor_wine_group_score
+
+        for i in range(len(wine_flavor_groups)):
+            taste_data[wine_flavor_groups[i].group_name] = taste_data[wine_flavor_groups[i].group_name] / wine_count
+
+
+    except:
+        return HttpResponseServerError()
 
     return HttpResponse()
-       # serializers.serialize('json', wine_flavor, fields=('wine_id', 'flavor_group', 'flavor_count', 'flavor_id')))
 
 
 @api_view(['GET'])
@@ -152,22 +85,34 @@ def get_wine_details(request, id=0):
     if id == 0:
         return HttpResponseBadRequest("Wine id must not be null or 0")
 
-#    try:
-#        wines = Wine.objects.filter(wine_id=id)
-#        wine_flavor = FlavorWine.objects.filter(wine_id__in=wines.values('wine_id'))
-#
-#        wine = list(wines)[0]
-#
-#        taste_data = [{'label': 'tree fruit', 'percentage': 0.2}, {'label': 'red fruit', 'percentage': 0.1},
-#                      {'label': 'citrus fruit', 'percentage': 0.5}, {'label': 'cinnamon', 'percentage': 0.3}]
-#        facts = [{'label': 'region', 'content': wine.wine_country}, {'label': 'style', 'content': wine.wine_type},
-#                 {'label': 'alc', 'content': wine.wine_alcohol}]
-#
-#        wine_details_dto = {'id': wine.wine_id, 'name': wine.wine_name, 'description': '', 'picture_url': '',
-#                            'facts': facts, 'taste_data': taste_data}
-#
-#        wine_details_dto = json.dumps(wine_details_dto)
-#    except BaseException as ex:
-#        return HttpResponseServerError()
+    try:
+        wines_list = LocalWine.objects.filter(lw_id=id)
+        wine = list(wines_list)[0]
 
-    return HttpResponse("wine_details_dto")
+        if wine is None:
+            return HttpResponseBadRequest()
+
+        wine_flavors = list(FlavorWineGroup.objects.all().filter(wine_id=wine.wine_id))
+        wine_flavor_groups = list(FlavorGroup.objects.all())
+
+        taste_data = []
+        for i in range(len(wine_flavor_groups)):
+            taste_data.append({'label': wine_flavor_groups[i].group_name,
+                               'percentage': wine_flavors[wine_flavor_groups[i].group_id].flavor_wine_group_score})
+
+        facts = [{'label': 'region', 'content': wine.lw_region},
+                 {'label': 'style', 'content': wine.lw_type},
+                 {'label': 'country', 'content': wine.lw_country},
+                 {'label': 'price', 'content': wine.lw_price},
+                 {'label:': 'seller', 'content': wine.lw_seller},
+                 {'label:': 'url', 'content': wine.lw_url},
+                 {'label:': 'year', 'content': wine.lw_year}]
+
+        wine_details_dto = {'id': wine.wine_id, 'name': wine.lw_name, 'description': wine.lw_description, 'picture_url': wine.lw_url,
+                            'facts': facts, 'taste_data': taste_data}
+
+        wine_details_dto = json.dumps(wine_details_dto)
+    except BaseException as ex:
+        return HttpResponseServerError()
+
+    return HttpResponse(wine_details_dto)

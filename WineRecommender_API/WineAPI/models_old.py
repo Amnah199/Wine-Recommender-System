@@ -75,8 +75,8 @@ import json
 #         managed = False
 #         db_table = 'auth_user_user_permissions'
 #         unique_together = (('user', 'permission'),)
-
-
+#
+#
 # class DjangoAdminLog(models.Model):
 #     action_time = models.DateTimeField()
 #     object_id = models.TextField(blank=True, null=True)
@@ -89,8 +89,8 @@ import json
 #     class Meta:
 #         managed = False
 #         db_table = 'django_admin_log'
-
-
+#
+#
 # class DjangoContentType(models.Model):
 #     app_label = models.CharField(max_length=100)
 #     model = models.CharField(max_length=100)
@@ -120,20 +120,33 @@ import json
 #     class Meta:
 #         managed = False
 #         db_table = 'django_session'
-#import WineAPI.models
+#
+#
+# class DjangoSite(models.Model):
+#     domain = models.CharField(unique=True, max_length=100)
+#     name = models.CharField(max_length=50)
+#
+#     class Meta:
+#         managed = False
+#         db_table = 'django_site'
 
 
-class Flavor(models.Model):
-    flavor_id = models.IntegerField(primary_key=False)
-    flavor_name = models.TextField(blank=True, null=True)
+class Wine(models.Model):
+    wine_id = models.IntegerField(primary_key=True)
+    wine_name = models.TextField(blank=True, null=True)
+    wine_type = models.TextField(blank=True, null=True)
+    wine_year = models.IntegerField(blank=True, null=True)
+    wine_alcohol = models.FloatField(blank=True, null=True)
+    wine_country = models.TextField(blank=True, null=True)
+    wine_price = models.FloatField(blank=True, null=True)
 
     class Meta:
         managed = False
-        db_table = 'flavor'
+        db_table = 'wine'
 
 
 class LocalWine(models.Model):
-    lw_id = models.IntegerField(blank=True, null=False, primary_key=True)
+    lw_id = models.IntegerField(primary_key=True)
     lw_name = models.TextField(blank=True, null=True)
     lw_country = models.TextField(blank=True, null=True)
     lw_region = models.TextField(blank=True, null=True)
@@ -148,30 +161,58 @@ class LocalWine(models.Model):
         db_table = 'local_wine'
 
 
-class Wine(models.Model):
-    wine_id = models.IntegerField(blank=True, null=False, primary_key=True)
-    wine_name = models.TextField(blank=True, null=True)
-    wine_type = models.TextField(blank=True, null=True)
-    wine_year = models.IntegerField(blank=True, null=True)
-    wine_alcohol = models.FloatField(blank=True, null=True)
-    wine_country = models.TextField(blank=True, null=True)
-    wine_price = models.FloatField(blank=True, null=True)
+class Flavor(models.Model):
+    flavor_id = models.IntegerField(primary_key=True)
+    flavor_name = models.TextField(blank=True, null=True)
 
     class Meta:
         managed = False
-        db_table = 'wine'
+        db_table = 'flavor'
+
+
+class FlavorGroup(models.Model):
+    group_id = models.BigIntegerField(primary_key=True)
+    group_name = models.TextField(blank=True, null=True)
+
+    class Meta:
+        managed = False
+        db_table = 'flavor_group'
 
 
 class FlavorWine(models.Model):
-    flavor_wine_id = models.IntegerField(blank=True, null=False, primary_key=True)
+    flavor_wine_id = models.IntegerField(primary_key=True)
     flavor_group = models.TextField(blank=True, null=True)
     flavor_count = models.IntegerField(blank=True, null=True)
-    wine = models.ForeignKey('Wine', on_delete=models.DO_NOTHING)
-    flavor = models.ForeignKey('Flavor', on_delete=models.DO_NOTHING)
+    wine = models.ForeignKey(Wine, on_delete=models.DO_NOTHING)
+    flavor = models.ForeignKey(Flavor, on_delete=models.DO_NOTHING)
 
     class Meta:
         managed = False
         db_table = 'flavor_wine'
+
+
+class FlavorWineGroup(models.Model):
+    flavor_wine_group_id = models.IntegerField(primary_key=True)
+    flavor_wine_group_score = models.FloatField(blank=True, null=True)
+    wine = models.ForeignKey(Wine, on_delete=models.DO_NOTHING)
+    group = models.ForeignKey(FlavorGroup, on_delete=models.DO_NOTHING)
+
+    class Meta:
+        managed = False
+        db_table = 'flavor_wine_group'
+
+
+class WineStructure(models.Model):
+    wine_structure_id = models.IntegerField(primary_key=True)
+    wine_acidity = models.FloatField(blank=True, null=True)
+    wine_fizziness = models.FloatField(blank=True, null=True)
+    wine_intensity = models.FloatField(blank=True, null=True)
+    wine_sweetness = models.FloatField(blank=True, null=True)
+    wine = models.ForeignKey(Wine, on_delete=models.DO_NOTHING)
+
+    class Meta:
+        managed = False
+        db_table = 'wine_structure'
 
 
 class WineDto:
