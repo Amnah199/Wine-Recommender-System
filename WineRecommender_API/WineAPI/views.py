@@ -56,8 +56,8 @@ sellers = [{
      "lon": "7.6085188", }]
 
 
-keys_taste = ['black_fruit', 'citrus_fruit', 'dried_fruit', 'earth', 'floral', 'microbio', 'non_oak', 'oak',
-              'red_fruit', 'spices', 'tree_fruit', 'tropical_fruit', 'vegetal']
+keys_taste = ['black_fruit', 'dried_fruit', 'red_fruit', 'tropical_fruit', 'tree_fruit', 'citrus_fruit', 'spices',  'earth', 'microbio', 'vegetal', 'floral',  'non_oak', 'oak',
+              ]
 
 keys_structure = ["wine_acidity", "wine_fizziness",
                   "wine_intensity", "wine_sweetness", "wine_tannin"]
@@ -167,19 +167,15 @@ def get_recommendations(request, profile):
             v["score_total"] = np.sum(np.asarray(
                 [wine["score"] for wine in wines if wine["seller"] == v["id"]]))
 
-      
-
         wines = wines[:num_recs]
         for i in range(len(wines)):
             wines[i]["rank"] = i + 1
-
 
         vendors = [vendor for vendor in sorted(
             vendors, key=lambda k: k["score_total"], reverse=True) if vendor["score_total"] > 0]
         for i in range(len(vendors)):
             vendors[i]["rank"] = i + 1
 
-            
         result = '{ "sellers":' + \
             json.dumps(vendors) + ', "wines":' + json.dumps(wines) + ' }'
 
