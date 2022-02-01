@@ -60,8 +60,7 @@ export const TasteDataWidget = (props) => {
     ],
   };
   if (cookies.wineMsProfile) {
-    console.log(cookies.wineMsProfile);
-    let profile_points = cookies.wineMsProfile.taste_data.map(
+    let profile_points = cookies[cookie_name].taste_data.map(
       (elem) => elem.percentage
     );
     chartData.datasets.push({
@@ -94,7 +93,11 @@ export const TasteDataWidget = (props) => {
               <TableRow>
                 <TableCell>property</TableCell>
                 <TableCell>Wine Value</TableCell>
-                <TableCell>Your Value</TableCell>
+                {cookies[cookie_name] ? (
+                  <TableCell>Your Value</TableCell>
+                ) : (
+                  <></>
+                )}
               </TableRow>
             </TableHead>
             <TableBody>
@@ -104,14 +107,22 @@ export const TasteDataWidget = (props) => {
                   <TableCell>
                     {Math.round(elem.percentage * 100) / 100}
                   </TableCell>
-                  {cookies[cookie_name].structure_data[elem.label] ? (
-                    <TableCell>
-                      {Math.round(
-                        cookies[cookie_name].structure_data[elem.label] * 100
-                      ) / 100}
-                    </TableCell>
+                  {cookies[cookie_name] ? (
+                    cookies[cookie_name].structure_data.filter(
+                      (profile_elem) => profile_elem.label == elem.label
+                    ).length > 0 ? (
+                      <TableCell>
+                        {Math.round(
+                          cookies[cookie_name].structure_data.filter(
+                            (profile_elem) => profile_elem.label == elem.label
+                          )[0].percentage * 100
+                        ) / 100}
+                      </TableCell>
+                    ) : (
+                      <TableCell>0</TableCell>
+                    )
                   ) : (
-                    <TableCell>0</TableCell>
+                    <></>
                   )}
                 </TableRow>
               ))}

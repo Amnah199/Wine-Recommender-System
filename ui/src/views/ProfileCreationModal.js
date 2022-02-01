@@ -62,7 +62,7 @@ export const ProfileCreationModal = (props) => {
       title={title}
       onNext={onNext}
       onPrevious={onPrevious}
-      nextDisabled={false}
+      nextDisabled={selectedWines.length < 1}
       previousDisabled={step <= 0}
     >
       {step == 0 ? (

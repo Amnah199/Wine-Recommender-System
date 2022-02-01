@@ -51,33 +51,21 @@ export const WineDetailPage = (props) => {
             <Grid item xs={12} sm={3}>
               <ImageList sx={{ width: "100%", height: "500px" }} cols={1}>
                 <ImageListItem style={{ overflow: "hidden" }}>
-                  {!backupVisible ? (
-                    <img
-                      style={{
-                        flex: 1,
-                        width: "auto",
-                        alignSelf: "center",
-                        resizeMode: "contain",
-                      }}
-                      src={
-                        !backupVisible
-                          ? data.picture_url + "?w=161&fit=clamp&auto=format"
-                          : "http://localhost:8080/backup_bottle.jpeg"
-                      }
-                      onError={() => setBackupVisible(true)}
-                    />
-                  ) : (
-                    <WineBar
-                      style={{
-                        overflow: "clip",
-                        fontSize: "220px",
+                  <img
+                    style={{
+                      flex: 1,
+                      width: "auto",
+                      alignSelf: "center",
+                      resizeMode: "contain",
+                    }}
+                    src={
+                      !backupVisible
+                        ? data.picture_url + "?w=161&fit=clamp&auto=format"
+                        : "http://localhost:8080/backup_bottle.jpeg"
+                    }
+                    onError={() => setBackupVisible(true)}
+                  />
 
-                        alignSelf: "center",
-                        resizeMode: "contain",
-                        width: "100%",
-                      }}
-                    />
-                  )}
                   <ImageListItemBar subtitle={data.name} />
                 </ImageListItem>
               </ImageList>
@@ -98,23 +86,29 @@ export const WineDetailPage = (props) => {
                     <CardContent>
                       <Grid container>
                         {data.facts.map((elem) => (
-                          <Grid
-                            container
-                            item
-                            justifyContent={"space-between"}
-                            style={{ textTransform: "capitalize" }}
-                          >
-                            <Grid item>
-                              <Typography variant="body1">
-                                {elem.label}
-                              </Typography>
-                            </Grid>
-                            <Grid item>
-                              <Typography variant="body1">
-                                {elem.content}
-                              </Typography>
-                            </Grid>
-                          </Grid>
+                          <>
+                            {elem.content ? (
+                              <Grid
+                                container
+                                item
+                                justifyContent={"space-between"}
+                                style={{ textTransform: "capitalize" }}
+                              >
+                                <Grid item>
+                                  <Typography variant="body1">
+                                    {elem.label}
+                                  </Typography>
+                                </Grid>
+                                <Grid item>
+                                  <Typography variant="body1">
+                                    {elem.content}
+                                  </Typography>
+                                </Grid>
+                              </Grid>
+                            ) : (
+                              <></>
+                            )}
+                          </>
                         ))}
                       </Grid>
                       <Button
