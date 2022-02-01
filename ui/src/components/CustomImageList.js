@@ -12,8 +12,8 @@ import {
 } from "@mui/material";
 import { Add, WineBar } from "@mui/icons-material";
 import { theme } from "../theming";
+import { CustomImg } from "./CustomImg";
 export const CustomImageList = (props) => {
-  let [backupVisible, setBackupVisible] = useState(false);
   return (
     <ImageList cols={props.cols}>
       {props.data.map((dataPoint) => (
@@ -24,32 +24,7 @@ export const CustomImageList = (props) => {
         >
           <CardActionArea onClick={() => props.onClick(dataPoint)}>
             <ImageListItem key={dataPoint[props.id]} style={{ opacity: 2 }}>
-              {!backupVisible ? (
-                <img
-                  style={{
-                    width: "10rem",
-
-                    alignSelf: "center",
-                    resizeMode: "contain",
-                  }}
-                  onError={() => setBackupVisible(true)}
-                  src={
-                    "http:" + dataPoint["url"] + "?w=161&fit=crop&auto=format"
-                  }
-                />
-              ) : (
-                <WineBar
-                  height={200}
-                  width={100}
-                  style={{
-                    flex: 1,
-                    width: 100,
-                    height: 100,
-                    alignSelf: "center",
-                    resizeMode: "contain",
-                  }}
-                />
-              )}
+              <CustomImg src={dataPoint[props.pictureUrl]} />
               <ImageListItemBar
                 subtitle={dataPoint[props.label]}
                 actionIcon={

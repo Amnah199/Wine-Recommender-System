@@ -25,7 +25,9 @@ sellers = [{
         {"label": "address", "content": "Wolbecker Straße 302 48155 Münster"},
         {"label": "tel", "content": "0251 39729960"},
         {"label": "email", "content": "info@wein-direktimport.de"}
-    ]
+    ],
+    "lat": "51.9507",
+    "lon": "7.6705",
 },
     {
     "rank": 2,
@@ -35,16 +37,24 @@ sellers = [{
         {"label": "address", "content": "Vogelrohrsheide 80 48167 Münster"},
         {"label": "tel", "content": "0251 62 79 184"},
         {"label": "email", "content": "info@divino.de"}
-    ]
+    ],
+    "lat": "51.9177774",
+    "lon": "7.6811747",
 },
-    {
-    "rank": 3,
-    "id": 3,
-    "name": "Jacques",
-    "info": [
-        {"label": "address", "content": "Warendorfer Str. 22 48145 Münster-Mauritz"},
-        {"label": "tel", "content": "0251/36384"},
-        {"label": "email", "content": "mauritz@jacques.de"}]}]
+
+    {"rank": 3,
+     "id": 3,
+     "name": "Jacques Weindepot",
+     "info": [
+         {"label": "address", "content": "Warendorfer Str. 22 48145 Münster-Mauritz"},
+         {"label": "tel", "content": "0251/36384"},
+         {"label": "email", "content": "mauritz@jacques.de"}
+     ],
+
+
+     "lat": "51.9286764",
+     "lon": "7.6085188", }]
+
 
 keys_taste = ['black_fruit', 'citrus_fruit', 'dried_fruit', 'earth', 'floral', 'microbio', 'non_oak', 'oak',
               'red_fruit', 'spices', 'tree_fruit', 'tropical_fruit', 'vegetal']
@@ -112,10 +122,11 @@ def get_recommendations(request, profile):
                            for taste in taste_data}
         user_taste = np.asarray([user_taste_dict[key] for key in keys_taste])
 
-        user_structure_dict = {struc["label"]: struc["percentage"] for struc in structure_data}
-        user_structure = np.asarray([user_structure_dict[key] for key in keys_structure])
+        user_structure_dict = {
+            struc["label"]: struc["percentage"] for struc in structure_data}
+        user_structure = np.asarray(
+            [user_structure_dict[key] for key in keys_structure])
         #user_structure = np.asarray([structure_data[key]for key in keys_structure])
-                                    
 
         local_wines = LocalWine.objects.none()
         if "over 20€" in ranges:
@@ -202,7 +213,8 @@ def get_profile(request, wine_ids=[]):
                                                        spices=Avg('spices'), tree_fruit=Avg('tree_fruit'), tropical_fruit=Avg('tropical_fruit'),
                                                        vegetal=Avg('vegetal'))
 
-        taste_data = [{"label": key, 'percentage': wine_flavors_averages[key]} for key in keys_taste]
+        taste_data = [
+            {"label": key, 'percentage': wine_flavors_averages[key]} for key in keys_taste]
 
         wine_type_options = []
         wine_origin_options = []
@@ -255,9 +267,9 @@ def get_profile(request, wine_ids=[]):
         wine_structure_averages = WineStructure.objects.filter(wine_id__in=wine_ids).aggregate(wine_acidity=Avg('wine_acidity'), wine_fizziness=Avg('wine_fizziness'), wine_intensity=Avg('wine_intensity'),
                                                                                                wine_tannin=Avg('wine_tannin'), wine_sweetness=Avg('wine_sweetness'))
 
+        structure_data = [
+            {"label": key, 'percentage': wine_structure_averages[key]} for key in keys_structure]
 
-        structure_data = [{"label": key, 'percentage': wine_structure_averages[key]} for key in keys_structure]
-                          
         # construct json result object
         result = '{ "wine_data": [' + json.dumps(multi_select_type) + ',' + json.dumps(
             multi_select_price) + ',' + json.dumps(search_field_origin) + '],'
@@ -289,25 +301,26 @@ def get_wine_details(request, id=0):
         if wine is None:
             return HttpResponseBadRequest()
 
-      
-
         wine_flavor_dict = WineFlavor.objects.get(wine_id=wine.wine).__dict__
-        taste_data = [{"label": key, 'percentage': wine_flavor_dict[key]} for key in keys_taste]
-        
+        taste_data = [{"label": key, 'percentage': wine_flavor_dict[key]}
+                      for key in keys_taste]
 
-        wine_structure_dict = WineStructure.objects.get(wine_id=wine.wine).__dict__   
-        structure_data = [{"label": key, 'percentage': wine_structure_dict[key]} for key in keys_structure]
+        wine_structure_dict = WineStructure.objects.get(
+            wine_id=wine.wine).__dict__
+        structure_data = [
+            {"label": key, 'percentage': wine_structure_dict[key]} for key in keys_structure]
 
-        facts = [{'label': 'region', 'content': wine.lw_region},
+        facts = [{'label': 'country', 'content': wine.lw_country},
+                 {'label': 'region', 'content': wine.lw_region},
                  {'label': 'style', 'content': wine.lw_type},
-                 {'label': 'country', 'content': wine.lw_country},
                  {'label': 'price', 'content': str(wine.lw_price) + '€'},
+                 {'label': 'year', 'content': wine.lw_year},
                  {'label': 'seller', 'content': next(
-                (item["name"] for item in sellers if item["id"] == wine.lw_seller), None)},
-                 {'label': 'year', 'content': wine.lw_year}]
+                     (item["name"] for item in sellers if item["id"] == wine.lw_seller), None)},
+                 ]
 
         wine_details_dto = {'id': wine.lw_id, 'name': wine.lw_name, 'description': wine.lw_description, 'link': wine.lw_url, 'picture_url': wine.lw_thumb,
-                            'facts': facts, 'taste_data': taste_data, 'structure_data': structure_data }
+                            'facts': facts, 'taste_data': taste_data, 'structure_data': structure_data}
         wine_details_dto = json.dumps(wine_details_dto)
     except BaseException as ex:
         print(ex)

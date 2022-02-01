@@ -33,7 +33,7 @@ export const SearchResultModal = (props) => {
           button={<Add />}
           data={results}
           id={"id"}
-          pictureUrl={"url"}
+          pictureUrl={"picture_url"}
           label={"name"}
           cols={3}
           onClick={(elem) => props.onClose(elem)}

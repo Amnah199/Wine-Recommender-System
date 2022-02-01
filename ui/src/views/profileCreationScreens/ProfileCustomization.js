@@ -3,6 +3,7 @@ import { MultiSelect } from "../../components/selectors/MultiSelect.js";
 import { SearchMultiSelect } from "../../components/selectors/SearchMultiSelect.js";
 
 export const ProfileCustomization = (props) => {
+  console.log(props.profile.wine_data);
   return (
     <>
       {props.profile.wine_data.map((elem, index) => {

@@ -6,6 +6,7 @@ import {
   CardActionArea,
   CardActions,
   Button,
+  ImageList,
 } from "@mui/material";
 import React, { useEffect, useState, useContext } from "react";
 import {
@@ -18,36 +19,13 @@ import { LoadingOverlay } from "../components/LoadingOverlay";
 import { ImageListItem, ImageListItemBar } from "@mui/material";
 import { Grid } from "@mui/material";
 import { CardHeader } from "@mui/material";
-import Color from "color";
-import { Radar } from "react-chartjs-2";
 
-import {
-  Chart as ChartJS,
-  RadialLinearScale,
-  PointElement,
-  LineElement,
-  Filler,
-  Tooltip,
-  Legend,
-} from "chart.js";
 import { SwaggerContext, CustomAppBar } from "../App";
-import { useCookies } from "react-cookie";
-import { useTheme } from "@emotion/react";
 import { ShoppingBasket } from "@mui/icons-material";
 import { WineBar } from "@mui/icons-material";
+import { TasteDataWidget } from "../components/TasteDataWidget";
 
-ChartJS.register(
-  RadialLinearScale,
-  PointElement,
-  LineElement,
-  Filler,
-  Tooltip,
-  Legend
-);
 export const WineDetailPage = (props) => {
-  const [cookies, setCookie, removeCookie] = useCookies();
-
-  const theme = useTheme();
   const params = useParams();
 
   const swagger = useContext(SwaggerContext);
@@ -63,33 +41,7 @@ export const WineDetailPage = (props) => {
   if (!data) {
     return <LoadingOverlay />;
   }
-  let labels = data.taste_data.map((elem) => elem.label);
-  let datapoints = data.taste_data.map((elem) => elem.percentage);
 
-  const chartData = {
-    labels: labels,
-    datasets: [
-      {
-        label: data.name,
-        data: datapoints,
-        backgroundColor: Color(theme.palette.primary.main).alpha(0.2).string(),
-        borderColor: Color(theme.palette.primary.main).string(),
-        borderWidth: 1,
-      },
-    ],
-  };
-  if (cookies.wineMsProfile) {
-    let profile_points = cookies.wineMsProfile.taste_data.map(
-      (elem) => elem.percentage
-    );
-    chartData.datasets.push({
-      label: "Your Taste",
-      data: profile_points,
-      backgroundColor: Color(theme.palette.secondary.main).alpha(0.2).string(),
-      borderColor: Color(theme.palette.secondary.main).string(),
-      borderWidth: 1,
-    });
-  }
   console.log(data);
   return (
     <>
@@ -97,37 +49,38 @@ export const WineDetailPage = (props) => {
         <CardContent>
           <Grid container spacing={1}>
             <Grid item xs={12} sm={3}>
-              <ImageListItem>
-                {!backupVisible ? (
-                  <img
-                    style={{
-                      flex: 1,
-                      width: "80%",
-                      marginLeft: "10%",
-                      alignSelf: "center",
-                      resizeMode: "contain",
-                    }}
-                    src={
-                      backupVisible
-                        ? data.picture_url + "?w=161&fit=crop&auto=format"
-                        : "http://localhost:8080/backup_bottle.jpeg"
-                    }
-                    onError={() => setBackupVisible(true)}
-                  />
-                ) : (
-                  <WineBar
-                    style={{
-                      fontSize: "220px",
+              <ImageList sx={{ width: "100%", height: "500px" }} cols={1}>
+                <ImageListItem style={{ overflow: "hidden" }}>
+                  {!backupVisible ? (
+                    <img
+                      style={{
+                        flex: 1,
+                        width: "auto",
+                        alignSelf: "center",
+                        resizeMode: "contain",
+                      }}
+                      src={
+                        !backupVisible
+                          ? data.picture_url + "?w=161&fit=clamp&auto=format"
+                          : "http://localhost:8080/backup_bottle.jpeg"
+                      }
+                      onError={() => setBackupVisible(true)}
+                    />
+                  ) : (
+                    <WineBar
+                      style={{
+                        overflow: "clip",
+                        fontSize: "220px",
 
-                      alignSelf: "center",
-                      resizeMode: "contain",
-                      width: "100%",
-                    }}
-                  />
-                )}
-
-                <ImageListItemBar title={data.name} />
-              </ImageListItem>
+                        alignSelf: "center",
+                        resizeMode: "contain",
+                        width: "100%",
+                      }}
+                    />
+                  )}
+                  <ImageListItemBar subtitle={data.name} />
+                </ImageListItem>
+              </ImageList>
             </Grid>
             <Grid item sm={9}>
               <Card>
@@ -176,12 +129,7 @@ export const WineDetailPage = (props) => {
                   </Card>
                 </Grid>
                 <Grid item md={6} xs={12}>
-                  <Card>
-                    <CardHeader title="Tasteprofile" />
-                    <CardContent>
-                      <Radar data={chartData} />
-                    </CardContent>
-                  </Card>
+                  <TasteDataWidget data={data} />
                 </Grid>
               </Grid>
             </Grid>

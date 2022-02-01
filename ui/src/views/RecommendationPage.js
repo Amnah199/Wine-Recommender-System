@@ -8,27 +8,32 @@ import { useContext } from "react";
 import { SwaggerContext } from "../App";
 import { useLocation } from "react-router-dom";
 import { useCookies } from "react-cookie";
+import { cookie_name } from "../constants";
 export const RecommendationPage = (props) => {
   const [profile, setProfile] = useState(false);
   const [recoData, setRecoData] = useState(null);
   const [loading, setLoading] = useState(false);
 
-  const [cookies, setCookie, removeCookie] = useCookies(["cookie-name"]);
+  const [cookies, setCookie, removeCookie] = useCookies(cookie_name);
 
   const swagger = useContext(SwaggerContext);
-  useEffect(
-    () => (cookies.profile ? setProfile(cookies.wineMsProfile) : null),
-    []
-  );
+  useEffect(() => {
+    console.log(cookies);
+    cookies[cookie_name] ? setProfile(cookies[cookie_name]) : null;
+  }, []);
   useEffect(() => {
     if (profile) {
       setLoading(true);
+      let profile_string = JSON.stringify(profile);
+      swagger.recommendations
+        .recommendations_read({ profile: profile_string })
+        .then((resp) => {
+          console.log(resp.body);
 
-      swagger.recommendations.recommendations_list().then((resp) => {
-        console.log(resp.body);
-        setRecoData(resp.body);
-        setLoading(false);
-      });
+          setRecoData(resp.body);
+
+          setLoading(false);
+        });
     }
   }, [profile]);
 

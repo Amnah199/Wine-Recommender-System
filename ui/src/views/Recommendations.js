@@ -31,7 +31,7 @@ export const Recommendations = (props) => {
             data={props.recoData.wines}
             id={"id"}
             pictureUrl={"picture_url"}
-            label={"name"}
+            label={"label"}
             cols={4}
             onClick={(elem) => navigate("/wine/" + elem.id)}
           />
