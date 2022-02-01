@@ -167,14 +167,19 @@ def get_recommendations(request, profile):
             v["score_total"] = np.sum(np.asarray(
                 [wine["score"] for wine in wines if wine["seller"] == v["id"]]))
 
+      
+
+        wines = wines[:num_recs]
+        for i in range(len(wines)):
+            wines[i]["rank"] = i + 1
+
+
         vendors = [vendor for vendor in sorted(
             vendors, key=lambda k: k["score_total"], reverse=True) if vendor["score_total"] > 0]
         for i in range(len(vendors)):
             vendors[i]["rank"] = i + 1
 
-        wines = wines[:num_recs]
-        for i in range(len(wines)):
-            wines[i]["rank"] = i + 1
+            
         result = '{ "sellers":' + \
             json.dumps(vendors) + ', "wines":' + json.dumps(wines) + ' }'
 
