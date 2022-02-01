@@ -40,7 +40,7 @@ sellers = [{
     {
     "rank": 3,
     "id": 3,
-    "name": "Jacques",
+    "name": "Jacques' Weindepot",
     "info": [
         {"label": "address", "content": "Warendorfer Str. 22 48145 Münster-Mauritz"},
         {"label": "tel", "content": "0251/36384"},
