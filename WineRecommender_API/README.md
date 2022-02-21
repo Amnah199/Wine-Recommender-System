@@ -11,9 +11,8 @@ To run this module the following steps have to be taken:
 
 ## Execution
 
-To run the API, run the command: <br>
+To run the API (assuming you're in the parent \WineRecommender_API>\ folder), run the command: <br>
 
         .\manage.py runserv
 
-        <br>
-        assuming you're in the parent \WineRecommender_API>\ folder.
+        
