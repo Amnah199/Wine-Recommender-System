@@ -1,68 +1,11 @@
-import json
-
 from django.http import HttpResponse
 from django.http import HttpResponseBadRequest
 from django.http import HttpResponseServerError
-from django.db.models import Avg
 from rest_framework.decorators import api_view
-import ast
-
-import numpy as np
-import recommender_engine.recommender
-from .models import *
-from recommender_engine import *
 from django.db.models import Avg
-
-wine_types = ['red', 'sparkling', 'white', 'rosé']
-countries = list(Wine.objects.values('wine_country').distinct())
-
-
-sellers = [{
-    "rank": 1,
-    "id": 1,
-    "name": "Wein Direktimport Scholz GmbH",
-    "info": [
-        {"label": "address", "content": "Wolbecker Straße 302 48155 Münster"},
-        {"label": "tel", "content": "0251 39729960"},
-        {"label": "email", "content": "info@wein-direktimport.de"}
-    ],
-    "lat": "51.9507",
-    "lon": "7.6705",
-    "url": "https://www.wein-direktimport.de/"
-},
-    {
-    "rank": 2,
-    "id": 2,
-    "name": "divino Weinhandel Tobias Voigt",
-    "info": [
-        {"label": "address", "content": "Vogelrohrsheide 80 48167 Münster"},
-        {"label": "tel", "content": "0251 62 79 184"},
-        {"label": "email", "content": "info@divino.de"}
-    ],
-    "lat": "51.9177774",
-    "lon": "7.6811747",
-    "url": "https://www.divino.de/"
-},
-
-    {"rank": 3,
-     "id": 3,
-     "name": "Jacques Weindepot",
-     "info": [
-         {"label": "address", "content": "Warendorfer Str. 22 48145 Münster-Mauritz"},
-         {"label": "tel", "content": "0251/36384"},
-         {"label": "email", "content": "mauritz@jacques.de"}
-     ],
-     "lat": "51.9286764",
-     "lon": "7.6085188",
-     "url": "https://www.jacques.de/"
-     }]
-
-
-keys_taste = ['black_fruit', 'dried_fruit', 'red_fruit', 'tropical_fruit', 'tree_fruit', 'citrus_fruit', 'spices',  'earth', 'microbio', 'vegetal', 'floral',  'non_oak', 'oak',
-              ]
-
-keys_structure = ["wine_acidity", "wine_fizziness",
-                  "wine_intensity", "wine_sweetness", "wine_tannin"]
+import numpy as np
+from .models import *
+from .constants import *
 
 
 @api_view(['GET'])
@@ -81,9 +24,9 @@ def search_wines(request, criteria=""):
         for wine in wines_list:
             winethumb = ''
             if wine.wine_thumb:
-                winethumb = 'https:'+wine.wine_thumb
+                winethumb = 'https:' + wine.wine_thumb
             wines_result = wines_result + \
-                (WineDto(wine.wine_id, wine.wine_name, winethumb)).toJSON() + ','
+                           (WineDto(wine.wine_id, wine.wine_name, winethumb)).toJSON() + ','
 
         wines_result = wines_result + '] }'
 
@@ -98,7 +41,7 @@ def get_recommendations(request, profile):
     """
     Gets wine-recommendations
     :param request: http request object
-    :param profile: profile
+    :param profile: wine taste profile
     :return: list of wines recommended
     """
     profile = json.loads(profile)
@@ -114,11 +57,11 @@ def get_recommendations(request, profile):
 
     try:
         types = [option["option"] for option in wine_data[0]
-                 ["options"] if option["selected"] == True]
+        ["options"] if option["selected"] == True]
         origins = [option["option"] for option in wine_data[2]
-                   ["options"] if option["selected"] == True]
+        ["options"] if option["selected"] == True]
         ranges = [option["option"] for option in wine_data[1]
-                  ["options"] if option["selected"] == True]
+        ["options"] if option["selected"] == True]
 
         user_taste_dict = {taste["label"]: taste["percentage"]
                            for taste in taste_data}
@@ -128,7 +71,6 @@ def get_recommendations(request, profile):
             struc["label"]: struc["percentage"] for struc in structure_data}
         user_structure = np.asarray(
             [user_structure_dict[key] for key in keys_structure])
-        #user_structure = np.asarray([structure_data[key]for key in keys_structure])
 
         local_wines = LocalWine.objects.none()
         if "over 20€" in ranges:
@@ -151,14 +93,15 @@ def get_recommendations(request, profile):
             wine["label"] = lw.lw_name
             wine_flavor_dict = WineFlavor.objects.get(wine_id=lw.wine).__dict__
             wine_flavor = np.asarray([wine_flavor_dict[key]
-                                     for key in keys_taste])
+                                      for key in keys_taste])
 
             wine_structure_dict = WineStructure.objects.get(
                 wine_id=lw.wine).__dict__
             wine_structure = np.asarray(
                 [wine_structure_dict[key] for key in keys_structure])
 
-            wine["score"] = (structure_param * np.sum(np.multiply(user_structure, wine_structure)) + taste_param * np.sum(
+            wine["score"] = (structure_param * np.sum(
+                np.multiply(user_structure, wine_structure)) + taste_param * np.sum(
                 np.multiply(user_taste, wine_flavor))) * (ratings_param * float(lw.wine.wine_rating) / 4)
             wines.append(wine)
 
@@ -179,10 +122,9 @@ def get_recommendations(request, profile):
             vendors[i]["rank"] = i + 1
 
         result = '{ "sellers":' + \
-            json.dumps(vendors) + ', "wines":' + json.dumps(wines) + ' }'
+                 json.dumps(vendors) + ', "wines":' + json.dumps(wines) + ' }'
 
     except BaseException as ex:
-        print(ex)
         return HttpResponseServerError(ex)
 
     return HttpResponse(result)
@@ -197,7 +139,6 @@ def get_profile(request, wine_ids=[]):
     :return: wine preferences profile
     """
     wine_ids = json.loads(wine_ids)
-    print(wine_ids)
     if len(wine_ids) == 0:
         return HttpResponseBadRequest("Wine id must not be null or 0")
 
@@ -210,10 +151,14 @@ def get_profile(request, wine_ids=[]):
         wine_flavors = WineFlavor.objects.all().filter(
             wine_id__in=[w.wine_id for w in wines])
 
-        wine_flavors_averages = wine_flavors.aggregate(black_fruit=Avg('black_fruit'), citrus_fruit=Avg('citrus_fruit'), dried_fruit=Avg('dried_fruit'),
-                                                       earth=Avg('earth'), floral=Avg('floral'), microbio=Avg('microbio'),
-                                                       non_oak=Avg('non_oak'), oak=Avg('oak'), red_fruit=Avg('red_fruit'),
-                                                       spices=Avg('spices'), tree_fruit=Avg('tree_fruit'), tropical_fruit=Avg('tropical_fruit'),
+        wine_flavors_averages = wine_flavors.aggregate(black_fruit=Avg('black_fruit'), citrus_fruit=Avg('citrus_fruit'),
+                                                       dried_fruit=Avg('dried_fruit'),
+                                                       earth=Avg('earth'), floral=Avg('floral'),
+                                                       microbio=Avg('microbio'),
+                                                       non_oak=Avg('non_oak'), oak=Avg('oak'),
+                                                       red_fruit=Avg('red_fruit'),
+                                                       spices=Avg('spices'), tree_fruit=Avg('tree_fruit'),
+                                                       tropical_fruit=Avg('tropical_fruit'),
                                                        vegetal=Avg('vegetal'))
 
         taste_data = [
@@ -267,8 +212,10 @@ def get_profile(request, wine_ids=[]):
         wine_price_options.append(
             {'option': 'over 20€', 'selected': distinct_prices['>20']})
 
-        wine_structure_averages = WineStructure.objects.filter(wine_id__in=wine_ids).aggregate(wine_acidity=Avg('wine_acidity'), wine_fizziness=Avg('wine_fizziness'), wine_intensity=Avg('wine_intensity'),
-                                                                                               wine_tannin=Avg('wine_tannin'), wine_sweetness=Avg('wine_sweetness'))
+        wine_structure_averages = WineStructure.objects.filter(wine_id__in=wine_ids).aggregate(
+            wine_acidity=Avg('wine_acidity'), wine_fizziness=Avg('wine_fizziness'),
+            wine_intensity=Avg('wine_intensity'),
+            wine_tannin=Avg('wine_tannin'), wine_sweetness=Avg('wine_sweetness'))
 
         structure_data = [
             {"label": key, 'percentage': wine_structure_averages[key]} for key in keys_structure]
@@ -277,10 +224,9 @@ def get_profile(request, wine_ids=[]):
         result = '{ "wine_data": [' + json.dumps(multi_select_type) + ',' + json.dumps(
             multi_select_price) + ',' + json.dumps(search_field_origin) + '],'
         result += '"taste_data": ' + \
-            json.dumps(taste_data) + ', "structure_data": ' + \
-            json.dumps(structure_data) + ' }'
+                  json.dumps(taste_data) + ', "structure_data": ' + \
+                  json.dumps(structure_data) + ' }'
     except BaseException as ex:
-        print(ex)
         return HttpResponseServerError(ex)
 
     return HttpResponse(result)
@@ -294,8 +240,7 @@ def get_wine_details(request, id=0):
     :param id: id of the wine
     :return: details of specified wine
     """
-
-    if id == 0:
+    if id <= 0:
         return HttpResponseBadRequest("Wine id must not be null or 0")
 
     try:
@@ -322,11 +267,11 @@ def get_wine_details(request, id=0):
                      (item["name"] for item in sellers if item["id"] == wine.lw_seller), None)},
                  ]
 
-        wine_details_dto = {'id': wine.lw_id, 'name': wine.lw_name, 'description': wine.lw_description, 'link': wine.lw_url, 'picture_url': wine.lw_thumb,
+        wine_details_dto = {'id': wine.lw_id, 'name': wine.lw_name, 'description': wine.lw_description,
+                            'link': wine.lw_url, 'picture_url': wine.lw_thumb,
                             'facts': facts, 'taste_data': taste_data, 'structure_data': structure_data}
         wine_details_dto = json.dumps(wine_details_dto)
     except BaseException as ex:
-        print(ex)
-        return HttpResponseServerError()
+        return HttpResponseServerError(ex)
 
     return HttpResponse(wine_details_dto)
