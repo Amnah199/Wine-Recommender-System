@@ -13,6 +13,6 @@ To run this module the following steps have to be taken:
 
 To run the API (assuming you're in the parent \WineRecommender_API>\ folder), run the command: <br>
 
-        .\manage.py runserv
+        .\manage.py runserver
 
         
