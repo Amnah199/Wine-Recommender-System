@@ -15,5 +15,5 @@ To run the API, run the command: <br>
 
         .\manage.py runserv
 
-        <br />
+        <br>
         assuming you're in the parent \WineRecommender_API>\ folder.
