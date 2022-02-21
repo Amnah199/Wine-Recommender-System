@@ -28,6 +28,7 @@ sellers = [{
     ],
     "lat": "51.9507",
     "lon": "7.6705",
+    "url": "https://www.wein-direktimport.de/"
 },
     {
     "rank": 2,
@@ -40,6 +41,7 @@ sellers = [{
     ],
     "lat": "51.9177774",
     "lon": "7.6811747",
+    "url": "https://www.divino.de/"
 },
 
     {"rank": 3,
@@ -50,10 +52,10 @@ sellers = [{
          {"label": "tel", "content": "0251/36384"},
          {"label": "email", "content": "mauritz@jacques.de"}
      ],
-
-
      "lat": "51.9286764",
-     "lon": "7.6085188", }]
+     "lon": "7.6085188",
+     "url": "https://www.jacques.de/"
+     }]
 
 
 keys_taste = ['black_fruit', 'dried_fruit', 'red_fruit', 'tropical_fruit', 'tree_fruit', 'citrus_fruit', 'spices',  'earth', 'microbio', 'vegetal', 'floral',  'non_oak', 'oak',
@@ -108,7 +110,7 @@ def get_recommendations(request, profile):
     structure_param = 0.5
     taste_param = 1
     ratings_param = 1
-    num_recs = 10
+    num_recs = 12
 
     try:
         types = [option["option"] for option in wine_data[0]
