@@ -46,7 +46,7 @@ const CustomAppBar = (props) => {
               style={{ height: "100%" }}
               onClick={() => {
                 removeCookie(cookie_name);
-                window.location.reload(false);
+                setTimeout(() => window.location.reload(false), 1000);
               }}
             >
               <RestartAltIcon color="primary" sx={{ fontSize: 40 }} />

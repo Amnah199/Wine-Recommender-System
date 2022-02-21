@@ -18,7 +18,6 @@ export const RecommendationPage = (props) => {
 
   const swagger = useContext(SwaggerContext);
   useEffect(() => {
-    console.log(cookies);
     cookies[cookie_name] ? setProfile(cookies[cookie_name]) : null;
   }, []);
   useEffect(() => {
@@ -28,8 +27,6 @@ export const RecommendationPage = (props) => {
       swagger.recommendations
         .recommendations_read({ profile: profile_string })
         .then((resp) => {
-          console.log(resp.body);
-
           setRecoData(resp.body);
 
           setLoading(false);

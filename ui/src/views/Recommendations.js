@@ -15,7 +15,7 @@ export const Recommendations = (props) => {
       lat: 51.96,
       lng: 7.65,
     },
-    zoom: 11,
+    zoom: 10,
   };
   return (
     <>
@@ -33,7 +33,7 @@ export const Recommendations = (props) => {
             pictureUrl={"picture_url"}
             label={"label"}
             cols={4}
-            onClick={(elem) => navigate("/wine/" + elem.id)}
+            onClick={(elem) => open("/wine/" + elem.id, "_blank")}
           />
         </CardContent>
       </Card>

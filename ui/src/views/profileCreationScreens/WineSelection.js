@@ -68,7 +68,7 @@ export const WineSelection = (props) => {
       ) : (
         <Typography variant="body1">
           You have not selected any wines. <br />
-          Please select some wine you like to continue!
+          Please select at least one wine to continue!
         </Typography>
       )}
     </>

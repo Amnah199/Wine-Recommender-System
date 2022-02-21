@@ -24,6 +24,7 @@ import { SwaggerContext, CustomAppBar } from "../App";
 import { ShoppingBasket } from "@mui/icons-material";
 import { WineBar } from "@mui/icons-material";
 import { TasteDataWidget } from "../components/TasteDataWidget";
+import { maxWidth, width } from "@mui/system";
 
 export const WineDetailPage = (props) => {
   const params = useParams();
@@ -54,9 +55,10 @@ export const WineDetailPage = (props) => {
                   <img
                     style={{
                       flex: 1,
-                      width: "auto",
+                      height: "100%",
+                      maxWidth: "100%",
                       alignSelf: "center",
-                      resizeMode: "contain",
+                      objectFit: "contain",
                     }}
                     src={
                       !backupVisible
@@ -81,7 +83,7 @@ export const WineDetailPage = (props) => {
               </Card>
               <Grid item container spacing={1} style={{ marginTop: "0.25rem" }}>
                 <Grid item md={6} xs={12}>
-                  <Card style={{ marginTop: "1rem" }}>
+                  <Card>
                     <CardHeader title="Facts" />
                     <CardContent>
                       <Grid container>
