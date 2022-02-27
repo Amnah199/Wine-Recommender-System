@@ -1,91 +1,50 @@
 # from selenium import webdriver
 import os
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
-
-from seleniumwire import webdriver
+from seleniumwire import webdriver as seleniumwire_webdriver
 from seleniumwire.utils import decode
 import re
 import pandas as pd
-import bs4
 
 import time
 import json
 
-import config
+import config.config as config
 import pathlib
 import datetime
+import chromedriver_config
+from vivino_pages import wine_detail_page
 
-
-def parseWebsite(html):
-    soup = bs4.BeautifulSoup(html, features="html.parser")
-    for elem in soup.findAll("script"):
-        script = str(elem)
-        if '{"vintage":' in script:
-
-            line = script.splitlines()[3]
-
-            if line[-1] == ";":
-                line = line[:-1]
-
-            jsonString = line[line.index('{"vintage"'):]
-            return json.loads(jsonString)
-
-
-chrome_options = Options()
-chrome_options.add_argument("--no-sandbox")
-chrome_options.add_argument("--disable-dev-shm-usage")
-chrome_options.add_argument("user-agent=" + config.userAgent)
-chrome_options.add_argument("--proxy-server=localhost:8899")
-chrome_options.headless = True
-chrome_prefs = {}
-chrome_prefs["profile.default_content_settings"] = {"images": 2}
-chrome_options.experimental_options["prefs"] = chrome_prefs
-chrome_options.add_argument('lang=en')
-desired_capabilities = DesiredCapabilities.CHROME
-desired_capabilities["goog:loggingPrefs"] = {"performance": "ALL"}
-
-
-driver = webdriver.Chrome(options=chrome_options,
-                          executable_path=config.chromedriver_path,
-                          desired_capabilities=desired_capabilities)
-
-driver.set_window_size(1920, 1080)
+driver = chromedriver_config.get_chromedriver(
+    webdriver_module=seleniumwire_webdriver)
 
 filePath = pathlib.Path(__file__).parent.resolve()
 
 
 df = pd.read_csv(str(filePath)+"/../temp/wines_export.csv")
 
+# create export folder
 if not os.path.isdir(str(filePath) + "/../export"):
     os.mkdir(str(filePath) + "/../export")
+
 time0 = datetime.datetime.utcnow()
 for id, row in df.iterrows():
     print(id, "/", len(df))
 
-    link = "http://www.vivino.com" + row["link"]
-
     current_wine_dir_path = str(
         filePath) + "/../export/" + str(id) + "/"
 
-    secondCondition = (os.path.isfile(current_wine_dir_path+"taste.json"))
-    secondCondition = True
+    # check if wine was already scraped
+    if not(os.path.isfile(current_wine_dir_path+"vintage.json")):
 
-    if not(os.path.isfile(current_wine_dir_path+"vintage.json") and secondCondition):
-
+        # create folder
         if not os.path.isdir(current_wine_dir_path):
             os.mkdir(current_wine_dir_path)
             file = open(current_wine_dir_path+"wine_id",
                         "w").write(str(row["local_id"]))
 
+        # interceptor function which checks every call for taste data
         def interceptor(request, response):
-            global body
             global id
-
             if(re.match("http[s]?://www\.vivino\.com\/api\/wines\/.*\/tastes.*", request.url)):
                 with open(current_wine_dir_path+"taste.json", "w") as taste_file:
                     pattern = re.compile("(?<=/wines\/)\d.*(?=\/tastes)|$")
@@ -95,39 +54,20 @@ for id, row in df.iterrows():
                     taste_data["vivino_id"] = id
                     json.dump(taste_data, taste_file)
 
+        # set interceptor
         driver.response_interceptor = interceptor
-        driver.get(link)
+        driver.get("http://www.vivino.com" + row["link"])
 
-        WebDriverWait(driver, config.timeout).until(
-            EC.presence_of_element_located(
-                (By.CLASS_NAME, "vintage"))
-        )
+        wine_detail_page.wait_for_wine_data(driver)
+
+        # safe wine data
         with open(current_wine_dir_path+"vintage.json", "w") as vintage_file:
-            json.dump(parseWebsite(driver.page_source), vintage_file)
+            json.dump(wine_detail_page.get_wine_data(driver), vintage_file)
 
-        counter = 0
+        # check for taste data or scroll down
+        wine_detail_page.look_for_taste_data(driver)
 
-        while (counter < 5):
-            try:
-                WebDriverWait(driver, config.loadTime).until(
-                    EC.presence_of_element_located(
-                        (By.XPATH, "//div[contains(@class, 'tasteCharacteristics')] "))
-                )
-
-                break
-            except:
-                counter2 = 0
-                while counter2 < 10:
-                    try:
-
-                        driver.execute_script("""window.scrollBy(0,400)""")
-                        break
-                    except:
-                        print("error while scrolling")
-                        time.sleep(1)
-                        counter2 += 1
-            counter += 1
-
+        # compute time spend
         time.sleep(config.sleepTime)
         time_now = datetime.datetime.utcnow()
         print("secs per page:", (time_now - time0).total_seconds())

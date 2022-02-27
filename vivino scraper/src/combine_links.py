@@ -21,3 +21,4 @@ except:
     pass
 print(df.head())
 df.to_csv(str(filePath)+"/../temp/wines_export.csv", index=False)
+print("links combined!")

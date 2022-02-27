@@ -16,3 +16,8 @@ Scraping/.idea
 Scraping/__pycache__
 vivino scraper/_export
 vivino scraper/export1
+vivino scraper/export2
+WineRecommender_API/recommender_engine/taste.py
+vivino scraper/export3
+
+WineRecommender_API/requirements.txt

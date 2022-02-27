@@ -4,27 +4,34 @@
 
 This module is used to scrape vivino data from overview pages of vivino
 
+## Requirements
+
+In order to use this software following software has to be installed:
+
+- Python 3.x (In testing 3.8 was used)
+- all necessary pip packages:
+    use pip install -r requirements
+- Chrome with ChromeDriver (in testing Chrome 98 was used with ChromeDriver 98.0.4758.102)
+    See [ChromeDriver Documentation](https://chromedriver.chromium.org/home) for more information
+    The chromedriver file has to be copied to ./dependencies or the path has to be specified in the ./src/config/config.py
+
 ## Usage
 
-1. modify config.py. A sample configuration is provided. For info on configuration check the section config.
-2. run wine_overview_scraper.py. Repeat for all 
+1. modify the configs described below.
+2. Start scraping. Refer to Config below for more details about configuration.
+2.1 run wine_overview_scraper.py. Repeat for all overview pages that you want to scraper
+2.2 run wine_search_scraper.py.
 3. run combine_links to create a shared wines_export.csv with all links
-4. run wine_detail_page_scraper.py to scrape the vintage and taste data. 
+4. run wine_detail_page_scraper.py to scrape the vintage and taste data.
+5. The results are stored in ./export
 
 The easiest way to test this is using the vscode debug configurations.
 
 ## Config
 
-sleepTime: wait after every scraped element to avoid bot detection
+There are three config files which are all located in src/config.
 
-loadTime: time after which an element is assumed to not be available
-
-timeout: time after which the execution of the programm is cancelled because detail page is not available
-
-userAgent: userAgent thats used to avoid bot detection
-
-link: link to page thats scraped by wine_overview_scraper.py
-
-link_file_name: file with links created by wine_overview_scraper.py
-
-chromedriver_path: driver for selenium. For more info visit: <https://chromedriver.chromium.org/getting-started>
+- config.py is used as a general config file and used by all parts of the program
+- wine_overview_config.py is used to configure the overview page scraper. This includes link to scrape and output file.
+- wine_search_config.py is used to configure the wine search. This includes the output file.
+There is also wine_search.json which is used to provide search terms and matched local ids to be scraped.
