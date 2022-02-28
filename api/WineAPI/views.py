@@ -7,9 +7,8 @@ import numpy as np
 from .models import *
 from .constants import *
 from .cosine_similarity import cos_sim
+from WineAPI import recommender_settings
 
-with open("recommender_settings.json") as f:
-    recommender_settings = json.load(f)
 
 @api_view(['GET'])
 def search_wines(request, criteria=""):
@@ -29,7 +28,7 @@ def search_wines(request, criteria=""):
             if wine.wine_thumb:
                 winethumb = 'https:' + wine.wine_thumb
             wines_result = wines_result + \
-                           (WineDto(wine.wine_id, wine.wine_name, winethumb)).toJSON() + ','
+                (WineDto(wine.wine_id, wine.wine_name, winethumb)).toJSON() + ','
 
         wines_result = wines_result + '] }'
 
@@ -40,7 +39,7 @@ def search_wines(request, criteria=""):
 
 
 @api_view(['GET'])
-def get_recommendations(request, profile, recommender_settings = recommender_settings):
+def get_recommendations(request, profile, recommender_settings=recommender_settings):
     """
     Gets wine-recommendations
     :param request: http request object
@@ -53,18 +52,18 @@ def get_recommendations(request, profile, recommender_settings = recommender_set
     wine_data = profile["wine_data"]
     taste_data = profile["taste_data"]
     structure_data = profile["structure_data"]
-    structure_param = recommender_settings["structure_param"]
-    taste_param = recommender_settings["taste_param"]
-    ratings_param = recommender_settings["ratings_param"]
-    num_recs = recommender_settings["num_recs"]
+    structure_param = recommender_settings.structure_param
+    taste_param = recommender_settings.taste_param
+    ratings_param = recommender_settings.ratings_param
+    num_recs = recommender_settings.num_recs
 
     try:
         types = [option["option"] for option in wine_data[0]
-        ["options"] if option["selected"] == True]
+                 ["options"] if option["selected"] == True]
         origins = [option["option"] for option in wine_data[2]
-        ["options"] if option["selected"] == True]
+                   ["options"] if option["selected"] == True]
         ranges = [option["option"] for option in wine_data[1]
-        ["options"] if option["selected"] == True]
+                  ["options"] if option["selected"] == True]
 
         user_taste_dict = {taste["label"]: taste["percentage"]
                            for taste in taste_data}
@@ -103,7 +102,8 @@ def get_recommendations(request, profile, recommender_settings = recommender_set
             wine_structure = np.asarray(
                 [wine_structure_dict[key] for key in keys_structure])
 
-            wine["score"] = ((structure_param * cos_sim(user_structure, wine_structure)) + (taste_param * cos_sim(user_taste, wine_flavor))) * (ratings_param * float(lw.wine.wine_rating) / 4)
+            wine["score"] = ((structure_param * cos_sim(user_structure, wine_structure)) + (
+                taste_param * cos_sim(user_taste, wine_flavor))) * (ratings_param * float(lw.wine.wine_rating) / 4)
             wines.append(wine)
 
         wines = sorted(wines, key=lambda k: k["score"], reverse=True)
@@ -153,13 +153,17 @@ def get_profile(request, wine_ids=[]):
             wine_id__in=[w.wine_id for w in wines])
 
         wine_flavors_averages = wine_flavors.aggregate(black_fruit=Avg('black_fruit'), citrus_fruit=Avg('citrus_fruit'),
-                                                       dried_fruit=Avg('dried_fruit'),
+                                                       dried_fruit=Avg(
+                                                           'dried_fruit'),
                                                        earth=Avg('earth'), floral=Avg('floral'),
-                                                       microbio=Avg('microbio'),
+                                                       microbio=Avg(
+                                                           'microbio'),
                                                        non_oak=Avg('non_oak'), oak=Avg('oak'),
-                                                       red_fruit=Avg('red_fruit'),
+                                                       red_fruit=Avg(
+                                                           'red_fruit'),
                                                        spices=Avg('spices'), tree_fruit=Avg('tree_fruit'),
-                                                       tropical_fruit=Avg('tropical_fruit'),
+                                                       tropical_fruit=Avg(
+                                                           'tropical_fruit'),
                                                        vegetal=Avg('vegetal'))
 
         taste_data = [
