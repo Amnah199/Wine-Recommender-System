@@ -6,7 +6,10 @@ from django.db.models import Avg
 import numpy as np
 from .models import *
 from .constants import *
+from .cosine_similarity import cos_sim
 
+with open("recommender_settings.json") as f:
+    recommender_settings = json.load(f)
 
 @api_view(['GET'])
 def search_wines(request, criteria=""):
@@ -37,7 +40,7 @@ def search_wines(request, criteria=""):
 
 
 @api_view(['GET'])
-def get_recommendations(request, profile):
+def get_recommendations(request, profile, recommender_settings = recommender_settings):
     """
     Gets wine-recommendations
     :param request: http request object
@@ -50,10 +53,10 @@ def get_recommendations(request, profile):
     wine_data = profile["wine_data"]
     taste_data = profile["taste_data"]
     structure_data = profile["structure_data"]
-    structure_param = 0.5
-    taste_param = 1
-    ratings_param = 1
-    num_recs = 12
+    structure_param = recommender_settings["structure_param"]
+    taste_param = recommender_settings["taste_param"]
+    ratings_param = recommender_settings["ratings_param"]
+    num_recs = recommender_settings["num_recs"]
 
     try:
         types = [option["option"] for option in wine_data[0]
@@ -100,9 +103,7 @@ def get_recommendations(request, profile):
             wine_structure = np.asarray(
                 [wine_structure_dict[key] for key in keys_structure])
 
-            wine["score"] = (structure_param * np.sum(
-                np.multiply(user_structure, wine_structure)) + taste_param * np.sum(
-                np.multiply(user_taste, wine_flavor))) * (ratings_param * float(lw.wine.wine_rating) / 4)
+            wine["score"] = ((structure_param * cos_sim(user_structure, wine_structure)) + (taste_param * cos_sim(user_taste, wine_flavor))) * (ratings_param * float(lw.wine.wine_rating) / 4)
             wines.append(wine)
 
         wines = sorted(wines, key=lambda k: k["score"], reverse=True)
