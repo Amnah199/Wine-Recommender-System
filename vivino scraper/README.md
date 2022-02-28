@@ -35,3 +35,8 @@ There are three config files which are all located in src/config.
 - wine_overview_config.py is used to configure the overview page scraper. This includes link to scrape and output file.
 - wine_search_config.py is used to configure the wine search. This includes the output file.
 There is also wine_search.json which is used to provide search terms and matched local ids to be scraped.
+
+## Transforming Scraping Results
+We have included our scraping results as vivino_raw.zip.
+To transform the scraping results from individual folders to an easily loadable list of item dictionaries, the enclosed extraction.py needs to be run from the command line within the top level vivino_raw folder. Since scraping was done in multiple runs, multiple export folders with identical subfolder names were generated. To combat this, the script was modified accordingly to iterate over all subfolders of the meta-level folder.
+The resulting output of the script is included as vivino_data.json.
