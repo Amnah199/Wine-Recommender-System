@@ -1,0 +1,37 @@
+{
+  "sellers": [
+    {
+      "rank": 1,
+      "id": 0,
+      "name": "",
+      "info": [
+        {
+          "label": "address",
+          "content": ""
+        },
+        {
+          "label": "tel",
+          "content": ""
+        },
+        {
+          "label": "email",
+          "content": ""
+        }
+      ],
+      "lat": "0.0",
+      "lon": "0.0",
+      "url": "",
+      "score_total": 0.0
+    }
+  ],
+  "wines": [
+    {
+      "id": 0,
+      "picture_url": "",
+      "seller": 0,
+      "label": "",
+      "score": 0.0,
+      "rank": 1
+    }
+  ]
+}

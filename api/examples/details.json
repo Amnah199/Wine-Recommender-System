@@ -1,0 +1,109 @@
+{
+  "id": 0,
+  "name": "",
+  "description": "",
+  "link": "",
+  "picture_url": "",
+  "facts": [
+    {
+      "label": "country",
+      "content": ""
+    },
+    {
+      "label": "region",
+      "content": ""
+    },
+    {
+      "label": "style",
+      "content": ""
+    },
+    {
+      "label": "price",
+      "content": ""
+    },
+    {
+      "label": "year",
+      "content": 0
+    },
+    {
+      "label": "seller",
+      "content": ""
+    }
+  ],
+  "taste_data": [
+    {
+      "label": "black_fruit",
+      "percentage": 0.0
+    },
+    {
+      "label": "dried_fruit",
+      "percentage": 0.0
+    },
+    {
+      "label": "red_fruit",
+      "percentage": 0.0
+    },
+    {
+      "label": "tropical_fruit",
+      "percentage": 0.0
+    },
+    {
+      "label": "tree_fruit",
+      "percentage": 0.0
+    },
+    {
+      "label": "citrus_fruit",
+      "percentage": 0.0
+    },
+    {
+      "label": "spices",
+      "percentage": 0.0
+    },
+    {
+      "label": "earth",
+      "percentage": 0.0
+    },
+    {
+      "label": "microbio",
+      "percentage": 0.0
+    },
+    {
+      "label": "vegetal",
+      "percentage": 0.0
+    },
+    {
+      "label": "floral",
+      "percentage": 0.0
+    },
+    {
+      "label": "non_oak",
+      "percentage": 0.0
+    },
+    {
+      "label": "oak",
+      "percentage": 0.0
+    }
+  ],
+  "structure_data": [
+    {
+      "label": "wine_acidity",
+      "percentage": 0.0
+    },
+    {
+      "label": "wine_fizziness",
+      "percentage": 0.0
+    },
+    {
+      "label": "wine_intensity",
+      "percentage": 0.0
+    },
+    {
+      "label": "wine_sweetness",
+      "percentage": 0.0
+    },
+    {
+      "label": "wine_tannin",
+      "percentage": 0.0
+    }
+  ]
+}

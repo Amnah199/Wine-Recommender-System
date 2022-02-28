@@ -1,0 +1,210 @@
+{
+  "wine_data": [
+    {
+      "selection_type": "multiselect",
+      "name": "Type of Wine",
+      "options": [
+        {
+          "option": "red",
+          "selected": true
+        },
+        {
+          "option": "sparkling",
+          "selected": false
+        },
+        {
+          "option": "white",
+          "selected": true
+        },
+        {
+          "option": "rose",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "selection_type": "multiselect",
+      "name": "Price",
+      "options": [
+        {
+          "option": "under 10\u20ac",
+          "selected": false
+        },
+        {
+          "option": "10-20\u20ac",
+          "selected": true
+        },
+        {
+          "option": "over 20\u20ac",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "selection_type": "search_field",
+      "name": "Origin",
+      "options": [
+        {
+          "option": "Mexiko",
+          "selected": false
+        },
+        {
+          "option": "Neuseeland",
+          "selected": false
+        },
+        {
+          "option": "Uruguay",
+          "selected": false
+        },
+        {
+          "option": "Deutschland",
+          "selected": false
+        },
+        {
+          "option": "Vereinigtes K\u00f6nigreich",
+          "selected": false
+        },
+        {
+          "option": "S\u00fcdafrika",
+          "selected": true
+        },
+        {
+          "option": "Chile",
+          "selected": false
+        },
+        {
+          "option": "\u00d6sterreich",
+          "selected": false
+        },
+        {
+          "option": "Vereinigte Staaten",
+          "selected": false
+        },
+        {
+          "option": "Frankreich",
+          "selected": false
+        },
+        {
+          "option": "Brasilien",
+          "selected": false
+        },
+        {
+          "option": "Italien",
+          "selected": true
+        },
+        {
+          "option": "Israel",
+          "selected": false
+        },
+        {
+          "option": "South Africa",
+          "selected": false
+        },
+        {
+          "option": "Australien",
+          "selected": false
+        },
+        {
+          "option": "Spanien",
+          "selected": true
+        },
+        {
+          "option": "Luxemburg",
+          "selected": false
+        },
+        {
+          "option": "Argentinien",
+          "selected": false
+        },
+        {
+          "option": "Portugal",
+          "selected": false
+        },
+        {
+          "option": "Schweiz",
+          "selected": false
+        },
+        {
+          "option": "Griechenland",
+          "selected": false
+        }
+      ]
+    }
+  ],
+  "taste_data": [
+    {
+      "label": "black_fruit",
+      "percentage": 0.0
+    },
+    {
+      "label": "dried_fruit",
+      "percentage": 0.0
+    },
+    {
+      "label": "red_fruit",
+      "percentage": 0.0
+    },
+    {
+      "label": "tropical_fruit",
+      "percentage": 0.0
+    },
+    {
+      "label": "tree_fruit",
+      "percentage": 0.0
+    },
+    {
+      "label": "citrus_fruit",
+      "percentage": 0.0
+    },
+    {
+      "label": "spices",
+      "percentage": 0.0
+    },
+    {
+      "label": "earth",
+      "percentage": 0.0
+    },
+    {
+      "label": "microbio",
+      "percentage": 0.0
+    },
+    {
+      "label": "vegetal",
+      "percentage": 0.0
+    },
+    {
+      "label": "floral",
+      "percentage": 0.0
+    },
+    {
+      "label": "non_oak",
+      "percentage": 0.0
+    },
+    {
+      "label": "oak",
+      "percentage": 0.0
+    }
+  ],
+  "structure_data": [
+    {
+      "label": "wine_acidity",
+      "percentage": 0.0
+    },
+    {
+      "label": "wine_fizziness",
+      "percentage": 0.0
+    },
+    {
+      "label": "wine_intensity",
+      "percentage": 0.0
+    },
+    {
+      "label": "wine_sweetness",
+      "percentage": 0.0
+    },
+    {
+      "label": "wine_tannin",
+      "percentage": 0.0
+    }
+  ]
+}
