@@ -38,6 +38,7 @@ sqlalchemy
 #### Matching:
 ```
 recordlinkage
+fuzzymatcher
 fuzzywuzzy
 rapidfuzz
 ```
