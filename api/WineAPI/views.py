@@ -103,7 +103,7 @@ def get_recommendations(request, profile, recommender_settings=recommender_setti
                 [wine_structure_dict[key] for key in keys_structure])
 
             wine["score"] = ((structure_param * cos_sim(user_structure, wine_structure)) + (
-                taste_param * cos_sim(user_taste, wine_flavor))) * (ratings_param * float(lw.wine.wine_rating) / 4)
+                taste_param * cos_sim(user_taste, wine_flavor))) + (ratings_param * float(lw.wine.wine_rating) / 5)
             wines.append(wine)
 
         wines = sorted(wines, key=lambda k: k["score"], reverse=True)
